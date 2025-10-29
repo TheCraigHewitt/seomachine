@@ -1,0 +1,114 @@
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Keep directory structure but ignore content in working directories
+# Allow .gitkeep files to preserve empty directories
+topics/*
+!topics/.gitkeep
+!topics/example-topic-idea.md
+
+research/*
+!research/.gitkeep
+
+drafts/*
+!drafts/.gitkeep
+
+published/*
+!published/.gitkeep
+
+rewrites/*
+!rewrites/.gitkeep
+
+# Don't ignore context files - these should be committed after customization
+# !context/
+
+# Node modules if using any tools
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Secrets and sensitive data
+secrets/
+credentials/
+*.key
+*.pem
+*.p12
+
+# Personal notes that shouldn't be in repo
+NOTES.md
+personal-*.md
+
+# Data source credentials and cache
+data_sources/config/.env
+data_sources/config/*_credentials.json
+data_sources/config/*_config.json
+data_sources/cache/*
+!data_sources/cache/.gitkeep
+
+# Python virtual environment
+venv/
+env/
+.venv/
+
+
+# GA4 Credentials (additional explicit entry)
+ga4-credentials.json
+google-analytics-credentials.json
