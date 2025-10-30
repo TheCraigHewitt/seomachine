@@ -1,12 +1,12 @@
-# Contributing to Castos Writer
+# Contributing to SEO Machine
 
-Thank you for your interest in improving Castos Writer! This document provides guidelines for contributing to the project.
+Thank you for your interest in improving SEO Machine! This document provides guidelines for contributing to the project.
 
 ## How to Contribute
 
 ### Reporting Issues
 If you encounter bugs or have suggestions:
-1. Check existing [GitHub Issues](https://github.com/castos/castos-writer/issues) to avoid duplicates
+1. Check existing [GitHub Issues](https://github.com/thecraighewitt/seomachine/issues) to avoid duplicates
 2. Create a new issue with:
    - Clear description of the problem or suggestion
    - Steps to reproduce (for bugs)
@@ -34,8 +34,8 @@ If you encounter bugs or have suggestions:
 
 1. **Fork the Repository**
    ```bash
-   git clone https://github.com/castos/castos-writer.git
-   cd castos-writer
+   git clone https://github.com/thecraighewitt/seomachine.git
+   cd seomachine
    ```
 
 2. **Create a Feature Branch**
@@ -143,4 +143,4 @@ By contributing, you agree that your contributions will be licensed under the sa
 
 ---
 
-Thank you for helping make Castos Writer better! 🎙️📝
+Thank you for helping make SEO Machine better! 🎙️📝
