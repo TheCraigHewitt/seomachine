@@ -193,6 +193,27 @@ Example: `rewrites/podcast-hosting-guide-rewrite-2025-10-15.md`
 Also save the change summary separately:
 - **File Location**: `rewrites/changes-[topic-slug]-[YYYY-MM-DD].md`
 
+## Automatic Content Scrubbing
+**IMPORTANT**: Immediately after saving the rewritten article file, automatically scrub the content to remove AI watermarks:
+
+1. Run the content scrubber on the saved file:
+```python
+import sys
+sys.path.append('data_sources/modules')
+from content_scrubber import scrub_file
+
+# Scrub the file (overwrites with cleaned version)
+scrub_file('rewrites/[topic-slug]-rewrite-[YYYY-MM-DD].md', verbose=True)
+```
+
+2. This removes:
+   - All invisible Unicode watermarks (zero-width spaces, format-control characters, etc.)
+   - Em-dashes, replaced with contextually appropriate punctuation
+
+3. The scrubbing happens silently and automatically - no user action required
+
+**Result**: Rewritten content is clean of AI watermarks before agents analyze it.
+
 ## Automatic Agent Execution
 After saving the rewritten article, run optimization agents:
 
