@@ -71,14 +71,9 @@ class ContentScrubber:
         original_len = len(content)
 
         for char in self.WATERMARK_CHARS:
-            # Replace zero-width space with regular space if between word characters
-            if char == '\u200B':
-                # Replace zero-width space between alphanumeric chars with regular space
-                content = re.sub(r'(\w)\u200B(\w)', r'\1 \2', content)
-                # Remove any remaining zero-width spaces
-                content = content.replace(char, '')
-            else:
-                content = content.replace(char, '')
+            # For zero-width space, just remove it completely
+            # Don't replace with regular space as it breaks URLs
+            content = content.replace(char, '')
 
         self.stats['unicode_removed'] = original_len - len(content)
         return content
@@ -190,12 +185,19 @@ class ContentScrubber:
 
     def _clean_whitespace(self, content: str) -> str:
         """Clean up multiple spaces and normalize whitespace."""
-        # Replace multiple spaces with single space
-        content = re.sub(r' {2,}', ' ', content)
-
-        # Fix spacing around punctuation
-        content = re.sub(r'\s+([.,;:!?])', r'\1', content)  # Remove space before punctuation
-        content = re.sub(r'([.,;:!?])([A-Za-z])', r'\1 \2', content)  # Add space after punctuation if missing
+        # Replace multiple spaces with single space (but not in specific contexts)
+        content = re.sub(r'(?<!\.)  +', ' ', content)  # Multiple spaces to single, but not after period
+        
+        # Remove spaces that appear between filename and extension (e.g., "file. png" -> "file.png")
+        content = re.sub(r'(\w)\s+\.\s*(\w+)', r'\1.\2', content)
+        
+        # Remove space before punctuation
+        content = re.sub(r'\s+([,;:!?])', r'\1', content)
+        
+        # Only add space after sentence-ending punctuation (.!?) when followed by capital letter
+        # AND only if preceded by a word character (ensures it's end of sentence, not a domain/file)
+        # This avoids breaking URLs, TLDs, and file extensions while fixing sentence spacing
+        content = re.sub(r'(\w)([.!?])([A-Z])', r'\1\2 \3', content)
 
         # Clean up line breaks
         content = re.sub(r'\n{3,}', '\n\n', content)  # Max 2 consecutive newlines
