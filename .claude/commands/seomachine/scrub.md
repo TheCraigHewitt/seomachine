@@ -3,7 +3,7 @@
 Use this command to remove AI-generated content watermarks and telltale signs from markdown files.
 
 ## Usage
-`/scrub [file path]`
+`/seomachine:scrub [file path]`
 
 ## What This Command Does
 Removes invisible Unicode watermarks and replaces em-dashes with contextually appropriate punctuation to make content appear naturally human-written.
@@ -74,7 +74,7 @@ Sample of cleaned content:
 ## Example Usage
 
 ```
-/scrub drafts/content-marketing-guide-2025-10-31.md
+/seomachine:scrub drafts/content-marketing-guide-2025-10-31.md
 ```
 
 This will:
@@ -90,7 +90,7 @@ This will:
 - File will be overwritten with cleaned version (original is replaced)
 
 ## Best Practices
-- Run `/scrub` after generating content with `/write` or `/rewrite` (though this should happen automatically)
+- Run `/seomachine:scrub` after generating content with `/seomachine:write` or `/seomachine:rewrite` (though this should happen automatically)
 - Useful for cleaning files before publishing
 - Can be run on any markdown file in the workspace
 - Safe to run multiple times (idempotent - won't change already-clean content)
@@ -108,7 +108,7 @@ The goal is to make the content indistinguishable from naturally human-written t
 
 ## Integration Note
 
-This command is automatically triggered after `/write` and `/rewrite` commands, so you typically don't need to run it manually. Use this command when:
+This command is automatically triggered after `/seomachine:write` and `/seomachine:rewrite` commands, so you typically don't need to run it manually. Use this command when:
 - Testing the scrubber
 - Cleaning older content that wasn't auto-scrubbed
 - Verifying scrubbing was successful
