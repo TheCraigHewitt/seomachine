@@ -3,7 +3,7 @@
 Use this command to review and analyze existing your company blog posts for SEO opportunities, content gaps, and improvement areas.
 
 ## Usage
-`/analyze-existing [URL or file path]`
+`/seomachine:analyze-existing [URL or file path]`
 
 ## What This Command Does
 1. Fetches and analyzes existing blog post content
@@ -111,8 +111,8 @@ Example: `research/analysis-podcast-hosting-guide-2025-10-15.md`
 
 ## Next Steps
 Based on the analysis, the system will suggest:
-1. Running `/rewrite [topic]` if content needs significant updates
-2. Running `/optimize [file]` if content needs light SEO polish
+1. Running `/seomachine:rewrite [topic]` if content needs significant updates
+2. Running `/seomachine:optimize [file]` if content needs light SEO polish
 3. Archiving the post if it's no longer relevant or valuable
 
 This ensures every analysis leads to clear, actionable next steps for improving your company blog content.

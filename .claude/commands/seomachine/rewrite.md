@@ -3,7 +3,7 @@
 Use this command to update and improve existing your company blog posts based on analysis findings.
 
 ## Usage
-`/rewrite [topic or analysis file]`
+`/seomachine:rewrite [topic or analysis file]`
 
 ## What This Command Does
 1. Takes existing blog post content and improvement recommendations
@@ -16,7 +16,7 @@ Use this command to update and improve existing your company blog posts based on
 
 ### Pre-Rewrite Review
 - **Original Content**: Read the existing article thoroughly
-- **Analysis Report**: Review findings from `/analyze-existing` if available
+- **Analysis Report**: Review findings from `/seomachine:analyze-existing` if available
 - **Research Brief**: Check if new research brief exists for updated angles
 - **Brand Voice**: Verify alignment with current @context/brand-voice.md
 - **SEO Guidelines**: Apply latest requirements from @context/seo-guidelines.md
@@ -62,7 +62,7 @@ Based on analysis, classify the rewrite level:
 - Fluff or filler that doesn't add value
 
 ### Content Structure
-Follow same structure as `/write` command:
+Follow same structure as `/seomachine:write` command:
 
 #### 1. Updated Headline (H1)
 - Optimize with primary keyword if not already present
@@ -238,8 +238,8 @@ After saving the rewritten article, run optimization agents:
 After rewrite completion:
 1. Review change summary and ensure all updates are intentional
 2. Compare to original to verify improvements
-3. Run `/optimize` for final polish if needed
-4. Move to `/published` when ready
+3. Run `/seomachine:optimize` for final polish if needed
+4. Move to `published/` when ready
 5. Note original URL to ensure proper redirect/replacement
 
 This ensures every rewritten article is significantly improved while maintaining what worked in the original version.

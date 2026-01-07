@@ -3,7 +3,7 @@
 Use this command to create comprehensive, SEO-optimized long-form blog content.
 
 ## Usage
-`/write [topic or research brief]`
+`/seomachine:write [topic or research brief]`
 
 ## What This Command Does
 1. Creates complete, well-structured long-form articles (2000-3000+ words)
@@ -15,7 +15,7 @@ Use this command to create comprehensive, SEO-optimized long-form blog content.
 ## Process
 
 ### Pre-Writing Review
-- **Research Brief**: Review research brief from `/research` command if available
+- **Research Brief**: Review research brief from `/seomachine:research` command if available
 - **Brand Voice**: Check @context/brand-voice.md for tone and messaging
 - **Writing Examples**: Study @context/writing-examples.md for style consistency
 - **Style Guide**: Follow formatting rules from @context/style-guide.md

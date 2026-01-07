@@ -3,7 +3,7 @@
 Use this command to perform a final SEO optimization pass on completed articles before publishing.
 
 ## Usage
-`/optimize [article file]`
+`/seomachine:optimize [article file]`
 
 ## What This Command Does
 1. Performs comprehensive SEO audit of article
@@ -232,7 +232,7 @@ Visual representation of where primary keyword appears:
 **Next Steps**:
 1. [Specific action needed]
 2. [Specific action needed]
-3. Move to `/published` folder when complete
+3. Move to `published/` folder when complete
 
 ## File Management
 After optimization analysis, save report to:
@@ -243,7 +243,7 @@ After optimization analysis, save report to:
 Example: `drafts/optimization-report-podcast-analytics-2025-10-15.md`
 
 ## Integration with Agents
-The `/optimize` command triggers final review from all agents:
+The `/seomachine:optimize` command triggers final review from all agents:
 - **content-analyzer** (NEW!): Comprehensive analysis with search intent, keyword density & clustering, content length comparison, readability score, and SEO quality rating (0-100)
 - **seo-optimizer**: Technical SEO final check
 - **meta-creator**: Best meta title/description options

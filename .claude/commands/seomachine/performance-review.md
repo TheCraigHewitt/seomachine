@@ -3,7 +3,7 @@
 Use this command to analyze content performance data and generate a prioritized queue of content tasks.
 
 ## Usage
-`/performance-review [days]`
+`/seomachine:performance-review [days]`
 
 ## What This Command Does
 1. Fetches data from Google Analytics, Google Search Console, and DataForSEO
@@ -161,14 +161,14 @@ The Performance Agent output directly informs other commands:
 
 1. **Quick Win Identified**: "podcast monetization" at position 13
    ```
-   /analyze-existing /blog/podcast-monetization-guide
-   /optimize drafts/podcast-monetization-guide.md
+   /seomachine:analyze-existing /blog/podcast-monetization-guide
+   /seomachine:optimize drafts/podcast-monetization-guide.md
    ```
 
 2. **Declining Content**: Article lost 35% traffic
    ```
-   /analyze-existing /blog/podcast-equipment-guide
-   /rewrite podcast equipment guide
+   /seomachine:analyze-existing /blog/podcast-equipment-guide
+   /seomachine:rewrite podcast equipment guide
    ```
 
 3. **Low CTR**: High impressions, 2.5% CTR
@@ -179,14 +179,14 @@ The Performance Agent output directly informs other commands:
 
 4. **Trending Topic**: "AI podcast tools" +150% growth
    ```
-   /research AI podcast tools
-   /write AI podcast tools
+   /seomachine:research AI podcast tools
+   /seomachine:write AI podcast tools
    ```
 
 5. **Competitor Gap**: competitor.com ranks #3, your company not ranking
    ```
-   /research podcast editing workflow
-   /write podcast editing workflow
+   /seomachine:research podcast editing workflow
+   /seomachine:write podcast editing workflow
    ```
 
 ## Frequency Recommendations
@@ -197,7 +197,7 @@ The Performance Agent output directly informs other commands:
 - Adjust current work based on new data
 
 **Monthly** (Full Review):
-- Complete `/performance-review` analysis
+- Complete `/seomachine:performance-review` analysis
 - Assess previous month's actions and results
 - Plan next month's content priorities
 - Adjust strategy based on trends
@@ -267,22 +267,22 @@ Plan reviews accounting for data lag.
 
 ### Custom Analysis Period
 ```
-/performance-review 90  # Last 90 days for long-term trends
-/performance-review 7   # Last 7 days for recent changes
+/seomachine:performance-review 90  # Last 90 days for long-term trends
+/seomachine:performance-review 7   # Last 7 days for recent changes
 ```
 
 ### Focus on Specific Content
 After full review, drill into specific pages:
 ```
 # From performance review, identify problem page
-/analyze-existing /blog/specific-article
-/rewrite specific article
+/seomachine:analyze-existing /blog/specific-article
+/seomachine:rewrite specific article
 ```
 
 ### Compare Periods
 ```
 # Run monthly to track changes
-/performance-review 30   # This month
+/seomachine:performance-review 30   # This month
 # Compare to previous report from 30 days ago
 ```
 
@@ -324,28 +324,28 @@ A successful performance review should:
 
 ```bash
 # Month start: Run performance review
-/performance-review 30
+/seomachine:performance-review 30
 
 # Review report: research/performance-review-2025-10-15.md
 # Identify top 5 priorities
 
 # Week 1: Quick wins
-/analyze-existing /blog/top-quick-win-article
-/optimize drafts/top-quick-win-article.md
+/seomachine:analyze-existing /blog/top-quick-win-article
+/seomachine:optimize drafts/top-quick-win-article.md
 
 # Week 2: Declining content
-/analyze-existing /blog/declining-article
-/rewrite declining article
+/seomachine:analyze-existing /blog/declining-article
+/seomachine:rewrite declining article
 
 # Week 3: Meta improvements
 # Update meta elements for 5 low-CTR pages
 
 # Week 4: Trending topic
-/research [trending topic from report]
-/write [trending topic]
+/seomachine:research [trending topic from report]
+/seomachine:write [trending topic]
 
 # Month end: Review results, run new performance review
-/performance-review 30
+/seomachine:performance-review 30
 # Compare to previous month, adjust strategy
 ```
 
