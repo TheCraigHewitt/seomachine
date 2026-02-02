@@ -39,3 +39,6 @@ scikit-learn>=1.3.0
 # Web scraping and parsing
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
+
+# Markdown processing (for WordPress publisher)
+markdown>=3.5.0
