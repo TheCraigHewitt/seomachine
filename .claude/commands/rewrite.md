@@ -1,6 +1,6 @@
 # Rewrite Command
 
-Use this command to update and improve existing your company blog posts based on analysis findings.
+Use this command to update and improve existing blog posts based on analysis findings.
 
 ## Usage
 `/rewrite [topic or analysis file]`
@@ -85,7 +85,7 @@ Follow same structure as `/write` command:
 
 #### 4. Strengthened Conclusion
 - Update takeaways to reflect new/expanded content
-- Refresh CTA to align with current your company priorities
+- Refresh CTA to align with current business priorities
 - End with forward-looking perspective
 
 ### SEO Enhancement
@@ -99,7 +99,7 @@ Follow same structure as `/write` command:
 
 #### Internal Linking
 - **Review Existing**: Ensure all internal links still work and are relevant
-- **Add New Links**: Reference newer your company content published since original
+- **Add New Links**: Reference newer content published since original
 - **Strategic Placement**: Link to pillar content and related articles
 - **Anchor Text**: Use keyword-rich, descriptive anchor text
 - **Quantity**: Aim for 3-5+ quality internal links
@@ -121,11 +121,11 @@ Follow same structure as `/write` command:
 #### Content Accuracy
 - Verify all updated statistics and data points
 - Ensure technical information is current
-- Confirm examples reflect current podcast landscape
-- Check that your company product references are up-to-date
+- Confirm examples reflect current industry landscape
+- Check that product references are up-to-date
 
 #### Brand Alignment
-- Maintain your company voice from @context/brand-voice.md
+- Maintain brand voice from @context/brand-voice.md
 - Follow formatting from @context/style-guide.md
 - Ensure messaging aligns with current positioning
 - Keep focus on target audience needs
@@ -188,31 +188,45 @@ After completing the rewrite, save to:
 - **File Format**: Markdown with change summary frontmatter
 - **Naming Convention**: Use original slug + "rewrite" + current date
 
-Example: `rewrites/podcast-hosting-guide-rewrite-2025-10-15.md`
+Example: `rewrites/content-marketing-guide-rewrite-2025-10-15.md`
 
 Also save the change summary separately:
 - **File Location**: `rewrites/changes-[topic-slug]-[YYYY-MM-DD].md`
 
 ## Automatic Content Scrubbing
-**IMPORTANT**: Immediately after saving the rewritten article file, automatically scrub the content to remove AI watermarks:
 
-1. Run the content scrubber on the saved file:
-```python
-import sys
-sys.path.append('data_sources/modules')
-from content_scrubber import scrub_file
+**CRITICAL**: Immediately after saving the rewritten article file, automatically invoke the content scrubber to remove AI watermarks and telltale patterns.
 
-# Scrub the file (overwrites with cleaned version)
-scrub_file('rewrites/[topic-slug]-rewrite-[YYYY-MM-DD].md', verbose=True)
+### Why This Matters
+AI-generated content often contains invisible Unicode watermarks and characteristic patterns (like em-dash overuse) that can identify it as AI-written. Scrubbing removes these indicators to make content appear naturally human-written.
+
+### Scrubbing Process
+1. **Invoke Scrubber**: Run `/scrub [file-path]` on the saved rewritten article file
+2. **Automatic Execution**: This should happen automatically, not require user action
+3. **Timing**: Must occur immediately after file save, before any other processing
+4. **Scope**: Scrub the main rewritten article file only (not change summary or analysis files)
+
+### What Gets Cleaned
+- Invisible Unicode watermarks (zero-width spaces, BOMs, format-control characters)
+- Em-dashes replaced with contextually appropriate punctuation (commas, semicolons, periods)
+- Whitespace normalization and formatting cleanup
+- All changes preserve content meaning and markdown structure
+
+### Verification
+The scrubber will display statistics:
+- Unicode watermarks removed
+- Format-control characters removed
+- Em-dashes replaced
+
+### Example Workflow
+```
+1. Rewrite article → Save to rewrites/article-name-rewrite-2025-10-31.md
+2. IMMEDIATELY run: /scrub rewrites/article-name-rewrite-2025-10-31.md
+3. Verify scrubbing statistics
+4. THEN proceed with optimization agents below
 ```
 
-2. This removes:
-   - All invisible Unicode watermarks (zero-width spaces, format-control characters, etc.)
-   - Em-dashes, replaced with contextually appropriate punctuation
-
-3. The scrubbing happens silently and automatically - no user action required
-
-**Result**: Rewritten content is clean of AI watermarks before agents analyze it.
+This ensures all published content is free of AI signatures before any further processing.
 
 ## Automatic Agent Execution
 After saving the rewritten article, run optimization agents:

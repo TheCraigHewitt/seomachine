@@ -1,119 +1,156 @@
 # Scrub Command
 
-Use this command to remove AI-generated content watermarks and telltale signs from markdown files.
+Use this command to remove invisible AI-generated watermarks and telltale patterns from markdown content files.
 
 ## Usage
 `/scrub [file path]`
 
 ## What This Command Does
-Removes invisible Unicode watermarks and replaces em-dashes with contextually appropriate punctuation to make content appear naturally human-written.
+1. Removes invisible Unicode watermarks commonly embedded by AI systems
+2. Replaces em-dashes with contextually appropriate punctuation
+3. Cleans up whitespace and formatting artifacts
+4. Makes content appear naturally human-written
+5. Provides statistics on changes made
 
-## What Gets Removed/Replaced
+## Why This Matters
 
-### Invisible Unicode Watermarks Removed:
-- **Zero-width spaces (U+200B)**: Often used for word-breaking and watermarking
-- **Byte Order Mark (U+FEFF)**: Text encoding indicator, sometimes inserted as watermark
-- **Zero-width non-joiners (U+200C)**: Prevents character joining, used for watermarking
-- **Word joiner (U+2060)**: Invisible character that prevents line breaks
-- **Soft hyphen (U+00AD)**: Invisible hyphen used for watermarking
-- **Narrow no-break space (U+202F)**: Special space character
-- **All Unicode Category Cf characters**: Format-control codepoints
-
-### Em-Dash Replacement (U+2014):
-Em-dashes are replaced with contextually appropriate punctuation:
-- **Comma**: For simple separation, parenthetical phrases, or lists
-- **Semicolon**: For independent clauses that are closely related
-- **Period**: For strong breaks or when the em-dash separates complete thoughts
-- **Space**: When em-dash is used for attribution
-
-The scrubber analyzes sentence structure and context to determine the most natural replacement.
+AI language models often embed invisible Unicode characters as watermarks or identifiers in generated content. Additionally, AI tends to overuse certain punctuation patterns like em-dashes. This command removes these telltale signs to make content appear more naturally written.
 
 ## Process
 
-### 1. Read the File
-Load the specified markdown file from the file path provided.
+### 1. Watermark Detection & Removal
 
-### 2. Run Content Scrubber
-Execute the Python content scrubber module:
+The scrubber identifies and removes several types of invisible Unicode characters:
 
-```python
-import sys
-sys.path.append('data_sources/modules')
-from content_scrubber import scrub_file
+#### Invisible Characters Removed
+- **Zero-width spaces** (U+200B): Often inserted between words
+- **Byte Order Marks** (U+FEFF): BOM characters that shouldn't appear in content
+- **Zero-width non-joiners** (U+200C): Invisible formatting characters
+- **Word joiners** (U+2060): Non-breaking invisible characters
+- **Soft hyphens** (U+00AD): Optional hyphenation points
+- **Narrow no-break spaces** (U+202F): Special spacing characters
+- **All format-control characters**: Unicode category Cf characters
 
-# Scrub the file (overwrites original with cleaned version)
-scrub_file('[file_path]', verbose=True)
-```
+### 2. Em-Dash Replacement
 
-### 3. Report Results
-Show statistics about what was cleaned:
-- Number of invisible Unicode characters removed
-- Number of format-control characters removed
-- Number of em-dashes replaced
-- File location of cleaned content
+AI-generated content tends to overuse em-dashes (—). The scrubber intelligently replaces them based on context:
 
-### 4. Verify Clean Content
-Read a sample of the cleaned content to verify it looks natural and all watermarks are removed.
+#### Contextual Rules
+- **Attribution**: Replaces with comma when used for quotes or attribution
+  - Example: "Text — Author Name" becomes "Text, Author Name"
 
-## Output Format
+- **Independent Clauses**: Replaces with semicolon when joining complete thoughts
+  - Example: "First clause — second clause" becomes "First clause; second clause"
 
+- **Strong Breaks**: Replaces with period when separating distinct sentences
+  - Example: "Sentence one — Sentence two" becomes "Sentence one. Sentence two"
+
+- **Simple Separation**: Replaces with comma for list items or simple separation
+  - Example: "Item — detail" becomes "Item, detail"
+
+- **Conjunctive Adverbs**: Replaces with semicolon before words like "however", "therefore", "moreover"
+  - Example: "Text — however, more text" becomes "Text; however, more text"
+
+### 3. Whitespace Normalization
+
+After removing watermarks and replacing em-dashes, the scrubber cleans up formatting:
+
+- **Multiple Spaces**: Reduces multiple consecutive spaces to single space
+- **Punctuation Spacing**: Removes spaces before punctuation marks
+- **Post-Punctuation Spacing**: Ensures single space after punctuation
+- **Excessive Line Breaks**: Reduces 3+ consecutive line breaks to 2
+
+## Output
+
+The command displays:
+
+### Statistics Report
 ```
 Content Scrubbing Complete:
   - Unicode watermarks removed: [count]
   - Format-control chars removed: [count]
   - Em-dashes replaced: [count]
-
-Scrubbed content saved to: [file_path]
-
-Sample of cleaned content:
-[First 300 characters of cleaned content]
-
-✓ Content successfully scrubbed of AI watermarks
 ```
 
-## Example Usage
+### File Update
+- Original file is overwritten with cleaned content
+- All changes are applied in-place
+- Original formatting and structure preserved (except cleaned elements)
 
-```
-/scrub drafts/content-marketing-guide-2025-10-31.md
-```
+## Integration with Writing Workflow
 
-This will:
-1. Read the file
-2. Remove all invisible watermarks
-3. Replace em-dashes with appropriate punctuation
-4. Save the cleaned version (overwrites original)
-5. Show statistics and sample
+This command is designed to run automatically after content generation:
 
-## File Requirements
-- File must be a markdown (.md) file
-- File must exist in the workspace
-- File will be overwritten with cleaned version (original is replaced)
+### Automatic Execution
+After `/write` or `/rewrite` commands save article files, the scrubber should run automatically on:
+- Main article file in `drafts/` directory
+- Any generated content that will be published
 
-## Best Practices
-- Run `/scrub` after generating content with `/write` or `/rewrite` (though this should happen automatically)
-- Useful for cleaning files before publishing
-- Can be run on any markdown file in the workspace
-- Safe to run multiple times (idempotent - won't change already-clean content)
+### Manual Execution
+You can also manually scrub any markdown file:
+- Testing content cleanliness
+- Cleaning legacy content
+- Processing externally generated content
+- Verifying scrubbing was successful
 
 ## Technical Details
 
-The scrubber uses intelligent context analysis to replace em-dashes:
+### Implementation
+The scrubbing functionality is implemented in:
+- **Module**: `data_sources/modules/content_scrubber.py`
+- **Main Function**: `scrub_file(file_path, output_path, verbose)`
+- **Class**: `ContentScrubber` with specialized methods for each cleaning operation
 
-**Example transformations**:
-- "This is great—you'll love it" → "This is great, you'll love it" (comma for simple separation)
-- "I tried everything—nothing worked" → "I tried everything; nothing worked" (semicolon for independent clauses)
-- "Here's the thing—AI content is detectable" → "Here's the thing: AI content is detectable" (natural separation)
+### Idempotency
+The scrubber is idempotent - running it multiple times on already-cleaned content produces no additional changes. This makes it safe to:
+- Run multiple times on same file
+- Include in automated workflows
+- Use as quality check without risk of over-processing
 
-The goal is to make the content indistinguishable from naturally human-written text while maintaining readability and proper grammar.
+### Safety
+The scrubbing process:
+- Never modifies visible content or meaning
+- Only removes invisible/problematic characters
+- Preserves all markdown formatting
+- Maintains document structure
+- Safe for all content types
 
-## Integration Note
+## Example Usage
 
-This command is automatically triggered after `/write` and `/rewrite` commands, so you typically don't need to run it manually. Use this command when:
-- Testing the scrubber
-- Cleaning older content that wasn't auto-scrubbed
-- Verifying scrubbing was successful
-- Cleaning content from external sources
+### Basic Scrubbing
+```
+/scrub drafts/content-marketing-strategies-2025-10-31.md
+```
 
----
+### What Gets Changed
 
-**Result**: Content that is clean of AI watermarks and appears naturally human-written.
+**Before:**
+```
+Content​ marketing​ is​ a​ powerful​ strategy—businesses can reach global audiences—and convert more customers.
+```
+(Contains zero-width spaces after words and em-dashes)
+
+**After:**
+```
+Content marketing is a powerful strategy; businesses can reach global audiences, and convert more customers.
+```
+(Clean text with appropriate punctuation)
+
+## Quality Standards
+
+Every scrubbed file ensures:
+- Zero invisible Unicode watermarks
+- Natural punctuation patterns
+- Clean whitespace formatting
+- No telltale AI signatures
+- Publish-ready cleanliness
+
+## Best Practices
+
+1. **Always Scrub Before Publishing**: Make this the final step before any content goes live
+2. **Run on All AI-Generated Content**: Even if you edit the content, scrub it
+3. **Check Statistics**: Review the stats to understand what was cleaned
+4. **Test on Sample Content**: If unsure, scrub a copy first to verify results
+5. **Include in Workflows**: Automate scrubbing in your content pipeline
+
+This ensures all published content appears naturally written and free of AI indicators.

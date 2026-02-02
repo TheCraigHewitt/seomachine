@@ -31,9 +31,26 @@ Use this command to create comprehensive, SEO-optimized long-form blog content.
 - Promise clear value to reader
 
 #### 2. Introduction (150-200 words)
-- **Hook**: Open with attention-grabbing statement, question, or statistic
-- **Problem**: Clearly articulate the challenge or question
-- **Promise**: Tell reader what they'll learn or gain
+
+**CRITICAL: The Hook (First 1-2 Sentences)**
+
+The opening hook is the most important element. A strong hook can boost reader retention by 30%. NEVER open with a generic definition or statement like "X is..." or "When it comes to..."
+
+**Choose ONE hook type for each article:**
+
+| Hook Type | Example | Best For |
+|-----------|---------|----------|
+| **Provocative Question** | "What if the 'free' plan is actually costing you $500/month in lost opportunities?" | Challenging assumptions |
+| **Specific Scenario** | "Last Tuesday, Sarah checked her dashboard and discovered something alarming: her site had been invisible to Google for three weeks." | Creating emotional connection |
+| **Surprising Statistic** | "73% of SaaS users who switch platforms do so within 18 months, and most cite the same three reasons." | Data-driven topics |
+| **Bold Statement** | "Your current tool is lying to you about your numbers." | Controversial takes |
+| **Counterintuitive Claim** | "The cheapest option might be the most expensive decision you make this year." | Comparison content |
+
+**After the hook, follow the APP Formula:**
+- **Agree**: Acknowledge something the reader already believes/feels
+- **Promise**: Tell them exactly what they'll learn or gain
+- **Preview**: Brief overview of what's coming (can include mini table of contents for long posts)
+
 - **Keyword**: Include primary keyword in first 100 words
 - **Credibility**: Establish why you/this article is authoritative
 
@@ -43,16 +60,47 @@ Use this command to create comprehensive, SEO-optimized long-form blog content.
 - **H3 Subsections**: Break complex sections into digestible pieces
 - **Keyword Integration**: Use primary keyword 1-2% density, variations throughout
 - **Depth**: Provide thorough, actionable information at each point
-- **Examples**: Include real scenarios and use cases relevant to your industry
 - **Data**: Reference statistics and studies to support claims
 - **Visuals**: Note where images, screenshots, or graphics enhance understanding
 - **Lists**: Use bulleted or numbered lists for scannability
-- **Formatting**: Bold key concepts, use short paragraphs (2-4 sentences)
+- **Formatting**: Bold key concepts, use short paragraphs (2-4 sentences MAX)
+
+**REQUIRED: Mini-Stories (2-3 per article)**
+
+Research shows we're 22x more likely to remember facts wrapped in stories. Every article MUST include 2-3 mini-scenarios with:
+- A **specific person** (use names, even if fictional: "Sarah," "Mike," "The team at Acme Corp")
+- A **concrete situation** with details (dates, numbers, specifics)
+- A **clear outcome** that illustrates the point
+
+**Example mini-story (aim for 50-150 words each):**
+> "When Marcus launched his SaaS product in March 2024, he chose the cheapest hosting plan he could find, $5/month seemed like a no-brainer. Six months later, his app hit 10,000 active users. That's when he discovered the hidden bandwidth fees buried in his provider's terms. His $5/month plan suddenly became $89/month. Worse, migrating mid-growth meant a 3-week gap in analytics that cost him a $2,000 partnership deal. The 'savings' from cheap hosting cost him over $3,000."
+
+**Place mini-stories:**
+- One in the introduction or early section (to hook readers)
+- One in the middle (to re-engage skimmers)
+- One near the conclusion (to reinforce the main point)
+
+**REQUIRED: Contextual CTAs (2-3 per article)**
+
+Don't just put one CTA at the end. Embedded CTAs get 121% more conversions than end-only CTAs.
+
+**CTA Placement Strategy:**
+| Location | CTA Type | Example |
+|----------|----------|---------|
+| After first major value section | Soft CTA (learn more) | "Want to see how this works in practice? [Explore our features →]" |
+| After comparison/proof section | Medium CTA (try it) | "**Ready to test the difference?** Start a free trial, no credit card required." |
+| End of article | Strong CTA (convert) | "**[Start Your Free Trial →]**" with supporting text |
+
+**CTA Rules:**
+- Make CTAs contextual (relate to the section content)
+- Vary the format (inline text, bold callout, button-style)
+- First CTA should appear within the first 500 words
+- Never use generic "Click here" text
 
 #### 4. Conclusion (150-200 words)
 - **Recap**: Summarize 3-5 key takeaways
 - **Action**: Provide clear next steps for reader
-- **CTA**: Include relevant call-to-action (free trial, resource download, demo, etc.)
+- **CTA**: Include relevant call-to-action (free trial, resource download, etc.)
 - **Encouragement**: End on empowering, forward-looking note
 
 ### SEO Optimization
@@ -137,7 +185,15 @@ Word Count: [actual word count]
 - [ ] Article 2000+ words
 - [ ] Proper H2/H3 hierarchy
 - [ ] Readability optimized
-- [ ] CTA included
+
+### 4. Engagement Checklist
+- [ ] **Hook**: Opens with question, scenario, statistic, or bold statement (NOT generic definition)
+- [ ] **APP Formula**: Introduction includes Agree, Promise, Preview elements
+- [ ] **Mini-stories**: 2-3 specific scenarios with names, details, and outcomes
+- [ ] **Contextual CTAs**: 2-3 CTAs placed throughout (not just at end)
+- [ ] **First CTA**: Appears within first 500 words
+- [ ] **Paragraph length**: No paragraphs exceed 4 sentences
+- [ ] **Sentence rhythm**: Mix of short (5-10 words) and longer sentences (15-25 words)
 
 ## File Management
 After completing the article, automatically save to:
@@ -145,28 +201,42 @@ After completing the article, automatically save to:
 - **File Format**: Markdown with frontmatter and formatted content
 - **Naming Convention**: Use lowercase, hyphenated topic slug and current date
 
-Example: `drafts/content-marketing-strategies-2025-10-29.md`
+Example: `drafts/content-marketing-strategies-2025-10-15.md`
 
 ## Automatic Content Scrubbing
-**IMPORTANT**: Immediately after saving the article file, automatically scrub the content to remove AI watermarks:
 
-1. Run the content scrubber on the saved file:
-```python
-import sys
-sys.path.append('data_sources/modules')
-from content_scrubber import scrub_file
+**CRITICAL**: Immediately after saving the article file, automatically invoke the content scrubber to remove AI watermarks and telltale patterns.
 
-# Scrub the file (overwrites with cleaned version)
-scrub_file('drafts/[topic-slug]-[YYYY-MM-DD].md', verbose=True)
+### Why This Matters
+AI-generated content often contains invisible Unicode watermarks and characteristic patterns (like em-dash overuse) that can identify it as AI-written. Scrubbing removes these indicators to make content appear naturally human-written.
+
+### Scrubbing Process
+1. **Invoke Scrubber**: Run `/scrub [file-path]` on the saved article file
+2. **Automatic Execution**: This should happen automatically, not require user action
+3. **Timing**: Must occur immediately after file save, before any other processing
+4. **Scope**: Scrub the main article file only (not meta or analysis files)
+
+### What Gets Cleaned
+- Invisible Unicode watermarks (zero-width spaces, BOMs, format-control characters)
+- Em-dashes replaced with contextually appropriate punctuation (commas, semicolons, periods)
+- Whitespace normalization and formatting cleanup
+- All changes preserve content meaning and markdown structure
+
+### Verification
+The scrubber will display statistics:
+- Unicode watermarks removed
+- Format-control characters removed
+- Em-dashes replaced
+
+### Example Workflow
+```
+1. Write article → Save to drafts/article-name-2025-10-31.md
+2. IMMEDIATELY run: /scrub drafts/article-name-2025-10-31.md
+3. Verify scrubbing statistics
+4. THEN proceed with optimization agents below
 ```
 
-2. This removes:
-   - All invisible Unicode watermarks (zero-width spaces, format-control characters, etc.)
-   - Em-dashes, replaced with contextually appropriate punctuation
-
-3. The scrubbing happens silently and automatically - no user action required
-
-**Result**: Content is clean of AI watermarks before agents analyze it.
+This ensures all published content is free of AI signatures before any further processing.
 
 ## Automatic Agent Execution
 After saving the main article, immediately execute optimization agents:
@@ -208,8 +278,56 @@ This new agent uses 5 specialized analysis modules:
 - **Output**: Keyword placement analysis and improvements
 - **File**: `drafts/keyword-analysis-[topic-slug]-[YYYY-MM-DD].md`
 
+## Automatic Quality Loop
+
+After saving the initial draft, automatically run the content quality scorer:
+
+### Step 1: Score Content
+Run the content scorer to evaluate the draft:
+```bash
+python data_sources/modules/content_scorer.py drafts/[article-file].md
+```
+
+### Step 2: Evaluate Score
+The scorer evaluates 5 dimensions (composite score must be ≥70):
+
+| Dimension | Weight | Target |
+|-----------|--------|--------|
+| Humanity/Voice | 30% | No AI phrases, use contractions |
+| Specificity | 25% | Concrete examples, numbers, names |
+| Structure Balance | 20% | 40-70% prose (not all lists) |
+| SEO Compliance | 15% | Keywords, meta, structure |
+| Readability | 10% | Flesch 60-70, grade 8-10 |
+
+### Step 3: Auto-Revise if Needed
+If composite score < 70:
+1. Review the `priority_fixes` from the scorer
+2. Apply the top 3-5 fixes automatically
+3. Re-score the content
+4. Repeat once more if still below threshold
+
+### Step 4: Route Based on Final Score
+- **Score ≥ 70**: Save to `drafts/` and proceed to optimization agents
+- **Score < 70 after 2 iterations**: Save to `review-required/` with a `_REVIEW_NOTES.md` file containing the scoring details and remaining issues
+
+### Review-Required Folder
+Articles that fail quality threshold after 2 revision attempts go to `review-required/`:
+```
+review-required/
+├── article-name-2025-12-10.md
+└── article-name-2025-12-10_REVIEW_NOTES.md
+```
+
+The `_REVIEW_NOTES.md` file contains:
+- Final composite score
+- Dimension breakdown
+- Remaining priority fixes
+- Reason for human review
+
 ## Quality Standards
 Every article must meet these requirements:
+
+### Content Requirements
 - Minimum 2000 words (2500-3000+ preferred)
 - Proper H1/H2/H3 hierarchy
 - Primary keyword naturally integrated
@@ -218,8 +336,19 @@ Every article must meet these requirements:
 - Compelling meta title and description
 - Clear introduction and conclusion
 - Actionable, valuable information
-- Brand voice maintained (from @context/brand-voice.md)
+- Brand voice maintained
 - Target audience focused
+
+### Engagement Requirements
+- **Compelling hook** in first 1-2 sentences (no generic openings)
+- **2-3 mini-stories** with specific names, details, and outcomes
+- **2-3 contextual CTAs** distributed throughout (not just at end)
+- **First CTA within 500 words**
+- **No paragraphs longer than 4 sentences**
+- **Varied sentence rhythm** (mix short punchy + longer flowing)
+
+### Quality Score
+- **Composite quality score ≥70**
 - Publish-ready quality
 
-This ensures every article is comprehensive, optimized, and ready to rank while providing genuine value to your target audience.
+This ensures every article is comprehensive, optimized, engaging, and ready to rank while providing genuine value to your target audience.
