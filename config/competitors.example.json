@@ -1,0 +1,69 @@
+{
+  "direct_competitors": [
+    "competitor1.com",
+    "competitor2.com",
+    "competitor3.com"
+  ],
+  "content_competitors": [
+    "industrysite1.com",
+    "industrysite2.com"
+  ],
+  "bofu_keywords": [
+    "your product category",
+    "best your product category",
+    "your product category platform",
+    "your product category services",
+    "free your product category",
+    "competitor1 alternatives",
+    "competitor2 alternatives",
+    "your brand pricing",
+    "your brand vs competitor1",
+    "your brand review"
+  ],
+  "mofu_keywords": [
+    "how to use your product category",
+    "your product category best practices",
+    "your product category strategy",
+    "your product category tools",
+    "your product category for beginners"
+  ],
+  "alternative_keywords": [
+    "competitor1 alternatives",
+    "competitor2 alternatives",
+    "competitor3 alternatives"
+  ],
+  "key_queries": [
+    "your product category",
+    "best your product category",
+    "your brand name"
+  ],
+  "relevant_terms": [
+    "your industry term 1",
+    "your industry term 2",
+    "your industry term 3",
+    "your product type",
+    "hosting",
+    "platform",
+    "software",
+    "tool",
+    "best",
+    "review",
+    "pricing",
+    "alternative"
+  ],
+  "skip_terms": [
+    "celebrity",
+    "net worth",
+    "biography",
+    "dating",
+    "reddit"
+  ],
+  "topic_patterns": {
+    "Product Features": ["feature", "tool", "platform", "service", "software"],
+    "Pricing": ["price", "pricing", "cost", "plan", "free", "trial"],
+    "Tutorials": ["how to", "guide", "tutorial", "step", "setup"],
+    "Comparisons": ["vs", "versus", "compare", "comparison", "alternative", "best"],
+    "Marketing": ["market", "marketing", "promote", "promotion", "grow", "audience"],
+    "Analytics": ["analytics", "stats", "statistics", "metrics", "data", "report"]
+  }
+}

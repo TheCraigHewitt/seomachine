@@ -20,6 +20,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'data_sources'))
 from modules.google_search_console import GoogleSearchConsole
 from modules.dataforseo import DataForSEO
 from modules.google_analytics import GoogleAnalytics
+from modules.opportunity_scorer import OpportunityScorer, OpportunityType
+from modules.search_intent_analyzer import SearchIntentAnalyzer
 
 def main():
     print("=" * 80)
@@ -51,6 +53,11 @@ def main():
     except Exception as e:
         print(f"   ⚠ GA4 Error: {e}")
         ga = None
+
+    # Initialize scoring and analysis modules
+    scorer = OpportunityScorer()
+    intent_analyzer = SearchIntentAnalyzer()
+    print("   ✓ Enhanced scoring enabled")
 
     # Get quick wins from GSC
     print("\n2. Fetching keywords ranking positions 11-20...")
@@ -90,12 +97,14 @@ def main():
         print(f"Opportunity Score: {kw['opportunity_score']:.2f}")
         print(f"Priority: {kw['priority'].upper()}")
 
-        # Get current ranking URL from DataForSEO
+        # Get current ranking URL and SERP data from DataForSEO
+        serp_features = []
+        difficulty = None
         if dfs:
             try:
                 print(f"\nVerifying with DataForSEO...")
                 rankings = dfs.get_rankings(
-                    domain="castos.com",
+                    domain=os.getenv('GSC_SITE_URL', 'yoursite.com').replace('https://', '').replace('http://', '').rstrip('/'),
                     keywords=[keyword]
                 )
 
@@ -103,17 +112,32 @@ def main():
                     dfs_position = rankings[0]['position']
                     dfs_url = rankings[0]['url']
                     search_volume = rankings[0]['search_volume']
+                    difficulty = rankings[0].get('difficulty')
 
                     print(f"  DataForSEO Position: {dfs_position}")
                     print(f"  Ranking URL: {dfs_url}")
                     if search_volume:
                         print(f"  Search Volume: {search_volume:,}/month")
+                    if difficulty:
+                        print(f"  SEO Difficulty: {difficulty}/100")
 
                     kw['dfs_position'] = dfs_position
                     kw['ranking_url'] = dfs_url
                     kw['search_volume'] = search_volume
+                    kw['difficulty'] = difficulty
                 else:
                     print(f"  Not found in top 100 (DataForSEO)")
+
+                # Get SERP features for intent analysis
+                try:
+                    serp_data = dfs.get_serp_data(keyword, limit=10)
+                    if serp_data and 'features' in serp_data:
+                        serp_features = serp_data.get('features', [])
+                        kw['serp_features'] = serp_features
+                        if serp_features:
+                            print(f"  SERP Features: {', '.join(serp_features[:3])}")
+                except:
+                    pass
             except Exception as e:
                 print(f"  DataForSEO error: {e}")
 
@@ -137,12 +161,68 @@ def main():
             except Exception as e:
                 print(f"  GA4 error: {e}")
 
+        # Calculate enhanced opportunity score
+        print(f"\nEnhanced Scoring Analysis...")
+        enhanced_score_result = scorer.calculate_score(
+            keyword_data=kw,
+            opportunity_type=OpportunityType.QUICK_WIN,
+            search_volume=kw.get('search_volume'),
+            difficulty=kw.get('difficulty'),
+            serp_features=serp_features,
+            cluster_value=50,  # Default - will be enhanced with topic clustering later
+            trend_direction=None,  # Will be added with trend detection
+            trend_percent=None
+        )
+
+        kw['enhanced_score'] = enhanced_score_result['final_score']
+        kw['enhanced_priority'] = enhanced_score_result['priority']
+        kw['score_breakdown'] = enhanced_score_result['score_breakdown']
+        kw['primary_factor'] = enhanced_score_result['primary_factor']
+
+        print(f"  Enhanced Score: {enhanced_score_result['final_score']}/100")
+        print(f"  Priority: {enhanced_score_result['priority']}")
+        print(f"  Key Factor: {enhanced_score_result['primary_factor']}")
+
+        # Calculate traffic potential
+        if kw.get('position') and kw.get('impressions'):
+            traffic_potential = scorer.calculate_potential_traffic(
+                current_position=kw['position'],
+                target_position=7,  # Target middle of page 1
+                impressions=kw['impressions'],
+                current_clicks=kw['clicks']
+            )
+            kw['traffic_potential'] = traffic_potential
+            print(f"  Potential: +{traffic_potential['additional_clicks']} clicks/month (+{traffic_potential['percent_increase']:.0f}%)")
+
+        # Analyze search intent
+        if serp_features:
+            try:
+                intent_result = intent_analyzer.analyze(
+                    keyword=keyword,
+                    serp_features=serp_features
+                )
+                # Handle SearchIntent enum or string
+                primary_intent = intent_result.get('primary_intent', 'unknown')
+                if hasattr(primary_intent, 'value'):
+                    primary_intent = primary_intent.value
+                kw['search_intent'] = str(primary_intent)
+                kw['intent_confidence'] = float(intent_result.get('confidence', 0))
+                print(f"  Search Intent: {kw['search_intent']} (confidence: {kw['intent_confidence']:.0f}%)")
+            except Exception as e:
+                print(f"  Intent analysis error: {e}")
+
         print("\nRECOMMENDATION:")
         recommendation = generate_recommendation(kw)
         print(f"  {recommendation}")
 
         kw['recommendation'] = recommendation
         detailed_opportunities.append(kw)
+
+    # Re-sort by enhanced score
+    detailed_opportunities.sort(
+        key=lambda x: x.get('enhanced_score', x.get('opportunity_score', 0)),
+        reverse=True
+    )
 
     # Generate summary report
     print("\n\n" + "=" * 80)
@@ -251,8 +331,30 @@ def write_markdown_report(opportunities):
             f.write(f"- **Clicks (30d):** {kw['clicks']}\n")
             f.write(f"- **CTR:** {kw['ctr'] * 100:.2f}%\n")
             f.write(f"- **Commercial Intent:** {kw['commercial_intent_category']} ({kw['commercial_intent']}/3.0)\n")
-            f.write(f"- **Priority:** {kw['priority'].upper()}\n")
-            f.write(f"- **Opportunity Score:** {kw['opportunity_score']:.2f}\n\n")
+            if kw.get('search_intent'):
+                f.write(f"- **Search Intent:** {kw['search_intent']} ({kw.get('intent_confidence', 0):.0f}% confidence)\n")
+            f.write(f"\n### Enhanced Opportunity Analysis\n\n")
+            f.write(f"- **Enhanced Score:** {kw.get('enhanced_score', kw['opportunity_score']):.2f}/100\n")
+            f.write(f"- **Priority:** {kw.get('enhanced_priority', kw['priority']).upper()}\n")
+            f.write(f"- **Key Factor:** {kw.get('primary_factor', 'volume')}\n\n")
+
+            if kw.get('score_breakdown'):
+                f.write(f"**Score Breakdown:**\n")
+                breakdown = kw['score_breakdown']
+                f.write(f"- Volume: {breakdown.get('volume_score', 0):.0f}/100\n")
+                f.write(f"- Position: {breakdown.get('position_score', 0):.0f}/100\n")
+                f.write(f"- Intent: {breakdown.get('intent_score', 0):.0f}/100\n")
+                f.write(f"- Competition: {breakdown.get('competition_score', 0):.0f}/100\n")
+                f.write(f"- CTR Opportunity: {breakdown.get('ctr_score', 0):.0f}/100\n")
+                f.write(f"\n")
+
+            if kw.get('traffic_potential'):
+                tp = kw['traffic_potential']
+                f.write(f"### Traffic Potential\n\n")
+                f.write(f"- **Current:** {tp['current_clicks']} clicks/month at position {tp['current_position']:.1f}\n")
+                f.write(f"- **Target:** Position {tp['target_position']} (page 1)\n")
+                f.write(f"- **Potential:** {tp['potential_clicks']} clicks/month\n")
+                f.write(f"- **Gain:** +{tp['additional_clicks']} clicks (+{tp['percent_increase']:.0f}%)\n\n")
 
             if kw.get('ranking_url'):
                 f.write(f"### Ranking Page\n\n")
