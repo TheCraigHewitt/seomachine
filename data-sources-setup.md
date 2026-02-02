@@ -1,6 +1,6 @@
 # Data Sources Setup Guide
 
-This guide provides step-by-step instructions for setting up the three data source integrations used by Castos Writer: Google Analytics 4 (GA4), Google Search Console, and DataForSEO.
+This guide provides step-by-step instructions for setting up the data source integrations used by SEO Machine: Google Analytics 4 (GA4), Google Search Console, DataForSEO, and WordPress.
 
 ---
 
@@ -9,8 +9,9 @@ This guide provides step-by-step instructions for setting up the three data sour
 1. [Google Analytics 4 (GA4) Setup](#google-analytics-4-ga4-setup)
 2. [Google Search Console Setup](#google-search-console-setup)
 3. [DataForSEO Setup](#dataforseo-setup)
-4. [Testing Your Integrations](#testing-your-integrations)
-5. [Troubleshooting](#troubleshooting)
+4. [WordPress Setup](#wordpress-setup)
+5. [Testing Your Integrations](#testing-your-integrations)
+6. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -25,7 +26,7 @@ Google Analytics 4 provides traffic data, user behavior metrics, and page perfor
 ### Step 1: Enable the Google Analytics Data API
 
 1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
-2. Select or create a project for your Castos Writer integration
+2. Select or create a project for your SEO Machine integration
 3. Navigate to **APIs & Services > Library**
 4. Search for "Google Analytics Data API"
 5. Click on the API and click **Enable**
@@ -35,8 +36,8 @@ Google Analytics 4 provides traffic data, user behavior metrics, and page perfor
 1. In Google Cloud Console, go to **APIs & Services > Credentials**
 2. Click **Create Credentials** and select **Service Account**
 3. Fill in the service account details:
-   - **Name**: `castos-writer-ga4` (or any descriptive name)
-   - **Description**: "Service account for Castos Writer GA4 integration"
+   - **Name**: `seo-machine-ga4` (or any descriptive name)
+   - **Description**: "Service account for SEO Machine GA4 integration"
 4. Click **Create and Continue**
 5. Skip the optional "Grant this service account access to project" step (click **Continue**)
 6. Skip the optional "Grant users access to this service account" step (click **Done**)
@@ -59,7 +60,7 @@ Google Analytics 4 provides traffic data, user behavior metrics, and page perfor
 3. Click **Admin** (gear icon in bottom left)
 4. Under **Property**, click **Property access management**
 5. Click the **+** button in the top right and select **Add users**
-6. Enter the service account email (from Step 2, looks like `castos-writer-ga4@your-project.iam.gserviceaccount.com`)
+6. Enter the service account email (from Step 2, looks like `seo-machine-ga4@your-project.iam.gserviceaccount.com`)
 7. Select the role **Viewer** (read-only access)
 8. Uncheck "Notify new users by email"
 9. Click **Add**
@@ -73,11 +74,11 @@ Google Analytics 4 provides traffic data, user behavior metrics, and page perfor
 ### Step 6: Configure the Integration
 
 1. Rename your downloaded JSON key file to `ga4-credentials.json`
-2. Move the file to: `/Users/craighewitt/Coding/castos-writer/credentials/ga4-credentials.json`
+2. Move the file to: `credentials/ga4-credentials.json`
 3. Create a `.env` file in the root directory if it doesn't exist
 4. Add the following line to your `.env` file:
    ```
-   GA4_PROPERTY_ID=274429769
+   GA4_PROPERTY_ID=123456789
    ```
    (Replace with your actual Property ID from Step 5)
 
@@ -109,8 +110,8 @@ Google Search Console provides search query data, click-through rates, average p
 1. In Google Cloud Console, go to **APIs & Services > Credentials**
 2. Click **Create Credentials** and select **Service Account**
 3. Fill in the service account details:
-   - **Name**: `castos-writer-gsc` (or any descriptive name)
-   - **Description**: "Service account for Castos Writer GSC integration"
+   - **Name**: `seo-machine-gsc` (or any descriptive name)
+   - **Description**: "Service account for SEO Machine GSC integration"
 4. Click **Create and Continue**
 5. Skip the optional steps and click **Done**
 6. Create and download a JSON key (same process as GA4 Step 3)
@@ -122,15 +123,15 @@ Google Search Console provides search query data, click-through rates, average p
 3. Click **Settings** in the left sidebar
 4. Click **Users and permissions**
 5. Click **Add user**
-6. Enter the service account email (e.g., `castos-writer-ga4@your-project.iam.gserviceaccount.com`)
+6. Enter the service account email (e.g., `seo-machine-ga4@your-project.iam.gserviceaccount.com`)
 7. Select permission level: **Full** (required for API access, but only provides read access)
 8. Click **Add**
 
 ### Step 4: Get Your Site URL
 
 Your site URL is the property name in Search Console, typically one of:
-- `https://castos.com/` (for domain properties)
-- `sc-domain:castos.com` (for domain properties)
+- `https://yoursite.com/` (for URL prefix properties)
+- `sc-domain:yoursite.com` (for domain properties)
 - Check in Search Console settings to confirm the exact format
 
 ### Step 5: Configure the Integration
@@ -142,7 +143,7 @@ Since you're using the same service account for both GA4 and GSC, the configurat
 1. **Credentials file**: Use the existing `credentials/ga4-credentials.json` (no additional file needed)
 2. **Add to your `.env` file**:
    ```
-   GSC_SITE_URL=https://castos.com/
+   GSC_SITE_URL=https://yoursite.com/
    GSC_CREDENTIALS_PATH=credentials/ga4-credentials.json
    ```
 3. The integration will automatically use the shared credentials file
@@ -150,10 +151,10 @@ Since you're using the same service account for both GA4 and GSC, the configurat
 **If Using a Separate Service Account** (Alternative):
 
 1. Rename the JSON key to `gsc-credentials.json`
-2. Move to: `/Users/craighewitt/Coding/castos-writer/credentials/gsc-credentials.json`
+2. Move to: `credentials/gsc-credentials.json`
 3. Add to your `.env` file:
    ```
-   GSC_SITE_URL=https://castos.com/
+   GSC_SITE_URL=https://yoursite.com/
    GSC_CREDENTIALS_PATH=credentials/gsc-credentials.json
    ```
 
@@ -214,9 +215,49 @@ DataForSEO charges per API request. Common pricing:
 
 ---
 
+## WordPress Setup
+
+WordPress integration enables publishing articles and landing pages directly from SEO Machine via the REST API.
+
+### Prerequisites
+- A WordPress site with REST API enabled
+- Admin access to install plugins
+- Yoast SEO plugin installed (for SEO metadata)
+
+### Step 1: Install the MU-Plugin
+
+1. Copy `wordpress/seo-machine-yoast-rest.php` to your WordPress site's `wp-content/mu-plugins/` directory
+2. This plugin exposes Yoast SEO fields via the REST API for programmatic publishing
+
+### Step 2: Create an Application Password
+
+1. Log in to your WordPress admin
+2. Go to **Users > Profile**
+3. Scroll to **Application Passwords**
+4. Enter a name: `SEO Machine`
+5. Click **Add New Application Password**
+6. Copy the generated password (you won't see it again)
+
+### Step 3: Configure the Integration
+
+Add the following to your `.env` file:
+```
+WP_URL=https://yoursite.com
+WP_USERNAME=your_admin_username
+WP_APP_PASSWORD=xxxx xxxx xxxx xxxx xxxx xxxx
+```
+
+### Step 4: Optional Theme Integration
+
+Add the snippet from `wordpress/functions-snippet.php` to your theme's `functions.php` for additional publishing features.
+
+See `wordpress/README.md` for more details.
+
+---
+
 ## Testing Your Integrations
 
-After setting up all three data sources, test them to ensure they're working correctly.
+After setting up your data sources, test them to ensure they're working correctly.
 
 ### Test GA4 Integration
 
@@ -246,7 +287,7 @@ Expected output:
 
 Run the keyword research agent:
 ```bash
-npm run agent:keyword-research "podcast hosting"
+npm run agent:keyword-research "your target keyword"
 ```
 
 Expected output:
@@ -281,7 +322,7 @@ Expected output:
 
 **Error: "Site not found"**
 - Check the `GSC_SITE_URL` format matches exactly what's in Search Console
-- Try both formats: `https://castos.com/` and `sc-domain:castos.com`
+- Try both formats: `https://yoursite.com/` and `sc-domain:yoursite.com`
 
 ### DataForSEO Issues
 
@@ -306,10 +347,10 @@ Expected output:
 - Restart your application after modifying `.env`
 
 **Credentials File Not Found**
-- Check the file path is correct: `/Users/craighewitt/Coding/castos-writer/credentials/`
+- Check the file path is correct: `credentials/`
 - Create the `credentials/` directory if it doesn't exist:
   ```bash
-  mkdir -p /Users/craighewitt/Coding/castos-writer/credentials/
+  mkdir -p credentials/
   ```
 - Verify file names match exactly (case-sensitive)
 
@@ -353,11 +394,13 @@ Store encrypted backups of your credentials in a secure location:
 
 ### File Structure
 ```
-castos-writer/
+seomachine/
 ├── .env                          # Environment variables
 ├── credentials/
 │   ├── ga4-credentials.json     # GA4 service account key
 │   └── gsc-credentials.json     # GSC service account key (or reuse GA4)
+├── config/
+│   └── competitors.json         # Competitor configuration
 └── data-sources-setup.md        # This file
 ```
 
@@ -367,11 +410,17 @@ castos-writer/
 GA4_PROPERTY_ID=123456789
 
 # Google Search Console
-GSC_SITE_URL=https://castos.com/
+GSC_SITE_URL=https://yoursite.com/
+COMPANY_NAME=Your Company
 
 # DataForSEO
 DATAFORSEO_LOGIN=your_username
 DATAFORSEO_PASSWORD=your_api_password
+
+# WordPress (optional, for /publish-draft)
+WP_URL=https://yoursite.com
+WP_USERNAME=your_username
+WP_APP_PASSWORD=your_application_password
 ```
 
 ### Useful Links

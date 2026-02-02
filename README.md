@@ -5,8 +5,9 @@ A specialized Claude Code workspace for creating long-form, SEO-optimized blog c
 ## Overview
 
 SEO Machine is built on Claude Code and provides:
-- **Custom Commands**: `/research`, `/write`, `/rewrite`, `/analyze-existing`, `/optimize`, `/performance-review`
-- **Specialized Agents**: Content analyzer, SEO optimization, meta element creation, internal linking, keyword mapping, editor, performance analysis
+- **Custom Commands**: `/research`, `/write`, `/rewrite`, `/analyze-existing`, `/optimize`, `/performance-review`, `/publish-draft`, `/article`, `/priorities`, plus specialized research and landing page commands
+- **Specialized Agents**: Content analyzer, SEO optimization, meta element creation, internal linking, keyword mapping, editor, performance analysis, headline generator, CRO analyst, landing page optimizer
+- **Marketing Skills**: 26 marketing skills for copywriting, CRO, A/B testing, email sequences, pricing strategy, and more
 - **Advanced SEO Analysis**: Search intent detection, keyword density & clustering, content length comparison, readability scoring, SEO quality rating (0-100)
 - **Data Integrations**: Google Analytics 4, Google Search Console, DataForSEO for real-time performance insights
 - **Context-Driven**: Brand voice, style guide, SEO guidelines, and examples guide all content
@@ -240,6 +241,50 @@ Final SEO optimization pass before publishing.
 - Link enhancement suggestions
 - Publishing readiness assessment
 
+---
+
+### `/publish-draft [file]`
+Publish article to WordPress via REST API with Yoast SEO metadata.
+
+---
+
+### `/article [topic]`
+Simplified article creation workflow.
+
+---
+
+### `/priorities`
+Content prioritization matrix using analytics data to identify highest-impact content tasks.
+
+---
+
+### `/scrub [file]`
+Remove AI watermarks and patterns from content (em-dashes, filler phrases, robotic patterns).
+
+---
+
+### Research Commands
+
+| Command | Description |
+|---------|-------------|
+| `/research-serp [keyword]` | SERP analysis for a target keyword |
+| `/research-gaps` | Competitor content gap analysis |
+| `/research-trending` | Trending topic opportunities |
+| `/research-performance` | Performance-based content priorities |
+| `/research-topics` | Topic cluster research |
+
+---
+
+### Landing Page Commands
+
+| Command | Description |
+|---------|-------------|
+| `/landing-write [topic]` | Create conversion-optimized landing page |
+| `/landing-audit [file]` | Audit landing page for CRO issues |
+| `/landing-research [topic]` | Research competitors and positioning |
+| `/landing-competitor [URL]` | Deep competitor landing page analysis |
+| `/landing-publish [file]` | Publish landing page to WordPress |
+
 ## Agents
 
 Specialized agents that automatically analyze content and provide expert recommendations.
@@ -372,6 +417,54 @@ Specialized agents that automatically analyze content and provide expert recomme
 
 **Output**: Comprehensive performance report with actionable priorities
 
+---
+
+### Headline Generator
+**Purpose**: Generate high-converting headline variations and A/B testing recommendations
+
+**Provides**:
+- 10+ headline variations using proven formulas
+- Conversion potential scoring
+- A/B testing strategies
+- Audience-specific headline options
+
+---
+
+### CRO Analyst
+**Purpose**: Conversion rate optimization analysis for landing pages
+
+**Analyzes**:
+- Above-the-fold effectiveness
+- CTA quality and distribution
+- Trust signal presence
+- Friction points
+- Page structure
+
+---
+
+### Landing Page Optimizer
+**Purpose**: Comprehensive landing page optimization recommendations
+
+**Provides**:
+- CRO scoring (0-100) with category breakdowns
+- Above-fold, CTA, trust signal, structure, and SEO analysis
+- A/B testing recommendations
+- Priority action list
+
+## Marketing Skills
+
+SEO Machine includes 26 marketing skills accessible as slash commands:
+
+| Category | Skills |
+|----------|--------|
+| **Copywriting** | `/copywriting`, `/copy-editing` |
+| **CRO** | `/page-cro`, `/form-cro`, `/signup-flow-cro`, `/onboarding-cro`, `/popup-cro`, `/paywall-upgrade-cro` |
+| **Strategy** | `/content-strategy`, `/pricing-strategy`, `/launch-strategy`, `/marketing-ideas` |
+| **Channels** | `/email-sequence`, `/social-content`, `/paid-ads` |
+| **SEO** | `/seo-audit`, `/schema-markup`, `/programmatic-seo`, `/competitor-alternatives` |
+| **Analytics** | `/analytics-tracking`, `/ab-test-setup` |
+| **Other** | `/referral-program`, `/free-tool-strategy`, `/marketing-psychology` |
+
 ## Data Sources
 
 ### Integration with Analytics
@@ -434,7 +527,69 @@ SEO Machine includes 5 specialized Python modules for comprehensive content anal
 
 All modules can be used directly in Python or through the Content Analyzer agent.
 
-See `data_sources/README.md` for setup instructions.
+### CRO Analysis Modules
+
+Six Python modules for landing page conversion optimization:
+
+- `above_fold_analyzer.py` - Above-the-fold content analysis (headline, value prop, CTA, trust)
+- `cta_analyzer.py` - CTA effectiveness scoring (quality, distribution, goal alignment)
+- `trust_signal_analyzer.py` - Trust signal detection (testimonials, social proof, risk reversals)
+- `landing_page_scorer.py` - Overall landing page scoring (0-100 with category breakdowns)
+- `landing_performance.py` - Landing page performance tracking via GA4/GSC
+- `cro_checker.py` - CRO best practices checklist validation
+
+### Additional Analysis Modules
+
+- `opportunity_scorer.py` - 8-factor opportunity scoring for content prioritization
+- `content_scorer.py` - 5-dimension content quality scoring (humanity, specificity, structure, SEO, readability)
+- `engagement_analyzer.py` - Content engagement pattern analysis
+- `competitor_gap_analyzer.py` - Competitive content gap identification
+- `article_planner.py` - Data-driven article planning
+- `section_writer.py` - Section-level content guidance
+- `social_research_aggregator.py` - Social media research aggregation
+
+### Python Research Scripts
+
+Run from repo root:
+
+```bash
+# Content research
+python3 research_quick_wins.py
+python3 research_competitor_gaps.py
+python3 research_performance_matrix.py
+python3 research_priorities_comprehensive.py
+python3 research_serp_analysis.py
+python3 research_topic_clusters.py
+python3 research_trending.py
+
+# SEO analysis (config-driven - set up config/competitors.json first)
+python3 seo_baseline_analysis.py
+python3 seo_bofu_rankings.py
+python3 seo_competitor_analysis.py
+
+# Test API connectivity
+python3 test_dataforseo.py
+```
+
+**Note**: SEO analysis scripts load competitor lists and keywords from `config/competitors.json`. Copy `config/competitors.example.json` and customize for your business.
+
+### WordPress Integration
+
+Publishing uses the WordPress REST API with a custom MU-plugin that exposes Yoast SEO fields.
+
+**Setup**:
+1. Install `wordpress/seo-machine-yoast-rest.php` as an MU-plugin on your WordPress site
+2. Add `wordpress/functions-snippet.php` to your theme's functions.php
+3. Configure WordPress credentials in `.env`:
+   ```
+   WP_URL=https://yoursite.com
+   WP_USERNAME=your_username
+   WP_APP_PASSWORD=your_application_password
+   ```
+
+See `wordpress/README.md` for detailed setup instructions.
+
+See `data_sources/README.md` for analytics setup instructions.
 
 ## Directory Structure
 
@@ -447,43 +602,85 @@ seomachine/
 │   │   ├── write.md
 │   │   ├── rewrite.md
 │   │   ├── optimize.md
-│   │   └── performance-review.md
-│   └── agents/            # Specialized analysis agents
-│       ├── content-analyzer.md    # NEW! Comprehensive analysis
-│       ├── seo-optimizer.md
-│       ├── meta-creator.md
-│       ├── internal-linker.md
-│       ├── keyword-mapper.md
-│       ├── editor.md
-│       └── performance.md
+│   │   ├── scrub.md
+│   │   ├── performance-review.md
+│   │   ├── publish-draft.md
+│   │   ├── article.md
+│   │   ├── priorities.md
+│   │   ├── research-serp.md
+│   │   ├── research-gaps.md
+│   │   ├── research-trending.md
+│   │   ├── research-performance.md
+│   │   ├── research-topics.md
+│   │   ├── landing-write.md
+│   │   ├── landing-audit.md
+│   │   ├── landing-research.md
+│   │   ├── landing-competitor.md
+│   │   └── landing-publish.md
+│   ├── agents/            # Specialized analysis agents
+│   │   ├── content-analyzer.md
+│   │   ├── seo-optimizer.md
+│   │   ├── meta-creator.md
+│   │   ├── internal-linker.md
+│   │   ├── keyword-mapper.md
+│   │   ├── editor.md
+│   │   ├── performance.md
+│   │   ├── headline-generator.md
+│   │   ├── cro-analyst.md
+│   │   └── landing-page-optimizer.md
+│   └── skills/            # 26 marketing skills
 ├── data_sources/          # Analytics integrations
-│   ├── modules/          # Python integration modules
+│   ├── modules/          # Python analysis modules
 │   │   ├── google_analytics.py
 │   │   ├── google_search_console.py
 │   │   ├── dataforseo.py
 │   │   ├── data_aggregator.py
-│   │   ├── search_intent_analyzer.py    # NEW!
-│   │   ├── keyword_analyzer.py          # NEW!
-│   │   ├── seo_quality_rater.py         # NEW!
-│   │   ├── content_length_comparator.py # NEW!
-│   │   └── readability_scorer.py        # NEW!
+│   │   ├── search_intent_analyzer.py
+│   │   ├── keyword_analyzer.py
+│   │   ├── seo_quality_rater.py
+│   │   ├── content_length_comparator.py
+│   │   ├── readability_scorer.py
+│   │   ├── opportunity_scorer.py
+│   │   ├── content_scorer.py
+│   │   ├── engagement_analyzer.py
+│   │   ├── social_research_aggregator.py
+│   │   ├── competitor_gap_analyzer.py
+│   │   ├── article_planner.py
+│   │   ├── section_writer.py
+│   │   ├── wordpress_publisher.py
+│   │   ├── above_fold_analyzer.py
+│   │   ├── cro_checker.py
+│   │   ├── cta_analyzer.py
+│   │   ├── landing_page_scorer.py
+│   │   ├── landing_performance.py
+│   │   └── trust_signal_analyzer.py
 │   ├── config/           # API credentials (not in git)
 │   ├── utils/            # Helper functions
 │   ├── cache/            # Cached API responses
 │   └── README.md         # Setup instructions
+├── config/                # Configuration files
+│   └── competitors.example.json  # Competitor config template
 ├── context/               # Configuration and guidelines
-│   ├── brand-voice.md          # Your brand voice and messaging (template)
-│   ├── writing-examples.md     # Example blog posts
-│   ├── style-guide.md          # Writing style conventions
-│   ├── seo-guidelines.md       # SEO requirements
-│   ├── target-keywords.md      # Keyword research and clusters
-│   ├── internal-links-map.md   # Key pages for internal linking
-│   └── competitor-analysis.md  # Competitive intelligence
+│   ├── brand-voice.md
+│   ├── writing-examples.md
+│   ├── style-guide.md
+│   ├── seo-guidelines.md
+│   ├── target-keywords.md
+│   ├── internal-links-map.md
+│   ├── competitor-analysis.md
+│   └── cro-best-practices.md
+├── wordpress/             # WordPress integration
+│   ├── seo-machine-yoast-rest.php
+│   ├── functions-snippet.php
+│   └── README.md
 ├── topics/                # Raw topic ideas
 ├── research/              # Research briefs and analysis reports
 ├── drafts/                # Work in progress articles
+├── review-required/       # Articles pending review
 ├── published/             # Final versions ready to publish
 ├── rewrites/              # Updated existing content
+├── landing-pages/         # Landing page content
+├── audits/                # Audit reports
 └── README.md              # This file
 ```
 
@@ -628,7 +825,7 @@ Every article must meet these requirements:
 1. **Follow the brief**: Use research brief as your outline
 2. **Natural keywords**: Integrate keywords naturally, never force them
 3. **Add value**: Every section should provide actionable insights
-4. **Use examples**: Include real podcast scenarios and use cases
+4. **Use examples**: Include real scenarios and use cases from your industry
 5. **Cite sources**: Link to statistics and data sources
 
 ### After Writing
@@ -654,13 +851,13 @@ Every article must meet these requirements:
 # Create file in topics/ directory with initial thoughts
 
 # Step 2: Research the topic
-/research podcast advertising strategies
+/research content marketing strategies
 
 # Step 3: Review research brief
-# Read research/brief-podcast-advertising-strategies-2025-10-15.md
+# Read research/brief-content-marketing-strategies-[date].md
 
 # Step 4: Write article
-/write podcast advertising strategies
+/write content marketing strategies
 
 # Step 5: Review agent feedback
 # Read all agent reports in drafts/
@@ -669,10 +866,10 @@ Every article must meet these requirements:
 # Edit article based on agent recommendations
 
 # Step 7: Final optimization
-/optimize drafts/podcast-advertising-strategies-2025-10-15.md
+/optimize drafts/content-marketing-strategies-[date].md
 
-# Step 8: Final review and move to published/
-# Manual review, then move when ready
+# Step 8: Publish to WordPress (optional)
+/publish-draft drafts/content-marketing-strategies-[date].md
 ```
 
 ### Example 2: Updating Existing Content
@@ -720,7 +917,7 @@ Every article must meet these requirements:
 - **Study examples**: Read your `writing-examples.md` before each writing session
 - **Use data**: Always include current statistics and cite sources
 - **Be specific**: "40% increase" beats "significant improvement"
-- **Show, don't tell**: Use real podcast examples and scenarios
+- **Show, don't tell**: Use real examples and scenarios from your industry
 - **Answer questions**: Address "People Also Ask" questions from research
 
 ### SEO Optimization

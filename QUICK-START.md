@@ -76,18 +76,37 @@ You now have:
 ## Common Commands
 
 ```bash
+# Core workflow
 /research [topic]           # Research before writing
 /write [topic]              # Create new article
-/analyze-existing [URL]     # Analyze existing post
+/article [topic]            # Simplified article creation
 /rewrite [topic]            # Update old content
 /optimize [file]            # Final SEO polish
+/scrub [file]               # Remove AI watermarks
+/publish-draft [file]       # Publish to WordPress
+
+# Analysis
+/analyze-existing [URL]     # Analyze existing post
+/performance-review         # Analytics-driven priorities
+/priorities                 # Content prioritization matrix
+
+# Research
+/research-serp [keyword]    # SERP analysis
+/research-gaps              # Competitor content gaps
+/research-trending          # Trending topics
+/research-topics            # Topic clusters
+
+# Landing pages
+/landing-write [topic]      # Create landing page
+/landing-audit [file]       # Audit for CRO issues
+/landing-research [topic]   # Research positioning
 ```
 
 ## Need Help?
 
-- 📖 **Full Documentation**: See README.md
-- 🔍 **Real Example**: Check `examples/castos/` directory
-- 🐛 **Issues**: https://github.com/[your-username]/seomachine/issues
+- Full Documentation: See README.md
+- Real Example: Check `examples/castos/` directory
+- Issues: https://github.com/[your-username]/seomachine/issues
 
 ---
 
