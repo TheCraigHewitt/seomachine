@@ -1,428 +1,255 @@
 ---
 name: form-cro
 version: 1.0.0
-description: When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions "form optimization," "lead form conversions," "form friction," "form fields," "form completion rate," or "contact form." For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.
+description: Use for optimizing non-signup forms (lead capture, contact, demo request, quote, application, survey, checkout-adjacent forms). For account creation use signup-flow-cro; for popup forms use popup-cro.
 ---
 
 # Form CRO
 
-You are an expert in form optimization. Your goal is to maximize form completion rates while capturing the data that matters.
+Improve form completion rates without sacrificing data quality.
 
-## Initial Assessment
+## Scope and Pre-Work
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
-Before providing recommendations, identify:
-
-1. **Form Type**
-   - Lead capture (gated content, newsletter)
-   - Contact form
-   - Demo/sales request
-   - Application form
-   - Survey/feedback
-   - Checkout form
-   - Quote request
-
-2. **Current State**
-   - How many fields?
-   - What's the current completion rate?
-   - Mobile vs. desktop split?
-   - Where do users abandon?
-
-3. **Business Context**
-   - What happens with form submissions?
-   - Which fields are actually used in follow-up?
-   - Are there compliance/legal requirements?
+- If `.claude/product-marketing-context.md` exists, read it first.
+- Confirm:
+  1. Form type and business outcome of a submission.
+  2. Current start rate, completion rate, and major drop-off field(s).
+  3. Mobile/desktop split and any compliance constraints.
+  4. Which collected fields are actually used downstream.
 
 ---
 
 ## Core Principles
 
 ### 1. Every Field Has a Cost
-Each field reduces completion rate. Rule of thumb:
-- 3 fields: Baseline
-- 4-6 fields: 10-25% reduction
-- 7+ fields: 25-50%+ reduction
+
+Typical impact of added fields:
+- **3 fields**: baseline conversion.
+- **4-6 fields**: often **10-25%** completion drop.
+- **7+ fields**: often **25-50%+** drop.
 
 For each field, ask:
-- Is this absolutely necessary before we can help them?
-- Can we get this information another way?
-- Can we ask this later?
+- Is this required before we can help the user?
+- Can this be inferred (email domain, enrichment, CRM data)?
+- Can it be collected after submission?
 
 ### 2. Value Must Exceed Effort
-- Clear value proposition above form
-- Make what they get obvious
-- Reduce perceived effort (field count, labels)
+
+The form should quickly answer: "What do I get if I complete this?"
+- Put value proposition above the form.
+- Set expectation (`takes 30 seconds`, `response within 1 business day`).
+- Avoid asking for high-friction info before trust is established.
 
 ### 3. Reduce Cognitive Load
-- One question per field
-- Clear, conversational labels
-- Logical grouping and order
-- Smart defaults where possible
+
+- Use clear labels and predictable field order.
+- Keep one concept per field.
+- Group related fields only when necessary.
+- Prefer defaults/autofill where possible.
 
 ---
 
-## Field-by-Field Optimization
+## Field Priority Framework
 
-### Email Field
-- Single field, no confirmation
-- Inline validation
-- Typo detection (did you mean gmail.com?)
-- Proper mobile keyboard
+### Required Now (default)
+- `Email` (or best contact channel)
+- `Name` when needed for follow-up quality
+- Core request context (`Message` or `Goal`) if routing requires it
 
-### Name Fields
-- Single "Name" vs. First/Last — test this
-- Single field reduces friction
-- Split needed only if personalization requires it
+### Usually Deferrable
+- `Phone`, `Company size`, `Budget`, `Role`, full address, long qualification questions
 
-### Phone Number
-- Make optional if possible
-- If required, explain why
-- Auto-format as they type
-- Country code handling
+### Conditional Only
+- Compliance-required information
+- Sales qualification fields that materially change routing/response
 
-### Company/Organization
-- Auto-suggest for faster entry
-- Enrichment after submission (Clearbit, etc.)
-- Consider inferring from email domain
-
-### Job Title/Role
-- Dropdown if categories matter
-- Free text if wide variation
-- Consider making optional
-
-### Message/Comments (Free Text)
-- Make optional
-- Reasonable character guidance
-- Expand on focus
-
-### Dropdown Selects
-- "Select one..." placeholder
-- Searchable if many options
-- Consider radio buttons if < 5 options
-- "Other" option with text field
-
-### Checkboxes (Multi-select)
-- Clear, parallel labels
-- Reasonable number of options
-- Consider "Select all that apply" instruction
+If a field does not change routing, eligibility, or immediate response quality, defer it.
 
 ---
 
-## Form Layout Optimization
+## Field-by-Field Guidance
+
+### Email
+- Single email field (no confirmation field).
+- Validate format inline; do not block while user is typing.
+- Catch common typos (`gmial.com` -> `gmail.com`).
+- Use email keyboard on mobile.
+
+### Name
+- Test `Full name` vs. `First/Last` split.
+- Single field usually reduces friction.
+- Split only when downstream systems genuinely require separate components.
+
+### Phone
+- Make optional unless legally or operationally required.
+- If required, explain why (`Needed for same-day scheduling`).
+- Auto-format and handle country codes.
+
+### Company / Organization
+- Use autocomplete where possible.
+- Infer from email domain when acceptable.
+- Consider collecting post-submit if not routing-critical.
+
+### Role / Use Case
+- Use concise options when segmentation is required.
+- Keep to one question at capture stage.
+- Move deeper profiling into follow-up or onboarding.
+
+### Free Text (Message / Details)
+- Make optional unless essential for routing.
+- Give guidance (`1-2 sentences is enough`).
+- Preserve typed content on validation errors.
+
+### Selects and Checkboxes
+- Use radios when <=5 mutually exclusive options.
+- Use searchable select for large lists.
+- Add `Other` only if you can handle unstructured responses.
+
+---
+
+## Layout and Flow
 
 ### Field Order
-1. Start with easiest fields (name, email)
-2. Build commitment before asking more
-3. Sensitive fields last (phone, company size)
-4. Logical grouping if many fields
+1. Start with easy fields (`Name`, `Email`).
+2. Build commitment.
+3. Ask sensitive/high-friction info later.
+4. Keep related fields adjacent.
 
-### Labels and Placeholders
-- Labels: Always visible (not just placeholder)
-- Placeholders: Examples, not labels
-- Help text: Only when genuinely helpful
+### Labels, Placeholders, Help Text
+- Labels should remain visible.
+- Placeholders are for examples, not core instructions.
+- Help text should be brief and adjacent to the field.
 
-**Good:**
-```
-Email
-[name@company.com]
-```
-
-**Bad:**
-```
-[Enter your email address]  ← Disappears on focus
+Good:
+```text
+Work Email
+name@company.com
 ```
 
-### Visual Design
-- Sufficient spacing between fields
-- Clear visual hierarchy
-- CTA button stands out
-- Mobile-friendly tap targets (44px+)
+Bad:
+```text
+[Enter your email address]
+```
+(Placeholder disappears on focus.)
 
-### Single Column vs. Multi-Column
-- Single column: Higher completion, mobile-friendly
-- Multi-column: Only for short related fields (First/Last name)
-- When in doubt, single column
+### Single vs. Multi-Column
+- Default to single column for readability and mobile performance.
+- Multi-column only for tightly related short fields.
 
 ---
 
 ## Multi-Step Forms
 
-### When to Use Multi-Step
-- More than 5-6 fields
-- Logically distinct sections
-- Conditional paths based on answers
-- Complex forms (applications, quotes)
+Use multi-step when:
+- You need more than ~5-6 inputs.
+- Inputs naturally split into stages.
+- Conditional logic meaningfully changes later questions.
 
-### Multi-Step Best Practices
-- Progress indicator (step X of Y)
-- Start with easy, end with sensitive
-- One topic per step
-- Allow back navigation
-- Save progress (don't lose data on refresh)
-- Clear indication of required vs. optional
+Best practices:
+- Progress indicator (`Step 2 of 4`).
+- One topic per step.
+- Back navigation and saved progress.
+- Required/optional state clearly marked.
 
-### Progressive Commitment Pattern
-1. Low-friction start (just email)
-2. More detail (name, company)
-3. Qualifying questions
-4. Contact preferences
+A common commitment sequence:
+1. Contact info.
+2. Context and goals.
+3. Qualification details.
+4. Scheduling/preferences.
 
 ---
 
-## Error Handling
+## Validation and Error Handling
 
 ### Inline Validation
-- Validate as they move to next field
-- Don't validate too aggressively while typing
-- Clear visual indicators (green check, red border)
+- Validate on blur or step transition, not every keystroke.
+- Keep entered values on error.
+- Show error beside field and summarize at top for long forms.
 
-### Error Messages
-- Specific to the problem
-- Suggest how to fix
-- Positioned near the field
-- Don't clear their input
+### Error Copy
+- Be specific and actionable.
 
-**Good:** "Please enter a valid email address (e.g., name@company.com)"
-**Bad:** "Invalid input"
+Good: `Enter a valid work email (example: name@company.com)`
 
-### On Submit
-- Focus on first error field
-- Summarize errors if multiple
-- Preserve all entered data
-- Don't clear form on error
+Bad: `Invalid input`
+
+### Submit Behavior
+- Disable duplicate submits while loading.
+- Show progress/processing state.
+- On error, focus first invalid field.
+- On success, confirm next step clearly.
 
 ---
 
-## Submit Button Optimization
+## CTA and Trust Optimization
 
 ### Button Copy
-Weak: "Submit" | "Send"
-Strong: "[Action] + [What they get]"
+Prefer action + value:
+- `Get My Quote`
+- `Book My Demo`
+- `Send My Request`
 
-Examples:
-- "Get My Free Quote"
-- "Download the Guide"
-- "Request Demo"
-- "Send Message"
-- "Start Free Trial"
+Avoid low-signal labels like `Submit` unless context is already explicit.
 
-### Button Placement
-- Immediately after last field
-- Left-aligned with fields
-- Sufficient size and contrast
-- Mobile: Sticky or clearly visible
+### Trust and Risk Reduction
+Near the form, add only what helps decisions:
+- Privacy reassurance (`We never share your information`).
+- Expected response SLA.
+- Relevant trust proof (testimonial, customer logo, compliance badge).
 
-### Post-Submit States
-- Loading state (disable button, show spinner)
-- Success confirmation (clear next steps)
-- Error handling (clear message, focus on issue)
-
----
-
-## Trust and Friction Reduction
-
-### Near the Form
-- Privacy statement: "We'll never share your info"
-- Security badges if collecting sensitive data
-- Testimonial or social proof
-- Expected response time
-
-### Reducing Perceived Effort
-- "Takes 30 seconds"
-- Field count indicator
-- Remove visual clutter
-- Generous white space
-
-### Addressing Objections
-- "No spam, unsubscribe anytime"
-- "We won't share your number"
-- "No credit card required"
-
----
-
-## Form Types: Specific Guidance
-
-### Lead Capture (Gated Content)
-- Minimum viable fields (often just email)
-- Clear value proposition for what they get
-- Consider asking enrichment questions post-download
-- Test email-only vs. email + name
-
-### Contact Form
-- Essential: Email/Name + Message
-- Phone optional
-- Set response time expectations
-- Offer alternatives (chat, phone)
-
-### Demo Request
-- Name, Email, Company required
-- Phone: Optional with "preferred contact" choice
-- Use case/goal question helps personalize
-- Calendar embed can increase show rate
-
-### Quote/Estimate Request
-- Multi-step often works well
-- Start with easy questions
-- Technical details later
-- Save progress for complex forms
-
-### Survey Forms
-- Progress bar essential
-- One question per screen for engagement
-- Skip logic for relevance
-- Consider incentive for completion
-
----
-
-## Mobile Optimization
-
-- Larger touch targets (44px minimum height)
-- Appropriate keyboard types (email, tel, number)
-- Autofill support
-- Single column only
-- Sticky submit button
-- Minimal typing (dropdowns, buttons)
+### Perceived Effort Reducers
+- "Takes < 1 minute"
+- Minimal visual clutter
+- Clear required field count
 
 ---
 
 ## Measurement
 
-### Key Metrics
-- **Form start rate**: Page views → Started form
-- **Completion rate**: Started → Submitted
-- **Field drop-off**: Which fields lose people
-- **Error rate**: By field
-- **Time to complete**: Total and by field
-- **Mobile vs. desktop**: Completion by device
+Track by device and traffic source.
 
-### What to Track
-- Form views
-- First field focus
-- Each field completion
-- Errors by field
-- Submit attempts
-- Successful submissions
+### Core Metrics
+- **Form start rate**: page visits -> first field interaction.
+- **Completion rate**: form starts -> successful submit.
+- **Field-level drop-off**: abandonment after each field.
+- **Error rate by field**.
+- **Time to complete**.
+- **Lead quality guardrails**: SQL rate, response quality, spam rate.
+
+### Event Instrumentation
+- Form view
+- First focus
+- Field blur/validation error
+- Step progression (multi-step)
+- Submit attempt
+- Successful submit
 
 ---
 
 ## Output Format
 
 ### Form Audit
-For each issue:
-- **Issue**: What's wrong
-- **Impact**: Estimated effect on conversions
-- **Fix**: Specific recommendation
-- **Priority**: High/Medium/Low
+For each issue include:
+- **Issue**
+- **Impact**
+- **Fix**
+- **Priority** (`High`, `Medium`, `Low`)
 
 ### Recommended Form Design
-- **Required fields**: Justified list
-- **Optional fields**: With rationale
-- **Field order**: Recommended sequence
-- **Copy**: Labels, placeholders, button
-- **Error messages**: For each field
-- **Layout**: Visual guidance
+- Required vs. optional fields with rationale
+- Proposed field order
+- Label/placeholder/button copy
+- Error messages for critical fields
+- Layout notes (desktop + mobile)
 
-### Test Hypotheses
-Ideas to A/B test with expected outcomes
-
----
-
-## Experiment Ideas
-
-### Form Structure Experiments
-
-**Layout & Flow**
-- Single-step form vs. multi-step with progress bar
-- 1-column vs. 2-column field layout
-- Form embedded on page vs. separate page
-- Vertical vs. horizontal field alignment
-- Form above fold vs. after content
-
-**Field Optimization**
-- Reduce to minimum viable fields
-- Add or remove phone number field
-- Add or remove company/organization field
-- Test required vs. optional field balance
-- Use field enrichment to auto-fill known data
-- Hide fields for returning/known visitors
-
-**Smart Forms**
-- Add real-time validation for emails and phone numbers
-- Progressive profiling (ask more over time)
-- Conditional fields based on earlier answers
-- Auto-suggest for company names
-
----
-
-### Copy & Design Experiments
-
-**Labels & Microcopy**
-- Test field label clarity and length
-- Placeholder text optimization
-- Help text: show vs. hide vs. on-hover
-- Error message tone (friendly vs. direct)
-
-**CTAs & Buttons**
-- Button text variations ("Submit" vs. "Get My Quote" vs. specific action)
-- Button color and size testing
-- Button placement relative to fields
-
-**Trust Elements**
-- Add privacy assurance near form
-- Show trust badges next to submit
-- Add testimonial near form
-- Display expected response time
-
----
-
-### Form Type-Specific Experiments
-
-**Demo Request Forms**
-- Test with/without phone number requirement
-- Add "preferred contact method" choice
-- Include "What's your biggest challenge?" question
-- Test calendar embed vs. form submission
-
-**Lead Capture Forms**
-- Email-only vs. email + name
-- Test value proposition messaging above form
-- Gated vs. ungated content strategies
-- Post-submission enrichment questions
-
-**Contact Forms**
-- Add department/topic routing dropdown
-- Test with/without message field requirement
-- Show alternative contact methods (chat, phone)
-- Expected response time messaging
-
----
-
-### Mobile & UX Experiments
-
-- Larger touch targets for mobile
-- Test appropriate keyboard types by field
-- Sticky submit button on mobile
-- Auto-focus first field on page load
-- Test form container styling (card vs. minimal)
-
----
-
-## Task-Specific Questions
-
-1. What's your current form completion rate?
-2. Do you have field-level analytics?
-3. What happens with the data after submission?
-4. Which fields are actually used in follow-up?
-5. Are there compliance/legal requirements?
-6. What's the mobile vs. desktop split?
+### Test Backlog
+For each test: variant, hypothesis, primary metric, guardrail metric.
 
 ---
 
 ## Related Skills
 
-- **signup-flow-cro**: For account creation forms
-- **popup-cro**: For forms inside popups/modals
-- **page-cro**: For the page containing the form
-- **ab-test-setup**: For testing form changes
+- `signup-flow-cro`
+- `popup-cro`
+- `page-cro`
+- `ab-test-setup`

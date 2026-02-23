@@ -1,225 +1,166 @@
 ---
 name: paywall-upgrade-cro
 version: 1.0.0
-description: When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade screen," "upgrade modal," "upsell," "feature gate," "convert free to paid," "freemium conversion," "trial expiration screen," "limit reached screen," "plan upgrade prompt," or "in-app pricing." Distinct from public pricing pages (see page-cro) — this skill focuses on in-product upgrade moments where the user has already experienced value.
+description: Use for in-product paywalls, upgrade prompts, feature gates, and free->paid/tier-upgrade conversion moments. This skill covers in-app upgrade context, not public pricing pages.
 ---
 
 # Paywall and Upgrade Screen CRO
 
-You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
+Optimize upgrade prompts shown after users have experienced product value.
 
-## Initial Assessment
+## Scope and Pre-Work
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
-Before providing recommendations, understand:
-
-1. **Upgrade Context** - Freemium → Paid? Trial → Paid? Tier upgrade? Feature upsell? Usage limit?
-
-2. **Product Model** - What's free? What's behind paywall? What triggers prompts? Current conversion rate?
-
-3. **User Journey** - When does this appear? What have they experienced? What are they trying to do?
+- If `.claude/product-marketing-context.md` exists, read it first.
+- Confirm:
+  1. Upgrade model (`freemium->paid`, `trial->paid`, tier upgrade).
+  2. Trigger type and current conversion (`feature gate`, `usage limit`, `trial expiry`, timed prompts).
+  3. What value users have already seen before the paywall appears.
 
 ---
 
 ## Core Principles
 
 ### 1. Value Before Ask
-- User should have experienced real value first
-- Upgrade should feel like natural next step
-- Timing: After "aha moment," not before
+Prompt after meaningful usage or an attempted premium action, not on first sessions.
 
-### 2. Show, Don't Just Tell
-- Demonstrate the value of paid features
-- Preview what they're missing
-- Make the upgrade feel tangible
+### 2. Show Concrete Gain
+Demonstrate capability and outcome (`unlock unlimited exports`, `remove usage cap`), not just plan names.
 
-### 3. Friction-Free Path
-- Easy to upgrade when ready
-- Don't make them hunt for pricing
+### 3. Keep Upgrade Path Short
+Minimize clicks to payment, prefill known data, keep context intact.
 
 ### 4. Respect the No
-- Don't trap or pressure
-- Make it easy to continue free
-- Maintain trust for future conversion
+Easy dismissal and clear free-path continuation preserve trust.
 
 ---
 
-## Paywall Trigger Points
+## Trigger Taxonomy
 
-### Feature Gates
-When user clicks a paid-only feature:
-- Clear explanation of why it's paid
-- Show what the feature does
-- Quick path to unlock
-- Option to continue without
+### Feature Gate
+Shown when user attempts premium functionality.
 
-### Usage Limits
-When user hits a limit:
-- Clear indication of limit reached
-- Show what upgrading provides
-- Don't block abruptly
+Must include:
+- What was blocked.
+- Why it is premium.
+- What outcome unlocks after upgrade.
+- Clear downgrade/continue option.
+
+### Usage Limit
+Shown at or near cap (projects, reports, seats, API calls).
+
+Must include:
+- Current usage vs. limit.
+- Immediate consequence.
+- Upgrade value (`from 3 projects to unlimited`).
 
 ### Trial Expiration
-When trial is ending:
-- Early warnings (7, 3, 1 day)
-- Clear "what happens" on expiration
-- Summarize value received
+Shown before and at expiration.
 
-### Time-Based Prompts
-After X days of free use:
-- Gentle upgrade reminder
-- Highlight unused paid features
-- Easy to dismiss
+Must include:
+- Countdown checkpoints (e.g., 7/3/1 days).
+- What remains vs. what is lost.
+- Value recap from trial usage.
 
----
-
-## Paywall Screen Components
-
-1. **Headline** - Focus on what they get: "Unlock [Feature] to [Benefit]"
-
-2. **Value Demonstration** - Preview, before/after, "With Pro you could..."
-
-3. **Feature Comparison** - Highlight key differences, current plan marked
-
-4. **Pricing** - Clear, simple, annual vs. monthly options
-
-5. **Social Proof** - Customer quotes, "X teams use this"
-
-6. **CTA** - Specific and value-oriented: "Start Getting [Benefit]"
-
-7. **Escape Hatch** - Clear "Not now" or "Continue with Free"
+### Time/Behavior Prompt
+Use sparingly for engaged free users; suppress for new or disengaged users.
 
 ---
 
-## Specific Paywall Types
+## Paywall Screen Anatomy
 
-### Feature Lock Paywall
-```
-[Lock Icon]
-This feature is available on Pro
+1. **Headline**: outcome-focused (`Unlock advanced reporting to cut weekly prep time`).
+2. **Value proof**: preview, before/after, or recent usage summary.
+3. **Plan clarity**: simple comparison with current plan marked.
+4. **Pricing clarity**: monthly/annual options with savings logic.
+5. **Trust cues**: proof points, guarantee/cancellation terms.
+6. **CTA**: specific action (`Upgrade to Pro`).
+7. **Escape hatch**: `Not now` / `Continue with Free`.
 
-[Feature preview/screenshot]
+---
 
-[Feature name] helps you [benefit]:
-• [Capability]
-• [Capability]
+## Example Wireframes
 
-[Upgrade to Pro - $X/mo]
-[Maybe Later]
-```
+### Feature Lock
+```text
+[Locked] Advanced Export is on Pro
+Generate branded exports for clients in one click.
 
-### Usage Limit Paywall
-```
-You've reached your free limit
-
-[Progress bar at 100%]
-
-Free: 3 projects | Pro: Unlimited
-
-[Upgrade to Pro]  [Delete a project]
+Includes: watermark removal, templates, scheduling
+[Upgrade to Pro - $29/mo]   [Not now]
 ```
 
-### Trial Expiration Paywall
+### Usage Limit
+```text
+You've reached your free limit: 3/3 projects
+Pro includes unlimited projects and team permissions.
+
+[Upgrade to Pro]   [Delete a project]
 ```
-Your trial ends in 3 days
 
-What you'll lose:
-• [Feature used]
-• [Data created]
+### Trial Ending
+```text
+Trial ends in 3 days
+You've created 12 reports and invited 2 teammates.
+Keep these workflows active with Pro.
 
-What you've accomplished:
-• Created X projects
-
-[Continue with Pro]
-[Remind me later]  [Downgrade]
+[Continue with Pro]   [Remind me later]   [Downgrade]
 ```
 
 ---
 
-## Timing and Frequency
+## Frequency and UX Rules
 
-### When to Show
-- After value moment, before frustration
-- After activation/aha moment
-- When hitting genuine limits
-
-### When NOT to Show
-- During onboarding (too early)
-- When they're in a flow
-- Repeatedly after dismissal
-
-### Frequency Rules
-- Limit per session
-- Cool-down after dismiss (days, not hours)
-- Track annoyance signals
+- Cap prompts per session.
+- Apply cool-down after dismissal (days, not minutes).
+- Avoid interrupting critical flows.
+- Suppress repeated prompts when user repeatedly declines in short windows.
 
 ---
 
-## Upgrade Flow Optimization
+## Upgrade Flow and Post-Upgrade
 
-### From Paywall to Payment
-- Minimize steps
-- Keep in-context if possible
-- Pre-fill known information
+### Conversion Path
+- Minimize form fields and step count.
+- Keep billing context clear.
+- Offer payment methods relevant to audience.
 
-### Post-Upgrade
-- Immediate access to features
-- Confirmation and receipt
-- Guide to new features
+### Post-Upgrade Experience
+- Immediate feature unlock.
+- Confirmation and receipt.
+- Contextual "what to do next" for newly unlocked features.
 
 ---
 
-## A/B Testing
+## Measurement
 
-### What to Test
-- Trigger timing
-- Headline/copy variations
-- Price presentation
-- Trial length
-- Feature emphasis
-- Design/layout
-
-### Metrics to Track
+### Core Metrics
 - Paywall impression rate
-- Click-through to upgrade
-- Completion rate
+- Paywall CTR
+- Checkout start rate
+- Upgrade completion rate
 - Revenue per user
-- Churn rate post-upgrade
 
-**For comprehensive experiment ideas**: See [references/experiments.md](references/experiments.md)
+### Guardrails
+- Free-user churn
+- Support complaints/friction signals
+- Refund/cancellation rate
+
+For detailed paywall test ideas, see [references/experiments.md](references/experiments.md).
 
 ---
 
 ## Anti-Patterns to Avoid
 
-### Dark Patterns
-- Hiding the close button
-- Confusing plan selection
-- Guilt-trip copy
-
-### Conversion Killers
-- Asking before value delivered
-- Too frequent prompts
-- Blocking critical flows
-- Complicated upgrade process
-
----
-
-## Task-Specific Questions
-
-1. What's your current free → paid conversion rate?
-2. What triggers upgrade prompts today?
-3. What features are behind the paywall?
-4. What's your "aha moment" for users?
-5. What pricing model? (per seat, usage, flat)
-6. Mobile app, web app, or both?
+- Hidden close affordance.
+- Misleading plan comparisons.
+- Guilt-trip or manipulative decline copy.
+- Frequent prompts before value realization.
+- Blocking essential non-premium workflows.
 
 ---
 
 ## Related Skills
 
-- **page-cro**: For public pricing page optimization
-- **onboarding-cro**: For driving to aha moment before upgrade
-- **ab-test-setup**: For testing paywall variations
+- `page-cro`
+- `onboarding-cro`
+- `ab-test-setup`

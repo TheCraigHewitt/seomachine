@@ -4,8 +4,6 @@ Complete JSON-LD examples for common schema types.
 
 ## Organization
 
-For company/brand homepage or about page.
-
 ```json
 {
   "@context": "https://schema.org",
@@ -15,8 +13,7 @@ For company/brand homepage or about page.
   "logo": "https://example.com/logo.png",
   "sameAs": [
     "https://twitter.com/example",
-    "https://linkedin.com/company/example",
-    "https://facebook.com/example"
+    "https://linkedin.com/company/example"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -26,11 +23,7 @@ For company/brand homepage or about page.
 }
 ```
 
----
-
 ## WebSite (with SearchAction)
-
-For homepage, enables sitelinks search box.
 
 ```json
 {
@@ -49,11 +42,7 @@ For homepage, enables sitelinks search box.
 }
 ```
 
----
-
 ## Article / BlogPosting
-
-For blog posts and news articles.
 
 ```json
 {
@@ -84,11 +73,7 @@ For blog posts and news articles.
 }
 ```
 
----
-
 ## Product
-
-For product pages (e-commerce or SaaS).
 
 ```json
 {
@@ -98,10 +83,7 @@ For product pages (e-commerce or SaaS).
   "image": "https://example.com/widget.jpg",
   "description": "Our best-selling widget for professionals",
   "sku": "WIDGET-001",
-  "brand": {
-    "@type": "Brand",
-    "name": "Example Co"
-  },
+  "brand": { "@type": "Brand", "name": "Example Co" },
   "offers": {
     "@type": "Offer",
     "url": "https://example.com/products/widget",
@@ -118,11 +100,7 @@ For product pages (e-commerce or SaaS).
 }
 ```
 
----
-
 ## SoftwareApplication
-
-For SaaS product pages and app landing pages.
 
 ```json
 {
@@ -131,11 +109,7 @@ For SaaS product pages and app landing pages.
   "name": "Example App",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web, iOS, Android",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.6",
@@ -144,11 +118,7 @@ For SaaS product pages and app landing pages.
 }
 ```
 
----
-
 ## FAQPage
-
-For pages with frequently asked questions.
 
 ```json
 {
@@ -175,11 +145,7 @@ For pages with frequently asked questions.
 }
 ```
 
----
-
 ## HowTo
-
-For instructional content and tutorials.
 
 ```json
 {
@@ -211,44 +177,21 @@ For instructional content and tutorials.
 }
 ```
 
----
-
 ## BreadcrumbList
-
-For any page with breadcrumb navigation.
 
 ```json
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://example.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://example.com/blog"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "SEO Guide",
-      "item": "https://example.com/blog/seo-guide"
-    }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://example.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://example.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "SEO Guide", "item": "https://example.com/blog/seo-guide" }
   ]
 }
 ```
 
----
-
 ## LocalBusiness
-
-For local business location pages.
 
 ```json
 {
@@ -264,11 +207,7 @@ For local business location pages.
     "postalCode": "94102",
     "addressCountry": "US"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "37.7749",
-    "longitude": "-122.4194"
-  },
+  "geo": { "@type": "GeoCoordinates", "latitude": "37.7749", "longitude": "-122.4194" },
   "telephone": "+1-555-555-5555",
   "openingHoursSpecification": [
     {
@@ -282,11 +221,7 @@ For local business location pages.
 }
 ```
 
----
-
 ## Event
-
-For event pages, webinars, conferences.
 
 ```json
 {
@@ -297,10 +232,7 @@ For event pages, webinars, conferences.
   "endDate": "2024-06-15T17:00:00-07:00",
   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
-  "location": {
-    "@type": "VirtualLocation",
-    "url": "https://example.com/conference"
-  },
+  "location": { "@type": "VirtualLocation", "url": "https://example.com/conference" },
   "image": "https://example.com/conference.jpg",
   "description": "Join us for our annual marketing conference...",
   "offers": {
@@ -311,23 +243,11 @@ For event pages, webinars, conferences.
     "availability": "https://schema.org/InStock",
     "validFrom": "2024-01-01"
   },
-  "performer": {
-    "@type": "Organization",
-    "name": "Example Company"
-  },
-  "organizer": {
-    "@type": "Organization",
-    "name": "Example Company",
-    "url": "https://example.com"
-  }
+  "organizer": { "@type": "Organization", "name": "Example Company", "url": "https://example.com" }
 }
 ```
 
----
-
-## Multiple Schema Types
-
-Combine multiple schema types using @graph.
+## Multiple Types with @graph
 
 ```json
 {
@@ -344,9 +264,7 @@ Combine multiple schema types using @graph.
       "@id": "https://example.com/#website",
       "url": "https://example.com",
       "name": "Example",
-      "publisher": {
-        "@id": "https://example.com/#organization"
-      }
+      "publisher": { "@id": "https://example.com/#organization" }
     },
     {
       "@type": "BreadcrumbList",
@@ -355,8 +273,6 @@ Combine multiple schema types using @graph.
   ]
 }
 ```
-
----
 
 ## Implementation Example (Next.js)
 

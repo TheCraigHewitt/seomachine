@@ -6,249 +6,113 @@ description: "When the user wants to create competitor comparison or alternative
 
 # Competitor & Alternative Pages
 
-You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively.
+Build pages that rank for competitive terms, help evaluators decide, and position your product.
 
 ## Initial Assessment
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+Check `.claude/product-marketing-context.md` first. Ask only for missing scope.
 
-Before creating competitor pages, understand:
-
-1. **Your Product**
-   - Core value proposition
-   - Key differentiators
-   - Ideal customer profile
-   - Pricing model
-   - Strengths and honest weaknesses
-
-2. **Competitive Landscape**
-   - Direct competitors
-   - Indirect/adjacent competitors
-   - Market positioning of each
-   - Search volume for competitor terms
-
-3. **Goals**
-   - SEO traffic capture
-   - Sales enablement
-   - Conversion from competitor users
-   - Brand positioning
+Capture:
+1. Your product: value prop, differentiators, ICP, pricing, honest strengths/weaknesses.
+2. Competitive landscape: direct and adjacent competitors, market positioning, search volume.
+3. Goals: SEO capture, sales enablement, conversion from competitor users.
 
 ---
 
 ## Core Principles
 
-### 1. Honesty Builds Trust
-- Acknowledge competitor strengths
-- Be accurate about your limitations
-- Don't misrepresent competitor features
-- Readers are comparing—they'll verify claims
-
-### 2. Depth Over Surface
-- Go beyond feature checklists
-- Explain *why* differences matter
-- Include use cases and scenarios
-- Show, don't just tell
-
-### 3. Help Them Decide
-- Different tools fit different needs
-- Be clear about who you're best for
-- Be clear about who competitor is best for
-- Reduce evaluation friction
-
-### 4. Modular Content Architecture
-- Competitor data should be centralized
-- Updates propagate to all pages
-- Single source of truth per competitor
+1. **Honesty builds trust** -- acknowledge competitor strengths, be accurate about your limits. Readers will verify.
+2. **Depth over surface** -- go beyond feature checklists. Explain *why* differences matter.
+3. **Help them decide** -- be clear about who you're best for and who the competitor is best for.
+4. **Modular architecture** -- centralize competitor data so updates propagate to all pages.
 
 ---
 
 ## Page Formats
 
-### Format 1: [Competitor] Alternative (Singular)
+| Format | Search Intent | URL Pattern | Key Keyword |
+|--------|--------------|-------------|-------------|
+| [Competitor] Alternative | Actively switching | `/alternatives/[competitor]` | "[Competitor] alternative" |
+| [Competitor] Alternatives | Researching options | `/alternatives/[competitor]-alternatives` | "[Competitor] alternatives" |
+| You vs [Competitor] | Direct comparison | `/vs/[competitor]` | "[You] vs [Competitor]" |
+| [A] vs [B] | Comparing two competitors | `/compare/[a]-vs-[b]` | "[A] vs [B]" |
 
-**Search intent**: User is actively looking to switch from a specific competitor
-
-**URL pattern**: `/alternatives/[competitor]` or `/[competitor]-alternative`
-
-**Target keywords**: "[Competitor] alternative", "alternative to [Competitor]", "switch from [Competitor]"
-
-**Page structure**:
-1. Why people look for alternatives (validate their pain)
-2. Summary: You as the alternative (quick positioning)
+### Format 1: Singular Alternative
+1. Why people look for alternatives (validate pain)
+2. You as the alternative (quick positioning)
 3. Detailed comparison (features, service, pricing)
 4. Who should switch (and who shouldn't)
-5. Migration path
-6. Social proof from switchers
-7. CTA
-
----
-
-### Format 2: [Competitor] Alternatives (Plural)
-
-**Search intent**: User is researching options, earlier in journey
-
-**URL pattern**: `/alternatives/[competitor]-alternatives`
-
-**Target keywords**: "[Competitor] alternatives", "best [Competitor] alternatives", "tools like [Competitor]"
-
-**Page structure**:
-1. Why people look for alternatives (common pain points)
-2. What to look for in an alternative (criteria framework)
-3. List of alternatives (you first, but include real options)
-4. Comparison table (summary)
-5. Detailed breakdown of each alternative
-6. Recommendation by use case
-7. CTA
-
-**Important**: Include 4-7 real alternatives. Being genuinely helpful builds trust and ranks better.
-
----
-
-### Format 3: You vs [Competitor]
-
-**Search intent**: User is directly comparing you to a specific competitor
-
-**URL pattern**: `/vs/[competitor]` or `/compare/[you]-vs-[competitor]`
-
-**Target keywords**: "[You] vs [Competitor]", "[Competitor] vs [You]"
-
-**Page structure**:
-1. TL;DR summary (key differences in 2-3 sentences)
-2. At-a-glance comparison table
-3. Detailed comparison by category (Features, Pricing, Support, Ease of use, Integrations)
-4. Who [You] is best for
-5. Who [Competitor] is best for (be honest)
-6. What customers say (testimonials from switchers)
-7. Migration support
-8. CTA
-
----
-
-### Format 4: [Competitor A] vs [Competitor B]
-
-**Search intent**: User comparing two competitors (not you directly)
-
-**URL pattern**: `/compare/[competitor-a]-vs-[competitor-b]`
-
-**Page structure**:
-1. Overview of both products
-2. Comparison by category
-3. Who each is best for
-4. The third option (introduce yourself)
-5. Comparison table (all three)
+5. Migration path + social proof from switchers
 6. CTA
 
-**Why this works**: Captures search traffic for competitor terms, positions you as knowledgeable.
+### Format 2: Plural Alternatives
+1. Why people look for alternatives (common pain points)
+2. What to look for (criteria framework)
+3. List of 4-7 real alternatives (you first, but include genuine options)
+4. Comparison table + detailed breakdown of each
+5. Recommendation by use case
+6. CTA
+
+### Format 3: You vs Competitor
+1. TL;DR (key differences in 2-3 sentences)
+2. At-a-glance comparison table
+3. Detailed comparison by category
+4. Who each is best for (be honest)
+5. Testimonials from switchers + migration support
+6. CTA
+
+### Format 4: Competitor vs Competitor
+1. Overview of both products
+2. Comparison by category + who each is best for
+3. The third option (introduce yourself)
+4. Three-way comparison table
+5. CTA
 
 ---
 
 ## Essential Sections
 
-### TL;DR Summary
-Start every page with a quick summary for scanners—key differences in 2-3 sentences.
+- **TL;DR**: 2-3 sentence summary for scanners.
+- **Paragraph comparisons**: Beyond tables -- explain when each matters.
+- **Feature comparison**: Per category with strengths, limitations, bottom-line rec.
+- **Pricing comparison**: Tier-by-tier, hidden costs, total cost for sample team.
+- **Who it's for**: Explicit ideal customer for each option.
+- **Migration**: What transfers, what doesn't, support offered, switcher quotes.
 
-### Paragraph Comparisons
-Go beyond tables. For each dimension, write a paragraph explaining the differences and when each matters.
-
-### Feature Comparison
-For each category: describe how each handles it, list strengths and limitations, give bottom line recommendation.
-
-### Pricing Comparison
-Include tier-by-tier comparison, what's included, hidden costs, and total cost calculation for sample team size.
-
-### Who It's For
-Be explicit about ideal customer for each option. Honest recommendations build trust.
-
-### Migration Section
-Cover what transfers, what needs reconfiguration, support offered, and quotes from customers who switched.
-
-**For detailed templates**: See [references/templates.md](references/templates.md)
+**Detailed templates**: See [references/templates.md](references/templates.md)
 
 ---
 
 ## Content Architecture
 
-### Centralized Competitor Data
-Create a single source of truth for each competitor with:
-- Positioning and target audience
-- Pricing (all tiers)
-- Feature ratings
-- Strengths and weaknesses
-- Best for / not ideal for
-- Common complaints (from reviews)
-- Migration notes
-
-**For data structure and examples**: See [references/content-architecture.md](references/content-architecture.md)
+Centralize competitor data as single source of truth per competitor. See [references/content-architecture.md](references/content-architecture.md).
 
 ---
 
 ## Research Process
 
-### Deep Competitor Research
+Per competitor:
+1. **Product**: Sign up, use it, document features/UX/limitations.
+2. **Pricing**: Current tiers, what's included, hidden costs.
+3. **Reviews**: G2, Capterra, TrustRadius -- common praise/complaint themes.
+4. **Customers**: Talk to switchers (both directions).
+5. **Content**: Their positioning, comparison pages, changelog.
 
-For each competitor, gather:
-
-1. **Product research**: Sign up, use it, document features/UX/limitations
-2. **Pricing research**: Current pricing, what's included, hidden costs
-3. **Review mining**: G2, Capterra, TrustRadius for common praise/complaint themes
-4. **Customer feedback**: Talk to customers who switched (both directions)
-5. **Content research**: Their positioning, their comparison pages, their changelog
-
-### Ongoing Updates
-
-- **Quarterly**: Verify pricing, check for major feature changes
-- **When notified**: Customer mentions competitor change
-- **Annually**: Full refresh of all competitor data
+**Update cadence**: Quarterly pricing/feature check. Annual full refresh.
 
 ---
 
-## SEO Considerations
+## SEO
 
-### Keyword Targeting
-
-| Format | Primary Keywords |
-|--------|-----------------|
-| Alternative (singular) | [Competitor] alternative, alternative to [Competitor] |
-| Alternatives (plural) | [Competitor] alternatives, best [Competitor] alternatives |
-| You vs Competitor | [You] vs [Competitor], [Competitor] vs [You] |
-| Competitor vs Competitor | [A] vs [B], [B] vs [A] |
-
-### Internal Linking
-- Link between related competitor pages
-- Link from feature pages to relevant comparisons
-- Create hub page linking to all competitor content
-
-### Schema Markup
-Consider FAQ schema for common questions like "What is the best alternative to [Competitor]?"
-
----
-
-## Output Format
-
-### Competitor Data File
-Complete competitor profile in YAML format for use across all comparison pages.
-
-### Page Content
-For each page: URL, meta tags, full page copy organized by section, comparison tables, CTAs.
-
-### Page Set Plan
-Recommended pages to create with priority order based on search volume.
-
----
-
-## Task-Specific Questions
-
-1. What are common reasons people switch to you?
-2. Do you have customer quotes about switching?
-3. What's your pricing vs. competitors?
-4. Do you offer migration support?
+- Link between related competitor pages.
+- Link from feature pages to relevant comparisons.
+- Create hub page linking to all competitor content.
+- FAQ schema for questions like "What is the best alternative to [Competitor]?"
 
 ---
 
 ## Related Skills
 
-- **programmatic-seo**: For building competitor pages at scale
-- **copywriting**: For writing compelling comparison copy
-- **seo-audit**: For optimizing competitor pages
-- **schema-markup**: For FAQ and comparison schema
+- **programmatic-seo**: Competitor pages at scale
+- **copywriting**: Compelling comparison copy
+- **schema-markup**: FAQ and comparison schema

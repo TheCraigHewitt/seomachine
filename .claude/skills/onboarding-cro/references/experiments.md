@@ -1,248 +1,73 @@
 # Onboarding Experiment Ideas
 
-Comprehensive list of A/B tests and experiments for user onboarding and activation.
+Use this backlog to test activation lift and time-to-value reduction. For each experiment, define one primary metric (`activation rate` or `time to activation`) plus guardrails (`retention`, `support load`, `trial->paid`).
 
-## Flow Simplification Experiments
+## Flow Simplification and Sequencing
 
-### Reduce Friction
-
-| Test | Hypothesis |
-|------|------------|
-| Email verification timing | During vs. after onboarding |
-| Empty states vs. dummy data | Pre-populated examples |
-| Pre-filled templates | Accelerate setup with templates |
-| OAuth options | Faster account linking |
-| Required step count | Fewer required steps |
-| Optional vs. required fields | Minimize requirements |
-| Skip options | Allow bypassing non-critical steps |
-
-### Step Sequencing
-
-| Test | Hypothesis |
-|------|------------|
-| Step ordering | Test different sequences |
-| Value-first ordering | Highest-value features first |
-| Friction placement | Move hard steps later |
-| Required vs. optional balance | Ratio of required steps |
-| Single vs. branching paths | One path vs. personalized |
-| Quick start vs. full setup | Minimal path to value |
-
-### Progress & Motivation
-
-| Test | Hypothesis |
-|------|------------|
-| Progress bars | Show completion percentage |
-| Checklist length | 3-5 items vs. 5-7 items |
-| Gamification | Badges, rewards, achievements |
-| Completion messaging | "X% complete" visibility |
-| Starting point | Begin at 20% vs. 0% |
-| Celebration moments | Acknowledge completions |
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Remove one required setup step | Fewer mandatory steps increase activation completion | Activation rate |
+| Defer email verification until post-activation | Delaying friction improves first-session completion | Activation rate |
+| Quick-start template vs. blank start | Prebuilt starting state reduces blank-page anxiety | Time to activation |
+| Reorder steps to value-first path | Showing payoff earlier reduces abandonment | Step completion rate |
+| Branching onboarding by role vs. one path | Relevance improves progression for each segment | Segment activation |
+| Optional advanced settings hidden by default | Lower cognitive load improves initial completion | Activation rate |
 
 ---
 
-## Guided Experience Experiments
+## First-Session Guidance
 
-### Product Tours
-
-| Test | Hypothesis |
-|------|------------|
-| Interactive tours | Tools like Navattic, Storylane |
-| Tooltip vs. modal guidance | Subtle vs. attention-grabbing |
-| Video tutorials | For complex workflows |
-| Self-paced vs. guided | User control vs. structured |
-| Tour length | Shorter vs. comprehensive |
-| Tour triggering | Automatic vs. user-initiated |
-
-### CTA Optimization
-
-| Test | Hypothesis |
-|------|------------|
-| CTA text variations | Action-oriented copy testing |
-| CTA placement | Position within screens |
-| In-app tooltips | Feature discovery prompts |
-| Sticky CTAs | Persist during onboarding |
-| CTA contrast | Visual prominence |
-| Secondary CTAs | "Learn more" vs. primary only |
-
-### UI Guidance
-
-| Test | Hypothesis |
-|------|------------|
-| Hotspot highlights | Draw attention to key features |
-| Coachmarks | Contextual tips |
-| Feature announcements | New feature discovery |
-| Contextual help | Help where users need it |
-| Search vs. guided | Self-service vs. directed |
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Checklist (3 items) vs. checklist (6 items) | Short checklist reduces overwhelm and improves completion | Checklist completion |
+| Progress bar visible vs. hidden | Progress visibility increases persistence | Onboarding completion |
+| Start users at 20% complete vs. 0% | Early momentum framing improves continuation | Completion rate |
+| Interactive task prompt vs. video tour | Doing first action beats passive viewing | Time to first key action |
+| Contextual tooltip on key action vs. generic tour | Just-in-time guidance improves successful task completion | Key action success rate |
 
 ---
 
-## Personalization Experiments
+## Empty State and In-App Prompt Tests
 
-### User Segmentation
-
-| Test | Hypothesis |
-|------|------------|
-| Role-based onboarding | Different paths by role |
-| Goal-based paths | Customize by stated goal |
-| Role-specific dashboards | Relevant default views |
-| Use-case question | Personalize based on answer |
-| Industry-specific paths | Vertical customization |
-| Experience-based | Beginner vs. expert paths |
-
-### Dynamic Content
-
-| Test | Hypothesis |
-|------|------------|
-| Personalized welcome | Name, company, role |
-| Industry examples | Relevant use cases |
-| Dynamic recommendations | Based on user answers |
-| Template suggestions | Pre-filled for segment |
-| Feature highlighting | Relevant to stated goals |
-| Benchmark data | Industry-specific metrics |
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Empty state with example output vs. text-only | Concrete preview reduces uncertainty | First object created |
+| One CTA in empty state vs. multiple CTAs | Single clear action improves progression | Empty-state CTA CTR |
+| Suggested template by use case vs. generic templates | Relevance increases first success | Activation rate |
+| "Next best action" card after each step vs. none | Guided sequencing reduces drop-off between steps | Step-to-step progression |
 
 ---
 
-## Quick Wins & Engagement Experiments
+## Stalled User Recovery
 
-### Time-to-Value
-
-| Test | Hypothesis |
-|------|------------|
-| First quick win | "Complete your first X" |
-| Success messages | After key actions |
-| Progress celebrations | Milestone moments |
-| Next step suggestions | After each completion |
-| Value demonstration | Show what they achieved |
-| Outcome preview | What success looks like |
-
-### Motivation Mechanics
-
-| Test | Hypothesis |
-|------|------------|
-| Achievement badges | Gamification elements |
-| Streaks | Consecutive day engagement |
-| Leaderboards | Social comparison (if appropriate) |
-| Rewards | Incentives for completion |
-| Unlock mechanics | Features revealed progressively |
-
-### Support & Help
-
-| Test | Hypothesis |
-|------|------------|
-| Free onboarding calls | For complex products |
-| Contextual help | Throughout onboarding |
-| Chat support | Availability during onboarding |
-| Proactive outreach | For stuck users |
-| Self-service resources | Help docs, videos |
-| Community access | Peer support early |
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Re-engagement trigger at 24h vs. 72h inactivity | Earlier intervention improves recovery | Reactivation rate |
+| "Resume where you left off" deep link vs. generic return link | Direct resume path increases completion after return | Recovered activation |
+| Simplified return flow vs. full original flow | Reduced complexity improves stalled-user recovery | Recovery completion |
+| Personal outreach for high-value accounts vs. automated only | Human touch improves completion for strategic cohorts | Activation for target cohort |
+| Offer guided help session vs. help docs only | Live support resolves blockers faster | Time to activation |
 
 ---
 
-## Email & Multi-Channel Experiments
+## Multi-Channel Onboarding (Email + In-App)
 
-### Onboarding Emails
-
-| Test | Hypothesis |
-|------|------------|
-| Founder welcome email | Personal vs. generic |
-| Behavior-based triggers | Action/inaction based |
-| Email timing | Immediate vs. delayed |
-| Email frequency | More vs. fewer touches |
-| Quick tips format | Short actionable content |
-| Video in email | More engaging format |
-
-### Email Content
-
-| Test | Hypothesis |
-|------|------------|
-| Subject lines | Open rate optimization |
-| Personalization depth | Name vs. behavior-based |
-| CTA prominence | Single clear action |
-| Social proof inclusion | Testimonials in email |
-| Urgency messaging | Trial reminders |
-| Plain text vs. designed | Format testing |
-
-### Feedback Loops
-
-| Test | Hypothesis |
-|------|------------|
-| NPS during onboarding | When to ask |
-| Blocking question | "What's stopping you?" |
-| NPS follow-up | Actions based on score |
-| In-app feedback | Thumbs up/down on features |
-| Survey timing | When to request feedback |
-| Feedback incentives | Reward for completing |
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Behavior-triggered email vs. fixed schedule | Trigger relevance improves return and completion | Email-driven activation |
+| Single CTA email vs. multi-link email | Focused intent improves click-to-complete path | Completion from email click |
+| Milestone celebration email vs. neutral confirmation | Positive reinforcement increases next-step completion | Next-step completion rate |
+| Feature-discovery emails sent after activation vs. before | Delayed expansion reduces pre-activation distraction | Activation + D7 retention |
 
 ---
 
-## Re-engagement Experiments
+## Metrics to Track Across All Tests
 
-### Stalled User Recovery
-
-| Test | Hypothesis |
-|------|------------|
-| Re-engagement email timing | When to send |
-| Personal outreach | Human vs. automated |
-| Simplified path | Reduced steps for returners |
-| Incentive offers | Discount or extended trial |
-| Problem identification | Ask what's blocking |
-| Demo offer | Live walkthrough |
-
-### Return Experience
-
-| Test | Hypothesis |
-|------|------------|
-| Welcome back message | Acknowledge return |
-| Progress resume | Pick up where left off |
-| Changed state | What happened while away |
-| Re-onboarding | Fresh start option |
-| Urgency messaging | Trial time remaining |
-
----
-
-## Technical & UX Experiments
-
-### Performance
-
-| Test | Hypothesis |
-|------|------------|
-| Load time optimization | Faster = higher completion |
-| Progressive loading | Perceived performance |
-| Offline capability | Mobile experience |
-| Error handling | Graceful failure recovery |
-
-### Mobile Onboarding
-
-| Test | Hypothesis |
-|------|------------|
-| Touch targets | Size and spacing |
-| Swipe navigation | Mobile-native patterns |
-| Screen count | Fewer screens needed |
-| Input optimization | Mobile-friendly forms |
-| Permission timing | When to ask |
-
-### Accessibility
-
-| Test | Hypothesis |
-|------|------------|
-| Screen reader support | Accessibility impact |
-| Keyboard navigation | Non-mouse users |
-| Color contrast | Visibility |
-| Font sizing | Readability |
-
----
-
-## Metrics to Track
-
-For all experiments, measure:
-
-| Metric | Description |
-|--------|-------------|
-| Activation rate | % reaching activation event |
-| Time to activation | Hours/days to first value |
-| Step completion rate | % completing each step |
-| Drop-off points | Where users abandon |
-| Return rate | Users who come back |
-| Day 1/7/30 retention | Engagement over time |
-| Feature adoption | Which features get used |
-| Support requests | Volume during onboarding |
+| Metric | Why It Matters |
+|--------|----------------|
+| Activation rate | Core success metric for onboarding |
+| Time to activation | Speed of value realization |
+| Step completion rate | Isolates where friction remains |
+| Drop-off by step | Pinpoints highest-leverage fixes |
+| D1/D7/D30 retention | Confirms activation quality, not just completion |
+| Support contacts during onboarding | Detects confusion introduced by changes |

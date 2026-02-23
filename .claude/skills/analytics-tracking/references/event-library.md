@@ -1,43 +1,33 @@
 # Event Library Reference
 
-Comprehensive list of events to track by business type and context.
-
 ## Marketing Site Events
 
 ### Navigation & Engagement
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| page_view | Page loaded (enhanced) | page_title, page_location, content_group |
-| scroll_depth | User scrolled to threshold | depth (25, 50, 75, 100) |
-| outbound_link_clicked | Click to external site | link_url, link_text |
-| internal_link_clicked | Click within site | link_url, link_text, location |
-| video_played | Video started | video_id, video_title, duration |
-| video_completed | Video finished | video_id, video_title, duration |
+| page_view | Page loaded | page_title, page_location, content_group |
+| scroll_depth | Scroll threshold reached | depth (25, 50, 75, 100) |
+| outbound_link_clicked | External link click | link_url, link_text |
+| video_played | Video started | video_id, video_title |
 
 ### CTA & Form Interactions
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| cta_clicked | Call to action clicked | button_text, cta_location, page |
-| form_started | User began form | form_name, form_location |
-| form_field_completed | Field filled | form_name, field_name |
-| form_submitted | Form successfully sent | form_name, form_location |
-| form_error | Form validation failed | form_name, error_type |
-| resource_downloaded | Asset downloaded | resource_name, resource_type |
+| cta_clicked | CTA clicked | cta_text, cta_location, page |
+| form_submitted | Successful submit | form_name, form_location |
+| form_error | Validation or submit error | form_name, error_type |
 
 ### Conversion Events
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| signup_started | Initiated signup | source, page |
-| signup_completed | Finished signup | method, plan, source |
-| demo_requested | Demo form submitted | company_size, industry |
-| contact_submitted | Contact form sent | inquiry_type |
-| newsletter_subscribed | Email list signup | source, list_name |
-| trial_started | Free trial began | plan, source |
-
----
+| signup_started | Signup initiated | source, page |
+| signup_completed | Signup completed | method, plan, source |
+| demo_requested | Demo request submitted | company_size, industry |
+| newsletter_subscribed | List signup | list_name, source |
+| trial_started | Trial created | plan, source |
 
 ## Product/App Events
 
@@ -45,37 +35,30 @@ Comprehensive list of events to track by business type and context.
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| signup_completed | Account created | method, referral_source |
-| onboarding_started | Began onboarding | - |
-| onboarding_step_completed | Step finished | step_number, step_name |
-| onboarding_completed | All steps done | steps_completed, time_to_complete |
-| onboarding_skipped | User skipped onboarding | step_skipped_at |
-| first_key_action_completed | Aha moment reached | action_type |
+| onboarding_started | Onboarding flow started | plan, source |
+| onboarding_step_completed | Step completed | step_number, step_name |
+| onboarding_completed | All required steps done | time_to_complete |
+| onboarding_skipped | User skipped flow | step_skipped_at |
+| first_key_action_completed | First value action done | action_type |
 
 ### Core Usage
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| session_started | App session began | session_number |
+| session_started | Product session started | session_number |
 | feature_used | Feature interaction | feature_name, feature_category |
-| action_completed | Core action done | action_type, count |
-| content_created | User created content | content_type |
-| content_edited | User modified content | content_type |
-| content_deleted | User removed content | content_type |
-| search_performed | In-app search | query, results_count |
-| settings_changed | Settings modified | setting_name, new_value |
-| invite_sent | User invited others | invite_type, count |
+| content_created | New content created | content_type |
+| invite_sent | Invite sent | invite_type, count |
+| settings_changed | Settings changed | setting_name |
 
 ### Errors & Support
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| error_occurred | Error experienced | error_type, error_message, page |
-| help_opened | Help accessed | help_type, page |
-| support_contacted | Support request made | contact_method, issue_type |
-| feedback_submitted | User feedback given | feedback_type, rating |
-
----
+| error_occurred | Product error surfaced | error_type, error_message, page |
+| help_opened | Help surface opened | help_type, page |
+| support_contacted | Support request created | contact_method, issue_type |
+| feedback_submitted | Product feedback submitted | feedback_type, rating |
 
 ## Monetization Events
 
@@ -83,156 +66,97 @@ Comprehensive list of events to track by business type and context.
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| pricing_viewed | Pricing page seen | source |
-| plan_selected | Plan chosen | plan_name, billing_cycle |
-| checkout_started | Began checkout | plan, value |
-| payment_info_entered | Payment submitted | payment_method |
-| purchase_completed | Purchase successful | plan, value, currency, transaction_id |
+| pricing_viewed | Pricing page viewed | source |
+| plan_selected | Plan selected | plan_name, billing_cycle |
+| checkout_started | Checkout initiated | plan, value |
+| payment_info_entered | Payment info submitted | payment_method |
+| purchase_completed | Purchase success | transaction_id, value, currency |
 | purchase_failed | Purchase failed | error_reason, plan |
 
-### Subscription Management
+### Subscription Lifecycle
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| trial_started | Trial began | plan, trial_length |
-| trial_ended | Trial expired | plan, converted (bool) |
-| subscription_upgraded | Plan upgraded | from_plan, to_plan, value |
-| subscription_downgraded | Plan downgraded | from_plan, to_plan |
-| subscription_cancelled | Cancelled | plan, reason, tenure |
-| subscription_renewed | Renewed | plan, value |
-| billing_updated | Payment method changed | - |
-
----
+| trial_started | Trial started | plan, trial_length |
+| trial_ended | Trial ended | plan, converted |
+| subscription_upgraded | Plan upgrade | from_plan, to_plan, value |
+| subscription_cancelled | Subscription cancelled | reason, tenure |
+| subscription_renewed | Subscription renewed | plan, value |
 
 ## E-commerce Events
 
-### Browsing
+### Browsing, Cart, Checkout
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| product_viewed | Product page viewed | product_id, product_name, category, price |
-| product_list_viewed | Category/list viewed | list_name, products[] |
-| product_searched | Search performed | query, results_count |
-| product_filtered | Filters applied | filter_type, filter_value |
-| product_sorted | Sort applied | sort_by, sort_order |
+| product_viewed | Product detail viewed | item_id, item_name, category, price |
+| product_added_to_cart | Added item to cart | item_id, price, quantity |
+| product_removed_from_cart | Removed item from cart | item_id, quantity |
+| cart_viewed | Cart viewed | cart_value, items_count |
+| checkout_started | Checkout started | cart_value, items_count |
+| shipping_info_entered | Shipping step completed | shipping_method |
+| payment_info_entered | Payment step completed | payment_method |
+| purchase_completed | Order completed | transaction_id, value, currency |
 
-### Cart
-
-| Event Name | Description | Properties |
-|------------|-------------|------------|
-| product_added_to_cart | Item added | product_id, product_name, price, quantity |
-| product_removed_from_cart | Item removed | product_id, product_name, price, quantity |
-| cart_viewed | Cart page viewed | cart_value, items_count |
-
-### Checkout
+## B2B / SaaS Events
 
 | Event Name | Description | Properties |
 |------------|-------------|------------|
-| checkout_started | Checkout began | cart_value, items_count |
-| checkout_step_completed | Step finished | step_number, step_name |
-| shipping_info_entered | Address entered | shipping_method |
-| payment_info_entered | Payment entered | payment_method |
-| coupon_applied | Coupon used | coupon_code, discount_value |
-| purchase_completed | Order placed | transaction_id, value, currency, items[] |
-
-### Post-Purchase
-
-| Event Name | Description | Properties |
-|------------|-------------|------------|
-| order_confirmed | Confirmation viewed | transaction_id |
-| refund_requested | Refund initiated | transaction_id, reason |
-| refund_completed | Refund processed | transaction_id, value |
-| review_submitted | Product reviewed | product_id, rating |
-
----
-
-## B2B / SaaS Specific Events
-
-### Team & Collaboration
-
-| Event Name | Description | Properties |
-|------------|-------------|------------|
-| team_created | New team/org made | team_size, plan |
-| team_member_invited | Invite sent | role, invite_method |
-| team_member_joined | Member accepted | role |
-| team_member_removed | Member removed | role |
-| role_changed | Permissions updated | user_id, old_role, new_role |
-
-### Integration Events
-
-| Event Name | Description | Properties |
-|------------|-------------|------------|
-| integration_viewed | Integration page seen | integration_name |
-| integration_started | Setup began | integration_name |
-| integration_connected | Successfully connected | integration_name |
-| integration_disconnected | Removed integration | integration_name, reason |
-
-### Account Events
-
-| Event Name | Description | Properties |
-|------------|-------------|------------|
-| account_created | New account | source, plan |
-| account_upgraded | Plan upgrade | from_plan, to_plan |
+| team_created | Team created | team_size, plan |
+| team_member_invited | Team invite sent | role, invite_method |
+| team_member_joined | Team invite accepted | role |
+| integration_connected | Integration connected | integration_name |
 | account_churned | Account closed | reason, tenure, mrr_lost |
-| account_reactivated | Returned customer | previous_tenure, new_plan |
 
----
+## Standard Property Sets
 
-## Event Properties (Parameters)
+### User Context
 
-### Standard Properties to Include
-
-**User Context:**
-```
-user_id: "12345"
-user_type: "free" | "trial" | "paid"
-account_id: "acct_123"
-plan_type: "starter" | "pro" | "enterprise"
+```text
+user_id
+user_type
+account_id
+plan_type
 ```
 
-**Session Context:**
-```
-session_id: "sess_abc"
-session_number: 5
-page: "/pricing"
-referrer: "https://google.com"
+### Session Context
+
+```text
+session_id
+session_number
+page
+referrer
 ```
 
-**Campaign Context:**
-```
-source: "google"
-medium: "cpc"
-campaign: "spring_sale"
-content: "hero_cta"
+### Campaign Context
+
+```text
+source
+medium
+campaign
+content
+term
 ```
 
-**Product Context (E-commerce):**
-```
-product_id: "SKU123"
-product_name: "Product Name"
-category: "Category"
-price: 99.99
-quantity: 1
-currency: "USD"
-```
+### Commerce Context
 
-**Timing:**
+```text
+item_id
+item_name
+category
+price
+quantity
+currency
 ```
-timestamp: "2024-01-15T10:30:00Z"
-time_on_page: 45
-session_duration: 300
-```
-
----
 
 ## Funnel Event Sequences
 
 ### Signup Funnel
 1. signup_started
-2. signup_step_completed (email)
-3. signup_step_completed (password)
-4. signup_completed
-5. onboarding_started
+2. signup_step_completed
+3. signup_completed
+4. onboarding_started
+5. first_key_action_completed
 
 ### Purchase Funnel
 1. pricing_viewed

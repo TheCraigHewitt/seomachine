@@ -1,396 +1,163 @@
 # CRO Best Practices for Landing Pages
 
-Conversion Rate Optimization guidelines for landing pages.
-
----
+Use these rules to improve landing-page conversion rates.
 
 ## Above-the-Fold Rules
 
-### The 5-Second Test
-Visitors should understand these within 5 seconds of landing:
-1. **What** you offer
-2. **Who** it's for
-3. **Why** they should care
-4. **What** to do next (CTA)
+### 5-Second Test
+Within 5 seconds, visitors should know:
+1. What you offer
+2. Who it is for
+3. Why it matters
+4. What to do next
 
 ### Required Elements
-| Element | Purpose | Guidelines |
-|---------|---------|------------|
-| Headline | Grab attention | Benefit-focused, <70 chars |
-| Subheadline | Clarify value | Expand on headline, 1-2 sentences |
-| CTA Button | Drive action | High contrast, action verb |
-| Trust Signal | Build credibility | Customer count, rating, or logo |
+| Element | Purpose | Guideline |
+|---------|---------|-----------|
+| Headline | Capture attention | Benefit-first, <70 chars |
+| Subheadline | Clarify value | 1-2 sentences |
+| CTA | Drive action | Action verb + contrast |
+| Trust Signal | Build credibility | Rating, count, or logo |
 
-### Above-the-Fold Don'ts
-- No sliders or carousels
-- No multiple competing CTAs
-- No walls of text
-- No autoplay videos with sound
-- No navigation that distracts from CTA
-
----
+### Avoid
+- Sliders/carousels
+- Multiple competing CTAs
+- Dense text blocks
+- Distracting nav
+- Autoplay media with sound
 
 ## Headline Best Practices
+### High-Performing Patterns
+- `Stop [Pain]. Start [Outcome].`
+- `[Outcome] Without [Sacrifice].`
+- `Join [Number] [Audience] Who [Outcome].`
+- `Ready to [Outcome]?`
 
-### Headline Formulas That Convert
+### Headline Checklist
+- [ ] Clear benefit
+- [ ] <70 chars
+- [ ] Specific language
+- [ ] Reader-focused
+- [ ] Some urgency/curiosity
 
-**Problem-Solution:**
-- "Stop [Pain Point]. Start [Desired Outcome]."
-- "No More [Problem]. Just [Solution]."
-
-**Benefit-First:**
-- "[Achieve Outcome] Without [Sacrifice]"
-- "The [Fastest/Easiest/Only] Way to [Outcome]"
-
-**Social Proof:**
-- "Join [Number] [Audience] Who [Achieved Outcome]"
-- "Why [Number] [Audience] Switched to [Product]"
-
-**Question:**
-- "Ready to [Achieve Outcome]?"
-- "What if You Could [Desired Outcome]?"
-
-### Headline Testing Checklist
-- [ ] Contains the primary benefit
-- [ ] Under 70 characters (mobile-friendly)
-- [ ] Uses "you" or implies the reader
-- [ ] Specific (not vague or generic)
-- [ ] Creates curiosity or urgency
-
-### Weak Headlines to Avoid
+### Weak Patterns
 - "Welcome to [Company]"
 - "The Best [Product] Solution"
 - "Everything You Need"
 - "We Help You [Generic Verb]"
-- Starting with "Our" or "We"
-
----
 
 ## CTA Best Practices
 
-### CTA Text Guidelines
+### Goal-Aligned CTA Text
+| Goal | Strong CTA | Avoid |
+|------|------------|-------|
+| Trial | Start Your Free Trial | Sign Up |
+| Trial | Try Free for 14 Days | Submit |
+| Demo | Book Your Demo | Contact Us |
+| Demo | See It in Action | Learn More |
+| Lead | Download the Free Guide | Submit |
+| Lead | Get Instant Access | Subscribe |
 
-**By Conversion Goal:**
+### CTA Formula
+`[Action Verb] + [Benefit/Object] + [Urgency optional]`
 
-| Goal | Strong CTAs | Avoid |
-|------|-------------|-------|
-| Trial | "Start Your Free Trial" | "Sign Up" |
-| Trial | "Try Free for 14 Days" | "Submit" |
-| Trial | "Get Started Free" | "Register" |
-| Demo | "Book Your Demo" | "Contact Us" |
-| Demo | "Schedule a Call" | "Get in Touch" |
-| Demo | "See It in Action" | "Learn More" |
-| Lead | "Download the Free Guide" | "Submit" |
-| Lead | "Get Instant Access" | "Subscribe" |
-| Lead | "Claim Your Copy" | "Send" |
+### Placement Cadence
+1. Hero CTA (0-20%)
+2. Post-problem CTA (30-40%)
+3. Post-proof CTA (60-70%)
+4. Closing CTA (90-100%)
 
-### CTA Button Formula
-**[Action Verb] + [Benefit/Object] + [Urgency (optional)]**
+## Trust Signals
 
-Examples:
-- "Start" + "Your Free Trial" + "→"
-- "Get" + "Instant Access" + "Now"
-- "Book" + "Your Demo" + "Today"
+### Priority Order
+1. Specific outcome proof (e.g., % growth)
+2. Named testimonials with role/company
+3. Contextual customer count
+4. Ratings/logos/press
+5. Risk-reversal statements near CTA
 
-### CTA Placement Strategy
-1. **Hero CTA** (0-20% of page): Primary, most prominent
-2. **Post-Problem CTA** (30-40%): After establishing pain
-3. **Post-Proof CTA** (60-70%): After testimonials
-4. **Closing CTA** (90-100%): Final push with risk reversal
+### Placement
+| Location | Best Signal |
+|----------|-------------|
+| Hero | Customer count or rating |
+| After pain section | Short outcome proof |
+| Mid page | 2-3 testimonials |
+| Near CTA | Risk reversal |
 
-### CTA Visual Best Practices
-- **Color**: High contrast with background
-- **Size**: Large enough to tap (44x44px minimum)
-- **Whitespace**: Breathing room around button
-- **Consistency**: Same style throughout page
-- **Mobile**: Full-width on small screens
-
----
-
-## Trust Signal Hierarchy
-
-### Strongest (Use First)
-1. **Specific Results**: "Grew audience by 300%"
-2. **Named Testimonials**: "Sarah M., The Creative Hour"
-3. **Customer Count with Context**: "50,000+ customers"
-
-### Strong
-4. **Star Ratings**: "4.9/5 on G2"
-5. **Media Logos**: "As seen in..."
-6. **Customer Logos**: Enterprise/recognizable brands
-
-### Supporting
-7. **Awards/Certifications**: "Best in Category 2024"
-8. **Partnerships**: "Official Partner"
-9. **Security Badges**: For payment/data collection pages
-
-### Trust Signal Placement
-| Location | Best Trust Signal |
-|----------|-------------------|
-| Hero (above fold) | Customer count or rating |
-| After problem section | Mini-story with outcome |
-| Middle of page | Full testimonials (2-3) |
-| Near CTA | Risk reversal statement |
-| Footer | Security/privacy badges |
-
----
-
-## Risk Reversal Tactics
-
-### For Free Trial
-- "No credit card required"
-- "Cancel anytime"
-- "Full access for [X] days"
-- "No commitment"
-- "Set up in under 5 minutes"
-
-### For Demo Requests
-- "No pressure, no hard sell"
-- "Just [X] minutes of your time"
-- "Get your questions answered"
-- "See if we're a fit"
-
-### For Lead Capture
-- "No spam, ever"
-- "Unsubscribe anytime"
-- "Instant download"
-- "Free, no strings attached"
-
-### Risk Reversal Placement
-Always place risk reversal **directly below or beside the CTA button**.
-
----
+## Risk Reversal
+Place next to CTA:
+- No credit card required
+- Cancel anytime
+- No commitment
+- Setup in [X] minutes
+- No-pressure demo language
 
 ## Objection Handling
-
-### Common Objections & Responses
-
-**"It's too expensive"**
-- Lead with free trial
-- Show ROI/value
-- Compare to competitor costs
-- Highlight what's included
-
-**"It looks complicated"**
-- "Set up in 5 minutes"
-- Show simple 3-step process
-- Include "no technical skills needed"
-
-**"I'm not ready"**
-- Use urgency sparingly
-- Offer lead magnet alternative
-- Provide "learn more" secondary CTA
-
-**"I don't know if it's right for me"**
-- Testimonials from similar users
-- Specific use case sections
-- "Perfect for [audience]" positioning
-
-**"Can I trust you?"**
-- Customer count
-- Years in business
-- Known customer logos
-- Money-back guarantee
-
----
+| Objection | Recommended Response |
+|-----------|----------------------|
+| Too expensive | Show ROI and what's included |
+| Too complex | Show setup time + 3-step simplicity |
+| Not ready | Offer low-friction next step |
+| Not sure it's for me | Add segment-specific proof |
+| Trust concerns | Add social proof + guarantees |
 
 ## Form Optimization
+- Each extra field usually reduces conversion.
+- Keep fields minimal by goal:
 
-### Field Reduction
-Every additional field reduces conversions by ~10%
-
-**Recommended Fields by Goal:**
-| Goal | Fields | What to Ask |
-|------|--------|-------------|
+| Goal | Typical Field Count | Suggested Fields |
+|------|---------------------|------------------|
 | Trial | 2-3 | Email, Password, (Name) |
 | Demo | 3-4 | Name, Email, Company, (Role) |
 | Lead | 1-2 | Email, (Name) |
 
-### Form Best Practices
-- Single column layout
-- Clear labels above fields
-- Helpful placeholder text
+Form standards:
+- Single-column layout
+- Clear labels
 - Real-time validation
-- Mobile-friendly input types
-- Progress indicator for multi-step
+- Mobile-friendly inputs
 
-### Form Placement
-- Above the fold for PPC
-- After value establishment for SEO
-- Never at the very bottom
-
----
-
-## Page Speed Impact
-
-### Conversion Impact
-- 1 second delay = 7% conversion drop
-- 3 second load = 40% abandonment
-- Mobile users expect <3 seconds
-
-### Quick Wins
-- Compress images (WebP format)
-- Minimize JavaScript
-- Use lazy loading for below-fold
-- Optimize fonts (system fonts fastest)
-- Enable browser caching
-
----
-
-## Mobile Optimization
-
-### Mobile-First Rules
-- 60%+ traffic is mobile
-- Design for mobile, then adapt for desktop
-- Touch-friendly tap targets (44x44px)
-- Readable without zooming (16px+ font)
-
-### Mobile CTA Guidelines
-- Full-width buttons
-- Sticky CTA on scroll (optional)
-- Phone number click-to-call
-- Simplified forms
-
-### Mobile Content Rules
-- Shorter headlines (<60 chars)
-- Front-load key information
-- Accordion FAQs to save space
-- Minimal navigation
-
----
+## Performance and Mobile
+- Target load time: <3s
+- Compress images and defer non-critical JS
+- Use touch-friendly controls (44x44px)
+- Keep copy scannable on small screens
 
 ## A/B Testing Priorities
-
-### High Impact (Test First)
+### Test First
 1. Headline
 2. CTA text
-3. CTA color/size
-4. Hero image/video
-5. Social proof placement
+3. CTA prominence/color
+4. Hero media
+5. Proof placement
 
-### Medium Impact
+### Test Next
 6. Subheadline
 7. Form length
 8. Testimonial selection
-9. Pricing presentation
-10. Risk reversal text
-
-### Low Impact (Test Later)
-11. Button shape
-12. Font choices
-13. Footer content
-14. Image style
-15. Color scheme
+9. Pricing framing
+10. Risk-reversal wording
 
 ### Testing Rules
-- One variable at a time
-- Minimum 100 conversions per variant
-- Run for at least 2 weeks
-- 95% statistical significance
+- One variable per test
+- Minimum ~100 conversions/variant
+- Run at least 2 weeks
+- Seek 95% significance
 
----
-
-## Conversion Goal Benchmarks
-
-### Industry Averages
+## Conversion Benchmarks
 | Goal | Average | Good | Excellent |
 |------|---------|------|-----------|
 | Free Trial | 3-5% | 7-10% | 15%+ |
 | Demo Request | 2-4% | 5-8% | 10%+ |
 | Lead Capture | 5-10% | 15-25% | 30%+ |
 
-### Factors That Affect Conversion
-- Traffic source quality
-- Brand awareness
-- Price point
-- Competition
-- Offer strength
-- Page experience
-
----
-
-## Psychology Principles
-
-### Scarcity
-- Limited time offers
-- Limited spots available
-- Stock/availability indicators
-- Use sparingly and honestly
-
-### Social Proof
-- "Join 50,000+ customers"
-- Testimonials with faces
-- Live user counts
-- Recent signup notifications
-
-### Authority
-- Expert endorsements
-- Media mentions
-- Certifications
-- Years of experience
-
-### Reciprocity
-- Free trial first
-- Free resources/guides
-- Helpful content before ask
-
-### Urgency
-- Time-limited offers
-- "Start today" messaging
-- Countdown timers (use carefully)
-- Season/event-based hooks
-
----
-
-## Landing Page Audit Checklist
-
-### Above the Fold
-- [ ] Clear, benefit-focused headline
-- [ ] Value proposition in 5 seconds
-- [ ] Prominent CTA button
-- [ ] Trust signal visible
-- [ ] No distracting elements
-
-### Content
-- [ ] Benefits before features
-- [ ] Scannable format (lists, bold, headers)
-- [ ] Appropriate length for page type
-- [ ] Addresses objections
-- [ ] Clear next step
-
-### CTAs
-- [ ] Action verb + benefit
-- [ ] High contrast visibility
-- [ ] Distributed throughout page
-- [ ] Goal-aligned messaging
-- [ ] Risk reversal nearby
-
-### Trust
-- [ ] Customer testimonials with names
-- [ ] Specific results/numbers
-- [ ] Social proof (count, logos)
-- [ ] Risk reversal present
-- [ ] Security indicators (if needed)
-
-### Technical
-- [ ] Mobile responsive
-- [ ] Fast load time (<3s)
-- [ ] Form works correctly
-- [ ] Links not broken
-- [ ] Analytics tracking installed
-
----
-
-## Quick Reference: Conversion Killers
-
-**Avoid These:**
-1. Generic headlines ("Welcome to our site")
-2. Weak CTAs ("Submit", "Click here")
-3. No visible trust signals
-4. Walls of unformatted text
-5. Multiple competing goals
-6. Slow page load
-7. Forms with too many fields
-8. No risk reversal
-9. Mobile-unfriendly design
-10. Navigation that distracts from goal
+## Audit Checklist
+- [ ] 5-second clarity passes
+- [ ] Benefit-first headline
+- [ ] Goal-aligned CTA(s)
+- [ ] Trust signals visible
+- [ ] Key objections addressed
+- [ ] Form friction minimized
+- [ ] Mobile UX solid
+- [ ] Page speed acceptable
+- [ ] Tracking installed

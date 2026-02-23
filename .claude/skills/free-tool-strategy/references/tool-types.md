@@ -1,208 +1,112 @@
 # Free Tool Types Reference
 
-Detailed guide to each type of marketing tool you can build.
-
 ## Calculators
 
-**Best for**: Decisions involving numbers, comparisons, estimates
+**Best for:** numeric decisions and ROI framing
 
-**Examples**:
+**Examples:**
 - ROI calculator
 - Savings calculator
-- Cost comparison tool
-- Salary calculator
-- Tax estimator
-- Pricing estimator
-- Compound interest calculator
 - Break-even calculator
+- Pricing estimator
 
-**Why they work**:
-- Personalized output
-- High perceived value
-- Share-worthy results
-- Clear problem → solution
+**Why they work:** personalized output, clear value, shareable results
 
-**Implementation tips**:
-- Keep inputs simple
-- Show calculations transparently
-- Make results shareable
-- Add "powered by" branding
-
----
+**Implementation tips:** keep inputs minimal, show formula logic, add export/share
 
 ## Generators
 
-**Best for**: Creating something useful quickly
+**Best for:** fast asset creation
 
-**Examples**:
-- Policy generator (privacy, terms)
+**Examples:**
+- Policy generator
 - Template generator
-- Name/tagline generator
-- Email subject line generator
-- Resume builder
-- Color palette generator
-- Logo maker
+- Subject line generator
 - Contract generator
 
-**Why they work**:
-- Tangible output
-- Saves time
-- Easily shared
-- Repeat usage
+**Why they work:** tangible output, time savings, repeat usage
 
-**Implementation tips**:
-- Output should be immediately usable
-- Allow customization
-- Offer download/export options
-- Include email gating for premium outputs
-
----
+**Implementation tips:** make output immediately usable, allow edits, support download
 
 ## Analyzers/Auditors
 
-**Best for**: Evaluating existing work or assets
+**Best for:** diagnosing existing assets/processes
 
-**Examples**:
+**Examples:**
 - Website grader
 - SEO analyzer
-- Email subject tester
-- Headline analyzer
-- Security checker
-- Performance auditor
-- Accessibility checker
-- Code quality analyzer
+- Headline/email analyzer
+- Performance checker
 
-**Why they work**:
-- Curiosity-driven
-- Personalized insights
-- Creates awareness of problems
-- Natural lead to solution
+**Why they work:** curiosity + personalized diagnosis + natural follow-up action
 
-**Implementation tips**:
-- Score or grade for gamification
-- Benchmark against averages
-- Provide actionable recommendations
-- Follow up with improvement offers
-
----
+**Implementation tips:** use a clear score, benchmark context, actionable next steps
 
 ## Testers/Validators
 
-**Best for**: Checking if something works
+**Best for:** pass/fail verification workflows
 
-**Examples**:
+**Examples:**
 - Meta tag preview
-- Email rendering test
-- Mobile-friendly test
-- Speed test
-- DNS checker
-- SSL certificate checker
+- Mobile-friendly check
 - Redirect checker
-- Broken link finder
+- SSL/DNS checker
 
-**Why they work**:
-- Immediate utility
-- Bookmark-worthy
-- Repeat usage
-- Professional necessity
+**Why they work:** immediate utility and repeat visits
 
-**Implementation tips**:
-- Fast results are essential
-- Show pass/fail clearly
-- Provide fix instructions
-- Integrate with your product where relevant
-
----
+**Implementation tips:** prioritize speed, clear pass/fail states, add fix guidance
 
 ## Libraries/Resources
 
-**Best for**: Reference material
+**Best for:** evergreen reference traffic
 
-**Examples**:
-- Icon library
+**Examples:**
 - Template library
 - Code snippet library
 - Example gallery
-- Industry directory
-- Resource list
-- Swipe file collection
-- Font pairing tool
+- Resource directory
 
-**Why they work**:
-- High SEO value
-- Ongoing traffic
-- Establishes authority
-- Linkable asset
+**Why they work:** strong SEO surface area and authority signal
 
-**Implementation tips**:
-- Make searchable/filterable
-- Allow easy copying/downloading
-- Update regularly
-- Accept community submissions
+**Implementation tips:** searchable taxonomy, easy copy/download, regular updates
 
----
+## Interactive Educational Tools
 
-## Interactive Educational
+**Best for:** teaching complex ideas hands-on
 
-**Best for**: Learning/understanding
-
-**Examples**:
+**Examples:**
 - Interactive tutorials
 - Code playgrounds
-- Visual explainers
-- Quizzes/assessments
 - Simulators
-- Comparison tools
 - Decision trees
-- Configurators
 
-**Why they work**:
-- Engages deeply
-- Demonstrates expertise
-- Shareable
-- Memory-creating
+**Why they work:** deep engagement and memory retention
 
-**Implementation tips**:
-- Make it hands-on
-- Show immediate feedback
-- Lead to deeper resources
-- Capture engaged users
-
----
+**Implementation tips:** immediate feedback loops, progressive difficulty, CTA to deeper resource
 
 ## Tool Concept Examples by Industry
 
 ### SaaS Product
-- Product ROI calculator
-- Competitor comparison tool
-- Readiness assessment quiz
-- Template library for use case
-- Feature configurator
+- ROI calculator
+- Migration/readiness assessment
+- Feature comparison tool
 
 ### Agency/Services
-- Industry benchmark tool
-- Project scoping calculator
-- Portfolio review tool
-- Cost estimator
+- Scope estimator
+- Benchmark grader
 - Proposal generator
 
 ### E-commerce
 - Product finder quiz
-- Comparison tool
-- Size/fit calculator
-- Savings calculator
-- Gift finder
+- Fit/size calculator
+- Savings bundle calculator
 
 ### Developer Tools
-- Code snippet library
-- Testing/preview tool
-- Documentation generator
-- Interactive tutorials
 - API playground
+- Snippet generator
+- Validator/checker
 
 ### Finance
-- Financial calculators
-- Investment comparison
 - Budget planner
 - Tax estimator
-- Loan calculator
+- Loan/interest calculator

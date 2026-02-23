@@ -1,171 +1,112 @@
 # Post Format Templates
 
-Ready-to-use templates for different platforms and content types.
-
 ## LinkedIn Post Templates
 
 ### The Story Post
-```
-[Hook: Unexpected outcome or lesson]
+```text
+[Hook: unexpected outcome or lesson]
 
-[Set the scene: When/where this happened]
+[Set the scene]
 
-[The challenge you faced]
+[Challenge]
 
-[What you tried / what happened]
+[What you tried]
 
-[The turning point]
+[Turning point]
 
-[The result]
+[Result]
 
-[The lesson for readers]
+[Lesson]
 
-[Question to prompt engagement]
+[Question for comments]
 ```
 
 ### The Contrarian Take
-```
-[Unpopular opinion stated boldly]
+```text
+[Unpopular opinion]
 
-Here's why:
+Here is why:
 
 [Reason 1]
 [Reason 2]
 [Reason 3]
 
-[What you recommend instead]
+[What to do instead]
 
-[Invite discussion: "Am I wrong?"]
+[Invite discussion]
 ```
 
 ### The List Post
-```
-[X things I learned about [topic] after [credibility builder]:
+```text
+[X things I learned about [topic] after [credibility context]:
 
-1. [Point] — [Brief explanation]
-
-2. [Point] — [Brief explanation]
-
-3. [Point] — [Brief explanation]
+1. [Point] - [Brief explanation]
+2. [Point] - [Brief explanation]
+3. [Point] - [Brief explanation]
 
 [Wrap-up insight]
 
-Which resonates most with you?
+[Question]
 ```
 
 ### The How-To
-```
-How to [achieve outcome] in [timeframe]:
+```text
+How to [outcome] in [timeframe]:
 
 Step 1: [Action]
-↳ [Why this matters]
+-> [Why it matters]
 
 Step 2: [Action]
-↳ [Key detail]
+-> [Key detail]
 
 Step 3: [Action]
-↳ [Common mistake to avoid]
+-> [Common mistake to avoid]
 
-[Result you can expect]
+[Expected result]
 
 [CTA or question]
 ```
 
----
-
 ## Twitter/X Thread Templates
 
 ### The Tutorial Thread
-```
-Tweet 1: [Hook + promise of value]
-
-"Here's exactly how to [outcome] (step-by-step):"
-
-Tweet 2-7: [One step per tweet with details]
-
+```text
+Tweet 1: [Hook + promise]
+Tweet 2-7: [One step per tweet]
 Final tweet: [Summary + CTA]
-
-"If this was helpful, follow me for more on [topic]"
 ```
 
 ### The Story Thread
-```
+```text
 Tweet 1: [Intriguing hook]
-
-"[Time] ago, [unexpected thing happened]. Here's the full story:"
-
-Tweet 2-6: [Story beats, building tension]
-
-Tweet 7: [Resolution and lesson]
-
+Tweet 2-6: [Story beats with tension]
+Tweet 7: [Resolution + lesson]
 Final tweet: [Takeaway + engagement ask]
 ```
 
 ### The Breakdown Thread
-```
+```text
 Tweet 1: [Company/person] just [did thing].
-
-Here's why it's genius (and what you can learn):
-
-Tweet 2-6: [Analysis points]
-
-Tweet 7: [Your key takeaway]
-
-"[Related insight + follow CTA]"
+Tweet 2-6: [Why it works]
+Tweet 7: [Key takeaway]
+Final tweet: [Related insight + CTA]
 ```
-
----
 
 ## Instagram Templates
 
 ### The Carousel Hook
-```
-[Slide 1: Bold statement or question]
-[Slides 2-9: One point per slide, visual + text]
-[Slide 10: Summary + CTA]
+```text
+Slide 1: [Bold statement/question]
+Slides 2-9: [One point per slide]
+Slide 10: [Summary + CTA]
 
-Caption: [Expand on the topic, add context, include CTA]
+Caption: [Context + CTA]
 ```
 
 ### The Reel Script
+```text
+Hook (0-2s): [Pattern interrupt]
+Setup (2-5s): [Context]
+Value (5-25s): [Core lesson]
+CTA (25-30s): [Follow/comment/share]
 ```
-Hook (0-2 sec): [Pattern interrupt or bold claim]
-Setup (2-5 sec): [Context for the tip]
-Value (5-25 sec): [The actual advice/content]
-CTA (25-30 sec): [Follow, comment, share, link]
-```
-
----
-
-## Hook Formulas
-
-The first line determines whether anyone reads the rest.
-
-### Curiosity Hooks
-- "I was wrong about [common belief]."
-- "The real reason [outcome] happens isn't what you think."
-- "[Impressive result] — and it only took [surprisingly short time]."
-- "Nobody talks about [insider knowledge]."
-
-### Story Hooks
-- "Last week, [unexpected thing] happened."
-- "I almost [big mistake/failure]."
-- "3 years ago, I [past state]. Today, [current state]."
-- "[Person] told me something I'll never forget."
-
-### Value Hooks
-- "How to [desirable outcome] (without [common pain]):"
-- "[Number] [things] that [outcome]:"
-- "The simplest way to [outcome]:"
-- "Stop [common mistake]. Do this instead:"
-
-### Contrarian Hooks
-- "Unpopular opinion: [bold statement]"
-- "[Common advice] is wrong. Here's why:"
-- "I stopped [common practice] and [positive result]."
-- "Everyone says [X]. The truth is [Y]."
-
-### Social Proof Hooks
-- "We [achieved result] in [timeframe]. Here's the full story:"
-- "[Number] people asked me about [topic]. Here's my answer:"
-- "[Authority figure] taught me [lesson]."

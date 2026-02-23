@@ -1,134 +1,77 @@
 # Referral Program Examples
 
-Real-world examples of successful referral programs.
-
 ## Dropbox (Classic)
 
-**Program:** Give 500MB storage, get 500MB storage
-
-**Why it worked:**
-- Reward directly tied to product value
-- Low friction (just an email)
-- Both parties benefit equally
-- Gamified with progress tracking
-
----
+**Program:** Give storage, get storage  
+**Why it worked:** reward matched core product value, double-sided, low-friction sharing.
 
 ## Uber/Lyft
 
-**Program:** Give $10 ride credit, get $10 when they ride
-
-**Why it worked:**
-- Immediate, clear value
-- Double-sided incentive
-- Easy to share (code/link)
-- Triggered at natural moments
-
----
+**Program:** Give ride credit, get ride credit  
+**Why it worked:** immediate value, clear exchange, easy code/link distribution.
 
 ## Morning Brew
 
-**Program:** Tiered rewards for subscriber referrals
-- 3 referrals: Newsletter stickers
-- 5 referrals: T-shirt
-- 10 referrals: Mug
-- 25 referrals: Hoodie
+**Program:** Tiered rewards for referral milestones  
+**Why it worked:** gamified progression and visible status rewards.
 
-**Why it worked:**
-- Gamification drives ongoing engagement
-- Physical rewards are shareable (more referrals)
-- Low cost relative to subscriber value
-- Built status/identity
+## Notion (Education Motion)
 
----
-
-## Notion
-
-**Program:** $10 credit per referral (education)
-
-**Why it worked:**
-- Targeted high-sharing audience (students)
-- Product naturally spreads in teams
-- Credit keeps users engaged
-
----
+**Program:** Credit per referral  
+**Why it worked:** high-sharing audience + team collaboration dynamics.
 
 ## Incentive Types Comparison
 
 | Type | Pros | Cons | Best For |
 |------|------|------|----------|
-| Cash/credit | Universally valued | Feels transactional | Marketplaces, fintech |
-| Product credit | Drives usage | Only valuable if they'll use it | SaaS, subscriptions |
-| Free months | Clear value | May attract freebie-seekers | Subscription products |
-| Feature unlock | Low cost to you | Only works for gated features | Freemium products |
-| Swag/gifts | Memorable, shareable | Logistics complexity | Brand-focused companies |
-| Charity donation | Feel-good | Lower personal motivation | Mission-driven brands |
-
----
+| Cash/credit | Universally understood | Can feel transactional | Fintech/marketplaces |
+| Product credit | Reinforces usage | Lower value for light users | SaaS subscriptions |
+| Free months | Clear, simple | Attracts discount seekers | Subscription products |
+| Feature unlock | Low marginal cost | Only works with meaningful gates | Freemium products |
+| Swag/gifts | Memorable and shareable | Ops overhead | Community-led brands |
+| Charity donation | Mission alignment | Lower direct motivation | Cause-led brands |
 
 ## Incentive Sizing Framework
 
-**Calculate your maximum incentive:**
-```
-Max Referral Reward = (Customer LTV × Gross Margin) - Target CAC
+```text
+Max Referral Reward = (Customer LTV x Gross Margin) - Target CAC
 ```
 
-**Example:**
+Example:
 - LTV: $1,200
 - Gross margin: 70%
 - Target CAC: $200
-- Max reward: ($1,200 × 0.70) - $200 = $640
+- Max reward: ($1,200 x 0.70) - $200 = $640
 
-**Typical referral rewards:**
+Typical reward ranges:
 - B2C: $10-50 or 10-25% of first purchase
-- B2B SaaS: $50-500 or 1-3 months free
-- Enterprise: Higher, often custom
-
----
+- B2B SaaS: $50-500 or 1-3 months credit
+- Enterprise: custom incentives
 
 ## Viral Coefficient & Metrics
 
-### Key Metrics
+### K-Factor
 
-**Viral coefficient (K-factor):**
-```
-K = Invitations × Conversion Rate
-
-K > 1 = Viral growth (each user brings more than 1 new user)
-K < 1 = Amplified growth (referrals supplement other acquisition)
+```text
+K = Invitations per user x Invitation conversion rate
+K > 1 means self-propagating growth
+K < 1 means referrals augment other channels
 ```
 
-**Example:**
-- Average customer sends 3 invitations
-- 15% of invitations convert
-- K = 3 × 0.15 = 0.45
+Example:
+- 3 invites per user
+- 15% invite conversion
+- K = 0.45
 
-**Referral rate:**
-```
-Referral Rate = (Customers who refer) / (Total customers)
-```
+### Additional Metrics
 
-Benchmarks:
-- Good: 10-25% of customers refer
-- Great: 25-50%
-- Exceptional: 50%+
+```text
+Referral Rate = Customers who referred / Total customers
 
-**Referrals per referrer:**
-
-Benchmarks:
-- Average: 1-2 referrals per referrer
-- Good: 2-5
-- Exceptional: 5+
-
-### Calculating Referral Program ROI
-
-```
-Referral Program ROI = (Revenue from referred customers - Program costs) / Program costs
-
-Program costs = Rewards paid + Tool costs + Management time
+Referral ROI = (Revenue from referred customers - Program costs) / Program costs
+Program costs = Rewards + Tooling + Management time
 ```
 
-**Track separately:**
-- Cost per referred customer (CAC via referral)
-- LTV of referred customers (often higher than average)
-- Payback period for referral rewards
+Typical operating benchmarks:
+- Typical: 10-25% referral participation is healthy in mature programs.
+- Typical: 1-2 referrals per active referrer is common.

@@ -6,49 +6,25 @@ description: When the user wants to plan, design, or implement an A/B test or ex
 
 # A/B Test Setup
 
-You are an expert in experimentation and A/B testing. Your goal is to help design tests that produce statistically valid, actionable results.
+Read `.claude/product-marketing-context.md` if it exists.
 
 ## Initial Assessment
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
-Before designing a test, understand:
-
-1. **Test Context** - What are you trying to improve? What change are you considering?
-2. **Current State** - Baseline conversion rate? Current traffic volume?
-3. **Constraints** - Technical complexity? Timeline? Tools available?
-
----
+Capture:
+1. What behavior/metric should improve.
+2. Current baseline conversion and traffic volume.
+3. Technical and timeline constraints.
 
 ## Core Principles
 
-### 1. Start with a Hypothesis
-- Not just "let's see what happens"
-- Specific prediction of outcome
-- Based on reasoning or data
-
-### 2. Test One Thing
-- Single variable per test
-- Otherwise you don't know what worked
-
-### 3. Statistical Rigor
-- Pre-determine sample size
-- Don't peek and stop early
-- Commit to the methodology
-
-### 4. Measure What Matters
-- Primary metric tied to business value
-- Secondary metrics for context
-- Guardrail metrics to prevent harm
-
----
+1. Start with a hypothesis.
+2. Isolate the variable being tested.
+3. Pre-commit sample size and duration.
+4. Track one primary metric + secondary + guardrails.
 
 ## Hypothesis Framework
 
-### Structure
-
-```
+```text
 Because [observation/data],
 we believe [change]
 will cause [expected outcome]
@@ -56,24 +32,18 @@ for [audience].
 We'll know this is true when [metrics].
 ```
 
-### Example
-
-**Weak**: "Changing the button color might increase clicks."
-
-**Strong**: "Because users report difficulty finding the CTA (per heatmaps and feedback), we believe making the button larger and using contrasting color will increase CTA clicks by 15%+ for new visitors. We'll measure click-through rate from page view to signup start."
-
----
+**Example**
+- Weak: "Change button color and see what happens."
+- Strong: "Because users miss the CTA in heatmaps, we believe larger contrast CTA will increase signup starts by 15%+ for new users."
 
 ## Test Types
 
-| Type | Description | Traffic Needed |
-|------|-------------|----------------|
-| A/B | Two versions, single change | Moderate |
+| Type | Description | Traffic Need |
+|------|-------------|--------------|
+| A/B | One control + one variant | Moderate |
 | A/B/n | Multiple variants | Higher |
-| MVT | Multiple changes in combinations | Very high |
-| Split URL | Different URLs for variants | Moderate |
-
----
+| MVT | Multiple variables combined | Very high |
+| Split URL | Different URLs per variant | Moderate |
 
 ## Sample Size
 
@@ -86,180 +56,87 @@ We'll know this is true when [metrics].
 | 5% | 27k/variant | 7k/variant | 1.2k/variant |
 | 10% | 12k/variant | 3k/variant | 550/variant |
 
-**Calculators:**
-- [Evan Miller's](https://www.evanmiller.org/ab-testing/sample-size.html)
-- [Optimizely's](https://www.optimizely.com/sample-size-calculator/)
-
-**For detailed sample size tables and duration calculations**: See [references/sample-size-guide.md](references/sample-size-guide.md)
-
----
+Detailed sample-size and duration guidance: [references/sample-size-guide.md](references/sample-size-guide.md)
 
 ## Metrics Selection
 
-### Primary Metric
-- Single metric that matters most
-- Directly tied to hypothesis
-- What you'll use to call the test
+### Metric Hierarchy
+- **Primary**: test winner/loser decision metric
+- **Secondary**: context and mechanism metrics
+- **Guardrails**: metrics that must not regress
 
-### Secondary Metrics
-- Support primary metric interpretation
-- Explain why/how the change worked
-
-### Guardrail Metrics
-- Things that shouldn't get worse
-- Stop test if significantly negative
-
-### Example: Pricing Page Test
-- **Primary**: Plan selection rate
-- **Secondary**: Time on page, plan distribution
-- **Guardrail**: Support tickets, refund rate
-
----
+### Example (Pricing Page)
+- Primary: plan selection rate
+- Secondary: page engagement, plan distribution
+- Guardrail: support tickets, refund/cancel rate
 
 ## Designing Variants
 
-### What to Vary
+| Category | What to Vary |
+|----------|---------------|
+| Messaging | Headline, value prop, proof framing |
+| Layout | Hierarchy, section order, visual emphasis |
+| CTA | Copy, size, placement |
+| Content | Depth, examples, objection handling |
 
-| Category | Examples |
-|----------|----------|
-| Headlines/Copy | Message angle, value prop, specificity, tone |
-| Visual Design | Layout, color, images, hierarchy |
-| CTA | Button copy, size, placement, number |
-| Content | Information included, order, amount, social proof |
-
-### Best Practices
-- Single, meaningful change
-- Bold enough to make a difference
-- True to the hypothesis
-
----
+Rules:
+- Make one meaningful change.
+- Ensure variant reflects hypothesis.
 
 ## Traffic Allocation
 
-| Approach | Split | When to Use |
-|----------|-------|-------------|
-| Standard | 50/50 | Default for A/B |
-| Conservative | 90/10, 80/20 | Limit risk of bad variant |
-| Ramping | Start small, increase | Technical risk mitigation |
-
-**Considerations:**
-- Consistency: Users see same variant on return
-- Balanced exposure across time of day/week
-
----
-
-## Implementation
-
-### Client-Side
-- JavaScript modifies page after load
-- Quick to implement, can cause flicker
-- Tools: PostHog, Optimizely, VWO
-
-### Server-Side
-- Variant determined before render
-- No flicker, requires dev work
-- Tools: PostHog, LaunchDarkly, Split
-
----
+| Approach | Split | Use Case |
+|----------|-------|----------|
+| Standard | 50/50 | Most A/B tests |
+| Conservative | 80/20 or 90/10 | Higher downside risk |
+| Ramped | Start low then increase | Technical risk mitigation |
 
 ## Running the Test
 
 ### Pre-Launch Checklist
 - [ ] Hypothesis documented
-- [ ] Primary metric defined
-- [ ] Sample size calculated
-- [ ] Variants implemented correctly
-- [ ] Tracking verified
-- [ ] QA completed on all variants
+- [ ] Primary metric and guardrails defined
+- [ ] Sample size and duration calculated
+- [ ] Variant QA completed
+- [ ] Tracking validated
 
 ### During the Test
+**Do**
+- Monitor technical quality and traffic integrity
+- Log unusual external factors
 
-**DO:**
-- Monitor for technical issues
-- Check segment quality
-- Document external factors
-
-**DON'T:**
-- Peek at results and stop early
-- Make changes to variants
-- Add traffic from new sources
-
-### The Peeking Problem
-Looking at results before reaching sample size and stopping early leads to false positives and wrong decisions. Pre-commit to sample size and trust the process.
-
----
+**Don't**
+- Stop early based on interim wins
+- Edit variants mid-test
+- Change acquisition mix without documentation
 
 ## Analyzing Results
 
-### Statistical Significance
-- 95% confidence = p-value < 0.05
-- Means <5% chance result is random
-- Not a guarantee—just a threshold
-
 ### Analysis Checklist
+1. Reached target sample?
+2. Statistically significant?
+3. Practically meaningful lift?
+4. Secondary and guardrail consistency?
+5. Segment differences worth follow-up?
 
-1. **Reach sample size?** If not, result is preliminary
-2. **Statistically significant?** Check confidence intervals
-3. **Effect size meaningful?** Compare to MDE, project impact
-4. **Secondary metrics consistent?** Support the primary?
-5. **Guardrail concerns?** Anything get worse?
-6. **Segment differences?** Mobile vs. desktop? New vs. returning?
+### Interpretation Guide
 
-### Interpreting Results
-
-| Result | Conclusion |
-|--------|------------|
-| Significant winner | Implement variant |
-| Significant loser | Keep control, learn why |
-| No significant difference | Need more traffic or bolder test |
-| Mixed signals | Dig deeper, maybe segment |
-
----
+| Result | Action |
+|--------|--------|
+| Significant winner | Roll out variant |
+| Significant loser | Keep control and document why |
+| No significant diff | Keep control or rerun with bolder change |
+| Mixed/segment-only | Investigate and run focused follow-up |
 
 ## Documentation
 
-Document every test with:
-- Hypothesis
-- Variants (with screenshots)
-- Results (sample, metrics, significance)
-- Decision and learnings
-
-**For templates**: See [references/test-templates.md](references/test-templates.md)
-
----
+Use templates in [references/test-templates.md](references/test-templates.md).
 
 ## Common Mistakes
 
-### Test Design
-- Testing too small a change (undetectable)
-- Testing too many things (can't isolate)
-- No clear hypothesis
-
-### Execution
-- Stopping early
-- Changing things mid-test
-- Not checking implementation
-
-### Analysis
-- Ignoring confidence intervals
-- Cherry-picking segments
-- Over-interpreting inconclusive results
-
----
-
-## Task-Specific Questions
-
-1. What's your current conversion rate?
-2. How much traffic does this page get?
-3. What change are you considering and why?
-4. What's the smallest improvement worth detecting?
-5. What tools do you have for testing?
-6. Have you tested this area before?
-
----
-
-## Related Skills
-
-- **page-cro**: For generating test ideas based on CRO principles
-- **analytics-tracking**: For setting up test measurement
-- **copywriting**: For creating variant copy
+| Area | Mistake |
+|------|---------|
+| Design | Tiny change with low detectable impact |
+| Execution | Stopping early (peeking bias) |
+| Analysis | Ignoring confidence interval and effect size |
+| Learning | Not logging outcomes and follow-up ideas |

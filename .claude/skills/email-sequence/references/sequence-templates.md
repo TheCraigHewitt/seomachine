@@ -1,162 +1,103 @@
 # Email Sequence Templates
 
-Detailed templates for common email sequences.
-
 ## Welcome Sequence (Post-Signup)
 
 **Email 1: Welcome (Immediate)**
-- Subject: Welcome to [Product] — here's your first step
-- Deliver what was promised (lead magnet, access, etc.)
+- Subject: Welcome to [Product] - here is your first step
+- Deliver promised value
 - Single next action
-- Set expectations for future emails
+- Set expectations for the sequence
 
 **Email 2: Quick Win (Day 1-2)**
 - Subject: Get your first [result] in 10 minutes
-- Enable small success
-- Build confidence
-- Link to helpful resource
+- Help user complete one high-value action
 
 **Email 3: Story/Why (Day 3-4)**
 - Subject: Why we built [Product]
-- Origin story or mission
-- Connect emotionally
-- Show you understand their problem
+- Origin story + problem understanding
 
 **Email 4: Social Proof (Day 5-6)**
 - Subject: How [Customer] achieved [Result]
-- Case study or testimonial
-- Relatable to their situation
-- Soft CTA to explore
+- Relevant case story + soft CTA
 
-**Email 5: Overcome Objection (Day 7-8)**
-- Subject: "I don't have time for X" — sound familiar?
-- Address common hesitation
-- Reframe the obstacle
-- Show easy path forward
+**Email 5: Objection Handler (Day 7-8)**
+- Subject: "I don't have time for X" - sound familiar?
+- Remove common blocker
 
 **Email 6: Core Feature (Day 9-11)**
 - Subject: Have you tried [Feature] yet?
-- Highlight underused capability
-- Show clear benefit
-- Direct CTA to try it
+- Show feature -> benefit -> direct action
 
 **Email 7: Conversion (Day 12-14)**
-- Subject: Ready to [upgrade/buy/commit]?
-- Summarize value
-- Clear offer
-- Urgency if appropriate
-- Risk reversal (guarantee, trial)
-
----
+- Subject: Ready to [upgrade/buy]?
+- Recap value + clear offer + risk reversal
 
 ## Lead Nurture Sequence (Pre-Sale)
 
 **Email 1: Deliver + Introduce (Immediate)**
-- Deliver the lead magnet
-- Brief intro to who you are
-- Preview what's coming
+- Deliver lead magnet
+- Set expectations
 
-**Email 2: Expand on Topic (Day 2-3)**
-- Related insight to lead magnet
-- Establish expertise
-- Light CTA to content
+**Email 2: Expand (Day 2-3)**
+- Deeper insight related to lead magnet
 
 **Email 3: Problem Deep-Dive (Day 4-5)**
-- Articulate their problem deeply
-- Show you understand
-- Hint at solution
+- Clarify root problem and costs of inaction
 
-**Email 4: Solution Framework (Day 6-8)**
-- Your approach/methodology
-- Educational, not salesy
-- Builds toward your product
+**Email 4: Framework (Day 6-8)**
+- Teach your method without hard pitch
 
 **Email 5: Case Study (Day 9-11)**
-- Real results from real customer
-- Specific and relatable
-- Soft CTA
+- Specific customer outcome
 
 **Email 6: Differentiation (Day 12-14)**
-- Why your approach is different
-- Address alternatives
-- Build preference
+- Why your approach beats alternatives
 
 **Email 7: Objection Handler (Day 15-18)**
-- Common concern addressed
-- FAQ or myth-busting
-- Reduce friction
+- Address top concern
 
 **Email 8: Direct Offer (Day 19-21)**
-- Clear pitch
-- Strong value proposition
-- Specific CTA
-- Urgency if available
-
----
+- Specific offer + clear CTA
 
 ## Re-Engagement Sequence
 
-**Email 1: Check-In (Day 30-60 of inactivity)**
+**Email 1: Check-In (inactivity day 30-60)**
 - Subject: Is everything okay, [Name]?
-- Genuine concern
-- Ask what happened
-- Easy win to re-engage
+- Ask what blocked usage
 
-**Email 2: Value Reminder (Day 2-3 after)**
+**Email 2: Value Reminder (2-3 days later)**
 - Subject: Remember when you [achieved X]?
-- Remind of past value
-- What's new since they left
-- Quick CTA
+- Show value already received + what is new
 
-**Email 3: Incentive (Day 5-7 after)**
-- Subject: We miss you — here's something special
-- Offer if appropriate
-- Limited time
-- Clear CTA
+**Email 3: Incentive (5-7 days later)**
+- Subject: We miss you - here is a return offer
+- Optional offer + simple reactivation CTA
 
-**Email 4: Last Chance (Day 10-14 after)**
+**Email 4: Final Choice (10-14 days later)**
 - Subject: Should we stop emailing you?
-- Honest and direct
-- One-click to stay or go
-- Clean the list if no response
-
----
+- Stay subscribed or unsubscribe cleanly
 
 ## Onboarding Sequence (Product Users)
 
-Coordinate with in-app onboarding. Email supports, doesn't duplicate.
+Coordinate with in-app onboarding; email should support, not duplicate.
 
 **Email 1: Welcome + First Step (Immediate)**
-- Confirm signup
-- One critical action
-- Link directly to that action
+- Confirm account + one required setup action
 
 **Email 2: Getting Started Help (Day 1)**
-- If they haven't completed step 1
-- Quick tip or video
-- Support option
+- Unblock users stuck on first step
 
 **Email 3: Feature Highlight (Day 2-3)**
-- Key feature they should know
-- Specific use case
-- In-app link
+- Introduce one key feature with use case
 
 **Email 4: Success Story (Day 4-5)**
-- Customer who succeeded
-- Relatable journey
-- Motivational
+- Similar customer outcome
 
 **Email 5: Check-In (Day 7)**
-- How's it going?
-- Ask for feedback
-- Offer help
+- Ask if help is needed
 
 **Email 6: Advanced Tip (Day 10-12)**
-- Power feature
-- For engaged users
-- Level-up content
+- Show power workflow for engaged users
 
 **Email 7: Upgrade/Expand (Day 14+)**
-- For trial users: conversion push
-- For free users: upgrade prompt
-- For paid: expansion opportunity
+- Tailor CTA by plan state (trial/free/paid)

@@ -2,102 +2,70 @@
 
 ## Structure
 
-1. **Hook**: First line grabs attention
-2. **Context**: Why this matters to them
-3. **Value**: The useful content
-4. **CTA**: What to do next
-5. **Sign-off**: Human, warm close
+1. **Hook**: first line earns attention.
+2. **Context**: why this matters now.
+3. **Value**: useful content or proof.
+4. **CTA**: one clear primary action.
+5. **Sign-off**: direct and human.
 
 ## Formatting
 
 - Short paragraphs (1-3 sentences)
-- White space between sections
-- Bullet points for scanability
-- Bold for emphasis (sparingly)
-- Mobile-first (most read on phone)
+- Scannable bullets
+- Sparse emphasis
+- Mobile-first
 
 ## Tone
 
-- Conversational, not formal
-- First-person (I/we) and second-person (you)
-- Active voice
-- Match your brand but lean friendly
-- Read it out loud—does it sound human?
+- Conversational and specific
+- First/second person voice
+- Active voice over passive
+- Avoid corporate filler
 
 ## Length
 
-- Shorter is usually better
-- 50-125 words for transactional
-- 150-300 words for educational
-- 300-500 words for story-driven
-- If it's long, it better be good
+- Transactional: 50-125 words
+- Educational: 150-300 words
+- Story-driven: 300-500 words
 
 ## CTA Buttons vs. Links
 
-- Buttons: Primary actions, high-visibility
-- Links: Secondary actions, in-text
-- One clear primary CTA per email
-- Button text: Action + outcome
-
----
+- Buttons for primary actions
+- Inline links for secondary actions
 
 ## Personalization
 
 ### Merge Fields
-- First name (fallback to "there" or "friend")
-- Company name (B2B)
-- Relevant data (usage, plan, etc.)
-
-### Dynamic Content
-- Based on segment
-- Based on behavior
-- Based on stage
-
-### Triggered Emails
-- Action-based sends
-- More relevant than time-based
-- Examples: Feature used, milestone hit, inactivity
-
----
+- Name/company fallback
+- Relevant plan/usage data
+- Segment by behavior, stage, or profile
+- Prefer action-triggered sends
 
 ## Segmentation Strategies
 
 ### By Behavior
-- Openers vs. non-openers
-- Clickers vs. non-clickers
-- Active vs. inactive
+- Openers vs non-openers
+- Clickers vs non-clickers
 
 ### By Stage
-- Trial vs. paid
-- New vs. long-term
-- Engaged vs. at-risk
-
-### By Profile
-- Industry/role (B2B)
-- Use case / goal
-- Company size
-
----
+- Trial, free, paid, at-risk
 
 ## Testing and Optimization
 
-### What to Test
-- Subject lines (highest impact)
-- Send times
-- Email length
-- CTA placement and copy
-- Personalization level
-- Sequence timing
+### Test Priority
+1. Subject line
+2. Offer/angle
+3. CTA copy and placement
+4. Send timing
+5. Personalization depth
 
-### How to Test
-- A/B test one variable at a time
-- Sufficient sample size
-- Statistical significance
-- Document learnings
+### Test Method
+- One variable per test
+- Adequate sample size
 
 ### Metrics to Track
-- Open rate (benchmark: 20-40%)
-- Click rate (benchmark: 2-5%)
-- Unsubscribe rate (keep under 0.5%)
-- Conversion rate (specific to sequence goal)
+- Open rate (Typical: 20-40%)
+- Click rate (Typical: 2-5%)
+- Unsubscribe rate (Typical: below 0.5%)
+- Conversion rate (goal-specific)
 - Revenue per email (if applicable)

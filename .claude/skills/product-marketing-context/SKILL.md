@@ -6,128 +6,70 @@ description: "When the user wants to create or update their product marketing co
 
 # Product Marketing Context
 
-You help users create and maintain a product marketing context document. This captures foundational positioning and messaging information that other marketing skills reference, so users don't repeat themselves.
-
-The document is stored at `.claude/product-marketing-context.md`.
-
 ## Workflow
 
-### Step 1: Check for Existing Context
+### Step 1: Check Existing Context
 
-First, check if `.claude/product-marketing-context.md` already exists.
+If `.claude/product-marketing-context.md` exists:
+- Read it.
+- Summarize what is already captured.
+- Ask which sections to update.
 
-**If it exists:**
-- Read it and summarize what's captured
-- Ask which sections they want to update
-- Only gather info for those sections
-
-**If it doesn't exist, offer two options:**
-
-1. **Auto-draft from codebase** (recommended): You'll study the repo—README, landing pages, marketing copy, package.json, etc.—and draft a V1 of the context document. The user then reviews, corrects, and fills gaps. This is faster than starting from scratch.
-
-2. **Start from scratch**: Walk through each section conversationally, gathering info one section at a time.
-
-Most users prefer option 1. After presenting the draft, ask: "What needs correcting? What's missing?"
+If it does not exist, offer:
+1. **Auto-draft from codebase**: Build V1 from README, site copy, docs, and product UI text.
+2. **Interview from scratch**: Gather section-by-section with user input.
 
 ### Step 2: Gather Information
 
-**If auto-drafting:**
-1. Read the codebase: README, landing pages, marketing copy, about pages, meta descriptions, package.json, any existing docs
-2. Draft all sections based on what you find
-3. Present the draft and ask what needs correcting or is missing
-4. Iterate until the user is satisfied
+If auto-drafting:
+1. Pull evidence from repository artifacts.
+2. Fill all sections with explicit assumptions marked, then ask for corrections.
 
-**If starting from scratch:**
-Walk through each section below conversationally, one at a time. Don't dump all questions at once.
-
-For each section:
-1. Briefly explain what you're capturing
-2. Ask relevant questions
-3. Confirm accuracy
-4. Move to the next
-
-**Important:** Push for verbatim customer language. Exact phrases are more valuable than polished descriptions.
-
----
+If interviewing:
+1. Ask for one section at a time.
+2. Confirm each section before moving on and capture verbatim customer language.
 
 ## Sections to Capture
 
 ### 1. Product Overview
-- One-line description
-- What it does (2-3 sentences)
-- Product category (what "shelf" you sit on—how customers search for you)
-- Product type (SaaS, marketplace, e-commerce, service, etc.)
-- Business model and pricing
+- One-liner, what it does, category, product type, business model.
 
 ### 2. Target Audience
-- Target company type (industry, size, stage)
-- Target decision-makers (roles, departments)
-- Primary use case (the main problem you solve)
-- Jobs to be done (2-3 things customers "hire" you for)
-- Specific use cases or scenarios
+- Company type, decision-makers, primary use case, JTBD, key scenarios.
 
 ### 3. Personas (B2B only)
-If multiple stakeholders are involved in buying, capture for each:
-- User, Champion, Decision Maker, Financial Buyer, Technical Influencer
-- What each cares about, their challenge, and the value you promise them
+- User, champion, decision-maker, financial buyer, technical influencer.
 
 ### 4. Problems & Pain Points
-- Core challenge customers face before finding you
-- Why current solutions fall short
-- What it costs them (time, money, opportunities)
-- Emotional tension (stress, fear, doubt)
+- Core problem, alternative failures, cost of problem, emotional tension.
 
 ### 5. Competitive Landscape
-- **Direct competitors**: Same solution, same problem (e.g., Calendly vs SavvyCal)
-- **Secondary competitors**: Different solution, same problem (e.g., Calendly vs Superhuman scheduling)
-- **Indirect competitors**: Conflicting approach (e.g., Calendly vs personal assistant)
-- How each falls short for customers
+- Direct, secondary, indirect alternatives and where each falls short.
 
 ### 6. Differentiation
-- Key differentiators (capabilities alternatives lack)
-- How you solve it differently
-- Why that's better (benefits)
-- Why customers choose you over alternatives
+- What is different, why it matters, why buyers choose this product.
 
 ### 7. Objections & Anti-Personas
-- Top 3 objections heard in sales and how to address them
-- Who is NOT a good fit (anti-persona)
+- Top objections with responses; who should not buy.
 
 ### 8. Switching Dynamics
-The JTBD Four Forces:
-- **Push**: What frustrations drive them away from current solution
-- **Pull**: What attracts them to you
-- **Habit**: What keeps them stuck with current approach
-- **Anxiety**: What worries them about switching
+- Push, pull, habit, anxiety.
 
 ### 9. Customer Language
-- How customers describe the problem (verbatim)
-- How they describe your solution (verbatim)
-- Words/phrases to use
-- Words/phrases to avoid
-- Glossary of product-specific terms
+- Verbatim problem/solution phrases, words to use/avoid, glossary.
 
 ### 10. Brand Voice
-- Tone (professional, casual, playful, etc.)
-- Communication style (direct, conversational, technical)
-- Brand personality (3-5 adjectives)
+- Tone, style, personality.
 
 ### 11. Proof Points
-- Key metrics or results to cite
-- Notable customers/logos
-- Testimonial snippets
-- Main value themes and supporting evidence
+- Metrics, logos, testimonials, value themes and evidence.
 
 ### 12. Goals
-- Primary business goal
-- Key conversion action (what you want people to do)
-- Current metrics (if known)
-
----
+- Business goal, primary conversion action, baseline metrics.
 
 ## Step 3: Create the Document
 
-After gathering information, create `.claude/product-marketing-context.md` with this structure:
+Use this template for `.claude/product-marketing-context.md`:
 
 ```markdown
 # Product Marketing Context
@@ -220,21 +162,6 @@ After gathering information, create `.claude/product-marketing-context.md` with 
 **Current metrics:**
 ```
 
----
-
 ## Step 4: Confirm and Save
 
-- Show the completed document
-- Ask if anything needs adjustment
-- Save to `.claude/product-marketing-context.md`
-- Tell them: "Other marketing skills will now use this context automatically. Run `/product-marketing-context` anytime to update it."
-
----
-
-## Tips
-
-- **Be specific**: Ask "What's the #1 frustration that brings them to you?" not "What problem do they solve?"
-- **Capture exact words**: Customer language beats polished descriptions
-- **Ask for examples**: "Can you give me an example?" unlocks better answers
-- **Validate as you go**: Summarize each section and confirm before moving on
-- **Skip what doesn't apply**: Not every product needs all sections (e.g., Personas for B2C)
+- Show the completed draft, gather corrections, and save to `.claude/product-marketing-context.md`.

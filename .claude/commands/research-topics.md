@@ -5,127 +5,45 @@ Analyze topical authority by clustering keywords into related topics.
 ## Usage
 `/research-topics`
 
-## What This Command Does
-
-Groups all your ranking keywords into topic clusters and identifies:
-- **Strong Authority Topics**: Where you dominate (maintain & expand)
-- **Moderate Authority Topics**: Partial coverage (strengthen)
-- **Weak Authority Topics**: BIGGEST OPPORTUNITY (build comprehensive clusters)
-- **Coverage Gaps**: Related keywords within each topic you don't rank for
-
-For each topic:
-- Authority score (0-100) based on coverage, position, demand
-- Number of keywords ranking
-- Average position
-- Total impressions and clicks
-- Coverage gaps to fill
-
 ## Process
 
-Execute topic cluster analysis:
 ```bash
 python3 research_topic_clusters.py
 ```
 
-This will:
 1. Fetch all ranking keywords from GSC (90 days)
-2. Cluster keywords into topics using:
-   - ML clustering (TF-IDF + K-means) if sklearn available
-   - Pattern-based clustering as fallback
-3. Calculate authority score for each cluster
-4. Identify coverage gaps using DataForSEO
+2. Cluster keywords using ML (TF-IDF + K-means) or pattern-based fallback
+3. Calculate authority score (0-100) per cluster based on coverage, position, demand
+4. Identify coverage gaps via DataForSEO
 5. Prioritize weak clusters with high demand
-6. Generate report: `research/topic-clusters-YYYY-MM-DD.md`
+6. Output: `research/topic-clusters-YYYY-MM-DD.md`
 
 ## Output
 
-The report includes:
+Per cluster: authority score, keyword count, avg position, impressions, clicks, coverage gaps.
 
-### Authority Distribution
-- Strong Authority: Topics you dominate
-- Moderate Authority: Partial coverage
-- Weak Authority: **OPPORTUNITIES**
-- Minimal Authority: Major gaps
+**Authority Levels:**
+- **Strong:** Topics you dominate -- maintain & expand
+- **Moderate:** Partial coverage -- strengthen with 3-5 articles
+- **Weak:** BIGGEST OPPORTUNITY -- build comprehensive clusters
+- **Minimal:** Major gaps
 
-### Weak Authority Topics (FOCUS HERE!)
-For each weak cluster:
-- Authority score and level
-- Current keyword count
-- Average position
-- Total impressions
-- Top 5 current keywords
-- 8-10 coverage gaps with search volume
-- Recommended action (build 8-12 article cluster)
-
-### Strong Authority Topics (MAINTAIN)
-For each strong cluster:
-- Performance metrics
-- Top performing keywords
-- Expansion opportunities
-- Maintenance recommendations
-
-## Key Insight
-
-**Weak clusters with high demand = Your biggest opportunity**
-
-Example: "Content Marketing"
-- Only 3 keywords ranking
-- Average position 28
-- 5,000 impressions/month (HIGH DEMAND!)
-- 15+ related keywords you don't rank for
-- **Action**: Build comprehensive 10-article cluster
+**Weak Cluster Detail:** Top 5 current keywords, 8-10 coverage gaps with volume, recommended action (build 8-12 article cluster).
 
 ## Strategy
 
-### Priority 1: Build Weak Clusters
-- Select top 2-3 weak clusters with highest demand
-- Create comprehensive pillar page (3000+ words)
-- Create 8-12 supporting cluster articles
-- Target all identified coverage gaps
-- Internal link everything to pillar
+1. **Build Weak Clusters:** Select top 2-3 with highest demand. Create pillar page (3000+ words) + 8-12 supporting articles. Internal link everything to pillar.
+2. **Maintain Strong Clusters:** Keep fresh, expand with advanced topics.
+3. **Strengthen Moderate Clusters:** Add 3-5 articles to reach strong authority.
 
-### Priority 2: Maintain Strong Clusters
-- Keep content fresh
-- Expand with advanced topics
-- Fill any remaining gaps
+## Next Steps
 
-### Priority 3: Strengthen Moderate Clusters
-- Add 3-5 articles to reach strong authority
-- Improve rankings for existing content
-
-## Integration
-
-After running `/research-topics`:
-- Select weak cluster to build
-- Use `/research-serp [gap keyword]` for each gap
+- `/research-serp [gap keyword]` for each identified gap
 - Create pillar page first, then cluster content
-- Use `/write [keyword]` for each piece
-
-## Example Output
-
-```
-Weak Authority: Content Marketing (Score: 32/100)
-- Keywords: 3
-- Avg Position: 28.4
-- Impressions: 5,240/mo
-
-Coverage Gaps:
-- "content marketing strategy" (1,200 vol)
-- "content marketing ROI" (980 vol)
-- "content calendar template" (580 vol)
-...
-
-Action: Create 10-article cluster to build authority
-```
+- `/write [keyword]` for each piece
 
 ## Time & Cost
 
-**Time:** 2-3 minutes
-**API Cost:** ~$0.50 (if fetching coverage gaps)
-**Cost:** Free for clustering only
-
-## When to Run
-
-- **Monthly**: Monitor topical authority growth
-- **Before content planning**: Identify cluster opportunities
-- **When entering new niche**: Find what topics to own
+- **Time:** 2-3 min
+- **API:** ~$0.50 with coverage gap enrichment; free for clustering only
+- **Cadence:** Monthly, before content planning, or when entering new niche

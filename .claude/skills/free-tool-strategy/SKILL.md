@@ -6,80 +6,47 @@ description: When the user wants to plan, evaluate, or build a free tool for mar
 
 # Free Tool Strategy (Engineering as Marketing)
 
-You are an expert in engineering-as-marketing strategy. Your goal is to help plan and evaluate free tools that generate leads, attract organic traffic, and build brand awareness.
+Read `.claude/product-marketing-context.md` if it exists.
 
 ## Initial Assessment
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
-Before designing a tool strategy, understand:
-
-1. **Business Context** - What's the core product? Who is the target audience? What problems do they have?
-
-2. **Goals** - Lead generation? SEO/traffic? Brand awareness? Product education?
-
-3. **Resources** - Technical capacity to build? Ongoing maintenance bandwidth? Budget for promotion?
-
----
+Capture:
+1. Core product and ICP
+2. Primary objective (SEO, leads, awareness, product education)
+3. Build and maintenance capacity
 
 ## Core Principles
 
-### 1. Solve a Real Problem
-- Tool must provide genuine value
-- Solves a problem your audience actually has
-- Useful even without your main product
-
-### 2. Adjacent to Core Product
-- Related to what you sell
-- Natural path from tool to product
-- Educates on problem you solve
-
-### 3. Simple and Focused
-- Does one thing well
-- Low friction to use
-- Immediate value
-
-### 4. Worth the Investment
-- Lead value × expected leads > build cost + maintenance
-
----
+1. Solve a real user problem.
+2. Keep adjacency to core product value.
+3. Scope one clear job-to-be-done.
+4. Ensure expected value exceeds build + maintenance cost.
 
 ## Tool Types Overview
 
-| Type | Examples | Best For |
-|------|----------|----------|
-| Calculators | ROI, savings, pricing estimators | Decisions involving numbers |
-| Generators | Templates, policies, names | Creating something quickly |
-| Analyzers | Website graders, SEO auditors | Evaluating existing work |
-| Testers | Meta tag preview, speed tests | Checking if something works |
-| Libraries | Icon sets, templates, snippets | Reference material |
-| Interactive | Tutorials, playgrounds, quizzes | Learning/understanding |
+| Type | Typical Output | Best For |
+|------|----------------|----------|
+| Calculators | Numeric estimate/report | ROI and planning decisions |
+| Generators | Draft asset/template | Fast content or doc creation |
+| Analyzers | Score + recommendations | Audit and gap discovery |
+| Testers | Pass/fail + fixes | Validation workflows |
+| Libraries | Searchable references | Evergreen SEO + authority |
+| Interactive | Guided learning/playground | Education and product qualification |
 
-**For detailed tool types and examples**: See [references/tool-types.md](references/tool-types.md)
-
----
+Detailed types and examples: [references/tool-types.md](references/tool-types.md)
 
 ## Ideation Framework
 
 ### Start with Pain Points
+- Repetitive manual tasks users do in spreadsheets
+- Questions users search before buying
+- Pre-purchase evaluation steps users struggle with
 
-1. **What problems does your audience Google?** - Search query research, common questions
-
-2. **What manual processes are tedious?** - Spreadsheet tasks, repetitive calculations
-
-3. **What do they need before buying your product?** - Assessments, planning, comparisons
-
-4. **What information do they wish they had?** - Data they can't easily access, benchmarks
-
-### Validate the Idea
-
-- **Search demand**: Is there search volume? How competitive?
-- **Uniqueness**: What exists? How can you be 10x better?
-- **Lead quality**: Does this audience match buyers?
-- **Build feasibility**: How complex? Can you scope an MVP?
-
----
+### Validate Before Building
+- Search demand and competition
+- Existing alternatives and differentiation
+- Lead quality fit to ICP
+- MVP feasibility in available timeline
 
 ## Lead Capture Strategy
 
@@ -87,91 +54,63 @@ Before designing a tool strategy, understand:
 
 | Approach | Pros | Cons |
 |----------|------|------|
-| Fully gated | Maximum capture | Lower usage |
-| Partially gated | Balance of both | Common pattern |
-| Ungated + optional | Maximum reach | Lower capture |
-| Ungated entirely | Pure SEO/brand | No direct leads |
+| Fully gated | Highest lead capture | Lower usage/reach |
+| Partially gated | Balance of reach and capture | More UX complexity |
+| Optional gate | Maximum usage | Lower lead rate |
+| Fully ungated | Best SEO/shareability | No direct lead capture |
 
-### Lead Capture Best Practices
-- Value exchange clear: "Get your full report"
-- Minimal friction: Email only
-- Show preview of what they'll get
-- Optional: Segment by asking one qualifying question
-
----
+### Best Practices
+- Clear value exchange
+- Minimal form friction
+- Preview before gate
+- Optional qualifier question
 
 ## SEO Considerations
 
-### Keyword Strategy
-**Tool landing page**: "[thing] calculator", "[thing] generator", "free [tool type]"
+### Keyword Pattern
+- "[use case] calculator"
+- "[use case] generator"
+- "free [tool type]"
 
-**Supporting content**: "How to [use case]", "What is [concept]"
+### Linkability Drivers
+- Useful output
+- Unique methodology
+- Easy sharing/embed paths
 
-### Link Building
-Free tools attract links because:
-- Genuinely useful (people reference them)
-- Unique (can't link to just any page)
-- Shareable (social amplification)
+## Build vs Buy
 
----
-
-## Build vs. Buy
-
-### Build Custom
-When: Unique concept, core to brand, high strategic value, have dev capacity
-
-### Use No-Code Tools
-Options: Outgrow, Involve.me, Typeform, Tally, Bubble, Webflow
-When: Speed to market, limited dev resources, testing concept
-
-### Embed Existing
-When: Something good exists, white-label available, not core differentiator
-
----
+- **Build custom** when strategic and differentiating.
+- **No-code/prototype** when validating quickly.
+- **Embed existing** when tool is useful but not core advantage.
 
 ## MVP Scope
 
-### Minimum Viable Tool
-1. Core functionality only—does the one thing, works reliably
-2. Essential UX—clear input, obvious output, mobile works
-3. Basic lead capture—email collection, leads go somewhere useful
+### Include
+1. Core function
+2. Clear input/output UX
+3. Basic tracking and lead routing
 
-### What to Skip Initially
-Account creation, saving results, advanced features, perfect design, every edge case
-
----
+### Exclude Initially
+- Full account systems
+- Advanced personalization
+- Edge-case completeness
 
 ## Evaluation Scorecard
 
-Rate each factor 1-5:
+Rate each 1-5:
 
 | Factor | Score |
 |--------|-------|
-| Search demand exists | ___ |
-| Audience match to buyers | ___ |
-| Uniqueness vs. existing | ___ |
-| Natural path to product | ___ |
+| Search demand | ___ |
+| ICP fit | ___ |
+| Differentiation | ___ |
+| Natural path to paid product | ___ |
 | Build feasibility | ___ |
-| Maintenance burden (inverse) | ___ |
-| Link-building potential | ___ |
+| Maintenance load (inverse) | ___ |
+| Linkability | ___ |
 | Share-worthiness | ___ |
 
-**25+**: Strong candidate | **15-24**: Promising | **<15**: Reconsider
-
----
-
-## Task-Specific Questions
-
-1. What existing tools does your audience use for workarounds?
-2. How do you currently generate leads?
-3. What technical resources are available?
-4. What's the timeline and budget?
-
----
-
-## Related Skills
-
-- **page-cro**: For optimizing the tool's landing page
-- **seo-audit**: For SEO-optimizing the tool
-- **analytics-tracking**: For measuring tool usage
-- **email-sequence**: For nurturing leads from the tool
+Interpretation:
+- **25+** strong candidate
+- **15-24** conditional candidate
+- **<15** deprioritize

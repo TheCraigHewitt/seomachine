@@ -1,219 +1,151 @@
 ---
 name: onboarding-cro
 version: 1.0.0
-description: When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user activation," "first-run experience," "empty states," "onboarding checklist," "aha moment," or "new user experience." For signup/registration optimization, see signup-flow-cro. For ongoing email sequences, see email-sequence.
+description: Use for post-signup onboarding and activation optimization (first-run experience, time-to-value, empty states, activation funnels). For signup optimization use signup-flow-cro.
 ---
 
 # Onboarding CRO
 
-You are an expert in user onboarding and activation. Your goal is to help users reach their "aha moment" as quickly as possible and establish habits that lead to long-term retention.
+Optimize first-run experience to move users to activation fast and predictably.
 
-## Initial Assessment
+## Scope and Pre-Work
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
-Before providing recommendations, understand:
-
-1. **Product Context** - What type of product? B2B or B2C? Core value proposition?
-2. **Activation Definition** - What's the "aha moment"? What action indicates a user "gets it"?
-3. **Current State** - What happens after signup? Where do users drop off?
+- If `.claude/product-marketing-context.md` exists, read it first.
+- Confirm:
+  1. Product type and core value promise.
+  2. Activation definition (`aha moment`) and current activation rate.
+  3. Current post-signup steps and major drop-off points.
 
 ---
 
 ## Core Principles
 
-### 1. Time-to-Value Is Everything
-Remove every step between signup and experiencing core value.
+### 1. Time-to-Value First
+Remove non-essential steps between signup and first meaningful outcome.
 
-### 2. One Goal Per Session
-Focus first session on one successful outcome. Save advanced features for later.
+### 2. One Session, One Win
+First session should drive one concrete success, not full product education.
 
-### 3. Do, Don't Show
-Interactive > Tutorial. Doing the thing > Learning about the thing.
+### 3. Doing Beats Explaining
+Interactive completion of real tasks beats long tours and static tutorials.
 
-### 4. Progress Creates Motivation
-Show advancement. Celebrate completions. Make the path visible.
-
----
-
-## Defining Activation
-
-### Find Your Aha Moment
-
-The action that correlates most strongly with retention:
-- What do retained users do that churned users don't?
-- What's the earliest indicator of future engagement?
-
-**Examples by product type:**
-- Project management: Create first project + add team member
-- Analytics: Install tracking + see first report
-- Design tool: Create first design + export/share
-- Marketplace: Complete first transaction
-
-### Activation Metrics
-- % of signups who reach activation
-- Time to activation
-- Steps to activation
-- Activation by cohort/source
+### 4. Visible Progress Sustains Momentum
+Use progress cues, completion states, and next-step prompts.
 
 ---
 
-## Onboarding Flow Design
+## Defining Activation (Aha Moment)
 
-### Immediate Post-Signup (First 30 Seconds)
+Activation is the earliest action strongly correlated with retention.
+
+Examples:
+- Project management: create first project + invite collaborator.
+- Analytics: install tracking + view first report.
+- Design: create and export/share first asset.
+- Marketplace: complete first transaction.
+
+Track:
+- `% of signups reaching activation`
+- `Time to activation`
+- `Step count to activation`
+- Activation by source/segment
+
+---
+
+## First 30 Seconds: Approach Matrix
 
 | Approach | Best For | Risk |
 |----------|----------|------|
-| Product-first | Simple products, B2C, mobile | Blank slate overwhelm |
-| Guided setup | Products needing personalization | Adds friction before value |
-| Value-first | Products with demo data | May not feel "real" |
+| Product-first | Simple B2C or low-complexity products | Blank-state confusion |
+| Guided setup | Products requiring configuration | Added friction before value |
+| Value-first demo data | Products where sample output is compelling | May feel less "real" |
 
-**Whatever you choose:**
-- Clear single next action
-- No dead ends
-- Progress indication if multi-step
+Whichever model you choose, enforce:
+- one clear next action,
+- no dead-end states,
+- visible step progression when multi-step.
 
-### Onboarding Checklist Pattern
+---
 
-**When to use:**
-- Multiple setup steps required
-- Product has several features to discover
-- Self-serve B2B products
+## Onboarding Patterns
 
-**Best practices:**
-- 3-7 items (not overwhelming)
-- Order by value (most impactful first)
-- Start with quick wins
-- Progress bar/completion %
-- Celebration on completion
-- Dismiss option (don't trap users)
+### Checklist Pattern
+Use when multiple setup tasks are required.
+
+Checklist standards:
+- 3-7 items max
+- Ordered by value, not implementation order
+- At least one quick win item first
+- Dismiss/skip path available
+- Explicit completion state
 
 ### Empty States
+Treat empty states as guided entry points:
+- explain purpose,
+- show example end state,
+- include one clear primary action,
+- optionally preload sample/template data.
 
-Empty states are onboarding opportunities, not dead ends.
-
-**Good empty state:**
-- Explains what this area is for
-- Shows what it looks like with data
-- Clear primary action to add first item
-- Optional: Pre-populate with example data
-
-### Tooltips and Guided Tours
-
-**When to use:** Complex UI, features that aren't self-evident, power features users might miss
-
-**Best practices:**
-- Max 3-5 steps per tour
-- Dismissable at any time
-- Don't repeat for returning users
+### Tooltips and Tours
+Use for non-obvious UI or high-value features, with constraints:
+- 3-5 steps max,
+- dismissable anytime,
+- avoid repeating for returning users.
 
 ---
 
-## Multi-Channel Onboarding
+## Stalled User Recovery
 
-### Email + In-App Coordination
+Define `stalled` objectively (e.g., no key action in 48-72h).
 
-**Trigger-based emails:**
-- Welcome email (immediate)
-- Incomplete onboarding (24h, 72h)
-- Activation achieved (celebration + next step)
-- Feature discovery (days 3, 7, 14)
+Recovery sequence:
+1. In-app resume prompt (`Pick up where you left off`).
+2. Triggered email tied to missing step.
+3. Human outreach for high-value accounts.
 
-**Email should:**
-- Reinforce in-app actions, not duplicate them
-- Drive back to product with specific CTA
-- Be personalized based on actions taken
-
----
-
-## Handling Stalled Users
-
-### Detection
-Define "stalled" criteria (X days inactive, incomplete setup)
-
-### Re-engagement Tactics
-
-1. **Email sequence** - Reminder of value, address blockers, offer help
-2. **In-app recovery** - Welcome back, pick up where left off
-3. **Human touch** - For high-value accounts, personal outreach
+Do not restart users from step 1 if they have partial progress; resume at last completed milestone.
 
 ---
 
 ## Measurement
 
-### Key Metrics
+### Core Metrics
+- Activation rate
+- Time to activation
+- Onboarding completion rate
+- Day 1 / Day 7 / Day 30 retention
 
-| Metric | Description |
-|--------|-------------|
-| Activation rate | % reaching activation event |
-| Time to activation | How long to first value |
-| Onboarding completion | % completing setup |
-| Day 1/7/30 retention | Return rate by timeframe |
+### Funnel View
+Track drop-off between each onboarding milestone, then prioritize the biggest absolute and relative loss points.
 
-### Funnel Analysis
-
-Track drop-off at each step:
-```
-Signup → Step 1 → Step 2 → Activation → Retention
-100%      80%       60%       40%         25%
-```
-
-Identify biggest drops and focus there.
+### Instrumentation
+- Step view/start/complete
+- Checklist item complete
+- Empty-state CTA clicks
+- Help/tour interactions
+- Re-engagement email click-through and completion
 
 ---
 
 ## Output Format
 
 ### Onboarding Audit
-For each issue: Finding → Impact → Recommendation → Priority
+For each issue: **Finding -> Impact -> Recommendation -> Priority**.
 
-### Onboarding Flow Design
-- Activation goal
-- Step-by-step flow
-- Checklist items (if applicable)
-- Empty state copy
-- Email sequence triggers
-- Metrics plan
+### Revised Flow
+- Activation target
+- Step-by-step onboarding path
+- Checklist and empty-state copy
+- Recovery triggers for stalled users
+- Metrics plan and experiment list
 
----
-
-## Common Patterns by Product Type
-
-| Product Type | Key Steps |
-|--------------|-----------|
-| B2B SaaS | Setup wizard → First value action → Team invite → Deep setup |
-| Marketplace | Complete profile → Browse → First transaction → Repeat loop |
-| Mobile App | Permissions → Quick win → Push setup → Habit loop |
-| Content Platform | Follow/customize → Consume → Create → Engage |
-
----
-
-## Experiment Ideas
-
-When recommending experiments, consider tests for:
-- Flow simplification (step count, ordering)
-- Progress and motivation mechanics
-- Personalization by role or goal
-- Support and help availability
-
-**For comprehensive experiment ideas**: See [references/experiments.md](references/experiments.md)
-
----
-
-## Task-Specific Questions
-
-1. What action most correlates with retention?
-2. What happens immediately after signup?
-3. Where do users currently drop off?
-4. What's your activation rate target?
-5. Do you have cohort analysis on successful vs. churned users?
+For broader test ideas, see [references/experiments.md](references/experiments.md).
 
 ---
 
 ## Related Skills
 
-- **signup-flow-cro**: For optimizing the signup before onboarding
-- **email-sequence**: For onboarding email series
-- **paywall-upgrade-cro**: For converting to paid during/after onboarding
-- **ab-test-setup**: For testing onboarding changes
+- `signup-flow-cro`
+- `email-sequence`
+- `paywall-upgrade-cro`
+- `ab-test-setup`

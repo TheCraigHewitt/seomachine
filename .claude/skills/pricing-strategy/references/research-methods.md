@@ -2,145 +2,85 @@
 
 ## Van Westendorp Price Sensitivity Meter
 
-The Van Westendorp survey identifies the acceptable price range for your product.
+### Four Questions
+1. At what price is this too expensive to consider?
+2. At what price is this so cheap you'd question quality?
+3. At what price is this getting expensive but still possible?
+4. At what price is this a bargain?
 
-### The Four Questions
+### Analysis
+- Plot cumulative distributions.
+- Identify intersections:
+  - PMC: too cheap x expensive
+  - PME: too expensive x cheap
+  - OPP: too cheap x too expensive
+  - IDP: expensive x cheap
 
-Ask each respondent:
-1. "At what price would you consider [product] to be so expensive that you would not consider buying it?" (Too expensive)
-2. "At what price would you consider [product] to be priced so low that you would question its quality?" (Too cheap)
-3. "At what price would you consider [product] to be starting to get expensive, but you still might consider it?" (Expensive/high side)
-4. "At what price would you consider [product] to be a bargain—a great buy for the money?" (Cheap/good value)
-
-### How to Analyze
-
-1. Plot cumulative distributions for each question
-2. Find the intersections:
-   - **Point of Marginal Cheapness (PMC):** "Too cheap" crosses "Expensive"
-   - **Point of Marginal Expensiveness (PME):** "Too expensive" crosses "Cheap"
-   - **Optimal Price Point (OPP):** "Too cheap" crosses "Too expensive"
-   - **Indifference Price Point (IDP):** "Expensive" crosses "Cheap"
-
-**The acceptable price range:** PMC to PME
-**Optimal pricing zone:** Between OPP and IDP
+Interpretation:
+- Acceptable range: PMC -> PME
+- Practical target zone: OPP -> IDP
 
 ### Survey Tips
-- Need 100-300 respondents for reliable data
-- Segment by persona (different willingness to pay)
-- Use realistic product descriptions
-- Consider adding purchase intent questions
+- Typical: 100-300 respondents for directional signal
+- Segment by persona whenever possible
+- Use realistic product framing
 
 ### Sample Output
 
-```
-Price Sensitivity Analysis Results:
-─────────────────────────────────
-Point of Marginal Cheapness:  $29/mo
-Optimal Price Point:          $49/mo
-Indifference Price Point:     $59/mo
-Point of Marginal Expensiveness: $79/mo
-
-Recommended range: $49-59/mo
-Current price: $39/mo (below optimal)
-Opportunity: 25-50% price increase without significant demand impact
+```text
+PMC: $29/mo
+OPP: $49/mo
+IDP: $59/mo
+PME: $79/mo
+Recommended zone: $49-59/mo
 ```
 
----
+## MaxDiff (Best-Worst Scaling)
 
-## MaxDiff Analysis (Best-Worst Scaling)
+### Method
+1. List 8-15 candidate features.
+2. Show 4-5 per question.
+3. Ask most important and least important.
+4. Repeat across randomized sets.
+5. Convert responses into utility scores.
 
-MaxDiff identifies which features customers value most, informing packaging decisions.
+### Example Prompt
 
-### How It Works
-
-1. List 8-15 features you could include
-2. Show respondents sets of 4-5 features at a time
-3. Ask: "Which is MOST important? Which is LEAST important?"
-4. Repeat across multiple sets until all features compared
-5. Statistical analysis produces importance scores
-
-### Example Survey Question
-
-```
-Which feature is MOST important to you?
-Which feature is LEAST important to you?
-
-□ Unlimited projects
-□ Custom branding
-□ Priority support
-□ API access
-□ Advanced analytics
+```text
+Which feature is MOST important and LEAST important?
+- Unlimited projects
+- Custom branding
+- Priority support
+- API access
+- Advanced analytics
 ```
 
-### Analyzing Results
+### Packaging Mapping
 
-Features are ranked by utility score:
-- High utility = Must-have (include in base tier)
-- Medium utility = Differentiator (use for tier separation)
-- Low utility = Nice-to-have (premium tier or cut)
-
-### Using MaxDiff for Packaging
-
-| Utility Score | Packaging Decision |
-|---------------|-------------------|
-| Top 20% | Include in all tiers (table stakes) |
-| 20-50% | Use to differentiate tiers |
+| Utility Rank | Packaging Decision |
+|--------------|--------------------|
+| Top 20% | Include in all tiers |
+| 20-50% | Use for tier separation |
 | 50-80% | Higher tiers only |
-| Bottom 20% | Consider cutting or premium add-on |
+| Bottom 20% | Consider add-on or remove |
 
----
+## Willingness-to-Pay Methods
 
-## Willingness to Pay Surveys
-
-**Direct method (simple but biased):**
-"How much would you pay for [product]?"
-
-**Better: Gabor-Granger method:**
-"Would you buy [product] at [$X]?" (Yes/No)
-Vary price across respondents to build demand curve.
-
-**Even better: Conjoint analysis:**
-Show product bundles at different prices
-Respondents choose preferred option
-Statistical analysis reveals price sensitivity per feature
-
----
+- Direct question: quick but biased.
+- Gabor-Granger: yes/no at price points for demand curve.
+- Conjoint: bundle tradeoff model for price-feature sensitivity.
 
 ## Usage-Value Correlation Analysis
 
-### 1. Instrument usage data
-Track how customers use your product:
-- Feature usage frequency
-- Volume metrics (users, records, API calls)
-- Outcome metrics (revenue generated, time saved)
+### Process
+1. Instrument real usage depth and breadth.
+2. Correlate usage patterns with retention/expansion.
+3. Identify value thresholds for pricing/packaging breaks.
 
-### 2. Correlate with customer success
-- Which usage patterns predict retention?
-- Which usage patterns predict expansion?
-- Which customers pay the most, and why?
+### Example
 
-### 3. Identify value thresholds
-- At what usage level do customers "get it"?
-- At what usage level do they expand?
-- At what usage level should price increase?
-
-### Example Analysis
-
-```
-Usage-Value Correlation Analysis:
-─────────────────────────────────
-Segment: High-LTV customers (>$10k ARR)
-Average monthly active users: 15
-Average projects: 8
-Average integrations: 4
-
-Segment: Churned customers
-Average monthly active users: 3
-Average projects: 2
-Average integrations: 0
-
-Insight: Value correlates with team adoption (users)
-        and depth of use (integrations)
-
-Recommendation: Price per user, gate integrations to higher tiers
+```text
+High-LTV cohort: more active users + more integrations.
+Churned cohort: low user adoption + low integration depth.
+Implication: per-user pricing with integration gating can align value capture.
 ```

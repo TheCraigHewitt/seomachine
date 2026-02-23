@@ -6,20 +6,14 @@ description: "When the user needs marketing ideas, inspiration, or strategies fo
 
 # Marketing Ideas for SaaS
 
-You are a marketing strategist with a library of 139 proven marketing ideas. Your goal is to help users find the right marketing strategies for their specific situation, stage, and resources.
+Read `.claude/product-marketing-context.md` if it exists.
 
 ## How to Use This Skill
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
-When asked for marketing ideas:
-1. Ask about their product, audience, and current stage if not clear
-2. Suggest 3-5 most relevant ideas based on their context
-3. Provide details on implementation for chosen ideas
-4. Consider their resources (time, budget, team size)
-
----
+1. Clarify product, audience, stage, and primary growth goal.
+2. Recommend 3-5 ideas matched to constraints (budget, team, timeline).
+3. For chosen ideas, provide first 2-3 implementation steps.
+4. Define expected outcome and leading indicator for each idea.
 
 ## Ideas by Category (Quick Reference)
 
@@ -43,76 +37,42 @@ When asked for marketing ideas:
 | Developer | 133-136 | DevRel, Certifications |
 | Audience-Specific | 137-139 | Referrals, Podcast tours, Customer language |
 
-**For the complete list with descriptions**: See [references/ideas-by-category.md](references/ideas-by-category.md)
+Full catalog: [references/ideas-by-category.md](references/ideas-by-category.md)
 
----
-
-## Implementation Tips
+## Prioritization Filters
 
 ### By Stage
 
-**Pre-launch:**
-- Waitlist referrals (#79)
-- Early access pricing (#81)
-- Product Hunt prep (#78)
-
-**Early stage:**
-- Content & SEO (#1-10)
-- Community (#35)
-- Founder-led sales (#47)
-
-**Growth stage:**
-- Paid acquisition (#23-34)
-- Partnerships (#54-64)
-- Events (#65-72)
-
-**Scale:**
-- Brand campaigns
-- International (#131-132)
-- Media acquisitions (#73)
+| Stage | Good Starting Ideas |
+|-------|----------------------|
+| Pre-launch | Waitlist referrals (#79), Early access pricing (#81), Product Hunt prep (#78) |
+| Early | Content/SEO (#1-10), Community (#35), Founder-led outreach (#47) |
+| Growth | Paid acquisition (#23-34), Partnerships (#54-64), Events (#65-72) |
+| Scale | Brand campaigns, International (#131-132), Media/PR leverage (#73-76) |
 
 ### By Budget
 
-**Free:**
-- Content & SEO
-- Community building
-- Social media
-- Comment marketing
-
-**Low budget:**
-- Targeted ads
-- Sponsorships
-- Free tools
-
-**Medium budget:**
-- Events
-- Partnerships
-- PR
-
-**High budget:**
-- Acquisitions
-- Conferences
-- Brand campaigns
+| Budget | Default Plays |
+|--------|----------------|
+| Free | Content/SEO, social, community, comment marketing |
+| Low | Targeted ads, small sponsorships, free-tool lead gen |
+| Medium | Partnerships, events, PR |
+| High | Conferences, larger campaigns, acquisitions |
 
 ### By Timeline
 
-**Quick wins:**
-- Ads, email, social posts
-
-**Medium-term:**
-- Content, SEO, community
-
-**Long-term:**
-- Brand, thought leadership, platform effects
-
----
+| Timeline | Best Fit |
+|----------|----------|
+| Quick wins (days-weeks) | Ads, email, distribution, social |
+| Mid-term (1-3 months) | Content, SEO, community |
+| Long-term (3+ months) | Brand, thought leadership, platform effects |
 
 ## Top Ideas by Use Case
 
 ### Need Leads Fast
-- Google Ads (#31) - High-intent search
-- LinkedIn Ads (#28) - B2B targeting
-- Engineering as Marketing (#15) - Free tool lead gen
+- Google Ads (#31)
+- LinkedIn Ads (#28)
+- Engineering as Marketing (#15)
 
 ### Building Authority
 - Conference Speaking (#70)
@@ -130,37 +90,15 @@ When asked for marketing ideas:
 - In-App Upsells (#91)
 
 ### Enterprise Sales
-- Investor Marketing (#133)
+- Investor/Network Marketing (#133)
 - Expert Networks (#57)
 - Conference Sponsorship (#72)
 
----
-
 ## Output Format
 
-When recommending ideas, provide for each:
-
-- **Idea name**: One-line description
-- **Why it fits**: Connection to their situation
-- **How to start**: First 2-3 implementation steps
-- **Expected outcome**: What success looks like
-- **Resources needed**: Time, budget, skills required
-
----
-
-## Task-Specific Questions
-
-1. What's your current stage and main growth goal?
-2. What's your marketing budget and team size?
-3. What have you already tried that worked or didn't?
-4. What competitor tactics do you admire?
-
----
-
-## Related Skills
-
-- **programmatic-seo**: For scaling SEO content (#4)
-- **competitor-alternatives**: For comparison pages (#11)
-- **email-sequence**: For email marketing tactics
-- **free-tool-strategy**: For engineering as marketing (#15)
-- **referral-program**: For viral growth (#93)
+For each recommended idea:
+- **Idea**: One-line description
+- **Why it fits**: Why it matches this product and stage
+- **How to start**: First 2-3 steps
+- **Resources**: Time, budget, skills
+- **Success signal**: First KPI to watch

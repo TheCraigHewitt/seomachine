@@ -1,155 +1,56 @@
 # Paywall Experiment Ideas
 
-Comprehensive list of A/B tests and experiments for paywall optimization.
+Prioritize tests that change either trigger quality or clarity of value. Track a primary conversion metric plus guardrails (`retention`, `refunds`, `support burden`).
 
-## Trigger & Timing Experiments
+## Trigger and Gate Design
 
-### When to Show
-- Test trigger timing: after aha moment vs. at feature attempt
-- Early trial reminder (7 days) vs. late reminder (1 day before)
-- Show after X actions completed vs. after X days
-- Test soft prompts at different engagement thresholds
-- Trigger based on usage patterns vs. time-based only
-
-### Trigger Type
-- Hard gate (can't proceed) vs. soft gate (preview + prompt)
-- Feature lock vs. usage limit as primary trigger
-- In-context modal vs. dedicated upgrade page
-- Banner reminder vs. modal prompt
-- Exit-intent on free plan pages
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Trigger at feature attempt vs. trigger after generic time delay | In-context need produces higher upgrade intent | Paywall CTR |
+| Hard gate vs. soft gate preview | Soft gate can preserve trust while maintaining upgrade intent | Upgrade completion |
+| Usage-limit prompt at 80% vs. 100% of cap | Early warning reduces surprise and improves conversion | Upgrade rate at cap |
+| Trial reminders at 7/3/1 days vs. 1 day only | Staggered reminders improve trial-to-paid conversion | Trial conversion rate |
 
 ---
 
-## Paywall Design Experiments
+## Value and Pricing Presentation
 
-### Layout & Format
-- Full-screen paywall vs. modal overlay
-- Minimal paywall (CTA-focused) vs. feature-rich paywall
-- Single plan display vs. plan comparison
-- Image/preview included vs. text-only
-- Vertical layout vs. horizontal layout on desktop
-
-### Value Presentation
-- Feature list vs. benefit statements
-- Show what they'll lose (loss aversion) vs. what they'll gain
-- Personalized value summary based on usage
-- Before/after demonstration
-- ROI calculator or value quantification
-
-### Visual Elements
-- Add product screenshots or previews
-- Include short demo video or GIF
-- Test illustration vs. product imagery
-- Animated vs. static paywall
-- Progress visualization (what they've accomplished)
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Benefit-led copy vs. feature-led copy | Outcome framing increases perceived value | Upgrade CTR |
+| Single recommended plan vs. full comparison table | Guided choice reduces decision fatigue | Checkout starts |
+| Annual savings in dollars vs. percentage | Concrete savings framing increases annual adoption | Annual plan share |
+| Personalized usage summary vs. generic paywall copy | Usage-based relevance improves conversion | Upgrade completion |
+| "Cancel anytime" / guarantee near CTA vs. absent | Risk reduction copy lowers hesitation | Checkout completion |
 
 ---
 
-## Pricing Presentation Experiments
+## Frequency and Dismissal Rules
 
-### Price Display
-- Show monthly vs. annual vs. both with toggle
-- Highlight savings for annual ($ amount vs. % off)
-- Price per day framing ("Less than a coffee")
-- Show price after trial vs. emphasize "Start Free"
-- Display price prominently vs. de-emphasize until click
-
-### Plan Options
-- Single recommended plan vs. multiple tiers
-- Add "Most Popular" badge to target plan
-- Test number of visible plans (2 vs. 3)
-- Show enterprise/custom tier vs. hide it
-- Include one-time purchase option alongside subscription
-
-### Discounts & Offers
-- First month/year discount for conversion
-- Limited-time upgrade offer with countdown
-- Loyalty discount based on free usage duration
-- Bundle discount for annual commitment
-- Referral discount for social proof
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| 1 prompt/session vs. multiple prompts/session | Frequency cap improves long-term conversion quality | 30-day paid conversion |
+| Cool-down 1 day vs. 7 days after decline | Longer cool-down may reduce annoyance and improve later acceptance | Re-exposed upgrade rate |
+| Dismiss options (`Not now` vs. `Remind me tomorrow`) | Better decline UX increases future re-engagement | Return-to-upgrade rate |
 
 ---
 
-## Copy & Messaging Experiments
+## Personalization and Segmentation
 
-### Headlines
-- Benefit-focused ("Unlock unlimited projects") vs. feature-focused ("Get Pro features")
-- Question format ("Ready to do more?") vs. statement format
-- Urgency-based ("Don't lose your work") vs. value-based
-- Personalized headline with user's name or usage data
-- Social proof headline ("Join 10,000+ Pro users")
-
-### CTAs
-- "Start Free Trial" vs. "Upgrade Now" vs. "Continue with Pro"
-- First person ("Start My Trial") vs. second person ("Start Your Trial")
-- Value-specific ("Unlock Unlimited") vs. generic ("Upgrade")
-- Add urgency ("Upgrade Today") vs. no pressure
-- Include price in CTA vs. separate price display
-
-### Objection Handling
-- Add money-back guarantee messaging
-- Show "Cancel anytime" prominently
-- Include FAQ on paywall
-- Address specific objections based on feature gated
-- Add chat/support option on paywall
+| Test | Hypothesis | Primary Metric |
+|------|------------|----------------|
+| Highlight most-used locked feature vs. static feature list | Relevance improves perceived necessity | Paywall CTR |
+| Power-user paywall vs. casual-user paywall copy | Segment-specific messaging lifts conversion by cohort | Segment upgrade rate |
+| B2B messaging (team productivity) vs. B2C messaging (personal output) | Audience-aligned value framing increases conversion | Upgrade completion |
 
 ---
 
-## Trial & Conversion Experiments
+## Recommended Core Metrics
 
-### Trial Structure
-- 7-day vs. 14-day vs. 30-day trial length
-- Credit card required vs. not required for trial
-- Full-access trial vs. limited feature trial
-- Trial extension offer for engaged users
-- Second trial offer for expired/churned users
-
-### Trial Expiration
-- Countdown timer visibility (always vs. near end)
-- Email reminders: frequency and timing
-- Grace period after expiration vs. immediate downgrade
-- "Last chance" offer with discount
-- Pause option vs. immediate cancellation
-
-### Upgrade Path
-- One-click upgrade from paywall vs. separate checkout
-- Pre-filled payment info for returning users
-- Multiple payment methods offered
-- Quarterly plan option alongside monthly/annual
-- Team invite flow for solo-to-team conversion
-
----
-
-## Personalization Experiments
-
-### Usage-Based
-- Personalize paywall copy based on features used
-- Highlight most-used premium features
-- Show usage stats ("You've created 50 projects")
-- Recommend plan based on behavior patterns
-- Dynamic feature emphasis based on user segment
-
-### Segment-Specific
-- Different paywall for power users vs. casual users
-- B2B vs. B2C messaging variations
-- Industry-specific value propositions
-- Role-based feature highlighting
-- Traffic source-based messaging
-
----
-
-## Frequency & UX Experiments
-
-### Frequency Capping
-- Test number of prompts per session
-- Cool-down period after dismiss (hours vs. days)
-- Escalating urgency over time vs. consistent messaging
-- Once per feature vs. consolidated prompts
-- Re-show rules after major engagement
-
-### Dismiss Behavior
-- "Maybe later" vs. "No thanks" vs. "Remind me tomorrow"
-- Ask reason for declining
-- Offer alternative (lower tier, annual discount)
-- Exit survey on dismiss
-- Friendly vs. neutral decline copy
+- Paywall impressions
+- Paywall CTA click-through
+- Checkout starts
+- Completed upgrades
+- Revenue per exposed user
+- Refund/cancellation rate
+- Free-user churn after exposure
