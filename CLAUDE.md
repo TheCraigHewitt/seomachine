@@ -26,6 +26,7 @@ All commands are defined in `.claude/commands/` and invoked as slash commands:
 - `/performance-review` - Analytics-driven content priorities
 - `/publish-draft [file]` - Publish to WordPress via REST API
 - `/article [topic]` - Simplified article creation
+- `/cluster [topic]` - Build complete topic cluster strategy with pillar + supporting articles + linking map
 - `/priorities` - Content prioritization matrix
 - `/research-serp`, `/research-gaps`, `/research-trending`, `/research-performance`, `/research-topics` - Specialized research commands
 - `/landing-write`, `/landing-audit`, `/landing-research`, `/landing-publish`, `/landing-competitor` - Landing page commands
@@ -36,7 +37,7 @@ All commands are defined in `.claude/commands/` and invoked as slash commands:
 
 **Commands** (`.claude/commands/`) orchestrate workflows. **Agents** (`.claude/agents/`) are specialized roles invoked by commands. After `/write`, these agents auto-run: SEO Optimizer, Meta Creator, Internal Linker, Keyword Mapper.
 
-Key agents: `content-analyzer.md`, `seo-optimizer.md`, `meta-creator.md`, `internal-linker.md`, `keyword-mapper.md`, `editor.md`, `headline-generator.md`, `cro-analyst.md`, `performance.md`.
+Key agents: `content-analyzer.md`, `seo-optimizer.md`, `meta-creator.md`, `internal-linker.md`, `keyword-mapper.md`, `editor.md`, `headline-generator.md`, `cro-analyst.md`, `performance.md`, `cluster-strategist.md`.
 
 ### Python Analysis Pipeline
 
