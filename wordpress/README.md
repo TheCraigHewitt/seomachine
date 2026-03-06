@@ -1,6 +1,6 @@
 # WordPress Integration Files
 
-These files enable the SEO Machine tool to set Yoast SEO meta fields (Focus Keyphrase, SEO Title, Meta Description) via the REST API.
+These files enable the SEO Machine tool to set Yoast SEO meta fields (Focus Keyphrase, SEO Title, Meta Description) via the REST API and optionally add a front-end day/night mode toggle.
 
 **Choose ONE option** - either the mu-plugin OR the functions.php snippet. They do the same thing.
 
@@ -37,6 +37,33 @@ These files enable the SEO Machine tool to set Yoast SEO meta fields (Focus Keyp
 
 **Cons:**
 - Lost if theme is changed/updated (unless using child theme)
+
+---
+
+## Option C: Theme Day/Night Toggle
+
+**File:** `theme-mode-toggle.php`
+
+**What it adds:**
+- Floating toggle button in the bottom-right corner
+- Day mode / night mode switching on the front-end
+- Preference persistence via browser local storage
+- Auto-detect fallback from `prefers-color-scheme` when no explicit choice exists
+
+**Installation (MU-plugin):**
+1. Upload to: `wp-content/mu-plugins/theme-mode-toggle.php`
+2. Done - it auto-activates
+
+**Alternative installation:**
+1. Open `theme-mode-toggle.php`
+2. Copy function contents into your active theme's `functions.php`
+
+**Verification checklist:**
+1. Open your site in a browser and hard refresh (`Ctrl+F5`)
+2. Confirm the toggle appears at the bottom-right
+3. Click `Night mode` and verify site colors change to dark
+4. Reload the page and confirm your selected mode persists
+5. Click `Day mode` to switch back
 
 ---
 
