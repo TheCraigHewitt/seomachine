@@ -408,7 +408,7 @@ class DataForSEO:
                 task = response['tasks'][0]
                 if task['status_code'] == 20000:
                     return task['result'][0].get('items', [])
-        except:
+        except Exception:
             pass
 
         return []
