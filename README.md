@@ -21,10 +21,15 @@ SEO Machine is built on Claude Code and provides:
 
 ### Installation
 
-1. Clone this repository:
+1. Fork this repository on GitHub, then clone your fork:
 ```bash
 git clone https://github.com/[your-username]/seomachine.git
 cd seomachine
+```
+
+Optionally, add the upstream repository as a remote to pull latest changes:
+```bash
+git remote add upstream https://github.com/TheCraigHewitt/seomachine.git
 ```
 
 2. Install Python dependencies for analysis modules:
