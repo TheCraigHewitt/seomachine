@@ -1,253 +1,126 @@
-# [YOUR COMPANY] Features & Benefits
+# Brandschutzausbildung Rhein-Neckar – Leistungen & Vorteile
 
-<!-- INSTRUCTIONS: This document outlines your key features, benefits, and differentiators.
-     Use this to inform content creation that drives conversions and customer acquisition.
-     Fill in all [BRACKETED] sections with your specific information.
-     Delete these instruction comments when done.
-     See examples/castos/ for a complete real-world example. -->
+Dieses Dokument beschreibt alle Leistungen, Kurse und Alleinstellungsmerkmale von Brandschutzausbildung Rhein-Neckar für die Content-Erstellung.
 
-This document outlines [YOUR COMPANY]'s key features, benefits, and differentiators to inform content creation that drives trial conversions and customer acquisition.
+## Kernangebote
 
-## Core Value Propositions
+### 1. Brandschutzhelfer-Schulung
+- **Was es ist**: Zertifizierter 3-Stunden-Kurs zur Ausbildung betrieblicher Brandschutzhelfer
+- **Dauer**: 3 Stunden (in der Regel 09:00–12:00 Uhr)
+- **Preis**: 198 € pro Teilnehmer
+- **Ort**: Ludwigstraße 56, 67063 Ludwigshafen am Rhein (auch Inhouse auf Anfrage)
+- **Zertifizierung**: BG-zertifiziert (Berufsgenossenschaft)
+- **Zielgruppe**: Mitarbeiter in Unternehmen jeder Branche und Größe
+- **Gesetzliche Grundlage**: § 10 ArbSchG, DGUV Information 205-023
+- **Inhalt**:
+  - Brandlehre: Wie entsteht Feuer, wie breitet es sich aus?
+  - Brandklassen und passende Löschmittel
+  - Praktischer Umgang mit Feuerlöschern (echter Löschversuch)
+  - Verhalten im Brandfall: Alarmierung, Evakuierung, Sammelplatz
+  - Aufgaben und Rechte des Brandschutzhelfers
+- **Hauptvorteil**: Mitarbeiter können im Ernstfall selbst aktiv werden – bevor die Feuerwehr eintrifft
+- **Conversion Angle**: "Pflicht rechtssicher erfüllen – in nur 3 Stunden"
 
-<!-- INSTRUCTIONS: List 5-10 of your most important features/benefits.
-     For each one, include:
-     - Feature: What it is (technical description)
-     - Benefit: Why it matters (user outcome)
-     - Conversion Angle: How to pitch it (marketing copy)
--->
+### 2. Erste-Hilfe-Kurs (Betriebliche Ersthelfer-Ausbildung)
+- **Was es ist**: Ganztägige Ersthelfer-Ausbildung für den Betrieb nach DGUV
+- **Dauer**: 1 Tag, 8 Stunden (08:00–16:00 Uhr)
+- **Preis**: 65 € pro Teilnehmer
+- **Ort**: Ludwigstraße 56, 67063 Ludwigshafen am Rhein
+- **Zertifizierung**: BG-zertifiziert
+- **Zielgruppe**: Mitarbeiter, die als betriebliche Ersthelfer fungieren sollen
+- **Gesetzliche Grundlage**: § 10 ArbSchG, DGUV Vorschrift 1
+- **Inhalt**:
+  - Grundlagen der Ersten Hilfe
+  - Stabile Seitenlage, Reanimation (CPR)
+  - Wundversorgung, Schock, Verbrennungen
+  - Notfallmanagement im Betrieb
+- **Hauptvorteil**: Gesetzliche Ersthelfer-Pflicht rechtskonform erfüllen
+- **Conversion Angle**: "Pflichtschulung für betriebliche Ersthelfer – BG-zertifiziert, günstig, lokal"
 
-### 1. **[FEATURE NAME]**
-- **Feature**: [Technical description of what this feature does]
-- **Benefit**: [The outcome or value this provides to users]
-- **Conversion Angle**: "[One-sentence pitch that makes someone want to sign up]"
+### 3. Kombikurs: Brandschutz + Erste Hilfe
+- **Was es ist**: Kombinierter Kurs, der Brandschutzhelfer-Ausbildung und Erste-Hilfe-Ausbildung an einem Tag verbindet
+- **Dauer**: 1 Tag
+- **Preis**: Auf Anfrage (Kombivorteil gegenüber Einzelbuchung)
+- **Zielgruppe**: Unternehmen, die beide Pflichten effizient an einem Tag erfüllen möchten
+- **Hauptvorteil**: Nur einmal Mitarbeiter freistellen, ein Termin, ein Anbieter, eine Rechnung
+- **Conversion Angle**: "Zwei Pflichten, ein Tag, ein Anbieter – der smarte Weg zum rechtskonformen Betrieb"
 
-### 2. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### 4. Externer Brandschutzbeauftragter
+- **Was es ist**: Externe Bestellung und Wahrnehmung der Aufgaben eines Brandschutzbeauftragten
+- **Preis**: Auf Anfrage (individuell je nach Betriebsgröße und Aufgabenumfang)
+- **Zielgruppe**:
+  - Unternehmen in Hochhäusern, Industriebauten, Verkaufsstätten (gesetzliche Pflicht)
+  - Betriebe mit Versicherungsanforderungen oder Brandschutzkonzept-Pflicht
+  - KMU ohne interne Kapazität für diese Rolle
+- **Gesetzliche Grundlage**: Landesbauordnungen, VdS-Richtlinien, BetrSichV
+- **Aufgaben des externen Brandschutzbeauftragten**:
+  - Erstellung und Pflege des Brandschutzkonzepts
+  - Regelmäßige Begehungen der Betriebsstätte
+  - Planung und Durchführung von Evakuierungsübungen
+  - Schulung und Unterweisung von Mitarbeitern
+  - Zusammenarbeit mit Behörden, Feuerwehr und Versicherungen
+  - Lückenlose Dokumentation aller Brandschutzmaßnahmen
+  - Beratung bei baulichen Veränderungen und neuen Risiken
+- **Hauptvorteil**: Externe Perspektive ohne Betriebsblindheit, günstiger als Festanstellung, stets aktuelles Fachwissen
+- **Conversion Angle**: "Brandschutzbeauftragten-Pflicht erfüllen – ohne Festanstellung, ohne internen Aufwand"
 
-### 3. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+## Übergreifende Alleinstellungsmerkmale (USPs)
 
-### 4. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### Alles aus einer Hand
+- Ein einziger Anbieter für Brandschutzhelfer, Erste Hilfe und externen Brandschutzbeauftragten
+- Kein Koordinationsaufwand zwischen verschiedenen Schulungsanbietern
+- Einheitliche Qualität und Dokumentation über alle Leistungen
 
-### 5. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### BG-Zertifizierung
+- Alle Kurse sind von der Berufsgenossenschaft anerkannt
+- Zertifikate gelten für Betriebsprüfungen, Versicherungen und Arbeitsschutzkontrollen
+- Rechtssichere Dokumentation nach BG-Standard
 
-### 6. **[FEATURE NAME]** (Optional)
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### Regionaler Anbieter mit persönlichem Kontakt
+- Standort in Ludwigshafen, Schulungen in Mannheim und der Rhein-Neckar-Region
+- Persönlicher Ansprechpartner: Rouven Thomas Hübner
+- Telefon: 0176 96 446 477 | E-Mail: info@brandschutzausbildung-rhein-neckar.de
+- Keine Call-Center, kein anonymes Ticketsystem
 
-### 7. **[FEATURE NAME]** (Optional)
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### Praxisorientierte Ausbildung
+- Echter Löschversuch mit Feuerlöscher (kein reiner Theorieunterricht)
+- Realistische Szenarien aus dem Betriebsalltag
+- Handlungssicherheit für den Ernstfall
 
-### 8. **[FEATURE NAME]** (Optional)
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### Flexible Durchführung
+- Fixe Kurstermine in Ludwigshafen (Online-Buchung möglich)
+- Inhouse-Schulungen im Betrieb auf Anfrage
+- Kombikurse für maximale Zeiteffizienz
 
-## Technical Features
+## Preisübersicht
 
-<!-- INSTRUCTIONS: Group your technical features into logical categories.
-     Use bullet points for quick reference. -->
+| Leistung | Preis | Dauer |
+|---|---|---|
+| Brandschutzhelfer-Schulung | 198 € / Person | 3 Stunden |
+| Erste-Hilfe-Kurs (Betrieb) | 65 € / Person | 1 Tag (8 Std.) |
+| Kombikurs Brandschutz + Erste Hilfe | Auf Anfrage | 1 Tag |
+| Externer Brandschutzbeauftragter | Auf Anfrage | laufend |
 
-### [CATEGORY NAME - e.g., "Hosting & Distribution"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+## Rechtliche Rahmenbedingungen (für Content-Nutzung)
 
-### [CATEGORY NAME - e.g., "Content Management"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+### Relevante Gesetze und Vorschriften
+- **§ 10 ArbSchG**: Maßnahmen bei Gefahr – Pflicht zur Bestellung von Ersthelfern und Brandschutzhelfern
+- **DGUV Vorschrift 1**: Mindestquoten für Ersthelfer (je nach Branche 5–10 % der Mitarbeiter)
+- **DGUV Information 205-023**: Ausbildung von Brandschutzhelfern
+- **Arbeitsstättenverordnung (ArbStättV)**: Anforderungen an Evakuierungskonzepte
+- **Landesbauordnung BW / RLP**: Anforderungen an Brandschutzbeauftragte
+- **VdS-Richtlinien**: Empfehlungen für Brandschutzbeauftragte
 
-### [CATEGORY NAME - e.g., "Analytics & Insights"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+### Wiederholungsintervalle
+- Brandschutzhelfer-Schulung: Alle 2–3 Jahre (BG-Empfehlung)
+- Erste Hilfe Auffrischung: Alle 2 Jahre
+- Brandschutzbegehung: Mindestens jährlich
 
-### [CATEGORY NAME - e.g., "Integrations"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+## Branchen mit besonderem Bedarf (Content-Zielgruppen)
 
-## Integrations & Ecosystem
-
-<!-- INSTRUCTIONS: List tools, platforms, and services you integrate with. -->
-
-### Direct Integrations
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
-
-### Distribution Partners (if applicable)
-- [Partner 1]
-- [Partner 2]
-- [Partner 3]
-- [Partner 4]
-- [Partner 5]
-
-## Competitive Differentiators
-
-<!-- INSTRUCTIONS: Define how you're different from competitors.
-     Group by competitor type or category. -->
-
-### vs. [COMPETITOR 1 or COMPETITOR TYPE]
-- **[Your advantage 1]** ([Explain what competitors lack])
-- **[Your advantage 2]** ([Explain what competitors lack])
-- **[Your advantage 3]** ([Explain what competitors lack])
-- **[Your advantage 4]** ([Explain what competitors lack])
-
-### vs. [COMPETITOR 2 or COMPETITOR TYPE]
-- **[Your advantage 1]** ([Explain what competitors lack])
-- **[Your advantage 2]** ([Explain what competitors lack])
-- **[Your advantage 3]** ([Explain what competitors lack])
-- **[Your advantage 4]** ([Explain what competitors lack])
-
-### vs. [COMPETITOR 3 or COMPETITOR TYPE]
-- **[Your advantage 1]** ([Explain what competitors lack])
-- **[Your advantage 2]** ([Explain what competitors lack])
-- **[Your advantage 3]** ([Explain what competitors lack])
-- **[Your advantage 4]** ([Explain what competitors lack])
-
-## Use Cases by Customer Segment
-
-<!-- INSTRUCTIONS: Describe your key customer segments and what they need. -->
-
-### [SEGMENT 1 NAME]
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
-
-### [SEGMENT 2 NAME]
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
-
-### [SEGMENT 3 NAME]
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
-
-### [SEGMENT 4 NAME] (Optional)
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
-
-### [SEGMENT 5 NAME] (Optional)
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
-
-## Pricing & Plan Benefits
-
-<!-- INSTRUCTIONS: Outline what's included in each pricing tier.
-     This helps AI understand value propositions for different customer segments. -->
-
-### [PLAN NAME 1] Benefits
-- [Benefit 1]
-- [Benefit 2]
-- [Benefit 3]
-- [Benefit 4]
-- [Benefit 5]
-
-### [PLAN NAME 2] Benefits
-- Everything in [Plan 1], plus:
-- [Additional benefit 1]
-- [Additional benefit 2]
-- [Additional benefit 3]
-- [Additional benefit 4]
-
-### [PLAN NAME 3] Benefits (Optional)
-- Everything in [Plan 2], plus:
-- [Additional benefit 1]
-- [Additional benefit 2]
-- [Additional benefit 3]
-- [Additional benefit 4]
-
-## Key Messaging for Conversions
-
-<!-- INSTRUCTIONS: Pre-write effective marketing messages for common conversion points. -->
-
-### Trial Conversion Messages
-- "[CTA message 1]"
-- "[CTA message 2]"
-- "[CTA message 3]"
-- "[CTA message 4]"
-
-### Pain Point Solutions
-<!-- Format: **"[Common objection or concern]"** → "[Your solution]" -->
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-
-### Social Proof Elements
-<!-- INSTRUCTIONS: Add specific numbers and achievements -->
-- "[Number] of [customers/users] [geographic scope]"
-- "[Impressive metric about usage or scale]"
-- "[Customer rating/review score]"
-- "[Press mentions or awards]"
-
-## Common Questions & Objections
-
-<!-- INSTRUCTIONS: List frequent customer questions and your best answers.
-     This helps AI address objections in content. -->
-
-### "[Common question 1]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 2]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 3]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 4]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 5]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-## Content Creation Guidelines
-
-When writing about [YOUR COMPANY] features:
-
-1. **Lead with benefits, not features**: Don't just say "[feature name]"—explain "[the outcome it delivers]"
-2. **Use specific examples**: Show how features solve real problems
-3. **Include proof points**: Stats, testimonials, certifications
-4. **Address objections proactively**: Answer concerns before they ask
-5. **Create clear CTAs**: Make next steps obvious (start trial, see pricing, contact sales)
-6. **Emphasize uniqueness**: Highlight what makes [YOUR COMPANY] different from competitors
-7. **Match audience to use case**: Tailor messaging to segment ([segment 1] vs. [segment 2] vs. [segment 3])
-
----
-
-*Note: Update this document as new features launch or positioning changes. Keep messaging aligned with current marketing campaigns and homepage copy.*
+1. **Industrie & Produktion**: Hohe Brandlasten, komplexe Evakuierungswege
+2. **Einzelhandel & Lagerhaltung**: Gesetzliche Pflicht für Verkaufsstätten ab bestimmter Größe
+3. **Büro & Verwaltung**: Oft unterschätzt, trotzdem Pflicht ab bestimmter Beschäftigtenzahl
+4. **Gesundheitswesen**: Besondere Anforderungen durch eingeschränkt mobile Patienten
+5. **Gastronomie & Hotel**: Brandgefahren durch Küche, viele Gäste, enge Fluchtwege
+6. **Bau & Handwerk**: Wechselnde Baustellen, temporäre Brandschutzmaßnahmen

@@ -1,291 +1,250 @@
-# [YOUR COMPANY] Brand Voice & Messaging
+# Brandschutzausbildung Rhein-Neckar – Brand Voice & Messaging
 
-<!-- INSTRUCTIONS: This template defines your brand voice, tone, and messaging framework.
-     Fill in all [BRACKETED] sections with your company's specific information.
-     Delete these instruction comments when done.
-     See examples/castos/ for a complete real-world example. -->
-
-This document defines the [YOUR COMPANY] brand voice, tone, and messaging framework. Reference this when writing all content to ensure consistency.
+Dieses Dokument definiert die Markenstimme, den Ton und das Messaging-Framework von Brandschutzausbildung Rhein-Neckar. Es dient als Referenz für alle Inhalte, um Konsistenz zu gewährleisten.
 
 ## Brand Voice Pillars
 
-<!-- INSTRUCTIONS: Define 3-5 voice pillars that capture your brand's personality.
-     Each pillar should include:
-     - What it means (the concept)
-     - How it sounds (the execution)
-     - Example (a sentence in your voice)
-     - Avoid (what NOT to do)
--->
+### 1. Kompetent & Vertrauenswürdig
+- **What it means**: Wir sind zertifizierte Brandschutz- und Erste-Hilfe-Experten – und das merkt man. Unternehmen vertrauen uns die Sicherheit ihrer Mitarbeiter an.
+- **How it sounds**: Sachlich, fundiert, beruhigend. Wie ein erfahrener Fachmann, der genau weiß, was zu tun ist – und es klar erklärt.
+- **Example**: "Als BG-zertifizierter Anbieter stellen wir sicher, dass Ihre Mitarbeiter nicht nur die Vorschriften kennen – sondern wirklich wissen, was im Ernstfall zu tun ist."
+- **Avoid**: Übertriebene Werbefloskel, vage Versprechen, unsichere Formulierungen ("vielleicht", "könnte")
 
-### 1. [VOICE PILLAR NAME]
-- **What it means**: [Explain the core concept of this voice characteristic]
-- **How it sounds**: [Describe how this comes across in writing - tone, style, approach]
-- **Example**: "[Write an example sentence that demonstrates this voice pillar]"
-- **Avoid**: [List what to avoid - opposite tones, styles, or approaches]
+### 2. Praktisch & Lösungsorientiert
+- **What it means**: Wir helfen Unternehmen, konkrete Sicherheitspflichten effizient zu erfüllen – ohne unnötigen Aufwand.
+- **How it sounds**: Direkt, handlungsorientiert, pragmatisch. Kein Fachjargon ohne Erklärung.
+- **Example**: "Mit unserem Kombikurs erfüllen Sie Brandschutzhelfer- und Erste-Hilfe-Pflicht an einem einzigen Tag – zeiteffizient und kostengünstig."
+- **Avoid**: Abstrakte Theorie ohne Praxisbezug, überkomplizierte Erklärungen
 
-### 2. [VOICE PILLAR NAME]
-- **What it means**: [Explain the core concept]
-- **How it sounds**: [Describe the execution]
-- **Example**: "[Example sentence]"
-- **Avoid**: [What to avoid]
+### 3. Regional & Persönlich
+- **What it means**: Wir sind ein lokaler Anbieter im Rhein-Neckar-Gebiet – kein anonymes Großunternehmen. Der direkte Draht zum Trainer ist selbstverständlich.
+- **How it sounds**: Nahbar, persönlich, bodenständig. Wir kennen die Region und ihre Unternehmen.
+- **Example**: "Als regionaler Partner in Mannheim und Ludwigshafen sind wir schnell vor Ort – und kennen die spezifischen Anforderungen der Betriebe hier."
+- **Avoid**: Corporate-Sprache, anonyme Floskeln, übertriebene Distanz
 
-### 3. [VOICE PILLAR NAME]
-- **What it means**: [Explain the core concept]
-- **How it sounds**: [Describe the execution]
-- **Example**: "[Example sentence]"
-- **Avoid**: [What to avoid]
+### 4. Rechtssicher & Pflichtbewusst
+- **What it means**: Brandschutz ist gesetzliche Pflicht. Wir helfen Unternehmen, diese Pflicht rechtssicher zu erfüllen – und das kommunizieren wir klar.
+- **How it sounds**: Informativ, normativ, orientierend. Wir erklären Gesetze verständlich.
+- **Example**: "Die Arbeitsstättenverordnung schreibt regelmäßige Brandschutzübungen vor. Wir sorgen dafür, dass Ihre Dokumentation bei einer Prüfung lückenlos standhält."
+- **Avoid**: Angstmacherei, Übertreibung von Risiken, Verwirrung durch zu viele Paragraphen
 
-### 4. [VOICE PILLAR NAME] (Optional)
-- **What it means**: [Explain the core concept]
-- **How it sounds**: [Describe the execution]
-- **Example**: "[Example sentence]"
-- **Avoid**: [What to avoid]
-
-### 5. [VOICE PILLAR NAME] (Optional)
-- **What it means**: [Explain the core concept]
-- **How it sounds**: [Describe the execution]
-- **Example**: "[Example sentence]"
-- **Avoid**: [What to avoid]
+### 5. Ganzheitlich & Effizient
+- **What it means**: Wir bieten alles aus einer Hand: Brandschutzhelfer-Training, Erste Hilfe, externer Brandschutzbeauftragter. Das spart Zeit und Koordinationsaufwand.
+- **How it sounds**: Übersichtlich, strukturiert, wertschätzend gegenüber der Zeit des Kunden.
+- **Example**: "Statt mehrere Anbieter zu koordinieren, haben Sie mit uns einen einzigen Ansprechpartner für alle Sicherheitsthemen."
+- **Avoid**: Überforderung durch zu viele Optionen, unklare Paketbeschreibungen
 
 ## Tone Guidelines
 
-### General Tone: [DESCRIBE YOUR GENERAL TONE]
-[Write a paragraph describing your overall tone. Example: "Imagine you're an experienced [expert in your field] helping a friend succeed. You know what you're talking about, you genuinely want them to succeed, and you explain things clearly without being patronizing."]
+### General Tone: Der verlässliche Sicherheitsexperte vor Ort
+Stellen Sie sich vor, Sie sprechen mit dem Sicherheitsbeauftragten eines gut geführten Unternehmens: fachkundig, klar, verbindlich – aber nicht bürokratisch. Er erklärt Vorschriften verständlich, nennt konkrete Lösungen und macht deutlich, dass die Zusammenarbeit einfach und effizient ist.
 
 ### Tone Variations by Content Type
 
-<!-- INSTRUCTIONS: Define how your tone shifts for different content types.
-     Include example phrases for each type. -->
+**How-To Guides**: Schrittweise, klar strukturiert, ermutigend
+- "So bereiten Sie Ihre Evakuierungsübung in 5 Schritten vor..."
+- "Schritt 1: Bestimmen Sie zunächst die Gefährdungsbereiche in Ihrem Betrieb."
+- "Das klingt aufwendig – ist es aber nicht, wenn man weiß, worauf es ankommt."
 
-**How-To Guides**: [Adjectives describing tone for tutorials]
-- "[Example phrase 1]"
-- "[Example phrase 2]"
-- "[Example phrase 3]"
+**Rechtliche/Compliance-Inhalte**: Sachlich, präzise, orientierend
+- "Laut § 10 ArbSchG sind Arbeitgeber verpflichtet, Ersthelfer zu benennen."
+- "Was bedeutet das konkret für Ihren Betrieb? Wir erklären es."
+- "Mit der richtigen Dokumentation sind Sie bei Berufsgenossenschaftsprüfungen auf der sicheren Seite."
 
-**Strategy/Advice Content**: [Adjectives describing tone for strategic content]
-- "[Example phrase 1]"
-- "[Example phrase 2]"
-- "[Example phrase 3]"
+**Branchennews/Trends**: Analytisch, einordnend, praxisnah
+- "Neue DGUV-Regelungen ab 2025: Was ändert sich für Ihren Brandschutz?"
+- "Warum immer mehr Unternehmen auf externe Brandschutzbeauftragte setzen."
+- "Das sollten Sicherheitsverantwortliche jetzt wissen."
 
-**Industry News/Trends**: [Adjectives describing tone for news/trends]
-- "[Example phrase 1]"
-- "[Example phrase 2]"
-- "[Example phrase 3]"
-
-**Product/Feature Content**: [Adjectives describing tone for product content]
-- "[Example phrase 1]"
-- "[Example phrase 2]"
-- "[Example phrase 3]"
+**Kurs-/Leistungsinhalte**: Nutzenorientiert, klar, konkret
+- "Der Kurs dauert 3 Stunden – und gibt Ihren Mitarbeitern das Wissen, das im Ernstfall Leben retten kann."
+- "BG-zertifiziert, sofort einsetzbar, regional verfügbar."
+- "So funktioniert die Buchung: schnell, unkompliziert, flexibel."
 
 ## Messaging Framework
 
 ### Core Brand Messages
 
-<!-- INSTRUCTIONS: Define 3-5 core messages that should be woven throughout your content.
-     Each message should include the concept, key points, and when to use it. -->
-
-#### Message 1: [MESSAGE TITLE]
-- **Concept**: [One sentence describing the core message]
+#### Message 1: Rechtssicherheit & Compliance
+- **Concept**: Brandschutzausbildung ist gesetzliche Pflicht – wir machen sie einfach erfüllbar.
 - **Key Points**:
-  - [Supporting point 1]
-  - [Supporting point 2]
-  - [Supporting point 3]
-- **Usage**: When discussing [topics/situations where this message applies]
+  - BG-zertifizierte Ausbildungen, die behördliche Anforderungen erfüllen
+  - Lückenlose Dokumentation für Audits und Prüfungen
+  - Klare Orientierung im Dschungel der Vorschriften (ArbSchG, DGUV, ArbStättV)
+- **Usage**: Bei Inhalten über gesetzliche Pflichten, Betriebsprüfungen, Haftungsrisiken
 
-#### Message 2: [MESSAGE TITLE]
-- **Concept**: [One sentence describing the core message]
+#### Message 2: Alles aus einer Hand
+- **Concept**: Ein Anbieter, ein Ansprechpartner, alle Sicherheitsthemen – das spart Zeit und Nerven.
 - **Key Points**:
-  - [Supporting point 1]
-  - [Supporting point 2]
-  - [Supporting point 3]
-- **Usage**: When discussing [topics/situations where this message applies]
+  - Brandschutzhelfer + Erste Hilfe + externer Brandschutzbeauftragter
+  - Kombikurs als zeitsparendes Paket
+  - Direkte Erreichbarkeit von Rouven Thomas Hübner
+- **Usage**: Bei Vergleichen mit Mitbewerbern, bei Kursbeschreibungen, bei Zielgruppe "Personalverantwortliche"
 
-#### Message 3: [MESSAGE TITLE]
-- **Concept**: [One sentence describing the core message]
+#### Message 3: Regional & Verlässlich
+- **Concept**: Wir kennen die Region und sind schnell da, wenn man uns braucht.
 - **Key Points**:
-  - [Supporting point 1]
-  - [Supporting point 2]
-  - [Supporting point 3]
-- **Usage**: When discussing [topics/situations where this message applies]
+  - Standort Ludwigshafen, Schulungen in Mannheim und Umgebung
+  - Persönlicher Kontakt, keine Call-Center-Anonymität
+  - Netzwerk in der Rhein-Neckar-Region
+- **Usage**: Bei lokalen SEO-Inhalten, Unternehmensvorstellung, Vertrauensaufbau
 
-#### Message 4: [MESSAGE TITLE] (Optional)
-- **Concept**: [One sentence describing the core message]
+#### Message 4: Praktischer Nutzen statt trockener Theorie
+- **Concept**: Unsere Trainings sind praxisnah – die Mitarbeiter können das Gelernte wirklich anwenden.
 - **Key Points**:
-  - [Supporting point 1]
-  - [Supporting point 2]
-  - [Supporting point 3]
-- **Usage**: When discussing [topics/situations where this message applies]
+  - Handlungsorientierte Übungen, keine reine Folienpräsentation
+  - Realistische Szenarien (Löschübungen, Erste-Hilfe-Situationen)
+  - Nachhaltiger Lerneffekt für den Ernstfall
+- **Usage**: Bei Kursbeschreibungen, Vergleichen mit Online-Kursen, Zielgruppe "Mitarbeiter"
 
 ### Value Propositions
 
-<!-- INSTRUCTIONS: Write specific value propositions for each of your key customer segments.
-     These should be 1-2 sentence statements that capture the core benefit for each audience. -->
+**Für Geschäftsführer / Inhaber**:
+"Erfüllen Sie Ihre gesetzliche Fürsorgepflicht rechtssicher – mit einem zertifizierten Partner, der Ihnen den gesamten Brandschutz aus einer Hand abnimmt."
 
-**For [TARGET SEGMENT 1]**:
-"[Value proposition for this segment]"
+**Für HR- und Sicherheitsverantwortliche**:
+"Organisieren Sie Brandschutz- und Erste-Hilfe-Schulungen ohne Koordinationsaufwand – unser Kombikurs erfüllt beide Pflichten an einem Tag."
 
-**For [TARGET SEGMENT 2]**:
-"[Value proposition for this segment]"
+**Für Unternehmen ohne internen Brandschutzbeauftragten**:
+"Holen Sie sich den externen Brandschutzbeauftragten, der Ihre Anlage kennt, Ihre Behörden kennt und immer erreichbar ist – ohne Festanstellung."
 
-**For [TARGET SEGMENT 3]**:
-"[Value proposition for this segment]"
-
-**For [TARGET SEGMENT 4]** (Optional):
-"[Value proposition for this segment]"
-
-**For [TARGET SEGMENT 5]** (Optional):
-"[Value proposition for this segment]"
+**Für KMU in der Rhein-Neckar-Region**:
+"Lokaler Anbieter, persönliche Betreuung, BG-zertifiziert: Ihr verlässlicher Brandschutz-Partner in Mannheim und Ludwigshafen."
 
 ## Writing Style Guidelines
 
 ### Sentence Structure
-- **Vary length**: [Your preference - e.g., "Mix short punchy sentences with longer explanatory ones"]
-- **Active voice preferred**: [Example] not [Counter-example]
-- **Average length**: [X-Y words per sentence]
-- **Clarity first**: [Your rule about clarity and readability]
+- **Variieren**: Kurze, prägnante Sätze wechseln mit erklärenden längeren Sätzen ab
+- **Aktiv bevorzugt**: "Wir schulen Ihre Mitarbeiter" statt "Ihre Mitarbeiter werden geschult"
+- **Durchschnittliche Länge**: 12–18 Wörter pro Satz
+- **Klarheit zuerst**: Wenn ein Satz zu komplex ist, aufteilen
 
 ### Paragraph Structure
-- **Length**: [X-Y sentences typically]
-- **One idea per paragraph**: [Your approach to paragraph focus]
-- **Transitions**: [How you handle paragraph transitions]
-- **White space**: [Your approach to visual readability]
+- **Länge**: 2–3 Sätze pro Absatz
+- **Ein Gedanke pro Absatz**: Jeder Absatz behandelt einen konkreten Punkt
+- **Übergänge**: Logisch und flüssig – "Das bedeutet konkret:", "Ein weiterer Vorteil:", "Wichtig zu wissen:"
+- **Weißraum**: Absätze konsequent aufbrechen, Bulletpoints für Listen nutzen
 
 ### Word Choice
-- **[CHARACTERISTIC 1]**: [Describe your word choice style - e.g., "Conversational: Write how you'd speak to a colleague"]
-- **[CHARACTERISTIC 2]**: [e.g., "Specific: '40% improvement' not 'Better performance'"]
-- **[CHARACTERISTIC 3]**: [e.g., "Active verbs: 'Launch', 'Create', 'Grow', 'Build'"]
-- **[WHAT TO AVOID]**: [e.g., "Avoid fluff: Cut 'very', 'really', 'actually' unless needed"]
+- **Fachlich korrekt**: Korrekte Begriffe aus dem Brandschutz und Arbeitsschutz verwenden
+- **Verständlich**: Fachbegriffe beim ersten Nennen kurz erklären
+- **Aktive Verben**: "schützen", "qualifizieren", "dokumentieren", "sicherstellen", "erfüllen"
+- **Fluff vermeiden**: Kein "quasi", "gewissermaßen", "sozusagen"
 
 ### Terminology
 
-<!-- INSTRUCTIONS: Define industry-specific terminology preferences.
-     List preferred terms vs. terms to avoid. -->
-
 **Say This** → **Not That**
-- [Preferred term] → [Term to avoid] ([Reason why])
-- [Preferred term] → [Term to avoid] ([Reason why])
-- [Preferred term] → [Term to avoid] ([Reason why])
-- [Preferred term] → [Term to avoid] ([Reason why])
-- [Preferred term] → [Term to avoid] ([Reason why])
+- Brandschutzhelfer → Feuerlöschhelfer (falscher Begriff)
+- Brandschutzbeauftragter → Brandschutzmanager (nicht die Fachbezeichnung)
+- BG-zertifiziert → "TÜV-geprüft" (falsche Zertifizierungsstelle)
+- Evakuierungsübung → Feueralarmübung (zu umgangssprachlich)
+- Gefährdungsbeurteilung → Risikoanalyse (dt. Fachbegriff bevorzugen)
+- Arbeitsstättenverordnung (ArbStättV) → "Sicherheitsgesetz" (zu vage)
 
 ## Content Formatting
 
 ### Headlines
-- **[RULE 1]**: [e.g., "Be specific: 'How to Grow Your Audience in 2025' not 'Growth Tips'"]
-- **[RULE 2]**: [e.g., "Include benefit: Tell reader what they'll gain"]
-- **[RULE 3]**: [e.g., "Use numbers: '7 Ways...' or 'Complete Guide...'"]
-- **[RULE 4]**: [e.g., "Keep concise: 60 characters or less for SEO"]
+- **Konkret und nutzenorientiert**: "So erfüllen Sie die Brandschutzhelfer-Pflicht rechtssicher" statt "Brandschutz im Unternehmen"
+- **Zahl oder Qualifier einsetzen**: "5 Gründe, warum Ihr Betrieb einen externen Brandschutzbeauftragten braucht"
+- **Regionalbezug bei Bedarf**: "Brandschutzschulung in Mannheim: Was Unternehmen wissen müssen"
+- **Max. 65 Zeichen** für SEO
 
 ### Subheadings
-- **[RULE 1]**: [Your subheading guidelines]
-- **[RULE 2]**: [Your subheading guidelines]
-- **[RULE 3]**: [Your subheading guidelines]
-- **[RULE 4]**: [Your subheading guidelines]
+- **Beschreibend und scannbar**: Leser sollen den Artikel-Überblick allein aus den H2/H3 verstehen
+- **Keyword-nah**: Relevante Suchbegriffe natürlich einbauen
+- **Parallele Struktur**: Innerhalb eines Artikels einheitliche Form (z. B. alle als Frage oder alle als Aussage)
 
 ### Lists
-- **[RULE 1]**: [Your list formatting guidelines]
-- **[RULE 2]**: [Your list formatting guidelines]
-- **[RULE 3]**: [Your list formatting guidelines]
-- **[RULE 4]**: [Your list formatting guidelines]
+- **Nummerierte Listen für Prozesse**: Schritt-für-Schritt-Anleitungen
+- **Bullet Points für Vorteile/Merkmale**: Übersichtliche Aufzählungen
+- **Max. 6–7 Punkte**: Bei mehr Punkten in Untergruppen aufteilen
+- **Parallele Formulierungen**: Alle Punkte beginnen mit Substantiv oder Verb
 
 ### Calls-to-Action
-- **[RULE 1]**: [Your CTA guidelines]
-- **[RULE 2]**: [Your CTA guidelines]
-- **[RULE 3]**: [Your CTA guidelines]
-- **[RULE 4]**: [Your CTA guidelines]
+- **Konkrete Handlung**: "Jetzt Kurs buchen" statt "Mehr erfahren"
+- **Nutzenorientiert**: "Termin anfragen – kostenlos und unverbindlich"
+- **Passend zum Funnel-Stadium**: Informativer Inhalt → "Kursübersicht ansehen"; Bottom of Funnel → "Direkt buchen"
+- **Regionaler Bezug**: "Jetzt Platz in Mannheim sichern"
 
 ## Voice Examples
 
-<!-- INSTRUCTIONS: Provide examples of your voice in action, showing both good and bad examples. -->
+### Exzellente Brandschutzausbildung Rhein-Neckar Stimme ✅
 
-### Excellent [YOUR COMPANY] Voice ✅
+"Viele Unternehmen wissen, dass sie einen Brandschutzhelfer brauchen – aber nicht, wie sie die Schulung am effizientesten organisieren. Dabei ist es einfacher als gedacht: Unser 3-stündiger Kurs in Ludwigshafen erfüllt alle BG-Anforderungen, die Teilnehmer üben den echten Umgang mit Feuerlöschern – und Sie haben die Pflicht rechtssicher abgehakt. Wir kümmern uns um die Dokumentation, Sie kümmern sich um Ihr Geschäft."
 
-"[Write a full paragraph example that demonstrates your brand voice at its best.
+**Warum das funktioniert**:
+- Spricht direkt das Problem des Lesers an
+- Konkrete Informationen (Dauer, Ort, Zertifizierung)
+- Zeigt praktischen Nutzen, nicht nur Features
+- Entlastet den Leser (wir übernehmen Aufwand)
+- Klare, vertrauensvolle Sprache
 
-This should include multiple sentences that show your tone, style, word choice, and approach.
+### Nicht unsere Stimme ❌
 
-Reference your actual product/service and target audience.]"
+"Die Brandschutzausbildung Rhein-Neckar GmbH bietet umfassende Trainingsmaßnahmen im Bereich des vorbeugenden Brandschutzes sowie der betrieblichen Erste-Hilfe-Ausbildung für Unternehmen im Rhein-Neckar-Ballungsraum an. Unsere zertifizierten Lehrgänge entsprechen den einschlägigen Vorschriften der Berufsgenossenschaften und sonstiger zuständiger Stellen."
 
-**Why this works**:
-- [Reason 1 - what makes this good]
-- [Reason 2]
-- [Reason 3]
-- [Reason 4]
-- [Reason 5]
-
-### Not [YOUR COMPANY] Voice ❌
-
-"[Write a full paragraph example that demonstrates what NOT to do.
-
-This should show common mistakes: wrong tone, corporate speak, feature-focused instead of benefit-focused, etc.
-
-This example shows what to avoid.]"
-
-**Why this fails**:
-- [Reason 1 - what makes this bad]
-- [Reason 2]
-- [Reason 3]
-- [Reason 4]
-- [Reason 5]
+**Warum das scheitert**:
+- Bürokratisch und unpersönlich
+- Keine konkreten Vorteile für den Leser
+- Kein Gefühl von Nahbarkeit oder Lösungsorientierung
+- Liest sich wie eine Behördenmitteilung
 
 ## Audience Understanding
 
 ### Who We Write For
 
-<!-- INSTRUCTIONS: Define your target audience(s) in detail. -->
+**Primäre Zielgruppe**: Sicherheits- und Personalverantwortliche in KMU
+- Suchen pragmatische Lösungen für Compliance-Anforderungen
+- Wenig Zeit für aufwendige Recherche
+- Wollen einen verlässlichen, lokalen Anbieter
+- Haften persönlich für Sicherheitsverstöße
+- Oft keine Sicherheits-Fachkenntnisse im Detail
 
-**Primary Audience**: [PRIMARY AUDIENCE NAME/DESCRIPTION]
-- [Characteristic 1]
-- [Characteristic 2]
-- [Characteristic 3]
-- [Characteristic 4]
-- [Characteristic 5]
-
-**Secondary Audiences**:
-- **[SEGMENT NAME]**: [Brief description]
-- **[SEGMENT NAME]**: [Brief description]
-- **[SEGMENT NAME]**: [Brief description]
-- **[SEGMENT NAME]**: [Brief description]
+**Sekundäre Zielgruppen**:
+- **Geschäftsführer kleiner Unternehmen**: Kümmern sich selbst um Brandschutzpflichten
+- **Facility Manager**: Verantwortlich für Gebäudesicherheit in größeren Betrieben
+- **HR-Abteilungen**: Organisieren Pflichtschulungen für alle Mitarbeiter
+- **Neu gegründete Unternehmen**: Müssen erstmalig Brandschutzstrukturen aufbauen
 
 ### What They Care About
 
 **Top Priorities**:
-1. [Priority 1]
-2. [Priority 2]
-3. [Priority 3]
-4. [Priority 4]
-5. [Priority 5]
+1. Gesetzliche Pflichten ohne Aufwand erfüllen
+2. Keine Haftungsrisiken eingehen
+3. Kosten- und zeiteffiziente Lösungen finden
+4. Verlässlichen lokalen Anbieter finden
+5. Mitarbeiter wirklich sicher machen (nicht nur auf dem Papier)
 
 **Pain Points**:
-1. [Pain point 1]
-2. [Pain point 2]
-3. [Pain point 3]
-4. [Pain point 4]
-5. [Pain point 5]
+1. Unübersichtliche Vorschriften – wer muss was wie oft schulen?
+2. Koordinationsaufwand bei mehreren Anbietern
+3. Angst vor Bußgeldern oder Versicherungsproblemen nach Unfall
+4. Schwierig, Mitarbeiter für Pflichtschulungen freizustellen
+5. Unsicherheit, ob Dokumentation bei Prüfung ausreicht
 
 ### How to Serve Them
 
-- **[PRINCIPLE 1]**: [How you serve your audience - e.g., "Respect their time: Get to the point quickly"]
-- **[PRINCIPLE 2]**: [e.g., "Make it actionable: Give specific, implementable advice"]
-- **[PRINCIPLE 3]**: [e.g., "Explain the 'why': Help them understand strategy, not just tactics"]
-- **[PRINCIPLE 4]**: [e.g., "Acknowledge challenges: Show we understand their work"]
-- **[PRINCIPLE 5]**: [e.g., "Celebrate progress: Encourage incremental improvement"]
+- **Zeit respektieren**: Auf den Punkt kommen, keine langen Einleitungen
+- **Rechtssicherheit betonen**: Immer klarmachen, welche Vorschrift erfüllt wird
+- **Konkret sein**: Preise, Dauer, Ablauf – keine vagen Angaben
+- **Regionalen Bezug herstellen**: Mannheim, Ludwigshafen, Rhein-Neckar explizit nennen
+- **Vertrauen aufbauen**: BG-Zertifizierung, Erfahrung, persönlicher Ansprechpartner betonen
 
 ## Quality Checklist
 
-Before publishing any content, verify:
+Vor jeder Veröffentlichung prüfen:
 
-- [ ] **Voice**: Sounds like [YOUR COMPANY] ([your key voice characteristics])
-- [ ] **Tone**: Appropriate for content type and audience stage
-- [ ] **Value**: Provides genuine, actionable insights for [YOUR AUDIENCE]
-- [ ] **Clarity**: Complex concepts explained simply
-- [ ] **Accuracy**: Technical information is correct
-- [ ] **Examples**: Includes relevant [industry/use case] scenarios
-- [ ] **Action**: Clear next steps or takeaways
-- [ ] **Messaging**: Aligns with core brand messages
-- [ ] **Terminology**: Uses correct [industry] terms
-- [ ] **Empowerment**: Helps [audience] feel capable and confident
+- [ ] **Stimme**: Klingt wie Brandschutzausbildung Rhein-Neckar (kompetent, persönlich, lösungsorientiert)
+- [ ] **Ton**: Passend zum Inhaltstyp und zur Leserstufe
+- [ ] **Mehrwert**: Bietet echte, umsetzbare Informationen für Sicherheitsverantwortliche
+- [ ] **Klarheit**: Fachbegriffe erklärt, Vorschriften verständlich eingeordnet
+- [ ] **Genauigkeit**: Gesetzliche Angaben korrekt (ArbSchG, DGUV, ArbStättV)
+- [ ] **Konkret**: Kursdetails, Preise, Ablauf klar kommuniziert
+- [ ] **Handlung**: Klarer nächster Schritt für den Leser
+- [ ] **Messaging**: Stimmt mit Kernbotschaften überein
+- [ ] **Terminologie**: Korrekte Brandschutz-Fachbegriffe verwendet
+- [ ] **Regionalbezug**: Rhein-Neckar, Mannheim, Ludwigshafen eingebunden
 
 ---
 
-**Remember**: [Write a memorable closing statement that captures the essence of your brand voice and mission. Example: "Every piece of content should make our audience feel more capable and confident. We're not just providing information—we're empowering success."]
+**Denken Sie daran**: Jeder Inhalt soll Sicherheitsverantwortlichen das Gefühl geben, dass Brandschutz-Compliance lösbar ist – und dass Brandschutzausbildung Rhein-Neckar der richtige Partner dafür ist.
