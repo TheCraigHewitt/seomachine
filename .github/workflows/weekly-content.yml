@@ -1,0 +1,94 @@
+name: Wöchentliche Content-Veröffentlichung
+
+# Jeden Montag um 07:00 Uhr (UTC+1 = 08:00 Uhr Deutschland)
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+
+  # Manuell auslösen (z.B. zum Testen oder für ein Extra-Thema)
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Thema überschreiben (leer = nächstes aus Queue)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Dry-Run (kein WordPress-Upload)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+jobs:
+  publish-weekly-article:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Python-Abhängigkeiten installieren
+        run: |
+          pip install -r data_sources/requirements.txt
+
+      - name: Claude Code CLI installieren
+        run: |
+          npm install -g @anthropic-ai/claude-code
+
+      - name: Umgebungsvariablen konfigurieren
+        run: |
+          mkdir -p data_sources/config
+          cat > data_sources/config/.env << EOF
+          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          WORDPRESS_URL=${{ secrets.WORDPRESS_URL }}
+          WORDPRESS_USERNAME=${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_APP_PASSWORD=${{ secrets.WORDPRESS_APP_PASSWORD }}
+          DATAFORSEO_LOGIN=${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD=${{ secrets.DATAFORSEO_PASSWORD }}
+          EOF
+
+      - name: Wöchentlichen Artikel veröffentlichen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
+          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
+        run: |
+          ARGS=""
+
+          if [ "${{ github.event.inputs.topic }}" != "" ]; then
+            ARGS="$ARGS --topic '${{ github.event.inputs.topic }}'"
+          fi
+
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+
+          eval python3 scripts/weekly_pipeline.py $ARGS
+
+      - name: Geänderte Dateien committen (Queue + neue Artikel)
+        run: |
+          git config user.name "SEO Machine Bot"
+          git config user.email "seo-machine-bot@users.noreply.github.com"
+          git add topics/queue.txt topics/processed.txt drafts/ research/ || true
+          git diff --staged --quiet || git commit -m "chore: wöchentlicher Artikel automatisch veröffentlicht [skip ci]"
+          git push
+
+      - name: Ergebnis melden
+        if: always()
+        run: |
+          if [ "${{ job.status }}" = "success" ]; then
+            echo "Artikel erfolgreich veröffentlicht!"
+          else
+            echo "Pipeline fehlgeschlagen – bitte Log prüfen."
+          fi

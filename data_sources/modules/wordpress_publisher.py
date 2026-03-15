@@ -270,10 +270,11 @@ class WordPressPublisher:
         excerpt: str = '',
         category_ids: Optional[List[int]] = None,
         tag_ids: Optional[List[int]] = None,
-        post_type: str = 'posts'
+        post_type: str = 'posts',
+        status: str = 'draft'
     ) -> Dict:
         """
-        Create a WordPress draft post, page, or custom post type
+        Create a WordPress post, page, or custom post type
 
         Args:
             title: Post title
@@ -283,6 +284,7 @@ class WordPressPublisher:
             category_ids: List of category IDs (posts only)
             tag_ids: List of tag IDs (posts only)
             post_type: WordPress post type endpoint ('posts', 'pages', or custom type)
+            status: WordPress post status ('draft' or 'publish')
 
         Returns:
             WordPress post response with id, link, etc.
@@ -291,7 +293,7 @@ class WordPressPublisher:
             'title': title,
             'content': content,
             'slug': slug,
-            'status': 'draft',
+            'status': status,
             'excerpt': excerpt
         }
 
@@ -349,13 +351,14 @@ class WordPressPublisher:
         response.raise_for_status()
         return response.json()
 
-    def publish_draft(self, file_path: str, post_type: str = 'post') -> Dict:
+    def publish_draft(self, file_path: str, post_type: str = 'post', status: str = 'draft') -> Dict:
         """
         Publish a draft file to WordPress as a post, page, or custom post type
 
         Args:
             file_path: Path to the markdown draft file
             post_type: Content type - 'post', 'page', or custom post type (e.g., 'compare')
+            status: WordPress post status ('draft' or 'publish')
 
         Returns:
             Dict with post_id, edit_url, view_url, and status information
@@ -393,7 +396,7 @@ class WordPressPublisher:
                 if tag_name:
                     tag_ids.append(self.get_or_create_tag(tag_name))
 
-        # Create the draft
+        # Create the post
         post = self.create_draft(
             title=draft['title'],
             content=html_content,
@@ -401,7 +404,8 @@ class WordPressPublisher:
             excerpt=draft['meta_description'],
             category_ids=category_ids if category_ids else None,
             tag_ids=tag_ids if tag_ids else None,
-            post_type=api_endpoint
+            post_type=api_endpoint,
+            status=status
         )
 
         post_id = post['id']
@@ -455,16 +459,23 @@ def main():
         default='post',
         help='Content type: post, page, or custom post type (default: post)'
     )
+    parser.add_argument(
+        '--status', '-s',
+        default='draft',
+        choices=['draft', 'publish'],
+        help='WordPress post status: draft or publish (default: draft)'
+    )
     args = parser.parse_args()
 
     try:
         publisher = WordPressPublisher()
-        result = publisher.publish_draft(args.file_path, post_type=args.type)
+        result = publisher.publish_draft(args.file_path, post_type=args.type, status=args.status)
 
         type_label = result['post_type'].title()
+        status_label = 'published' if args.status == 'publish' else 'draft'
         print(f"\n✓ Parsed draft file")
         print(f"✓ Converted {result['word_count']:,} words to HTML")
-        print(f"✓ Created WordPress {type_label} draft (ID: {result['post_id']})")
+        print(f"✓ Created WordPress {type_label} {status_label} (ID: {result['post_id']})")
         print(f"✓ Set Yoast meta (title, description, focus keyphrase)")
 
         if result['categories']:

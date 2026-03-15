@@ -1,0 +1,25 @@
+# Themen-Queue für wöchentliche automatische Veröffentlichung
+# Format: ein Thema pro Zeile
+# Abgearbeitete Themen werden automatisch nach topics/processed.txt verschoben
+# Neue Themen einfach unten anfügen
+
+wie viele Brandschutzhelfer braucht ein Betrieb
+Brandschutzhelfer Kurs Mannheim
+wann ist Brandschutzbeauftragter Pflicht
+Evakuierungsübung planen Unternehmen
+Brandschutzhelfer Kurs Ludwigshafen
+externer Brandschutzbeauftragter Mannheim
+interner vs externer Brandschutzbeauftragter Unterschied
+Kombikurs Brandschutz Erste Hilfe
+Brandschutzhelfer Pflicht Unternehmen
+Erste Hilfe Pflicht Betrieb DGUV
+Brandschutzunterweisung online reicht nicht aus
+Brandschutzhelfer Wiederholung wie oft
+Brandschutz Einzelhandel Pflichten
+Brandschutz Industriebetrieb Anforderungen
+Brandschutzbeauftragter Hochhaus Pflicht
+Erste Hilfe Kurs Betrieb Kosten
+Brandschutzhelfer Ausbildung Rhein-Neckar
+Feuerlöscher Wartung Pflicht Unternehmen
+Brandschutzordnung erstellen Vorlage
+Notfallplan Unternehmen erstellen
