@@ -1,499 +1,356 @@
-# SEO Guidelines for Castos Content
+# SEO Guidelines for Freaking Nomads Content
 
-This document outlines SEO best practices and requirements for all Castos blog content to maximize organic search visibility and rankings.
+2026 SEO standards optimized for both traditional Google search and AI search engines (ChatGPT, Perplexity, Gemini). Every article must pass all checklist items before publishing.
 
-## Content Length Requirements
+---
 
-### Target Word Counts
-- **Standard Blog Post**: 1,500-3,000 words (target: 2,000-2,500)
-- **Pillar Content / Comprehensive Guides**: 3,000-5,000 words maximum
-- **How-To Guides**: 1,500-2,500 words
-- **News / Updates**: 800-1,200 words (exception to standard)
+## Content Length
 
-### Important Length Guidelines
-- **Maximum for most articles**: 3,000 words
-- **Maximum for pillar content**: 5,000 words
-- If a topic requires more than the maximum, break it into a series of related articles
-- Aim for the lower end of ranges when possible—concise, focused content often performs better
+| Content Type | Target Length |
+|---|---|
+| Destination guides | 2,500–4,000 words |
+| Visa guides | 2,000–3,500 words |
+| Gear/product reviews | 1,500–3,000 words |
+| Best-of listicles | 2,000–4,000 words |
+| Trend/opinion pieces | 1,200–2,000 words |
+| Café/workspace guides | 1,500–2,500 words |
 
-### Why Length Matters
-- Longer content typically ranks higher in search results
-- More words = more opportunities for keyword integration and topic coverage
-- Comprehensive content earns more backlinks and engagement
-- Depth signals expertise and authority to search engines
+**Rule**: No padding to hit word counts. Every section earns its place. Better to publish 1,800 substantive words than 3,000 padded words.
 
-### Quality Over Quantity
-- Don't add fluff just to hit word counts
-- Every section should provide genuine value
-- Better to have 2,000 valuable words than 3,000 padded words
-- **Stay within the maximum word counts**—overly long articles hurt user experience
+---
 
-## Keyword Optimization
+## Keyword Strategy
 
-### Keyword Research Requirements
+### Research Requirements
 Before writing any article:
-1. Identify primary target keyword
-2. Research search volume and difficulty
-3. Analyze top 10 ranking competitors
-4. Identify 3-5 secondary/related keywords
-5. List LSI (Latent Semantic Indexing) keywords
+1. Identify primary keyword (long-tail preferred — genuine search intent)
+2. Check search volume and keyword difficulty via DataForSEO
+3. Analyze top 10 SERP results for format, depth, and gaps
+4. Identify 3–5 secondary/LSI keywords
+5. Pull "People Also Ask" questions for FAQ section
 
-### Keyword Density Guidelines
-- **Primary Keyword**: 1-2% density
-  - Example: In a 2,000-word article, use keyword 20-40 times
-  - Natural integration is critical—never force keywords
-- **Secondary Keywords**: 0.5-1% density each
-- **LSI Keywords**: Sprinkle throughout naturally
-
-### Critical Keyword Placement
-Primary keyword MUST appear in:
-- [ ] H1 headline (preferably near the beginning)
-- [ ] First 100 words of article
-- [ ] At least 2-3 H2 subheadings
-- [ ] Last paragraph / conclusion
+### Keyword Placement
+Primary keyword must appear in:
+- [ ] H1 title (naturally, not forced)
+- [ ] First 100 words
+- [ ] At least 2 H2 subheadings
 - [ ] Meta title (within first 60 characters)
 - [ ] Meta description
 - [ ] URL slug
 
-### Keyword Integration Best Practices
-- **Natural language first**: Write for humans, optimize for search engines
-- **Use variations**: Don't repeat exact phrase robotically
-  - Example: "podcast hosting" → "hosting your podcast" → "podcast host"
-- **Question formats**: Include conversational variations
-  - "How to start a podcast" vs "starting a podcast"
-- **Semantic keywords**: Use related terms to support topical authority
-  - For "podcast editing": include "audio editing", "post-production", "editing workflow"
+### Long-Tail Focus
+Prioritize long-tail keywords with clear intent over high-volume broad terms:
+- ✅ "digital nomad visa Finland requirements 2026" (clear intent, qualified audience)
+- ✅ "best eSIM for China digital nomads" (specific, buyer intent)
+- ❌ "digital nomad" (too broad, no ranking chance)
+- ❌ "travel insurance" (dominated by aggregators)
 
-### Keyword Stuffing (Avoid)
-❌ "Podcast hosting is important. Podcast hosting helps podcasters. Our podcast hosting platform offers podcast hosting services for podcast hosting needs."
+### Keyword Density
+- Primary: ~1% density — never force it, write naturally
+- Secondary: Sprinkled naturally throughout
+- LSI keywords: Integrated where relevant
+- **Stuffing check**: Run `keyword_analyzer.py` before publishing
 
-✅ "Podcast hosting is important for creators who want to distribute their show to major platforms. A reliable host ensures your episodes are accessible wherever listeners discover new content."
+---
 
-## Content Structure Requirements
+## Content Structure
 
 ### Heading Hierarchy
+- **H1**: One per article. Include primary keyword near the start. Keep compelling — it's the SERP title too.
+- **H2**: 4–8 main sections. At least 2 should contain keyword variations. Write them as questions or clear statements readers scan for.
+- **H3**: Subsections under H2. Never jump H2 → H4.
 
-#### H1 (Title)
-- **Only one H1 per article**
-- Include primary keyword naturally
-- 60 characters or less (for SERP display)
-- Compelling and benefit-focused
-- Should answer: "What will I learn/gain from this?"
+### Article Structure for Freaking Nomads Content
 
-#### H2 (Main Sections)
-- **4-7 H2 sections** for standard articles
-- At least **2-3 should include keyword variations**
-- Descriptive and keyword-rich
-- Logical progression through topic
-- Can be standalone (readers should understand flow from H2s alone)
-
-#### H3 (Subsections)
-- Nested under H2s (never skip from H2 to H4)
-- Break complex sections into digestible chunks
-- Include keywords where natural
-- More specific than H2s
-
-### Article Structure Template
-
-```markdown
-# [H1: Compelling Title with Primary Keyword]
-
-## Introduction (150-250 words)
-- Hook: Attention-grabbing opening
-- Problem: What challenge does this address?
-- Promise: What will reader learn/achieve?
-- Keyword in first 100 words
-
-## [H2: Main Section 1 - Include Keyword Variation]
-### [H3: Subsection if needed]
-- Content depth
-- Examples
-- Data/statistics
-
-## [H2: Main Section 2]
-### [H3: Subsection if needed]
-- Content depth
-- Examples
-- Data/statistics
-
-## [H2: Main Section 3 - Include Keyword Variation]
-### [H3: Subsection if needed]
-- Content depth
-- Examples
-- Data/statistics
-
-## [H2: Main Section 4]
-[Continue with 4-7 total H2 sections]
-
-## Conclusion (150-250 words)
-- Recap key points (3-5 takeaways)
-- Include keyword
-- Clear call-to-action
-- Next steps for reader
 ```
+# [H1: Primary Keyword + Compelling Promise]
+
+[Hook: 1–3 sentences. Personal story, gut-punch question, or bold statement. Never "In today's world..."]
+
+[Context: What this article covers and who it's for. Max 1 paragraph.]
+
+## [H2: Most common question first — e.g., "Does [Country] Have a Digital Nomad Visa?"]
+[Direct answer in first sentence. No teasing.]
+
+## [H2: Core Section 1 — requirements, costs, process, etc.]
+### [H3: Subsection if needed]
+
+## [H2: Core Section 2]
+...
+
+## [H2: Pros and Cons / What to Expect / Our Assessment]
+[Equal weight to positives and negatives]
+
+## [H2: Frequently Asked Questions]
+[4–6 PAA-sourced questions, answered concisely]
+
+[Closing: 1–2 paragraphs. Honest verdict. Single CTA.]
+```
+
+---
 
 ## Meta Elements
 
 ### Meta Title
-**Requirements**:
-- **Length**: 50-60 characters (including "| Castos" if used)
-- **Primary keyword**: Must be included
-- **Compelling**: Should encourage clicks from SERP
-- **Unique**: Different from all other Castos page titles
-- **Accurate**: Must match page content
-
-**Format Options**:
-- `[Primary Keyword]: [Benefit/Promise]`
-- `How to [Goal] | [Qualifier]`
-- `[Number] Ways to [Achieve Benefit]`
-- `[Topic] Guide for [Audience] | Castos`
-
-**Examples**:
-- ✅ "How to Start a Podcast in 2025: Complete Guide"
-- ✅ "12 Proven Podcast Growth Strategies | Castos"
-- ❌ "Podcast Tips and Tricks" (too vague, no keyword)
-- ❌ "The Ultimate Comprehensive Guide to Everything About Starting Your First Podcast Successfully" (too long)
+- Length: 50–60 characters
+- Include primary keyword near the start
+- Format options:
+  - `[Primary Keyword]: [Honest Take or Benefit]`
+  - `[Destination] Digital Nomad Guide: What You Actually Need to Know`
+  - `[Product] Review: Is It Worth It for Nomads?`
+- **Never**: Keyword-stuffed titles, clickbait without delivery, Castos-era podcast examples
 
 ### Meta Description
-**Requirements**:
-- **Length**: 150-160 characters
-- **Primary keyword**: Include naturally
-- **Value proposition**: Clear benefit to reader
-- **Call-to-action**: Action phrase (Learn, Discover, Find out, Get, etc.)
-- **Complete**: Must not cut off mid-sentence
-- **Compelling**: Should drive clicks from SERP
-
-**Formula**:
-```
-[Problem/Question]? [Solution/Benefit]. [Unique angle]. [CTA].
-```
-
-**Examples**:
-- ✅ "Learn how to start a podcast with our step-by-step guide. Everything from equipment to launch strategy. Perfect for beginners. Start your show today." (159 chars)
-- ✅ "Discover 12 proven podcast growth strategies that top creators use. Increase downloads, engagement, and audience loyalty. Actionable tips inside." (155 chars)
-- ❌ "This is a blog post about podcasting where we discuss many podcast-related topics." (vague, no value prop, no CTA)
+- Length: **≤155 characters** (strict — gets truncated otherwise)
+- Include primary keyword naturally
+- State the specific value the article delivers
+- End with implicit or explicit call to action
+- Formula: `[Specific thing article covers]. [Who it's for]. [What they'll learn/get].`
+- Example: "Finland has no dedicated digital nomad visa — but its Self-Employment Visa works. Requirements, costs, and 4-month timeline explained."
 
 ### URL Slug
-**Requirements**:
-- Include primary keyword
-- Lowercase letters only
-- Hyphens between words (not underscores)
-- Short and descriptive (3-5 words ideal)
-- No stop words unless necessary (a, the, and, of, etc.)
-
-**Format**: `/blog/[primary-keyword-phrase]`
-
-**Examples**:
-- ✅ `/blog/start-podcast-guide`
-- ✅ `/blog/podcast-growth-strategies`
-- ✅ `/blog/podcast-editing-software`
-- ❌ `/blog/how-to-start-a-podcast-in-2025-the-complete-guide` (too long)
-- ❌ `/blog/post-12345` (no keywords)
-
-## Internal Linking Strategy
-
-### Requirements
-- **Minimum**: 3 internal links per article
-- **Optimal**: 4-5 internal links
-- **Maximum**: 7 internal links (unless 3,000+ word article)
-
-### Link Types to Include
-
-#### 1. Pillar Content (1-2 links)
-- Link to main comprehensive guides on related topics
-- Builds topic cluster authority
-- Usually 2,000+ word cornerstone content
-
-#### 2. Related Blog Posts (2-3 links)
-- Link to articles on related subtopics
-- Creates content web
-- Helps readers explore topics comprehensively
-
-#### 3. Product/Feature Pages (0-1 link)
-- Only when contextually relevant
-- Natural mention of how Castos solves problem
-- Never forced or overly promotional
-
-#### 4. Resource Pages (0-1 link)
-- Templates, tools, checklists
-- When mentioned as solutions in content
-- Provides additional value to reader
-
-### Internal Linking Best Practices
-
-**Anchor Text**:
-- ✅ Descriptive and keyword-rich: "our complete guide to podcast analytics"
-- ✅ Natural in sentence flow: "Learn more about podcast SEO strategies"
-- ❌ Generic: "click here" or "read more"
-- ❌ Exact match repeatedly: Always using same anchor text for same page
-
-**Placement**:
-- Within body paragraphs (most valuable)
-- Natural context that adds value to reader
-- Never more than 2 links per paragraph
-- Distributed throughout article, not clustered
-
-**Reference**:
-- Always check @context/internal-links-map.md for priority linking targets
-- Ensure links are current and functional
-- Link to most relevant, up-to-date content
-
-## External Linking Strategy
-
-### Requirements
-- **Minimum**: 2 external links per article
-- **Optimal**: 3-4 external authority links
-- Purpose: Add credibility, provide sources, support claims
-
-### What to Link Externally
-- **Statistics and data sources**: Always cite where numbers come from
-- **Research and studies**: Link to original research
-- **Tools and resources**: When recommending specific tools
-- **Industry authorities**: Expert opinions or industry publications
-
-### External Link Quality Standards
-- **Authority**: Link to credible, well-known sources
-  - ✅ Industry publications (Podcast Host, Podnews, etc.)
-  - ✅ Research institutions and studies
-  - ✅ Established media outlets
-  - ❌ Random blogs with no authority
-  - ❌ Spammy or low-quality sites
-
-- **Relevance**: Links must directly support content claims
-- **Freshness**: Prefer recent sources (within 1-2 years for data)
-- **Functionality**: All links must work (no broken links)
-
-### External Link Attributes
-- Most external links: No special attributes needed
-- Sponsored/affiliate links: Use `rel="sponsored"` or `rel="nofollow"`
-- User-generated content: Use `rel="nofollow"`
-
-## Readability Optimization
-
-### Target Reading Level
-- **Goal**: 8th-10th grade reading level (Flesch-Kincaid)
-- Makes content accessible to wider audience
-- Easier to scan and understand quickly
-
-### Sentence Structure
-- **Average length**: 15-20 words per sentence
-- **Maximum**: 25 words (break longer sentences into two)
-- **Variety**: Mix short punchy sentences with longer explanatory ones
-- **Active voice**: Preferred over passive voice (80%+ active)
-
-### Paragraph Structure
-- **Length**: 2-4 sentences per paragraph
-- **One idea**: Focus each paragraph on single point
-- **White space**: No walls of text
-- **Mobile-friendly**: Short paragraphs scan better on phones
-
-### Formatting for Scannability
-- **Subheadings**: Every 300-400 words
-- **Lists**: Use bullets/numbers for sequential or multiple items
-- **Bold**: Emphasize key concepts or takeaways
-- **Short paragraphs**: Easier to digest
-- **White space**: Makes content less intimidating
-
-### Transition Words
-Use transition words to improve flow (target: one per paragraph):
-- Addition: Additionally, Furthermore, Moreover
-- Contrast: However, On the other hand, Nevertheless
-- Cause/Effect: Therefore, Consequently, As a result
-- Example: For instance, For example, Specifically
-- Time: First, Next, Finally
-
-## Content Quality Standards
-
-### Expertise, Authoritativeness, Trustworthiness (E-A-T)
-
-#### Expertise
-- Provide accurate, detailed information on podcasting topics
-- Back claims with data and examples
-- Demonstrate deep understanding of podcast creator needs
-- Include actionable, practical advice
-
-#### Authoritativeness
-- Cite credible sources
-- Reference industry data and trends
-- Include expert quotes when relevant
-- Leverage Castos's position as hosting platform
-
-#### Trustworthiness
-- Be transparent and honest
-- Acknowledge limitations or challenges
-- Don't overpromise results
-- Cite sources for all statistics and claims
-- Update outdated content regularly
-
-### Content Originality
-- **Never plagiarize**: All content must be original
-- **Add unique value**: What perspective or insight do we add?
-- **Fresh examples**: Use current, relevant examples
-- **Updated data**: Use most recent statistics available
-- **Unique angle**: Differentiate from competitor content
-
-### Factual Accuracy
-- **Verify statistics**: Check all numbers and data points
-- **Current information**: Ensure practices/processes are up-to-date
-- **Technical accuracy**: Podcasting terminology and processes must be correct
-- **Castos features**: Ensure product references are accurate
-
-## Image Optimization
-
-### Image Requirements
-- **Relevant**: Images should support content points
-- **High-quality**: Professional appearance
-- **Optimized**: Compressed for fast loading
-- **Mobile-friendly**: Visible and useful on small screens
-
-### Image SEO
-**File Names**:
-- Descriptive and keyword-rich
-- ✅ `podcast-editing-software-interface.jpg`
-- ❌ `IMG_12345.jpg`
-
-**Alt Text**:
-- Describe what image shows (accessibility + SEO)
-- Include keywords naturally where relevant
-- 125 characters or less
-- ✅ "Podcast editing software interface showing waveform and timeline"
-- ❌ "Image"
-
-**Placement**:
-- Break up long text sections
-- Illustrate concepts being discussed
-- After explaining concept, not before
-
-## Featured Snippet Optimization
-
-Featured snippets appear at position 0 in Google search results. Optimize for them when possible.
-
-### Question-Based Snippets
-- Include question as H2 heading
-- Answer concisely in 40-60 words immediately after
-- Use clear, direct language
-
-**Example**:
-```markdown
-## What is Podcast Hosting?
-
-Podcast hosting is a service that stores your audio files and generates an RSS feed that distributes your episodes to podcast platforms like Apple Podcasts, Spotify, and Google Podcasts. Without a host, listeners can't discover or access your show on their favorite apps.
-```
-
-### List-Based Snippets
-- Use numbered or bulleted lists
-- Keep items concise (1-2 sentences each)
-- Include 5-8 items typically
-
-### Table-Based Snippets
-- Use HTML tables or markdown tables
-- Comparison charts, pricing, specifications
-- Clear headers and organized data
-
-### Definition Snippets
-- Define term in first sentence after heading
-- 40-60 word clear, concise definition
-- Expand with additional detail after
-
-## Mobile Optimization
-
-### Mobile-First Considerations
-- **Short paragraphs**: 2-3 sentences max
-- **Scannable**: Heavy use of subheadings and lists
-- **Large fonts**: Readable without zooming
-- **Tap-friendly links**: Adequate spacing
-- **Fast loading**: Optimized images
-
-## Content Refresh Strategy
-
-### When to Update Content
-- Article is 12+ months old
-- Statistics or data are outdated
-- Processes or best practices have changed
-- Competitor content has surpassed ours
-- Rankings have declined
-- New relevant information available
-
-### What to Update
-- Publication date or "Last Updated" date
-- Statistics with current data
-- Screenshots with current versions
-- Examples with recent case studies
-- SEO elements (keyword focus may have shifted)
-- Internal links to newer content
-
-## SEO Checklist for Every Article
-
-Before publishing, verify:
-
-### Content
-- [ ] 2,000+ words (or appropriate for content type)
-- [ ] Primary keyword identified
-- [ ] Keyword density 1-2%
-- [ ] 3-5 secondary keywords included
-- [ ] LSI keywords naturally integrated
-- [ ] Provides unique value vs. competitors
-- [ ] Factually accurate and current
-
-### Structure
-- [ ] One H1 with primary keyword
-- [ ] 4-7 H2 sections
-- [ ] 2-3 H2s include keyword variations
-- [ ] Proper H1>H2>H3 hierarchy
-- [ ] Keyword in first 100 words
-- [ ] Keyword in conclusion
-
-### Meta Elements
-- [ ] Meta title 50-60 characters with keyword
-- [ ] Meta description 150-160 characters with keyword & CTA
-- [ ] URL slug includes primary keyword
-- [ ] All meta elements are unique
-
-### Links
-- [ ] 3-5 internal links included
-- [ ] Internal links use descriptive anchor text
-- [ ] 2-3 external authority links
-- [ ] All links functional (no broken links)
-- [ ] Links add value to reader
-
-### Readability
-- [ ] 8th-10th grade reading level
-- [ ] Average sentence length 15-20 words
-- [ ] Paragraphs 2-4 sentences
-- [ ] Subheadings every 300-400 words
-- [ ] Lists used for scannability
-- [ ] Active voice predominantly
-
-### Images
-- [ ] Relevant images included
-- [ ] Descriptive file names
-- [ ] Alt text with keywords
-- [ ] Images optimized for web
-
-### Quality
-- [ ] No spelling or grammar errors
-- [ ] Factually accurate
-- [ ] Sources cited
-- [ ] Brand voice maintained
-- [ ] Provides actionable value
-- [ ] Clear call-to-action
-
-## SEO Tools & Resources
-
-### Recommended Tools
-- **Keyword Research**: Ahrefs, SEMrush, Google Keyword Planner
-- **Content Analysis**: Clearscope, Surfer SEO, MarketMuse
-- **Readability**: Hemingway Editor, Grammarly
-- **Technical SEO**: Screaming Frog, Google Search Console
-- **Rank Tracking**: Ahrefs, SEMrush, Google Search Console
-
-### Reference Resources
-- Google's Search Quality Evaluator Guidelines
-- Moz Beginner's Guide to SEO
-- Backlinko Blog (Brian Dean)
-- Search Engine Journal
-- Ahrefs Blog
+- Lowercase, hyphens only
+- 3–5 words, include primary keyword
+- Match existing FN URL pattern: `/[keyword-phrase]/` (no `/blog/` prefix)
+- Examples from live site: `/finland-digital-nomad-visa/`, `/holafly-china-esim-review/`, `/nomadic-living-costs/`
 
 ---
 
-**Remember**: SEO serves the user, not the algorithm. Never sacrifice content quality, accuracy, or helpfulness for keyword optimization. The best SEO is great content that genuinely helps podcast creators succeed.
+## Internal Linking
+
+### Requirements (MANDATORY)
+- **Minimum**: 3 internal links per article
+- **Optimal**: 4–6 internal links
+- Always check `context/internal-links-map.md` for available URLs before writing
+
+### Anchor Text Rules
+- ✅ Descriptive: "our guide to the Finland digital nomad visa"
+- ✅ Natural: "we covered the best eSIMs for China"
+- ❌ Generic: "click here," "read more," "this article"
+- ❌ Exact-match spam: using the same anchor text every time for the same URL
+
+### Placement
+- First link within first 300 words where natural
+- Distributed throughout — never clustered in one section
+- Max 2 links per paragraph
+- Context must be relevant — never force a link
+
+---
+
+## External Linking
+
+### Requirements (MANDATORY)
+- **Minimum**: 2 external links per article
+- Purpose: Establish EEAT, support claims with authoritative sources
+
+### What to Link To
+- Government visa portals (official source, always preferred for visa guides)
+- Official country immigration pages
+- Established nomad resources (Nomad List for data, NomadGossip for community context)
+- Scientific/medical studies when relevant (health/insurance content)
+- Manufacturer/product official pages for gear reviews
+- **Never**: Random blogs with no authority, sites with thin content, competitors without good reason
+
+### Attributes
+- No `rel="nofollow"` needed for editorial links
+- Affiliate/sponsored links: `rel="sponsored"` — disclose upfront in article
+- External links open in new tab where appropriate
+
+---
+
+## EEAT (Experience, Expertise, Authoritativeness, Trustworthiness)
+
+This is critical for ranking in 2026. Google and AI search engines heavily weight EEAT signals.
+
+### Experience (the most important E in 2026)
+- **Every article must be attributed to a real author** — Irene, Luca, or a named contributor
+- Author must have verifiable first-person experience with the topic
+- State the experience upfront: "I spent three months in China testing this eSIM" / "I've lived in Mazunte as a nomad"
+- Reference specific, real-world details: café names, exact speeds, actual prices paid
+- Never write "many nomads find..." — use "I found..." or cite a named source
+
+### Expertise
+- Include specific data: speeds, costs, processing times, coverage percentages
+- Cite official sources for visa and legal information
+- Acknowledge limitations of knowledge honestly
+
+### Authoritativeness
+- Author bio linking to author profile/page
+- Press mentions where relevant (Forbes, Condé Nast, Reader's Digest)
+- Community credentials: "Freaking Nomads has 1,433+ community members"
+- Cross-link to related authoritative FN content
+
+### Trustworthiness
+- Disclose affiliate relationships upfront (not buried)
+- State limitations: "We haven't personally visited every destination on this list"
+- Update dates shown prominently on evergreen content
+- Never claim universal truth: "This worked for us — your mileage may vary"
+- Acknowledge product downsides without softening
+
+---
+
+## FAQ Section (MANDATORY)
+
+Every article must include a FAQ section.
+
+### Requirements
+- Minimum 4 questions, maximum 8
+- Source questions from Google's "People Also Ask" for the primary keyword
+- Also include questions from the article's own H2 headings that are question-format
+- Each answer: 40–80 words, clear and direct
+- Implement FAQPage schema (see Schema section below)
+
+### FAQ Format
+```markdown
+## Frequently Asked Questions
+
+### Does [Country] have a digital nomad visa?
+[Direct answer in 1–2 sentences. Then 1–2 sentences of supporting detail.]
+
+### How much does [Country]'s digital nomad visa cost?
+[Specific number(s). No vague "it depends" without specifics.]
+
+### [Next question from PAA]
+[Answer]
+```
+
+---
+
+## Schema Markup
+
+All articles should include schema recommendations in the draft frontmatter. The developer/CMS handles implementation, but the content must flag which schemas apply.
+
+### Required for All Articles
+```
+Schema: Article (author, datePublished, dateModified, publisher)
+Schema: FAQPage (all FAQ questions and answers)
+Schema: BreadcrumbList (Home > Category > Article)
+```
+
+### Additional by Content Type
+- **Destination guides**: Add `TravelGuide` or `Place` schema where applicable
+- **Product reviews**: Add `Review` schema with rating if a rating is given
+- **Best-of listicles**: Add `ItemList` schema
+- **Visa guides**: Add `HowTo` schema for the application process steps
+
+---
+
+## AI Search Optimization (2026 Priority)
+
+Content is now being surfaced by ChatGPT, Perplexity, Gemini, and other AI search engines. Optimize for extraction:
+
+### Structure for AI extraction
+- **Define terms clearly in the first mention**: "A digital nomad visa (a visa specifically designed for remote workers earning income from abroad) allows..."
+- **Use direct Q&A format**: H2 headings as questions, direct answers in first sentence
+- **Include structured data**: Tables, numbered lists, and bullet points extract better than prose paragraphs
+- **Factual claims must be citable**: Every stat should have a source linked. AI engines check sourcing.
+- **Summaries at top**: For longer guides, include a "Quick Answer" or "TL;DR" box near the top
+
+### What AI engines surface from FN content
+Based on observed FN content structure, these elements get extracted:
+- Cost tables and monthly budget breakdowns
+- Visa requirements tables (validity, cost, processing time)
+- Product comparison tables
+- FAQ answers
+- Direct "Does X have a digital nomad visa?" answers
+
+---
+
+## AI Detection (MANDATORY POLICY)
+
+**Every article must be checked for AI detection before publishing.**
+
+- **Target**: Score below 40% on AI detection tools
+- **If above 40%**: Humanization pass is mandatory — do not publish until score drops
+- **Humanization pass includes**:
+  - Replace any banned words (see brand-voice.md)
+  - Add specific personal details, real prices, location names
+  - Vary sentence length more aggressively (shorter punchy sentences)
+  - Add a rhetorical question or two
+  - Add a fragment or casual aside where natural
+  - Remove any passive constructions
+  - Replace "moreover/furthermore/in conclusion" with natural transitions or new paragraphs
+
+**Tools to use**: GPTZero, Originality.ai, or similar. The humanization step is not optional.
+
+---
+
+## Readability
+
+- **Reading level**: 8th–10th grade (Flesch-Kincaid) — check with `readability_scorer.py`
+- **Sentence length**: Vary. Mix short (5–10 words) with medium (15–20 words). Max 30 words before breaking.
+- **Paragraph length**: 2–4 sentences. No walls of text.
+- **Subheadings**: Every 300–400 words
+- **Lists**: Use for sequential steps, comparisons, specs — not as a substitute for real analysis
+
+---
+
+## Image Optimization
+
+- **File names**: Descriptive, keyword-include. `finland-digital-nomad-visa-requirements.jpg` not `IMG_1234.jpg`
+- **Alt text**: Describe what the image shows + keyword where natural. Max 125 characters.
+- **Compression**: Optimize before upload (WebP preferred)
+- **Placement**: After the concept is explained, not before
+
+---
+
+## Content Refresh Triggers
+
+Refresh an article when:
+- It's 12+ months old AND ranks in positions 8–20 (opportunity to push higher)
+- Visa information has changed (legislation, costs, eligibility)
+- Product has been updated or discontinued
+- A competitor has outranked us with fresher content
+- GSC shows declining impressions over 3+ months
+
+---
+
+## Pre-Publishing SEO Checklist
+
+### Keyword & Content
+- [ ] Primary keyword identified, researched (volume + difficulty)
+- [ ] Long-tail keyword with clear intent
+- [ ] Keyword in H1, first 100 words, 2+ H2s, meta title, meta description, URL
+- [ ] 3–5 secondary keywords naturally integrated
+- [ ] No keyword stuffing — `keyword_analyzer.py` run
+- [ ] Content matches search intent (informational, commercial, navigational)
+- [ ] Provides unique value vs. top 10 competitors
+
+### Structure
+- [ ] Hook in first 1–3 sentences
+- [ ] Single H1 with primary keyword
+- [ ] 4–8 H2 sections
+- [ ] Proper H1 > H2 > H3 hierarchy
+- [ ] FAQ section with 4–6 PAA questions
+- [ ] Conclusion with honest verdict
+
+### EEAT
+- [ ] Real author attributed (Irene, Luca, or named contributor)
+- [ ] Author's personal experience stated upfront
+- [ ] Specific data included (prices, speeds, dates, processing times)
+- [ ] External authoritative sources linked (minimum 2)
+- [ ] Affiliate disclosure if applicable (upfront, not buried)
+
+### Meta & Technical
+- [ ] Meta title 50–60 characters, keyword included
+- [ ] Meta description ≤155 characters, keyword + value prop + implicit CTA
+- [ ] URL slug: short, keyword-included, matches FN URL pattern
+- [ ] Schema markup flagged: Article + FAQPage (minimum)
+- [ ] Images: descriptive filenames + alt text
+
+### Links
+- [ ] 3+ internal links with descriptive anchor text
+- [ ] 2+ external authority links
+- [ ] All links functional
+
+### Quality & Compliance
+- [ ] AI detection score below 40% — humanization pass completed if needed
+- [ ] No banned words (check brand-voice.md list)
+- [ ] Active voice throughout
+- [ ] Cons stated plainly, not buried
+- [ ] Reading level 8th–10th grade
+- [ ] Proofread — no typos or grammar errors
+
+---
+
+**Remember**: SEO serves readers, not algorithms. The best-ranking Freaking Nomads article is the one that most honestly and specifically answers what a digital nomad actually needs to know.
