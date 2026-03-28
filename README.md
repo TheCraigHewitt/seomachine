@@ -1,5 +1,7 @@
 # SEO Machine
 
+[![gitcgr](https://gitcgr.com/badge/TheCraigHewitt/seomachine.svg)](https://gitcgr.com/TheCraigHewitt/seomachine)
+
 A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.
 
 ## Overview
