@@ -9,6 +9,13 @@ Get SEO Machine running in **10 minutes** ⚡
 pip install -r data_sources/requirements.txt
 ```
 
+### Docker Alternative
+
+```bash
+docker-compose build
+docker-compose run seomachine bash
+```
+
 ## Step 2: Configure Context Files (5 min)
 
 Fill out these **3 essential files** with your company info:

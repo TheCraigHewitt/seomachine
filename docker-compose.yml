@@ -1,0 +1,17 @@
+services:
+  seomachine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - data_sources/config/.env
+    volumes:
+      - ./context:/app/context
+      - ./drafts:/app/drafts
+      - ./output:/app/output
+      - ./published:/app/published
+      - ./research:/app/research
+      - ./rewrites:/app/rewrites
+      - ./topics:/app/topics
+      - ./credentials:/app/credentials
+      - ./.claude:/app/.claude
