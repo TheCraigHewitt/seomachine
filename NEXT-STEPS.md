@@ -4,6 +4,8 @@
 
 SEO Machine is ready to help you create world-class SEO content for your business. Here's what you have:
 
+Change SEO to GEO.
+
 ### Project Structure
 ```
 seomachine/
