@@ -1,73 +1,67 @@
-# SEO Guidelines for Castos Content
+# SEO Guidelines for CoolMaps Content
 
-This document outlines SEO best practices and requirements for all Castos blog content to maximize organic search visibility and rankings.
+This document outlines SEO best practices and requirements for all CoolMaps blog and editorial content to maximise organic search visibility and rankings.
 
 ## Content Length Requirements
 
 ### Target Word Counts
-- **Standard Blog Post**: 1,500-3,000 words (target: 2,000-2,500)
-- **Pillar Content / Comprehensive Guides**: 3,000-5,000 words maximum
-- **How-To Guides**: 1,500-2,500 words
-- **News / Updates**: 800-1,200 words (exception to standard)
+- **Standard Blog Post**: 1,200–2,500 words (target: 1,500–2,000)
+- **Pillar Content / Comprehensive Guides**: 2,500–4,000 words maximum
+- **Gift Guides & Listicles**: 1,200–2,000 words
+- **Place Storytelling / Editorial**: 800–1,500 words (quality over quantity)
+- **Product Style Pages**: 400–700 words (focused, conversion-oriented)
 
 ### Important Length Guidelines
-- **Maximum for most articles**: 3,000 words
-- **Maximum for pillar content**: 5,000 words
-- If a topic requires more than the maximum, break it into a series of related articles
-- Aim for the lower end of ranges when possible—concise, focused content often performs better
-
-### Why Length Matters
-- Longer content typically ranks higher in search results
-- More words = more opportunities for keyword integration and topic coverage
-- Comprehensive content earns more backlinks and engagement
-- Depth signals expertise and authority to search engines
+- **Maximum for most articles**: 2,500 words
+- **Maximum for pillar content**: 4,000 words
+- If a topic requires more, break it into a series of related articles (e.g. a gift guide for each occasion)
+- Aim for the lower end of ranges — in CoolMaps' category, readers want to feel inspired and informed quickly, not exhausted
 
 ### Quality Over Quantity
-- Don't add fluff just to hit word counts
-- Every section should provide genuine value
-- Better to have 2,000 valuable words than 3,000 padded words
-- **Stay within the maximum word counts**—overly long articles hurt user experience
+- Every section should provide genuine value or emotional resonance
+- Better to have 1,200 purposeful words than 2,000 padded ones
+- CoolMaps content should always feel crafted, not stuffed
 
-## Keyword Optimization
+## Keyword Optimisation
 
 ### Keyword Research Requirements
 Before writing any article:
-1. Identify primary target keyword
-2. Research search volume and difficulty
-3. Analyze top 10 ranking competitors
-4. Identify 3-5 secondary/related keywords
+1. Identify primary target keyword (e.g. "personalised map print", "custom map art", "map of London print")
+2. Research search volume and keyword difficulty
+3. Analyse top 10 ranking competitors
+4. Identify 3–5 secondary/related keywords
 5. List LSI (Latent Semantic Indexing) keywords
 
 ### Keyword Density Guidelines
-- **Primary Keyword**: 1-2% density
-  - Example: In a 2,000-word article, use keyword 20-40 times
-  - Natural integration is critical—never force keywords
-- **Secondary Keywords**: 0.5-1% density each
+- **Primary Keyword**: 1–2% density
+  - In a 1,500-word article, use keyword naturally 15–30 times
+  - Natural integration is critical — never force keywords
+- **Secondary Keywords**: 0.5–1% each
 - **LSI Keywords**: Sprinkle throughout naturally
 
 ### Critical Keyword Placement
 Primary keyword MUST appear in:
 - [ ] H1 headline (preferably near the beginning)
 - [ ] First 100 words of article
-- [ ] At least 2-3 H2 subheadings
+- [ ] At least 2 H2 subheadings
 - [ ] Last paragraph / conclusion
 - [ ] Meta title (within first 60 characters)
 - [ ] Meta description
 - [ ] URL slug
 
 ### Keyword Integration Best Practices
-- **Natural language first**: Write for humans, optimize for search engines
-- **Use variations**: Don't repeat exact phrase robotically
-  - Example: "podcast hosting" → "hosting your podcast" → "podcast host"
-- **Question formats**: Include conversational variations
-  - "How to start a podcast" vs "starting a podcast"
-- **Semantic keywords**: Use related terms to support topical authority
-  - For "podcast editing": include "audio editing", "post-production", "editing workflow"
+- **Natural language first**: Write for humans, optimise for search engines
+- **Use variations**: Don't repeat exact phrases robotically
+  - Example: "personalised map print" → "personalised map art" → "custom map print" → "map of [city]"
+- **Location-modifier strategy**: Many high-intent searches include a place name
+  - "map print of Paris" / "London map art" / "New York custom map"
+- **Occasion modifiers**: Strong secondary keyword layer
+  - "anniversary gift map print" / "wedding gift personalised map" / "housewarming map art"
 
 ### Keyword Stuffing (Avoid)
-❌ "Podcast hosting is important. Podcast hosting helps podcasters. Our podcast hosting platform offers podcast hosting services for podcast hosting needs."
+❌ "Our personalised map prints are the best personalised map prints. When you buy a personalised map print, you're getting a personalised map print made just for you."
 
-✅ "Podcast hosting is important for creators who want to distribute their show to major platforms. A reliable host ensures your episodes are accessible wherever listeners discover new content."
+✅ "A personalised map print turns a meaningful place into something you can actually live with — a piece of art that tells your story every time you walk past it."
 
 ## Content Structure Requirements
 
@@ -76,424 +70,281 @@ Primary keyword MUST appear in:
 #### H1 (Title)
 - **Only one H1 per article**
 - Include primary keyword naturally
-- 60 characters or less (for SERP display)
-- Compelling and benefit-focused
-- Should answer: "What will I learn/gain from this?"
+- Sentence case (not Title Case) — fits CoolMaps' refined, non-corporate tone
+- 60 characters or less for SERP display
+- Should feel editorial, not like a product description — lead with the story angle
 
 #### H2 (Main Sections)
-- **4-7 H2 sections** for standard articles
-- At least **2-3 should include keyword variations**
-- Descriptive and keyword-rich
-- Logical progression through topic
-- Can be standalone (readers should understand flow from H2s alone)
+- **3–6 H2 sections** for standard articles
+- At least **2 should include keyword variations**
+- Sentence case throughout
+- Narrative where possible — subheadings should feel like part of the story
 
 #### H3 (Subsections)
 - Nested under H2s (never skip from H2 to H4)
-- Break complex sections into digestible chunks
+- Use sparingly — CoolMaps content favours flowing prose over heavy formatting
 - Include keywords where natural
-- More specific than H2s
 
 ### Article Structure Template
 
 ```markdown
-# [H1: Compelling Title with Primary Keyword]
+# [H1: Emotionally-led title with primary keyword — sentence case]
 
-## Introduction (150-250 words)
-- Hook: Attention-grabbing opening
-- Problem: What challenge does this address?
-- Promise: What will reader learn/achieve?
-- Keyword in first 100 words
+## Introduction (100–200 words)
+- Hook: Open with a specific emotional image or moment, not a product pitch
+- Problem/desire: What is the reader feeling or looking for?
+- Promise: What will they learn or gain?
+- Primary keyword in first 100 words
 
-## [H2: Main Section 1 - Include Keyword Variation]
-### [H3: Subsection if needed]
-- Content depth
-- Examples
-- Data/statistics
+## [H2: Section 1 — narrative or informational, includes keyword variation]
+Content, examples, specific place references
 
-## [H2: Main Section 2]
-### [H3: Subsection if needed]
-- Content depth
-- Examples
-- Data/statistics
+## [H2: Section 2]
+Content, sensory details, emotional grounding
 
-## [H2: Main Section 3 - Include Keyword Variation]
-### [H3: Subsection if needed]
-- Content depth
-- Examples
-- Data/statistics
+## [H2: Section 3 — practical guidance or product connection]
+CoolMaps styles, customiser, or gift use case introduced naturally
 
-## [H2: Main Section 4]
-[Continue with 4-7 total H2 sections]
+## [H2: Section 4 — optional, for longer guides]
+Additional depth
 
-## Conclusion (150-250 words)
-- Recap key points (3-5 takeaways)
-- Include keyword
-- Clear call-to-action
-- Next steps for reader
+## Conclusion (100–150 words)
+- 2–3 key takeaways
+- Warm, forward-looking closing thought
+- Clear, invitation-style CTA ("Design your map" / "Find the right style")
 ```
 
 ## Meta Elements
 
 ### Meta Title
 **Requirements**:
-- **Length**: 50-60 characters (including "| Castos" if used)
+- **Length**: 50–60 characters (including "| CoolMaps" if used)
 - **Primary keyword**: Must be included
-- **Compelling**: Should encourage clicks from SERP
-- **Unique**: Different from all other Castos page titles
+- **Compelling**: Encourage clicks from SERP
+- **Sentence case**
 - **Accurate**: Must match page content
 
 **Format Options**:
-- `[Primary Keyword]: [Benefit/Promise]`
-- `How to [Goal] | [Qualifier]`
-- `[Number] Ways to [Achieve Benefit]`
-- `[Topic] Guide for [Audience] | Castos`
+- `[Keyword]: [Emotional angle or benefit]`
+- `[Emotional hook] — [Keyword]`
+- `[Number] [keyword] ideas for [occasion]`
+- `[Keyword] | CoolMaps`
 
 **Examples**:
-- ✅ "How to Start a Podcast in 2025: Complete Guide"
-- ✅ "12 Proven Podcast Growth Strategies | Castos"
-- ❌ "Podcast Tips and Tricks" (too vague, no keyword)
-- ❌ "The Ultimate Comprehensive Guide to Everything About Starting Your First Podcast Successfully" (too long)
+- ✅ "Personalised map prints: the gift that actually means something | CoolMaps"
+- ✅ "How to choose a custom map print for your home"
+- ✅ "12 anniversary gift ideas — including one they'll frame forever"
+- ❌ "Buy Custom Map Prints Online — Great Prices" (too generic, too product-catalogue)
+- ❌ "The Ultimate Comprehensive Guide to Everything About Personalised Map Art Prints for Every Occasion" (too long)
 
 ### Meta Description
 **Requirements**:
-- **Length**: 150-160 characters
+- **Length**: 150–160 characters
 - **Primary keyword**: Include naturally
-- **Value proposition**: Clear benefit to reader
-- **Call-to-action**: Action phrase (Learn, Discover, Find out, Get, etc.)
+- **Emotional hook or value proposition**: Give them a reason to click
+- **Call-to-action**: Soft and brand-appropriate (not "Buy now!")
 - **Complete**: Must not cut off mid-sentence
-- **Compelling**: Should drive clicks from SERP
 
 **Formula**:
 ```
-[Problem/Question]? [Solution/Benefit]. [Unique angle]. [CTA].
+[Emotional hook or question]. [What the article provides]. [CTA].
 ```
 
 **Examples**:
-- ✅ "Learn how to start a podcast with our step-by-step guide. Everything from equipment to launch strategy. Perfect for beginners. Start your show today." (159 chars)
-- ✅ "Discover 12 proven podcast growth strategies that top creators use. Increase downloads, engagement, and audience loyalty. Actionable tips inside." (155 chars)
-- ❌ "This is a blog post about podcasting where we discuss many podcast-related topics." (vague, no value prop, no CTA)
+- ✅ "Some places stay with you forever. Our guide to personalised map prints — and how to choose the one that tells your story. Start designing." (155 chars)
+- ✅ "A custom map print makes the perfect anniversary gift. Here's how to pick the right style, size, and location for someone you love." (132 chars)
+- ❌ "Read our blog post about personalised map prints and gifts and home decor products." (vague, no emotional hook)
 
 ### URL Slug
 **Requirements**:
 - Include primary keyword
 - Lowercase letters only
 - Hyphens between words (not underscores)
-- Short and descriptive (3-5 words ideal)
-- No stop words unless necessary (a, the, and, of, etc.)
+- Short and descriptive (3–5 words ideal)
+- Omit stop words where possible (a, the, and, of)
 
 **Format**: `/blog/[primary-keyword-phrase]`
 
 **Examples**:
-- ✅ `/blog/start-podcast-guide`
-- ✅ `/blog/podcast-growth-strategies`
-- ✅ `/blog/podcast-editing-software`
-- ❌ `/blog/how-to-start-a-podcast-in-2025-the-complete-guide` (too long)
+- ✅ `/blog/personalised-map-print-gift`
+- ✅ `/blog/custom-map-art-anniversary`
+- ✅ `/blog/best-map-styles-home-decor`
+- ❌ `/blog/how-to-choose-the-perfect-personalised-map-print-for-your-home` (too long)
 - ❌ `/blog/post-12345` (no keywords)
 
 ## Internal Linking Strategy
 
 ### Requirements
 - **Minimum**: 3 internal links per article
-- **Optimal**: 4-5 internal links
-- **Maximum**: 7 internal links (unless 3,000+ word article)
+- **Optimal**: 4–5 internal links
+- **Maximum**: 6 internal links (unless 2,500+ word article)
 
 ### Link Types to Include
 
-#### 1. Pillar Content (1-2 links)
-- Link to main comprehensive guides on related topics
-- Builds topic cluster authority
-- Usually 2,000+ word cornerstone content
+#### 1. Product / Customiser Page (1 link)
+- Always link naturally to the CoolMaps customiser when relevant
+- Contextualise with an invitation: "Design your map" not "click here"
 
-#### 2. Related Blog Posts (2-3 links)
-- Link to articles on related subtopics
-- Creates content web
-- Helps readers explore topics comprehensively
+#### 2. Related Blog Posts (2–3 links)
+- Connect to articles on related topics — other occasions, other style guides, place stories
+- Builds topical authority and keeps readers on site
 
-#### 3. Product/Feature Pages (0-1 link)
-- Only when contextually relevant
-- Natural mention of how Castos solves problem
-- Never forced or overly promotional
+#### 3. Style or Feature Pages (0–1 link)
+- Link to relevant style pages when discussing aesthetics
+- Only when it genuinely helps the reader
 
-#### 4. Resource Pages (0-1 link)
-- Templates, tools, checklists
-- When mentioned as solutions in content
-- Provides additional value to reader
+#### 4. Gift or Occasion Landing Pages (0–1 link)
+- Link to occasion-specific pages where contextually appropriate
 
 ### Internal Linking Best Practices
 
 **Anchor Text**:
-- ✅ Descriptive and keyword-rich: "our complete guide to podcast analytics"
-- ✅ Natural in sentence flow: "Learn more about podcast SEO strategies"
+- ✅ Descriptive and contextual: "our complete style guide for home interiors"
+- ✅ Natural in sentence: "the right map style for your space"
 - ❌ Generic: "click here" or "read more"
-- ❌ Exact match repeatedly: Always using same anchor text for same page
+- ❌ Exact match overuse: Always using identical anchor text for the same page
 
 **Placement**:
-- Within body paragraphs (most valuable)
-- Natural context that adds value to reader
+- Within body paragraphs (most SEO value)
+- Natural context that adds value for the reader
 - Never more than 2 links per paragraph
-- Distributed throughout article, not clustered
+- Distributed throughout article — don't cluster in one section
 
 **Reference**:
-- Always check @context/internal-links-map.md for priority linking targets
-- Ensure links are current and functional
-- Link to most relevant, up-to-date content
+- Always check `context/internal-links-map.md` for priority linking targets
+- Verify links are current
 
 ## External Linking Strategy
 
 ### Requirements
 - **Minimum**: 2 external links per article
-- **Optimal**: 3-4 external authority links
-- Purpose: Add credibility, provide sources, support claims
+- **Optimal**: 3–4 external authority links
+- Purpose: Support claims, credit sources, add credibility
 
 ### What to Link Externally
-- **Statistics and data sources**: Always cite where numbers come from
-- **Research and studies**: Link to original research
-- **Tools and resources**: When recommending specific tools
-- **Industry authorities**: Expert opinions or industry publications
+- **Data and statistics**: Always cite the source
+- **Geographic or historical references**: Wikipedia, reputable encyclopaedias, tourism boards
+- **Design and interiors authority**: Architectural Digest, Dezeen, design publications
+- **Cartographic or historical references**: When invoking Portugal's Age of Discovery heritage
+- **Gelato**: When referencing print fulfillment quality
 
 ### External Link Quality Standards
-- **Authority**: Link to credible, well-known sources
-  - ✅ Industry publications (Podcast Host, Podnews, etc.)
-  - ✅ Research institutions and studies
-  - ✅ Established media outlets
-  - ❌ Random blogs with no authority
-  - ❌ Spammy or low-quality sites
+- **Authority**: Well-known, credible sources
+  - ✅ Established media, academic or institutional sources, reputable industry publications
+  - ❌ Random blogs, low-authority sites, competitors
+- **Relevance**: Links must directly support the content
+- **Freshness**: Prefer recent sources for statistics and trends
 
-- **Relevance**: Links must directly support content claims
-- **Freshness**: Prefer recent sources (within 1-2 years for data)
-- **Functionality**: All links must work (no broken links)
-
-### External Link Attributes
-- Most external links: No special attributes needed
-- Sponsored/affiliate links: Use `rel="sponsored"` or `rel="nofollow"`
-- User-generated content: Use `rel="nofollow"`
-
-## Readability Optimization
+## Readability Optimisation
 
 ### Target Reading Level
-- **Goal**: 8th-10th grade reading level (Flesch-Kincaid)
-- Makes content accessible to wider audience
-- Easier to scan and understand quickly
+- **Goal**: 8th–10th grade reading level (Flesch-Kincaid)
+- Accessible to the widest audience while maintaining CoolMaps' refined tone
 
 ### Sentence Structure
-- **Average length**: 15-20 words per sentence
-- **Maximum**: 25 words (break longer sentences into two)
-- **Variety**: Mix short punchy sentences with longer explanatory ones
-- **Active voice**: Preferred over passive voice (80%+ active)
+- **Average length**: 12–18 words per sentence
+- **Maximum**: 25 words (break longer sentences)
+- **Short sentences for impact**: Use them freely — they're part of the brand voice
+- **Active voice**: Strongly preferred (80%+ active)
 
 ### Paragraph Structure
-- **Length**: 2-4 sentences per paragraph
-- **One idea**: Focus each paragraph on single point
-- **White space**: No walls of text
-- **Mobile-friendly**: Short paragraphs scan better on phones
+- **Length**: 1–3 sentences for web content; up to 4 for editorial
+- **One idea per paragraph**: Keep focus tight
+- **White space**: No walls of text — CoolMaps' aesthetic is about space and restraint
 
 ### Formatting for Scannability
-- **Subheadings**: Every 300-400 words
-- **Lists**: Use bullets/numbers for sequential or multiple items
-- **Bold**: Emphasize key concepts or takeaways
-- **Short paragraphs**: Easier to digest
-- **White space**: Makes content less intimidating
-
-### Transition Words
-Use transition words to improve flow (target: one per paragraph):
-- Addition: Additionally, Furthermore, Moreover
-- Contrast: However, On the other hand, Nevertheless
-- Cause/Effect: Therefore, Consequently, As a result
-- Example: For instance, For example, Specifically
-- Time: First, Next, Finally
+- **Subheadings**: Every 300–400 words minimum
+- **Bold**: For key concepts or important phrases — use sparingly
+- **Lists**: Only when genuinely appropriate (avoid over-listing in brand editorial)
+- **Short paragraphs**: Standard for this brand and category
 
 ## Content Quality Standards
 
-### Expertise, Authoritativeness, Trustworthiness (E-A-T)
+### E-E-A-T (Experience, Expertise, Authority, Trustworthiness)
+
+#### Experience
+- Write from genuine understanding of what matters to gift-givers, home decorators, and people with emotional ties to places
+- Reference real places, real occasions, real emotional contexts
 
 #### Expertise
-- Provide accurate, detailed information on podcasting topics
-- Back claims with data and examples
-- Demonstrate deep understanding of podcast creator needs
-- Include actionable, practical advice
+- Demonstrate knowledge of cartography, print quality, interior design context
+- Back up claims about Gelato print quality with specific detail
+- Reference CoolMaps' Portuguese cartographic heritage with accuracy
 
 #### Authoritativeness
-- Cite credible sources
-- Reference industry data and trends
-- Include expert quotes when relevant
-- Leverage Castos's position as hosting platform
+- Cite reputable sources for any claims about home decor trends, gift-giving behaviour, or market data
+- Use specific rather than vague proof points
 
 #### Trustworthiness
-- Be transparent and honest
-- Acknowledge limitations or challenges
-- Don't overpromise results
-- Cite sources for all statistics and claims
-- Update outdated content regularly
+- Never exaggerate what CoolMaps offers
+- Acknowledge limitations honestly (delivery times, sizing considerations)
+- Cite sources for all statistics
 
 ### Content Originality
-- **Never plagiarize**: All content must be original
-- **Add unique value**: What perspective or insight do we add?
-- **Fresh examples**: Use current, relevant examples
-- **Updated data**: Use most recent statistics available
-- **Unique angle**: Differentiate from competitor content
+- **Unique perspective**: What does CoolMaps add to this topic that no one else does?
+- **Place specificity**: Use real locations — Paris, Lisbon, the Scottish Highlands
+- **Brand angle**: Always connect the content back to the emotional logic of map prints
 
-### Factual Accuracy
-- **Verify statistics**: Check all numbers and data points
-- **Current information**: Ensure practices/processes are up-to-date
-- **Technical accuracy**: Podcasting terminology and processes must be correct
-- **Castos features**: Ensure product references are accurate
-
-## Image Optimization
-
-### Image Requirements
-- **Relevant**: Images should support content points
-- **High-quality**: Professional appearance
-- **Optimized**: Compressed for fast loading
-- **Mobile-friendly**: Visible and useful on small screens
-
-### Image SEO
-**File Names**:
-- Descriptive and keyword-rich
-- ✅ `podcast-editing-software-interface.jpg`
-- ❌ `IMG_12345.jpg`
-
-**Alt Text**:
-- Describe what image shows (accessibility + SEO)
-- Include keywords naturally where relevant
-- 125 characters or less
-- ✅ "Podcast editing software interface showing waveform and timeline"
-- ❌ "Image"
-
-**Placement**:
-- Break up long text sections
-- Illustrate concepts being discussed
-- After explaining concept, not before
-
-## Featured Snippet Optimization
-
-Featured snippets appear at position 0 in Google search results. Optimize for them when possible.
+## Featured Snippet Optimisation
 
 ### Question-Based Snippets
-- Include question as H2 heading
-- Answer concisely in 40-60 words immediately after
-- Use clear, direct language
+Include common gift/decor questions as H2 headings with 40–60 word answers immediately below.
 
 **Example**:
 ```markdown
-## What is Podcast Hosting?
+## What makes a personalised map print a good gift?
 
-Podcast hosting is a service that stores your audio files and generates an RSS feed that distributes your episodes to podcast platforms like Apple Podcasts, Spotify, and Google Podcasts. Without a host, listeners can't discover or access your show on their favorite apps.
+A personalised map print works as a gift because it's specific to someone's real life — a place they love, a memory they hold, a moment that mattered. Unlike generic art, it can't be given to just anyone. That specificity is what makes it land.
 ```
 
 ### List-Based Snippets
-- Use numbered or bulleted lists
-- Keep items concise (1-2 sentences each)
-- Include 5-8 items typically
-
-### Table-Based Snippets
-- Use HTML tables or markdown tables
-- Comparison charts, pricing, specifications
-- Clear headers and organized data
-
-### Definition Snippets
-- Define term in first sentence after heading
-- 40-60 word clear, concise definition
-- Expand with additional detail after
-
-## Mobile Optimization
-
-### Mobile-First Considerations
-- **Short paragraphs**: 2-3 sentences max
-- **Scannable**: Heavy use of subheadings and lists
-- **Large fonts**: Readable without zooming
-- **Tap-friendly links**: Adequate spacing
-- **Fast loading**: Optimized images
-
-## Content Refresh Strategy
-
-### When to Update Content
-- Article is 12+ months old
-- Statistics or data are outdated
-- Processes or best practices have changed
-- Competitor content has surpassed ours
-- Rankings have declined
-- New relevant information available
-
-### What to Update
-- Publication date or "Last Updated" date
-- Statistics with current data
-- Screenshots with current versions
-- Examples with recent case studies
-- SEO elements (keyword focus may have shifted)
-- Internal links to newer content
+Use numbered or bulleted lists for "best X for Y" style content — gift guides, style recommendations, size guides.
 
 ## SEO Checklist for Every Article
 
-Before publishing, verify:
-
 ### Content
-- [ ] 2,000+ words (or appropriate for content type)
-- [ ] Primary keyword identified
-- [ ] Keyword density 1-2%
-- [ ] 3-5 secondary keywords included
-- [ ] LSI keywords naturally integrated
-- [ ] Provides unique value vs. competitors
-- [ ] Factually accurate and current
+- [ ] 1,200+ words (or appropriate for content type)
+- [ ] Primary keyword identified and researched
+- [ ] Keyword density 1–2%
+- [ ] 3–5 secondary keywords included naturally
+- [ ] LSI keywords integrated
+- [ ] Provides genuine value — emotional, informational, or both
+- [ ] Factually accurate (places, history, product details)
 
 ### Structure
-- [ ] One H1 with primary keyword
-- [ ] 4-7 H2 sections
-- [ ] 2-3 H2s include keyword variations
-- [ ] Proper H1>H2>H3 hierarchy
+- [ ] One H1 with primary keyword (sentence case)
+- [ ] 3–6 H2 sections
+- [ ] 2+ H2s include keyword variations
+- [ ] Proper H1 > H2 > H3 hierarchy
 - [ ] Keyword in first 100 words
 - [ ] Keyword in conclusion
 
 ### Meta Elements
-- [ ] Meta title 50-60 characters with keyword
-- [ ] Meta description 150-160 characters with keyword & CTA
+- [ ] Meta title 50–60 characters with keyword
+- [ ] Meta description 150–160 characters with keyword and CTA
 - [ ] URL slug includes primary keyword
 - [ ] All meta elements are unique
 
 ### Links
-- [ ] 3-5 internal links included
-- [ ] Internal links use descriptive anchor text
-- [ ] 2-3 external authority links
-- [ ] All links functional (no broken links)
-- [ ] Links add value to reader
+- [ ] 3–5 internal links with descriptive anchor text
+- [ ] 2–3 external authority links
+- [ ] All links functional
+- [ ] Customiser or product page linked naturally
 
 ### Readability
-- [ ] 8th-10th grade reading level
-- [ ] Average sentence length 15-20 words
-- [ ] Paragraphs 2-4 sentences
-- [ ] Subheadings every 300-400 words
-- [ ] Lists used for scannability
-- [ ] Active voice predominantly
+- [ ] 8th–10th grade reading level
+- [ ] Average sentence length 12–18 words
+- [ ] Short paragraphs throughout
+- [ ] No walls of text
+- [ ] Active voice predominant
 
-### Images
-- [ ] Relevant images included
-- [ ] Descriptive file names
-- [ ] Alt text with keywords
-- [ ] Images optimized for web
-
-### Quality
-- [ ] No spelling or grammar errors
-- [ ] Factually accurate
-- [ ] Sources cited
-- [ ] Brand voice maintained
-- [ ] Provides actionable value
-- [ ] Clear call-to-action
-
-## SEO Tools & Resources
-
-### Recommended Tools
-- **Keyword Research**: Ahrefs, SEMrush, Google Keyword Planner
-- **Content Analysis**: Clearscope, Surfer SEO, MarketMuse
-- **Readability**: Hemingway Editor, Grammarly
-- **Technical SEO**: Screaming Frog, Google Search Console
-- **Rank Tracking**: Ahrefs, SEMrush, Google Search Console
-
-### Reference Resources
-- Google's Search Quality Evaluator Guidelines
-- Moz Beginner's Guide to SEO
-- Backlinko Blog (Brian Dean)
-- Search Engine Journal
-- Ahrefs Blog
+### Brand Voice
+- [ ] No exclamation marks
+- [ ] No generic superlatives (amazing, stunning, unique) without substance
+- [ ] UK English throughout (personalise, customise, colour)
+- [ ] Sentence case headings
+- [ ] Invitation-style CTAs
 
 ---
 
-**Remember**: SEO serves the user, not the algorithm. Never sacrifice content quality, accuracy, or helpfulness for keyword optimization. The best SEO is great content that genuinely helps podcast creators succeed.
+**Remember**: SEO serves the reader, not the algorithm. CoolMaps content should always feel like something worth reading — not something written to rank. The best SEO for this brand is content that makes people feel something, then gives them a clear next step.

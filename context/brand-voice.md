@@ -1,267 +1,256 @@
-# Castos Brand Voice & Messaging
+# CoolMaps Brand Voice & Messaging
 
-This document defines the Castos brand voice, tone, and messaging framework. Reference this when writing all content to ensure consistency.
+This document defines the CoolMaps brand voice, tone, and messaging framework. Reference this when writing all content to ensure consistency.
 
 ## Brand Voice Pillars
 
-### 1. Professional Yet Approachable
-- **What it means**: We're experts in podcasting, but we're not stuffy or overly formal
-- **How it sounds**: Conversational, warm, knowledgeable without being condescending. Like talking to a really knowledgeable, experienced friend on a topic. 
-- **Example**: "Podcast hosting doesn't have to be complicated. Here's what you actually need to know."
-- **Avoid**: Overly technical jargon without explanation, corporate-speak, talking down to readers, vague and fluffy speak that doesn't convey any real message. Never be boring.
+### 1. Warm & Inviting
+- **What it means**: We speak like a craftsperson who genuinely cares about what they make — never cold, never corporate
+- **How it sounds**: Conversational but polished. Like a knowledgeable friend who happens to have impeccable taste.
+- **Example**: "Every place holds a story. We help you put it on your wall."
+- **Avoid**: Tech-product language, SaaS jargon, clinical descriptions, overly formal phrasing
 
-### 2. Educational & Empowering
-- **What it means**: We teach podcast creators to succeed on their own terms
-- **How it sounds**: Encouraging, instructive, focused on building capability
-- **Example**: "You've got this. Let's walk through how to optimize your podcast for growth."
-- **Avoid**: Gatekeeping knowledge, making podcasting seem harder than it is, creating dependency
+### 2. Refined & Purposeful
+- **What it means**: Every word earns its place. Elevated without being pretentious.
+- **How it sounds**: Considered, unhurried, never breathless or sales-y
+- **Example**: "Not every gift is worth keeping. This one is."
+- **Avoid**: Hyperbole, exclamation marks, push-button urgency, cheapening language like "amazing deal"
 
-### 3. Podcast Creator Advocate
-- **What it means**: We're on the side of independent creators, not big media
-- **How it sounds**: Supportive of creator goals, understanding of challenges
-- **Example**: "We built Castos because podcast creators deserve better tools and support."
-- **Avoid**: Speaking from platform/company perspective only, ignoring creator pain points
+### 3. Timeless Over Trendy
+- **What it means**: We create things built to last — and our writing should feel the same way
+- **How it sounds**: Enduring, grounded, not chasing the algorithm
+- **Example**: "Some places stay with you forever. Custom map art is how you keep them close."
+- **Avoid**: Trend-chasing phrases, internet slang, anything that will feel dated in two years
 
-### 4. Technically Accurate but Accessible
-- **What it means**: We get the technical details right while explaining clearly
-- **How it sounds**: Precise when needed, simple explanations for complex concepts
-- **Example**: "RSS feeds are how podcast apps discover your show. Think of it like a menu that updates automatically."
-- **Avoid**: Dumbing down to the point of inaccuracy, unnecessary complexity
+### 4. Place-Rooted
+- **What it means**: We believe places hold meaning — emotional, personal, irreplaceable
+- **How it sounds**: Evocative, story-driven, specific rather than generic
+- **Example**: "The corner where you met. The city you grew up in. The mountain you climbed together. There's a reason certain places never leave you."
+- **Avoid**: Vague platitudes, treating locations as data points rather than emotional anchors
 
-### 5. Focused on Results & Growth
-- **What it means**: We care about podcast creator success metrics and outcomes. This is audience growth, monetization as well.
-- **How it sounds**: Action-oriented, results-focused, growth-minded
-- **Example**: "These strategies helped podcast creators increase their downloads by 40%."
-- **Avoid**: Vague promises, hype without substance, ignoring practical application
+### 5. Artisanal Confidence
+- **What it means**: We know our craft — cartography, print, design — and we carry that knowledge with quiet authority
+- **How it sounds**: Expert without being boastful, rooted in Portugal's cartographic heritage
+- **Example**: "Cartography has always been about more than coordinates. It's about making the invisible visible — the feeling of a place, captured in lines."
+- **Avoid**: Overselling, false modesty, dumbing down the craft
 
 ## Tone Guidelines
 
-### General Tone: Helpful Expert Friend
-Imagine you're an experienced podcaster helping a friend succeed. You know what you're talking about, you genuinely want them to succeed, and you explain things clearly without being patronizing.
+### General Tone: The Skilled Craftsperson
+Think of a master mapmaker who also happens to be a great storyteller. They know their work is good — they don't need to shout about it. They speak with warmth, precision, and a genuine love for what they create.
 
 ### Tone Variations by Content Type
 
-**How-To Guides**: Instructive, step-by-step, encouraging
-- "First, you'll want to..."
-- "Now that you've completed X, let's move on to Y."
-- "Don't worry if this seems confusing at first—it'll click once you try it."
-- "I like to start by..."
+**Product & Customiser Pages**: Clear, sensory, benefit-forward
+- "Eight map styles, each with a distinct personality."
+- "Choose the style that feels like home."
+- "From Modern to Mineral — find the aesthetic that's yours."
 
-**Strategy/Advice Content**: Authoritative, experienced, actionable
-- "Here's what successful podcasters do differently..."
-- "The most effective approach is..."
-- "Based on our analysis of 10,000+ podcasts..."
-- "When I am facing a decision like this, I always..."
+**Gift & Occasion Content**: Emotionally resonant, reassuring
+- "The kind of gift that stops someone in their tracks."
+- "Because some moments deserve to live on the wall, not just in a photo album."
+- "Thoughtful doesn't have to mean complicated."
 
-**Industry News/Trends**: Insightful, analytical, forward-looking
-- "This shift means podcast creators need to..."
-- "The podcasting landscape is evolving toward..."
-- "Here's why this matters for your show..."
-- "This is the really crazy part, that nobody is talking about..."
+**Place Storytelling / Blog**: Evocative, narrative, unhurried
+- "There's a particular kind of homesickness that hits you in the middle of ordinary days..."
+- "Maps have always been about more than getting from A to B."
+- "Portugal's cartographers understood something the rest of the world is only now catching up to."
 
-**Product/Feature Content**: Benefit-focused, clear, honest
-- "This feature solves the problem of..."
-- "You can use this to..."
-- "Here's how it works in practice..."
+**How-To / Guide Content**: Helpful, direct, still warm
+- "Here's how to pick the right style for your space."
+- "Three things to consider before you customise."
+- "Getting the frame size right matters more than most people think."
 
 ## Messaging Framework
 
 ### Core Brand Messages
 
-#### Message 1: Podcasting Made Simple
-- **Concept**: Podcast hosting and growth shouldn't require technical expertise
+#### Message 1: Places Hold Stories Worth Telling
+- **Concept**: Every location is loaded with personal meaning — and that meaning deserves to be displayed, not buried in a phone camera roll
 - **Key Points**:
-  - Intuitive tools that just work
-  - No steep learning curve
-  - Focus on creating, not troubleshooting
-- **Usage**: When discussing platform features, ease of use, user experience
+  - Emotional connection to place is universal
+  - Physical art makes memory tangible and lasting
+  - CoolMaps turns coordinates into something you can actually live with
+- **Usage**: Blog content, homepage copy, gift positioning, social storytelling
 
-#### Message 2: Built for Serious Creators
-- **Concept**: Professional-grade tools for creators who take podcasting seriously
+#### Message 2: Art That Outlasts Trends
+- **Concept**: CoolMaps prints are designed with timelessness in mind — not Instagram moments
 - **Key Points**:
-  - Advanced features when you need them
-  - Scales with your ambitions
-  - Trusted by successful podcasters
-- **Usage**: When discussing capabilities, advanced features, scalability
+  - Deliberate aesthetic choices rooted in cartographic heritage
+  - Premium print quality via Gelato
+  - Designed to look right in real spaces, not just on screens
+- **Usage**: Product pages, style guides, comparison content vs. competitors
 
-#### Message 3: Your Podcast's Growth Partner
-- **Concept**: We're invested in your success, not just hosting your files
+#### Message 3: The Gift That Actually Means Something
+- **Concept**: In a world of generic gifts, a personalised map print is specific, considered, and impossible to forget
 - **Key Points**:
-  - Analytics that drive decisions
-  - Features that support growth
-  - Resources to level up skills
-- **Usage**: When discussing analytics, growth strategies, educational content
+  - Personalisation makes it irreplaceable
+  - Emotional resonance makes it memorable
+  - Works for virtually any occasion or relationship
+- **Usage**: Gift guides, occasion landing pages, occasion-specific content
 
-#### Message 4: Monetization Options
-- **Concept**: We have the most tools to help you make money from your podcast in the industry
+#### Message 4: Craft Rooted in Portugal's Cartographic Tradition
+- **Concept**: Portugal has one of the richest cartographic histories in the world — Age of Discovery, precision, artistry. CoolMaps carries that heritage forward.
 - **Key Points**:
-  - Castos Ads: one-click, dynamic ad insertion for all your episodes
-  - Paid private (or Hybrid) podcasts: help you charge for access to some of your content
-  - Castos Commerce: let your audience give one time or recurring donations to support your show
-- **Usage**: When discussing making money from a podcast
+  - Portugal was the mapmaking capital of the world during the Age of Discovery
+  - That same attention to detail and love of place lives in every CoolMaps print
+  - Not a tech startup printing maps — an artisan studio making art
+- **Usage**: About page, brand storytelling content, differentiator vs. Mapiful and others
 
 ### Value Propositions
 
-**For New Podcasters**:
-"Start your podcast the right way with tools that grow with you."
+**For Gift-Givers**:
+"The one gift they'll actually keep — because it's about a place only the two of you know."
 
-**For Established Podcasters**:
-"Take your podcast to the next level with analytics and features that drive growth."
+**For Home Decorators**:
+"Art with a story built in. Choose the place, choose the style, make the wall yours."
 
-**For Business Podcasters**:
-"Professional podcast hosting with the tools and support your brand deserves."
+**For People with a Connection to a Place**:
+"Your hometown. Your honeymoon. Your mountain. Beautifully mapped, beautifully framed."
 
-**For Podcast Networks**:
-"Manage multiple shows with ease using enterprise-grade features."
-
-**For Podcasters Who Want To Monetize**:
-"More ways to make money from your content."
+**For Interior Design Enthusiasts**:
+"Eight distinct map styles, each designed to complement real spaces — not just phone screens."
 
 ## Writing Style Guidelines
 
 ### Sentence Structure
-- **Vary length**: Mix short punchy sentences with longer explanatory ones
-- **Active voice preferred**: "Castos helps you grow" not "Growth is helped by Castos"
-- **Average length**: 15-20 words per sentence
-- **Clarity first**: If a sentence is confusing, rewrite it
+- **Vary rhythm**: Short, declarative sentences land best for impact. Longer sentences carry nuance. Mix both.
+- **Active voice**: "We print every map to order" not "Every map is printed to order"
+- **Average length**: 12–18 words per sentence
+- **Fragments are fine**: Used intentionally, they add rhythm. Like this.
 
 ### Paragraph Structure
-- **Length**: 2-4 sentences typically
-- **One idea per paragraph**: Focus each paragraph on a single point
-- **Transitions**: Connect paragraphs logically
-- **White space**: Break up long blocks of text
+- **Short by default**: 1–3 sentences for web content; slightly longer for editorial/blog
+- **One idea per paragraph**: Keep focus tight
+- **Let ideas breathe**: Don't rush from one point to the next — give space
+- **White space is part of the design**: Reflects the brand's visual aesthetic
 
 ### Word Choice
-- **Conversational**: Write how you'd speak to a colleague
-- **Specific**: "Increase downloads by 40%" not "Improve performance"
-- **Active verbs**: "Launch", "Create", "Grow", "Build", "Optimize"
-- **Avoid fluff**: Cut "very", "really", "actually" unless needed for emphasis
+- **Sensory and specific**: "Deep midnight tones and clean cartographic lines" not "looks nice"
+- **Emotionally grounded**: Lead with feeling, support with fact
+- **Craft vocabulary**: Terms like "cartographic", "relief", "topography", "artisan" feel natural here
+- **Avoid SaaS-ification**: No "seamless", "robust", "leverage", "unlock", "journey" (used generically)
 
 ### Terminology
 
 **Say This** → **Not That**
-- Podcast hosting → Podcast storage (hosting is industry standard)
-- Analytics → Stats (analytics sounds more professional)
-- RSS feed → Podcast feed (RSS for technical accuracy when needed)
-- Listener → Subscriber (listener is more accurate)
-- Episode → Show (episode is the unit, show is the series)
+- Custom map print → Map product / map item
+- Personalise / personalised → Customize / customized (use UK English)
+- Map art / map print → Poster (too generic — undersells the craft)
+- Place → Location (place has emotional weight; location is administrative)
+- Style → Template (template sounds mechanical)
+- Fulfilled by Gelato → Manufactured / processed (fulfillment language is fine; factory language is not)
+- Frame-ready → Print-only (always position as display-worthy)
 
 ## Content Formatting
 
 ### Headlines
-- **Be specific**: "How to Grow Your Podcast Audience in 2025" not "Podcast Growth Tips"
-- **Include benefit**: Tell reader what they'll gain
-- **Use numbers**: "7 Ways..." or "Complete Guide..."
-- **Keep concise**: 60 characters or less for SEO
+- **Sentence case**: "How to choose the right map style for your home" not "How To Choose The Right Map Style For Your Home"
+- **Emotional or story-led when possible**: Lead with feeling, not just function
+- **Specific beats generic**: "The map print that made her cry at the wedding" beats "Personalised wedding gifts"
+- **60 characters or less for SEO meta titles**
 
 ### Subheadings
-- **Descriptive**: Should make sense on their own
-- **Scannable**: Readers should grasp content flow from headings alone
-- **Keyword-rich**: Include target keywords naturally
-- **Parallel structure**: Use consistent format within article
+- **Sentence case throughout**
+- **Narrative or descriptive**: Each subheading should feel like part of the story, not just a label
+- **No subheading islands**: Don't have a heading with only one line of copy under it
 
 ### Lists
-- **Use for sequential steps**: Numbered lists for processes
-- **Use for multiple items**: Bulleted lists for non-sequential points
-- **Keep consistent**: Parallel structure (all start with verbs, all complete sentences, etc.)
-- **Scannable**: Break complex information into digestible chunks
+- **Use sparingly**: Lists feel clinical; narrative prose fits CoolMaps' voice better
+- **When using lists**: Keep items parallel, short, and purposeful
+- **Never lead a page section with a list** — earn it with prose first
 
 ### Calls-to-Action
-- **Clear action**: "Start your free trial" not "Learn more"
-- **Value-focused**: Tell them what they'll get
-- **Appropriate timing**: Match intensity to funnel stage
-- **Natural placement**: CTAs should flow with content
+- **Warm invitation, not command**: "Design your map" not "Buy now"
+- **Specific**: "Choose your style" not "Get started"
+- **Occasion-aware in gift contexts**: "Create their gift" not "Order here"
+- **Avoid**: "Shop now", "Click here", "Add to cart" as primary CTAs in editorial content
 
 ## Voice Examples
 
-### Excellent Castos Voice ✅
+### Excellent CoolMaps Voice ✅
 
-"A lot of people think creating a podcast is too complicated for them – it seems like a lot of work, you need a lot of equipment, time and even getting the right guests on seems like a lot of effort.
+"There's a particular kind of gift that changes the dynamic entirely — the kind where the person receiving it goes quiet for a moment before they say thank you.
 
-Or sometimes, they think that it's way too simple to be taken seriously as a business or marketing channel.
+A custom map print can be that gift.
 
-But we've helped thousands of people start podcasts, and here's what we've learned:
+Not because it's expensive, or because it came in beautiful packaging (though it does). But because it's about a place. And places mean things.
 
-This misconception keeps thousands of experts, entrepreneurs, and passionate individuals from sharing their knowledge and building audiences."
+The street where they grew up. The city they left behind. The spot by the water where everything changed. When you give someone a map of that place, beautifully printed and framed, you're telling them: I remembered. I paid attention."
 
 **Why this works**:
-- Acknowledges reader's pain point directly
-- Conversational and approachable tone
-- Promises practical, actionable value
-- Sets clear expectations for the reader
-- Uses active, direct language throughout
+- Opens with a specific emotional image, not a product pitch
+- Uses short, punchy sentences alongside longer ones for rhythm
+- Validates the emotional logic without over-explaining it
+- Product comes in organically — it's not forced
+- Ends on an insight that resonates beyond the transaction
 
-### Not Castos Voice ❌
+### Not CoolMaps Voice ❌
 
-"Podcast analytics represent a comprehensive suite of metrics available to content creators for evaluating performance across multiple dimensions of listener engagement and content efficacy.
-
-At Castos, we provide industry-leading analytics capabilities that enable sophisticated analysis of podcast performance through our proprietary dashboard interface.
-
-Click here to learn more about our analytics features."
+"Looking for the perfect personalised gift? CoolMaps has you covered! Our amazing custom map prints are fully customisable with our easy-to-use design tool. Choose from 8 stunning map styles and create a unique, one-of-a-kind map print today. Fast shipping, premium quality, 100% satisfaction guaranteed. Shop now!"
 
 **Why this fails**:
-- Overly formal and corporate-sounding
-- Features-focused instead of benefit-focused
-- Doesn't acknowledge creator needs or pain points
-- Generic CTA with no value proposition
-- Reads like marketing copy, not helpful content
+- Generic gift-site energy — could be any print-on-demand shop
+- Exclamation marks kill the refined tone
+- "Amazing", "stunning", "unique" are empty modifiers
+- List of features without emotional grounding
+- CTA "Shop now!" is transactional and cold
+- Nothing that says CoolMaps specifically
 
 ## Audience Understanding
 
 ### Who We Write For
 
-**Primary Audience**: Independent Podcast Creators
-- Creating shows as side projects, businesses, or passions
-- Range from beginners to experienced podcasters
-- Want professional results without technical complexity
-- Value their time and want efficiency
-- Ambitious about growth but realistic about resources
+**Primary Audience**: Thoughtful Gift-Givers
+- Planning for a significant occasion (anniversary, wedding, birthday, housewarming)
+- Want something personal and considered, not generic
+- Willing to spend more for something genuinely meaningful
+- Often have a specific place in mind and are looking for the right way to commemorate it
 
 **Secondary Audiences**:
-- **Marketing Teams**: Using podcasts for brand building
-- **Content Creators**: Adding podcasting to their content mix
-- **Agencies**: Managing podcasts for clients
-- **Educators**: Creating educational podcast content
+- **Home Decorators**: Want art that tells a story and complements a curated interior
+- **Place Nostalgists**: Expats, emigrants, travellers who have a deep tie to a particular location
+- **Interior Design Enthusiasts**: Care deeply about aesthetics; drawn by the map styles and print quality
+- **Self-purchasers**: Buying for themselves — marking a move, a milestone, a meaningful place
 
 ### What They Care About
 
 **Top Priorities**:
-1. Growing their audience and downloads
-2. Creating high-quality content efficiently
-3. Understanding what's working (analytics)
-4. Monetizing their podcast
-5. Standing out in a crowded space
+1. That the gift feels personal and irreplaceable — not like something they could have bought anywhere
+2. That the print looks genuinely beautiful in a real home (not just on a product mockup)
+3. That the customisation is easy and the result looks exactly as expected
+4. Print quality and longevity — this will go on the wall
+5. Getting it right first time — no awkward returns or reprints
 
 **Pain Points**:
-1. Limited time to manage technical aspects
-2. Confusion about best practices
-3. Difficulty measuring success
-4. Challenges with consistent publishing
-5. Uncertainty about growth strategies
+1. Fear of giving something that feels "just like any other print-on-demand thing"
+2. Uncertainty about which style works in their specific space
+3. Worry about sizing — will it actually fit the wall?
+4. Impersonal or clinical product experience that kills the emotional purchase
+5. Delivery timing for gifting occasions
 
 ### How to Serve Them
 
-- **Respect their time**: Get to the point quickly
-- **Make it actionable**: Give specific, implementable advice
-- **Explain the "why"**: Help them understand strategy, not just tactics
-- **Acknowledge challenges**: Show we understand podcasting is hard work
-- **Celebrate progress**: Encourage incremental improvement
+- **Make it feel special from the first sentence**: The writing should carry the emotional weight of the purchase
+- **Remove decision anxiety**: Help them feel confident about style, size, and occasion fit
+- **Use specific places as shorthand**: Real city names, real landscapes, real emotional resonance
+- **Honour the occasion**: Don't reduce a wedding anniversary to a "product option"
+- **Trust their taste**: Don't over-explain; they're aesthetically literate and they know what they want
 
 ## Quality Checklist
 
 Before publishing any content, verify:
 
-- [ ] **Voice**: Sounds like Castos (professional but approachable, helpful expert friend)
-- [ ] **Tone**: Appropriate for content type and audience stage
-- [ ] **Value**: Provides genuine, actionable insights for podcast creators
-- [ ] **Clarity**: Complex concepts explained simply
-- [ ] **Accuracy**: Technical information is correct
-- [ ] **Examples**: Includes relevant podcast scenarios
-- [ ] **Action**: Clear next steps or takeaways
-- [ ] **Messaging**: Aligns with core brand messages
-- [ ] **Terminology**: Uses correct podcast industry terms
-- [ ] **Empowerment**: Helps creators feel capable and confident
+- [ ] **Voice**: Sounds like CoolMaps — warm, refined, craftsperson tone (not tech, not generic gift shop)
+- [ ] **Tone**: Appropriate for the content type and the reader's emotional state
+- [ ] **Value**: Provides genuine insight, not just product description
+- [ ] **Specificity**: Uses real places, real occasions, real emotional language — not vague generalisations
+- [ ] **Restraint**: No exclamation marks, no filler superlatives, no urgency-bait
+- [ ] **Craft vocabulary**: Map and print terminology used naturally and correctly
+- [ ] **CTA**: Invitation-style, not command-style
+- [ ] **UK English**: Personalise, customise, colour, fulfil — not the US spellings
+- [ ] **Termiology**: Uses preferred CoolMaps terms throughout
 
 ---
 
-**Remember**: Every piece of content should make podcast creators feel more capable and confident about their podcasting journey. We're not just providing information—we're empowering success.
+**Remember**: Every piece of content should make the reader feel that getting a CoolMaps print is the obvious, right choice — not because we told them it was, but because they felt it themselves.

@@ -1,248 +1,197 @@
-# Castos Features & Benefits
+# CoolMaps Features & Benefits
 
-This document outlines Castos's key features, benefits, and differentiators to inform content creation that drives trial conversions and customer acquisition.
+This document outlines CoolMaps's key features, benefits, and differentiators to inform content creation that drives conversions and customer acquisition.
 
 ## Core Value Propositions
 
-### 1. **Private Podcast Hosting**
-- **Feature**: Secure, unlimited hosting for private podcasts
-- **Benefit**: Companies can host internal communications, training content, and member-exclusive shows without worrying about storage limits
-- **Conversion Angle**: "Host unlimited private content without bandwidth caps or surprise overage fees"
+### 1. **Interactive Map Customiser (Mapbox-Powered)**
+- **Feature**: Real-time, browser-based map customisation tool built on Mapbox — search any location in the world and design your print live
+- **Benefit**: Customers see exactly what they're going to get before they order, eliminating uncertainty and building confidence
+- **Conversion Angle**: "Design your map in minutes — see it finished before you commit to a thing."
 
-### 2. **YouTube Repurposing**
-- **Feature**: Automated video-to-podcast conversion from YouTube
-- **Benefit**: Extract audio from YouTube videos and automatically publish as podcast episodes
-- **Conversion Angle**: "Expand your reach by repurposing existing YouTube content into podcast format—no extra work required"
+### 2. **Eight Named Map Styles**
+- **Feature**: Modern, Slate, Classic, Ski, Terrain, Paper, Blue, Mineral — each a distinct visual aesthetic, not just a colour filter
+- **Benefit**: Customers can find the style that actually fits their space and personality, rather than settling for one generic look
+- **Conversion Angle**: "Eight styles, each with a personality. One will feel like yours."
 
-### 3. **Advanced Analytics**
-- **Feature**: IAB-certified download statistics and listener insights
-- **Benefit**: Accurate, industry-standard metrics for understanding audience behavior and demonstrating ROI
-- **Conversion Angle**: "Know exactly who's listening with certified analytics that sponsors trust"
+### 3. **Custom Text & Typography**
+- **Feature**: Add custom titles, subtitles, coordinates, and personal messages directly on the map
+- **Benefit**: Transforms a beautiful print into a deeply personal artefact — a date, a name, a message that makes it unmistakably theirs
+- **Conversion Angle**: "Add the words that make it mean something. Coordinates, a name, the date it all changed."
 
-### 4. **WordPress Integration**
-- **Feature**: Native WordPress plugin with seamless integration
-- **Benefit**: Manage podcasts directly from WordPress dashboard—no need to leave your website
-- **Conversion Angle**: "Already use WordPress? Manage your entire podcast workflow without switching platforms"
+### 4. **Cut-Out Shapes & Pin Placement**
+- **Feature**: Choose custom shapes to frame the map area, and add a pin to mark the exact spot
+- **Benefit**: Allows for precision and personality — highlight the exact street corner, beach, or mountain summit that matters
+- **Conversion Angle**: "Mark the exact spot. Not just the city — the place."
 
-### 5. **Podcast Website Builder**
-- **Feature**: Built-in website creation tools with customizable templates
-- **Benefit**: Launch a professional podcast website without hiring a developer
-- **Conversion Angle**: "Get your podcast online in minutes with a beautiful, mobile-responsive website"
+### 5. **Multi-Format Sizing (Metric & Imperial)**
+- **Feature**: Available in multiple print sizes in both metric (cm) and imperial (inches) formats
+- **Benefit**: Removes guesswork for customers across different markets; they can order the size that actually fits their frame or wall
+- **Conversion Angle**: "Order in the size that works for your wall — cm or inches, we've got both."
 
-### 6. **Monetization Options**
-- **Feature**: Castos offers ads, donations, and paid private podcasting to help podcasters make money from their content
-- **Benefit**: You can make money from your podcast regardless of the style of monetization you're looking for
-- **Conversion Angle**: "Make money directly from your content, no extra tools required"
+### 6. **Any Location in the World**
+- **Feature**: Mapbox integration covers the entire globe — from major cities to remote villages and mountain ranges
+- **Benefit**: No matter where the customer's meaningful place is, CoolMaps can map it
+- **Conversion Angle**: "Your place — wherever in the world it is."
 
-### 7. **Unlimited Podcasts & Episodes**
-- **Feature**: Castos offers unlimited podcasts and episodes on all plans. Most competitors charge for this.
-- **Benefit**: You can experiment with different formats, publish more content without it costing extra
-- **Conversion Angle**: "Publish all you want, one simple, low cost."
+### 7. **Premium Print Fulfillment via Gelato**
+- **Feature**: Every order is printed and fulfilled by Gelato, a global print-on-demand network with production facilities worldwide
+- **Benefit**: Consistent, high-quality output with fast local delivery — prints are produced close to the customer, reducing shipping time and carbon footprint
+- **Conversion Angle**: "Printed to order. Delivered fast. Quality you can see from across the room."
 
-### 8. **One Click Distribution**
-- **Feature**: One click gets your podcast live in all of the major podcasting directories
-- **Benefit**: You don't need to understand the technical setup of Apple Podcasts, Spotify, etc. We handle it for you.
-- **Conversion Angle**: "Get your podcast live, everywhere your listeners already are, in just a few minutes, without the technical headaches."
+### 8. **Artisanal Aesthetic — Deliberately Not Scandinavian SaaS**
+- **Feature**: Visual identity rooted in warmth (Midnight, Terracotta, Parchment palette) and Portugal's cartographic heritage, using Playfair Display and DM Sans typography
+- **Benefit**: Stands out sharply from clinical, minimalist competitor aesthetics — feels like art, not a tech product
+- **Conversion Angle**: "Not a poster. Not a template. A map print designed to live on your wall for years."
 
-### 9. **Apple Podcast Subscriptions Integration**
-- **Feature**: Through a direct integration and partnership with Apple Podcasts, Castos enables hybrid podcasting where creators can "offer free or paid access to content and free kind of subscriber benefits to your audience." This includes features like early access to episodes, private episodes for paying subscribers, access to back catalogs, and ad-free episodes.
-- **Benefit**: Castos customers can offer several ways to offer Subscriber Benefits to their audience, both in Free and Paid options.
-- **Conversion Angle**: "Give your best audience members some perks—it doesn't cost you (or them potentially) any extra."
+## Map Style Guide
 
-### 10. **Castos Ads (Dynamic Ad Insertion)**
-- **Feature**: Castos provides monetization through dynamic ad insertion where users can monetize all of your episodes—even the old ones—with a press of a button.
-- **Benefit**: The system "will dynamically stitch short, brand-appropriate ads to the beginning and end of each episode" with ZERO technical setup needed and "zero transaction fees."
-- **Conversion Angle**: "You don't need to sell to sponsors or figure out any technical jargon."
+### Modern
+- **Aesthetic**: Clean lines, high contrast, contemporary — built for city apartments and modern interiors
+- **Best for**: Urban maps, minimalist spaces, contemporary homes
+- **Tone**: Sophisticated, precise
 
-### 11. **Castos Commerce (Listener Donations)**
-- **Feature**: A native listener donation system built into Castos websites that allows creators to accept either one-time or recurring donations with "Zero transaction fees" beyond standard Stripe processing fees (2.9% and $.30). The system includes "a customizable, conversion-optimized page where they can select the amount they'd like to donate."
-- **Benefit**: Castos users can accept listener donations without having to integrate another third-party website or tool.
-- **Conversion Angle**: "Ads don't need to be the only way you make money from your podcast. Accept listener donations instead."
+### Slate
+- **Aesthetic**: Dark background with refined cartographic detail — dramatic and impactful
+- **Best for**: Feature walls, gifts for design-conscious recipients, statement pieces
+- **Tone**: Bold, architectural
 
-## Technical Features
+### Classic
+- **Aesthetic**: Traditional cartographic styling with warm tones — evokes printed atlases and exploration
+- **Best for**: Studies, libraries, heritage properties, older generations
+- **Tone**: Timeless, scholarly
 
-### Hosting & Distribution
-- **Unlimited hosting**: No storage or bandwidth limits on any plan
-- **Automatic distribution**: Push episodes to Apple Podcasts, Spotify, Google Podcasts, and 20+ platforms
-- **RSS feed management**: Customizable feeds with full control
-- **Global CDN**: Fast, reliable delivery worldwide
-- **99.9% uptime guarantee**: Enterprise-grade reliability
+### Ski
+- **Aesthetic**: Specialised terrain styling optimised for mountain locations — shows elevation and runs clearly
+- **Best for**: Ski resort maps, mountain holiday memories, alpine properties
+- **Tone**: Adventurous, active
 
-### Content Management
-- **Episode scheduling**: Plan content releases in advance
-- **Draft mode**: Preview episodes before publishing
-- **WordPress Integration**: Manage all of your content from your WordPress site, Castos does the file storage and delivery
-- **Transcription services**: Free transcripts included in all plans
-- **Video podcasting**: Publish audio or video podcasts, all from the same account
+### Terrain
+- **Aesthetic**: Topographic detail with natural relief shading — the land itself takes centre stage
+- **Best for**: Rural areas, national parks, coastal landscapes, adventure travel
+- **Tone**: Natural, grounded
 
-### Audience Growth
-- **SEO optimization**: Episode pages optimized for search engines
-- **Social sharing**: Built-in tools to promote episodes on social media
-- **Embeddable player**: Add podcast player to any website
-- **Private podcasting**: Gated content for members or employees
+### Paper
+- **Aesthetic**: Warm, aged-paper feel with soft cartographic lines — nostalgic and handcrafted in character
+- **Best for**: Vintage-style interiors, travel memories, gifts for older family members
+- **Tone**: Nostalgic, intimate
 
-### Monetization & Business
-- **Dynamic ad insertion**: Insert ads into past episodes without re-uploading
-- **Member-only content**: Restrict episodes to paying subscribers
-- **Multiple shows**: Host unlimited podcasts under one account
-- **Team collaboration**: Multiple user access with role permissions
+### Blue
+- **Aesthetic**: Ocean and water tones dominant — clean and coastal
+- **Best for**: Coastal and island locations, nautical interiors, beach holiday memories
+- **Tone**: Calm, maritime
 
-### Analytics & Insights
-- **IAB v2 compliant stats**: Industry-standard download metrics
-- **Listener demographics**: Understand your audience location and how they listen
-- **Episode performance**: See which content resonates most
-- **Listening trends**: Track growth over time
-- **Export capabilities**: Download data for custom reporting and custom analytics reports for sponsors or stakeholders
-
-## Integrations & Ecosystem
-
-### Direct Integrations
-- **WordPress**: Native plugin for seamless management
-- **YouTube**: Automatic video-to-podcast conversion
-- **Zapier**: Connect to 5,000+ apps and workflows
-- **Seriously Simple Podcasting**: Migration and compatibility support
-- **Kit.com**: Automate private subscriber management through Kit (formerly Convertkit)
-- **Paid Memberships Pro**: Sync your private subscribers and gated content from Paid Memberships Pro to your Castos account
-- **API**: Create your own custom integration with our REST API
-
-### Distribution Partners
-- Apple Podcasts
-- Spotify
-- Amazon Music/Audible
-- iHeartRadio
-- Pandora
-- Player.fm
-- And 15+ more directories
+### Mineral
+- **Aesthetic**: Earthy, muted mineral palette — terracotta, sage, stone
+- **Best for**: Warm interiors, natural material spaces, earthy design aesthetics
+- **Tone**: Organic, warm, grounded
 
 ## Competitive Differentiators
 
-### vs. Buzzsprout/Transistor/Libsyn
-- **Unlimited hosting on all plans** (competitors often cap uploads or storage)
-- **Private podcasting built-in** (competitors charge extra or don't offer it)
-- **YouTube repurposing** (unique feature most competitors lack)
-- **WordPress-first approach** (tighter integration for WordPress users)
+### vs. Mapiful
+- **Artisanal warmth** (Mapiful feels like a SaaS product; CoolMaps feels like art)
+- **Richer style range** (eight distinct styles vs. Mapiful's more limited aesthetic options)
+- **Portugal's cartographic heritage as a brand story** (differentiates emotionally, not just functionally)
+- **Terracotta/Parchment/Midnight palette** stands apart from Mapiful's Scandinavian cool-grey aesthetic
+- **Cut-out shapes and pin placement** add creative depth
 
-### vs. Anchor/Spotify for Podcasters
-- **Professional analytics** (IAB-certified, not just platform metrics)
-- **Full RSS control** (own your feed, easy to migrate)
-- **No platform lock-in** (maintain independence from streaming platforms)
-- **Advanced monetization** (dynamic ad insertion, private podcasting)
+### vs. Generic Etsy/Print-on-Demand Sellers
+- **Consistent premium quality** via Gelato's global network (vs. inconsistent artisan quality)
+- **Real-time interactive customiser** (vs. static form-based ordering)
+- **Defined brand identity** (vs. anonymous print seller)
+- **Eight coherent styles** (vs. a catalogue of disconnected options)
 
-### vs. Generic Hosting (Libsyn, PodBean)
-- **Modern interface** (intuitive, not outdated)
-- **Built-in website** (don't need separate hosting)
-- **Active development** (regular updates and new features)
-- **Superior support** (responsive, podcast-focused team)
+### vs. Generic Wall Art Platforms (Desenio, JUNIQE, etc.)
+- **Personalisation at the core** — every print is unique to the buyer
+- **Emotional purchase driver** — the place matters, not just the aesthetic
+- **Occasion and gift positioning** makes it contextually relevant, not just decorative
 
 ## Use Cases by Customer Segment
 
-### Professional Podcasters
-- Need reliable hosting with professional analytics
-- Want monetization tools (ads, sponsorships, memberships)
-- Require consistent uptime and fast delivery
-- Value clean, branded podcast websites
+### Anniversary & Wedding Gift-Givers
+- Need something personal that feels considered, not generic
+- Often have a specific place in mind (where they met, where they married)
+- Want high-quality print that will be displayed proudly
+- May need it delivered to a deadline
 
-### Content Creators/Influencers
-- Already creating YouTube content
-- Want to repurpose existing work into podcast format
-- Need simple tools to expand reach across platforms
-- Looking for growth and audience insights
+### Housewarming Gift-Givers
+- Celebrating a move to a new home or city
+- Want to help someone connect to their new place
+- Map of new neighbourhood or beloved old home both work perfectly
 
-### WordPress Site Owners
-- Already invested in WordPress ecosystem
-- Want seamless integration with existing website
-- Prefer managing everything from one dashboard
-- Value plugins and familiar workflows
+### Self-Purchasers (Personal Milestone Marking)
+- Moving city — commemorating the place they're leaving
+- New home — celebrating where they've arrived
+- Anniversary — marking where it all started
+- Travel memory — capturing a trip that mattered
 
-### Businesses & Organizations
-- Need private podcasting for internal comms or training
-- Require team collaboration features
-- Want professional branding and control
-- Need reliable, scalable hosting
+### Home Decorators & Interiors Enthusiasts
+- Buying to complete a wall or gallery wall
+- Drawn primarily by aesthetic — want the right style for their space
+- May choose a meaningful place, or simply a beautiful city/landscape
+- Value print quality and frame-readiness
 
-### Educational Institutions
-- Distribute course content as podcasts
-- Need private podcasting for student-only content
-- Want transcription and accessibility features
-- Require reliable hosting for large audiences
-
-## Pricing & Plan Benefits
-
-### Growth Plan Benefits
-- Unlimited hosting and bandwidth
-- Unlimited podcasts
-- IAB-certified analytics
-- WordPress plugin
-- Website builder
-- YouTube repurposing
-- Basic support
-
-### Pro Plan Benefits
-- Everything in Growth, plus:
-- Private podcasting
-- Advanced analytics
-- Team members
-- Priority support
-- Custom branding options
-
-### Enterprise Plan Benefits
-- Everything in Pro, plus:
-- Dedicated account manager
-- Custom integrations
-- SLA guarantee
-- White-label options
-- Volume discounts
+### Expats & Emigrants
+- Deep emotional tie to a place they've left behind
+- Want to keep that connection visible in daily life
+- Often a hometown, childhood street, or beloved city
 
 ## Key Messaging for Conversions
 
-### Trial Conversion Messages
-- "Start your 14-day free trial—no credit card required"
-- "See why thousands of podcasters trust Castos"
-- "Set up your podcast in less than 10 minutes"
-- "Try all features free for 14 days"
+### Primary CTAs
+- "Design your map"
+- "Start customising"
+- "Choose your style"
+- "Create their gift"
+
+### Occasion-Specific Messages
+- **Anniversary**: "Map the moment everything changed."
+- **Wedding**: "The place you said yes — beautifully framed."
+- **Birthday**: "Their place. Their map. Their birthday."
+- **Housewarming**: "Welcome them home — wherever home is now."
+- **Just because**: "Sometimes the best gifts aren't for any occasion. They're just the right thing."
 
 ### Pain Point Solutions
-- **"Worried about bandwidth costs?"** → "Unlimited hosting means no surprise bills"
-- **"Already creating YouTube content?"** → "Repurpose it automatically into podcast episodes"
-- **"Using WordPress?"** → "Manage your podcast without leaving your dashboard"
-- **"Need accurate stats?"** → "IAB-certified analytics sponsors trust"
-- **"Want to monetize?"** → "Dynamic ad insertion, listener donations, and private podcasting built-in"
+- **"I don't know what style to choose"** → Style guide with room-specific recommendations
+- **"Will it look good in my space?"** → Style descriptions + lifestyle imagery in real homes
+- **"I'm worried about getting the size wrong"** → Clear sizing guide with wall scale reference
+- **"Can I trust the print quality?"** → Gelato's global network, premium paper stock, example close-ups
+- **"I need it for a specific date"** → Clear delivery times per country via Gelato network
 
-### Social Proof Elements
-- "Trusted by 50,000 podcasters worldwide"
-- "Hosting 10 million downloads per month"
-- "Rated 4.8/5 stars by customers"
-- "Featured in Forbes, Entrepreneur, and dozens of leading tech publications"
+### Social Proof Angles
+- "Printed and fulfilled by Gelato — trusted by thousands of independent designers worldwide"
+- Customer reviews featuring specific place stories (the more specific, the better)
+- Before/after of the customiser — what they designed, what arrived
 
 ## Common Questions & Objections
 
-### "Is it easy to migrate from another host?"
-**Answer**: Yes, we provide free migration assistance and handle the technical details to ensure zero downtime.
+### "What makes CoolMaps different from Mapiful?"
+**Answer**: CoolMaps was built as art, not software. Eight distinct styles rooted in cartographic tradition, a warm artisanal aesthetic quite different from Mapiful's Scandinavian minimalism — and a brand story grounded in Portugal's Age of Discovery cartographic heritage.
 
-### "What if I outgrow my plan?"
-**Answer**: Upgrade anytime with pro-rated pricing. All plans include unlimited hosting, so you'll never hit bandwidth limits.
+### "What if I can't find my location?"
+**Answer**: The customiser runs on Mapbox, which covers the entire globe including rural areas, small villages, and remote landscapes. If you can name it, we can map it.
 
-### "Can I cancel anytime?"
-**Answer**: Yes, no long-term contracts required. Cancel anytime with no penalties.
+### "What paper/print quality can I expect?"
+**Answer**: Every print is fulfilled by Gelato using premium paper stock. The result is gallery-quality output — sharp cartographic detail, rich colour, and paper with genuine weight and feel.
 
-### "Do you offer a money-back guarantee?"
-**Answer**: No, but there is a free 14-day trial available to everyone.
+### "How long does delivery take?"
+**Answer**: Delivery times vary by destination, but Gelato's local production network means most orders are printed close to where you are. Typical delivery is [X–X] business days after production.
 
-### "Will this work with my existing website?"
-**Answer**: Yes, Castos works with any website platform. WordPress users get extra integration benefits.
+### "Can I add a personal message?"
+**Answer**: Yes — add custom titles, coordinates, dates, or any text you want directly in the customiser. Make it say exactly what you mean.
 
 ## Content Creation Guidelines
 
-When writing about Castos features:
+When writing about CoolMaps:
 
-1. **Lead with benefits, not features**: Don't just say "unlimited hosting"—explain "never worry about bandwidth overages"
-2. **Use specific examples**: Show how features solve real problems
-3. **Include proof points**: Stats, testimonials, certifications
-4. **Address objections proactively**: Answer concerns before they ask
-5. **Create clear CTAs**: Make next steps obvious (start trial, see pricing, contact sales)
-6. **Emphasize uniqueness**: Highlight what makes Castos different from competitors
-7. **Match audience to use case**: Tailor messaging to segment (creator vs. business vs. WordPress user)
+1. **Lead with the place and the feeling, not the product**: Don't open with "CoolMaps lets you..." — open with the emotional context the reader already feels
+2. **Be specific**: Real cities, real occasions, real emotions land harder than generalities
+3. **Reference the styles by name**: Modern, Slate, Classic — these are part of the brand language
+4. **Let the craft speak**: Mapbox, Gelato, Portugal's cartographic heritage — these are differentiators worth mentioning naturally
+5. **Invitation, not instruction**: "Design your map" not "Order now"
+6. **Avoid the generic gift-site register**: No "amazing", "unique", "stunning", "one-of-a-kind" without substance behind them
+7. **UK English throughout**: Personalise, customise, colour, fulfil
 
 ---
 
-*Note: Update this document as new features launch or positioning changes. Keep messaging aligned with current marketing campaigns and homepage copy.*
+*Note: Update this document as new styles, features, or size options are added. Keep messaging aligned with the current customiser capabilities and Gelato's available print formats.*

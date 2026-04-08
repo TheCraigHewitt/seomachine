@@ -1,88 +1,91 @@
-# Castos Style Guide
+# CoolMaps Style Guide
 
-This guide defines writing conventions, formatting standards, and editorial guidelines for all Castos content.
-
-## Instructions
-Fill in this template with Castos-specific style preferences. Update as the style guide evolves.
+This guide defines writing conventions, formatting standards, and editorial guidelines for all CoolMaps content.
 
 ---
 
 ## Grammar & Mechanics
 
-### Capitalization
+### Capitalisation
 
 **Headlines & Subheadings**:
-- [ ] Title Case (Capitalize Major Words)
-- [ ] Sentence case (Only capitalize first word)
-- **Decision**: [Choose one and document here]
+- **Sentence case throughout** — "How to choose the right map style for your home" not "How To Choose The Right Map Style"
+- Sentence case feels warmer and more editorial; Title Case reads as corporate or clickbait
 
-**Product Names**:
-- Castos: [Always capitalized]
-- Seriously Simple Podcasting: [Capitalization style]
-- [Other Castos products]: [Style]
+**Brand & Product Names**:
+- CoolMaps: Always written as one word with capital C and M — "CoolMaps"
+- Mapbox: Capital M and B — "Mapbox"
+- Gelato: Capital G — "Gelato"
+- Map styles: Capitalised when used as proper names — "The Modern style", "a Mineral print"
 
 **Industry Terms**:
-- podcast / Podcast: [Choose one]
-- podcaster / Podcaster: [Choose one]
-- RSS / rss: [RSS (always caps)]
-- [Add other common terms]
+- map print / map art: Lowercase unless starting a sentence
+- custom: Lowercase
+- personalised: Lowercase (and always UK spelling — not "personalized")
+- print-on-demand: Hyphenated when used as adjective
 
 ### Numbers
 
 **When to Spell Out**:
-- Spell out: One through nine
+- Spell out: one through nine
 - Use numerals: 10 and above
 - Exceptions:
   - Percentages: Always use numerals (5%, 50%)
-  - Money: Always use numerals ($5, $500)
-  - Measurements: Always use numerals (5 GB, 50 MB)
-  - Lists/stats: Always use numerals for scannability
+  - Money: Always use numerals (£5, €50, $100)
+  - Measurements: Always use numerals (30 cm, 50×70 cm, 12 inches)
+  - Lists/stats: Use numerals for scannability
 
 **Large Numbers**:
-- 1,000+ (use comma)
-- 1 million (spell out million, billion, etc.)
-- $5,000 or $5K? [Choose convention]
+- Use comma as thousands separator: 10,000
+- Spell out million: 1 million (not 1M in editorial; 1M acceptable in data tables)
+- Prices: Use currency symbol without space (£29.95, not £ 29.95)
 
 ### Punctuation
 
 **Oxford Comma**:
-- [ ] Yes (A, B, and C)
-- [ ] No (A, B and C)
-- **Decision**: [Choose and document]
+- **Yes** — always use the Oxford comma (A, B, and C)
+- "Modern, Slate, and Classic" not "Modern, Slate and Classic"
 
 **Em Dashes**:
-- Style: — (em dash, no spaces) or - - (hyphens with spaces)
-- Usage: For parenthetical statements or emphasis
-- Example: "Podcast analytics—when used correctly—drive better content decisions."
+- Use em dash with no surrounding spaces: "The place—and the feeling it holds—is what matters."
+- Use for parenthetical emphasis or a sharp tonal shift in a sentence
+
+**Hyphens**:
+- print-on-demand (adjective): hyphenated
+- frame-ready: hyphenated
+- high-quality: hyphenated when before noun
+- full stop after hyphenated compound: treat as one word
+
+**Exclamation Marks**:
+- **Never use in editorial content** — they undermine the refined, warm tone
+- Exception: Social media captions where the context is celebratory (use sparingly even then)
 
 **Quotation Marks**:
-- "Straight quotes" or "Curly quotes"?
-- **Decision**: [Choose one]
+- Use "double quotes" for direct speech and titles
+- Use 'single quotes' for quotes within quotes
+- UK convention: punctuation outside quotation marks unless punctuation is part of the quoted text
 
 **Ellipses**:
-- Three dots: ...
-- Spacing: no spaces before or after
-- Use sparingly: Primarily for omitted text in quotes
+- Three dots with no spaces: ...
+- Use sparingly — for deliberate narrative pause in editorial prose
+- Never use to pad a sentence or signal trailing off
 
 ### Abbreviations & Acronyms
 
 **First Use**:
-- Spell out on first use, acronym in parentheses
-- Example: "Really Simple Syndication (RSS) feeds distribute..."
-- Exceptions for universally known: SEO, URL, CTA
+- Spell out on first use with acronym in parentheses if it will be used again
+- Exception for universally known: SEO, URL, CTA, PDF
 
-**Common Podcasting Acronyms**:
-- RSS: Really Simple Syndication
-- DAI: Dynamic Ad Insertion
-- SEO: Search Engine Optimization
-- IAB: Interactive Advertising Bureau
-- [Add others as needed]
+**Common Terms**:
+- POD: Print-on-demand (spell out on first use)
+- DPI: Dots per inch (spell out on first use in technical content)
+- UK: No spell-out needed
+- EU: No spell-out needed
 
 **Latin Abbreviations**:
-- e.g. (for example): [Use or avoid?]
-- i.e. (that is): [Use or avoid?]
-- etc. (and so forth): [Use or avoid?]
-- **Decision**: [Generally avoid in favor of plain English]
+- Avoid e.g. and i.e. in flowing editorial prose — use "for example" and "that is" instead
+- Acceptable in parenthetical notes or technical documentation
+- Avoid "etc." — be specific instead
 
 ---
 
@@ -91,28 +94,31 @@ Fill in this template with Castos-specific style preferences. Update as the styl
 ### Preferred Terms
 
 **Say This** → **Not That**:
-- podcast creators → podcasters
-- podcast hosting → podcast storage
-- listeners → subscribers
-- audio quality → sound quality
-- show notes → episode notes / shownotes
-- podcast episode → podcast show (episode is unit, show is series)
-- analytics → stats
-- monetize → monetise (US spelling)
-- [Add Castos-specific preferences]
+- personalised → personalized (UK English throughout)
+- customise / customised → customize / customized
+- colour → color
+- fulfil / fulfilled → fulfill / fulfilled
+- catalogue → catalog
+- aesthetic → look (aesthetic is correct and appropriate here)
+- place → location (place carries emotional weight; location is administrative)
+- map print → map poster / map product
+- design your map → order / buy / purchase (in CTAs and editorial)
+- map style → template (style is brand language; template sounds mechanical)
+- artisan / artisanal → handmade (artisanal is accurate and on-brand; handmade implies imprecision)
+- fulfilled by Gelato → manufactured by / made by (fulfilment is accurate; factory language isn't)
 
 ### Words to Avoid
-- Avoid jargon without explanation
-- Avoid "very", "really", "actually" (usually unnecessary)
-- Avoid passive constructions when active is clearer
-- Avoid "click here" or "read more" (use descriptive links)
-- [Add other words/phrases to avoid]
+- Amazing, stunning, incredible, unique (empty superlatives)
+- Seamless, robust, leverage, unlock, journey (SaaS jargon)
+- "Click here" or "Read more" (use descriptive anchor text instead)
+- "Game-changer", "revolutionary", "unprecedented" (hype without substance)
+- "Very", "really", "actually" (filler — cut them)
+- "One-of-a-kind" (use "irreplaceable" or "specific to you" instead)
 
 ### Inclusive Language
-- Use gender-neutral language ("they" instead of "he/she")
-- "Podcast creator" or "podcaster" instead of gendered terms
-- Avoid idioms that may not translate globally
-- Be mindful of accessibility in descriptions
+- Gender-neutral throughout: "the gift-giver" / "they" not "he or she"
+- Avoid idioms that don't translate globally (audience spans UK, EU, US, international)
+- Be mindful of accessibility in alt text and descriptions
 
 ---
 
@@ -121,248 +127,239 @@ Fill in this template with Castos-specific style preferences. Update as the styl
 ### Text Formatting
 
 **Bold**:
-- Use for: Key concepts, important takeaways, emphasis
-- Don't overuse: If everything is bold, nothing stands out
-- Example: "**Keyword density** should be 1-2% for optimal results."
+- Use for key terms, product names, or important practical information
+- Don't overuse — in CoolMaps' editorial voice, bold should feel considered, not mechanical
+- Example: "The **Mineral** style pairs beautifully with warm, earthy interiors."
 
 **Italics**:
-- Use for: Emphasis (sparingly), titles of works, foreign phrases
-- Example: "The term *podcast* combines 'iPod' and 'broadcast'."
+- Use for titles of publications or works: *The Art of the Map*, *Architectural Digest*
+- Use sparingly for gentle emphasis in narrative prose
+- Example: "There's a particular kind of homesickness that hits you in the middle of *ordinary* days."
 
 **Underline**:
-- Generally avoid (reserve for links)
+- Reserve exclusively for hyperlinks — never use for emphasis
 
 **ALL CAPS**:
-- Avoid except for standard acronyms (RSS, SEO, URL)
+- Avoid entirely in editorial content
+- Acceptable for standard acronyms only (SEO, URL, PDF)
 
 ### Lists
 
 **Bulleted Lists**:
-- Use for: Non-sequential items, features, benefits
-- Capitalization: [Sentence case or Title Case?]
-- Punctuation: [Period at end of each item or no punctuation?]
-- **Decision**:
-  - Capitalize first word
-  - Period if complete sentence, no period if fragment
-  - Parallel structure (all sentences or all fragments)
+- Use for: non-sequential items, feature summaries, style descriptions
+- Capitalise first word of each item
+- No period if the item is a fragment; period if the item is a complete sentence
+- Parallel structure throughout (all fragments or all complete sentences — never mixed)
 
 **Numbered Lists**:
-- Use for: Sequential steps, rankings, ordered priorities
-- Format: 1. 2. 3. (with period after number)
-- Same capitalization and punctuation rules as bullets
+- Use for: sequential steps, ranked content, ordered guidance
+- Same capitalisation and punctuation rules as bullets
 
 **Nested Lists**:
-- Maximum 2 levels deep for readability
-- Use different markers for sub-items
+- Maximum 2 levels deep
+- Use sparingly — prefer prose over heavy list nesting
+
+**When NOT to Use Lists**:
+- In narrative or emotional content — lists break the flow and feel clinical
+- When fewer than 3 items exist — use a sentence instead
 
 ### Links
 
 **Anchor Text**:
-- Descriptive (tell reader where they're going)
-- Keyword-rich when possible
-- 2-5 words typically
-- ✅ "Learn more about podcast SEO"
-- ❌ "Click here"
+- Descriptive and contextual — tell the reader exactly where they're going
+- 2–6 words typically
+- ✅ "our guide to choosing the right map style"
+- ✅ "design your custom map"
+- ❌ "click here"
+- ❌ "read more"
+- ❌ Full URLs as anchor text
 
-**Link Formatting**:
-- Color: [Default blue or Castos brand color?]
-- Underline: [Yes/No]
-- Open in new tab: [Only for external links]
+**External Links**:
+- Open in new tab for external destinations
+- No special styling needed beyond standard link colour
 
 ### Code & Technical Elements
 
 **Inline Code**:
-- Use backticks for: URLs, file names, code snippets
-- Example: "Your RSS feed URL is `https://feeds.castos.com/...`"
+- Backticks for: URLs in technical documentation, API references, file names
 
-**Code Blocks**:
-- Use for: Multi-line code, configuration examples
-- Include language identifier for syntax highlighting
-
-### Callout Boxes / Asides
-
-**When to Use**:
-- Important notes or warnings
-- Pro tips or expert insights
-- Key takeaways or summaries
-
-**Format**:
-- [Define how to format: blockquote, box, highlighted section?]
-- Example style to be determined
+**Tables**:
+- Use for: sizing guides, style comparisons, delivery time information
+- Always include clear headers
+- Keep simple — no merged cells unless truly necessary
 
 ---
 
 ## Content Structure
 
 ### Article Introduction
-**Standard Structure** (150-250 words):
-1. **Hook** (1-2 sentences): Grab attention with question, statistic, or bold statement
-2. **Problem** (2-3 sentences): What challenge or question does this address?
-3. **Promise** (2-3 sentences): What will reader learn/achieve?
-4. **Credibility** (optional, 1-2 sentences): Why trust this source?
+**Standard Structure** (100–200 words):
+1. **Hook** (1–2 sentences): Open with a specific emotional image, a telling detail, or a question that resonates — never with a product pitch
+2. **Tension or desire** (1–2 sentences): What is the reader feeling, wanting, or trying to solve?
+3. **Promise** (1–2 sentences): What will this article give them?
+4. **Optional credibility beat**: A brief mention of CoolMaps' expertise or heritage if it fits naturally
 
 **Keyword Placement**:
-- Must include primary keyword in first 100 words
-- Natural integration, not forced
+- Primary keyword within first 100 words — integrated naturally, never forced
 
 ### Section Length
-- **Minimum**: 150 words per section
-- **Maximum**: 500 words per section (break into subsections if longer)
-- **Ideal**: 250-350 words per main section
+- **Minimum**: 100 words per H2 section (editorial content)
+- **Maximum**: 400 words per section before considering a subsection break
+- **Ideal**: 150–280 words per main section in most editorial content
 
 ### Conclusion
-**Standard Structure** (150-250 words):
-1. **Recap** (3-5 bullet points or paragraph): Key takeaways
-2. **Action** (1-2 sentences): What should reader do next?
-3. **CTA** (1-2 sentences): Call-to-action (trial, resource, related content)
-4. **Forward-looking** (optional, 1 sentence): Encouraging final thought
+**Standard Structure** (80–150 words):
+1. **Brief recap**: 2–3 key takeaways, not a full summary
+2. **Emotional close**: End on a feeling, not a fact
+3. **CTA**: Warm, invitation-style — "Design your map", "Find your style", "Create their gift"
+4. **No "In conclusion..."**: Just close — the reader knows it's the end
 
 ---
 
 ## SEO-Specific Style
 
 ### Meta Titles
-- 50-60 characters including spaces
+- 50–60 characters including spaces
 - Include primary keyword
-- Include "| Castos" if space allows
+- Sentence case
+- Include "| CoolMaps" if space allows
 - No ending punctuation
+- Emotional or benefit-led where possible
 
 ### Meta Descriptions
-- 150-160 characters including spaces
-- Include primary keyword
-- Include call-to-action
-- End with complete thought
+- 150–160 characters including spaces
+- Include primary keyword naturally
+- Warm tone — not a product listing
+- End with a soft CTA ("Start designing." / "Find the right style.")
+- Complete sentence — never cut off
 
 ### URL Slugs
 - Lowercase only
-- Hyphens between words
+- Hyphens between words (never underscores)
 - Include primary keyword
-- 3-5 words ideal
-- Format: `/blog/primary-keyword-phrase`
+- 3–5 words ideal
+- Omit stop words (a, the, and, of, for)
+- Format: `/blog/[keyword-phrase]`
 
 ### Alt Text
-- Describe what image shows
-- Include keyword naturally if relevant
-- 125 characters or less
-- No "image of" or "picture of" (implied)
+- Describe what the image actually shows (accessibility first)
+- Include keyword naturally if genuinely relevant
+- 80–125 characters
+- No "image of" or "photo of" (implied)
+- Example: "Mineral style custom map print of Lisbon in terracotta tones, framed on a white wall"
 
 ---
 
 ## Dates & Time
 
 **Date Format**:
-- Month DD, YYYY (January 15, 2025)
-- Or: DD Month YYYY (15 January 2025)
-- **Decision**: [Choose one]
+- Day Month Year: 8 April 2026 (no ordinal suffixes: not "8th April")
+- In URLs and filenames: YYYY-MM-DD format
 
 **Time**:
-- 12-hour format with a.m./p.m.: 3:00 p.m.
-- Or: 24-hour format: 15:00
-- **Decision**: [Choose one]
+- 24-hour format in technical contexts: 14:00
+- 12-hour format in editorial: 2 p.m. (with full stops, no space before p.m.)
 
 **Time Zones**:
-- Specify when relevant: "3:00 p.m. EST"
-- Or use: "3:00 p.m. Eastern Time"
+- Specify when relevant: "2 p.m. GMT"
 
 ---
 
 ## Statistics & Data
 
 ### Citing Sources
-- Always cite statistics with sources
-- Format: "According to [Source], [statistic]."
-- Link to original source when possible
-- Include year of data: "In 2024, podcast listeners reached..."
+- Always cite statistics with sources: "According to [Source], [statistic]."
+- Link to original source where possible
+- Include year of data: "In 2024, personalised gifts..."
 
 ### Presenting Numbers
-- Round large numbers for readability: "1.2 million" not "1,234,567"
-- Use % symbol: 15% (not "percent")
-- Use $ for money: $500 (not "dollars")
-- Include commas: 10,000 not 10000
+- Round for readability: "1.2 million" not "1,234,567"
+- Use % symbol: 40% (not "forty percent" in data context)
+- Currency: £29.95, €34.99, $35 (always use symbol; no space)
+- Commas in thousands: 10,000 not 10000
 
 ---
 
 ## Images & Media
 
 ### Image Captions
-- [ ] Required for all images
-- [ ] Optional, only when needed for context
-- **Decision**: [Choose one]
-
-**Caption Style**:
+- **Optional** — only when the image needs context the surrounding text doesn't provide
 - Sentence case
-- End with period if complete sentence
-- Placement: Below image
+- End with a period if a complete sentence
+- Below the image
+- Not redundant with surrounding body copy
 
 ### Screenshots
-- Include relevant screenshots when helpful
-- Crop to show only relevant portion
-- Add arrows/highlights if needed to draw attention
-- Alt text should describe what's shown
+- Crop to show only what's relevant
+- High resolution (at least 1200px wide)
+- Alt text must describe what's shown functionally
 
-### Charts & Graphs
-- Include data visualization when it helps understanding
-- Keep design simple and clean
-- Always provide context in surrounding text
-- Alt text should describe the key finding, not just "chart"
+### Lifestyle & Product Photography
+- Always show prints in real spaces, not just white-background product shots
+- Prefer warm, lived-in interiors that reflect the Midnight/Terracotta/Parchment aesthetic
+- Alt text: describe the room setting, style, and location shown in the print if visible
 
 ---
 
 ## Brand-Specific Guidelines
 
-### Castos Product References
+### CoolMaps Product References
 
-**Castos Platform**:
-- "Castos" (not "the Castos platform" unless needed for clarity)
-- "Castos analytics dashboard"
-- [Add other product-specific terms]
+**The Map Customiser**:
+- "the CoolMaps customiser" or "our map customiser" (lowercase c in customiser)
+- Never "the tool" — it's a customiser or a design experience
 
-**Features**:
-- [List how to refer to specific features]
-- [Capitalization conventions for features]
+**Map Styles**:
+- Always capitalised as proper names: Modern, Slate, Classic, Ski, Terrain, Paper, Blue, Mineral
+- "the Modern style" / "a Mineral print" / "in Classic"
+
+**Gelato**:
+- Reference as a partner, not just a vendor: "printed and fulfilled by Gelato" — this is a quality signal
+- Never "our printer" or "the factory"
+
+**Portugal Heritage**:
+- "Portugal's cartographic heritage" or "rooted in Portugal's Age of Discovery tradition"
+- Don't over-claim — it's an authentic brand story, not a marketing gimmick
+- One natural mention per piece is usually sufficient
 
 ### Competitor References
-- [ ] Name competitors directly when relevant
-- [ ] Use generic terms ("other podcast hosts")
-- **Decision**: [Choose approach]
-
-**If Naming Competitors**:
-- Be fair and factual
-- No disparaging language
-- Focus on differentiation, not criticism
+- **Name Mapiful directly** when doing comparison content — it's the category leader and readers know it
+- Be fair and factual — describe differences in aesthetic and approach, not deficiencies
+- Never disparage or mock: "CoolMaps takes a warmer, more artisanal approach than Mapiful's Scandinavian minimalism" — not "Mapiful feels cold and generic"
 
 ---
 
 ## Accessibility
 
 ### Screen Reader Friendly
-- Descriptive link text (not "click here")
-- Image alt text for all images
-- Proper heading hierarchy (H1→H2→H3, no skipping)
-- Descriptive link previews
+- Descriptive link text always (never "click here" or "here")
+- Alt text on every image
+- Proper heading hierarchy — H1 → H2 → H3, never skip levels
+- Colour alone never used to convey meaning
 
 ### Plain Language
-- Write at 8th-10th grade level
-- Define technical terms on first use
-- Use short sentences and paragraphs
-- Break complex ideas into digestible chunks
+- 8th–10th grade reading level
+- Define cartographic or design terms on first use if they're not common knowledge
+- Short sentences and paragraphs
+- Clarity over cleverness when the two conflict
 
 ---
 
 ## Voice & Tone Reminders
 
 ### Core Voice Characteristics
-1. Professional yet approachable
-2. Educational and empowering
-3. Podcast creator advocate
-4. Technically accurate but accessible
-5. Results and growth-focused
+1. Warm but never gushing
+2. Refined but never cold
+3. Confident but never boastful
+4. Place-rooted and emotionally resonant
+5. Craftsperson authority — we know maps, print, and design
 
 ### Tone Variations
-- **How-to content**: Instructive, step-by-step, encouraging
-- **Strategic content**: Authoritative, experienced, actionable
-- **Industry news**: Insightful, analytical, forward-looking
-- **Product content**: Benefit-focused, clear, honest
+- **Product/Customiser pages**: Clear, sensory, benefit-forward
+- **Gift/Occasion content**: Emotionally resonant, reassuring, specific
+- **Editorial/Place storytelling**: Evocative, narrative, unhurried
+- **Practical guides**: Helpful, direct, still warm
+- **SEO / Comparison content**: Informative, fair, quietly confident
 
 ---
 
@@ -371,49 +368,45 @@ Fill in this template with Castos-specific style preferences. Update as the styl
 Before publishing any content:
 
 **Grammar & Mechanics**:
-- [ ] Spelling checked
-- [ ] Grammar checked
-- [ ] Punctuation correct (Oxford comma, em dashes, etc.)
-- [ ] Numbers formatted consistently
-- [ ] Dates formatted correctly
+- [ ] UK English throughout (personalise, colour, fulfil, etc.)
+- [ ] Sentence case headings
+- [ ] Oxford comma used consistently
+- [ ] No exclamation marks in editorial content
+- [ ] Numbers formatted correctly
+- [ ] Sources cited for all statistics
 
 **Style**:
-- [ ] Follows capitalization guidelines
-- [ ] Uses preferred terminology
-- [ ] Consistent formatting (bold, italics, lists)
-- [ ] Links are descriptive
-- [ ] Voice and tone appropriate
+- [ ] Preferred terminology used (place not location; style not template; etc.)
+- [ ] No banned words (amazing, seamless, leverage, etc.)
+- [ ] Bold and italic used purposefully, not decoratively
+- [ ] Links use descriptive anchor text
+- [ ] Map styles capitalised (Modern, Slate, Mineral, etc.)
 
 **Structure**:
-- [ ] Strong introduction (hook, problem, promise)
+- [ ] Emotional hook in introduction
 - [ ] Logical section flow
-- [ ] Proper heading hierarchy
-- [ ] Effective conclusion with CTA
-- [ ] Appropriate section lengths
+- [ ] Proper heading hierarchy (H1 → H2 → H3)
+- [ ] Warm conclusion with invitation-style CTA
+- [ ] Section lengths appropriate (100–400 words per H2)
 
 **SEO**:
-- [ ] Keyword integrated naturally
-- [ ] Meta elements optimized
-- [ ] Internal and external links included
-- [ ] Images have alt text
-- [ ] URL slug optimized
+- [ ] Primary keyword in H1, first 100 words, 2+ H2s, conclusion
+- [ ] Meta title 50–60 characters with keyword
+- [ ] Meta description 150–160 characters
+- [ ] URL slug optimised
+- [ ] Internal links included (3–5)
+- [ ] External authority links included (2–3)
+- [ ] Alt text on all images
 
-**Quality**:
-- [ ] Factually accurate
-- [ ] Sources cited
-- [ ] No broken links
-- [ ] Provides genuine value
-- [ ] Ready for publication
+**Brand Voice**:
+- [ ] Sounds like CoolMaps — warm, refined, craftsperson tone
+- [ ] No SaaS jargon
+- [ ] Place-specific language used where appropriate
+- [ ] CTAs are invitations, not commands
 
 ---
 
-## Updates & Maintenance
-
 **Style Guide Version**: 1.0
-**Last Updated**: [Date]
-**Next Review**: [Date]
+**Last Updated**: April 2026
 
-This style guide is a living document. Update as Castos brand and voice evolve.
-
-**Questions or Additions?**
-If you encounter a style question not covered here, make a decision, document it, and add it to this guide for future reference.
+This is a living document. Update as CoolMaps' brand, product range, and voice evolve.
