@@ -27,7 +27,6 @@ orjson>=3.9.0
 
 # Optional: For async API calls
 aiohttp>=3.9.0
-asyncio>=3.4.3
 
 # NLP and text analysis
 textstat>=0.7.3
