@@ -23,9 +23,50 @@ class ContentScrubber:
         '\u200B',  # Zero-width space
         '\uFEFF',  # Byte Order Mark (BOM)
         '\u200C',  # Zero-width non-joiner
+        '\u200D',  # Zero-width joiner
         '\u2060',  # Word joiner
         '\u00AD',  # Soft hyphen
         '\u202F',  # Narrow no-break space
+        '\u2062',  # Invisible times
+        '\u2063',  # Invisible separator
+        '\u2064',  # Invisible plus
+        '\u180E',  # Mongolian vowel separator
+        '\u200E',  # Left-to-right mark
+        '\u200F',  # Right-to-left mark
+        '\u2028',  # Line separator
+        '\u2029',  # Paragraph separator
+    ]
+
+    # AI-telltale phrases that sound robotic or overly formal
+    AI_PHRASE_REPLACEMENTS = [
+        # "It's important to note that X" → "X"
+        (r"[Ii]t(?:'s| is) (?:important|worth|crucial|essential) to (?:note|mention|highlight|understand|remember|recognize|emphasize) that ", ""),
+        # "In today's [fast-paced/digital/modern] landscape/world"
+        (r"[Ii]n today'?s (?:fast-paced|digital|modern|ever-changing|rapidly evolving|dynamic) (?:landscape|world|era|age|environment),? ?", ""),
+        # "Delve/dive into"
+        (r"\b[Dd]elve(?:s|d)? (?:into|deeper)\b", "explore"),
+        (r"\b[Dd]ive(?:s|d)? (?:deep )?into\b", "explore"),
+        # "Leverage" (overused by AI) → "use"
+        (r"\b[Ll]everage(?:s|d)?\b", "use"),
+        # "Utilize" → "use"
+        (r"\b[Uu]tilize(?:s|d)?\b", "use"),
+        # "In conclusion," / "To summarize,"
+        (r"^[Ii]n conclusion,? ?", ""),
+        # "It's worth mentioning" / "It bears mentioning"
+        (r"[Ii]t(?:'s| is) worth mentioning (?:that )?", ""),
+        (r"[Ii]t bears mentioning (?:that )?", ""),
+        # "At the end of the day"
+        (r"[Aa]t the end of the day,? ?", ""),
+        # "This comprehensive guide"
+        (r"[Tt]his comprehensive (?:guide|overview|article|resource)", "this guide"),
+        # "Without further ado"
+        (r"[Ww]ithout further ado,? ?", ""),
+    ]
+
+    # Overused AI filler adverbs
+    AI_FILLER_ADVERBS = [
+        'moreover', 'furthermore', 'additionally', 'consequently',
+        'nevertheless', 'nonetheless', 'henceforth', 'thereby',
     ]
 
     def __init__(self):
@@ -33,6 +74,7 @@ class ContentScrubber:
             'unicode_removed': 0,
             'emdashes_replaced': 0,
             'format_control_removed': 0,
+            'ai_phrases_replaced': 0,
         }
 
     def scrub(self, content: str) -> Tuple[str, Dict]:
@@ -61,7 +103,10 @@ class ContentScrubber:
         # Step 3: Replace em-dashes with contextually appropriate punctuation
         content = self._replace_emdashes(content)
 
-        # Step 4: Clean up any double spaces created by removals
+        # Step 4: Replace AI-telltale phrases
+        content = self._replace_ai_phrases(content)
+
+        # Step 5: Clean up any double spaces created by removals
         content = self._clean_whitespace(content)
 
         return content, self.stats
@@ -183,6 +228,13 @@ class ContentScrubber:
         # Default: Use comma for general separation
         return ', '
 
+    def _replace_ai_phrases(self, content: str) -> str:
+        """Replace common AI-telltale phrases with natural alternatives."""
+        for pattern, replacement in self.AI_PHRASE_REPLACEMENTS:
+            content, count = re.subn(pattern, replacement, content, flags=re.MULTILINE)
+            self.stats['ai_phrases_replaced'] += count
+        return content
+
     def _clean_whitespace(self, content: str) -> str:
         """Clean up multiple spaces and normalize whitespace."""
         # Replace multiple spaces with single space (but not in specific contexts)
@@ -224,6 +276,7 @@ def scrub_content(content: str, verbose: bool = False) -> str:
         print(f"  - Unicode watermarks removed: {stats['unicode_removed']}")
         print(f"  - Format-control chars removed: {stats['format_control_removed']}")
         print(f"  - Em-dashes replaced: {stats['emdashes_replaced']}")
+        print(f"  - AI phrases replaced: {stats['ai_phrases_replaced']}")
 
     return cleaned_content
 
