@@ -404,6 +404,95 @@ Podcast hosting is a service that stores your audio files and generates an RSS f
 - **Tap-friendly links**: Adequate spacing
 - **Fast loading**: Optimized images
 
+## AI Search Optimization (GEO/AICO)
+
+AI search engines (ChatGPT, Perplexity, Gemini, Claude) are now a significant traffic and recommendation channel. 5-15% of website traffic can come from AI sources, and 90% of buyers consult AI before purchase decisions. These guidelines ensure your content performs in both traditional Google search AND AI-generated answers.
+
+### Direct-Answer-First Principle
+
+AI scrapers prioritize content near the top of the page. When a user asks ChatGPT "best project management tool" or "how to start a podcast," the AI scans articles and pulls from the earliest clear answer it finds.
+
+**Rules:**
+- **Answer the query directly in the first 1-2 sentences** of the article, before the narrative hook or story
+- For "best/top/how" queries, state the answer (or a clear thesis) immediately
+- Put the core answer in the meta description too — literally answer the question in 150-160 chars
+- Do NOT bury the answer behind 200+ words of context, history, or definitions
+- The narrative hook and APP formula still apply, but they come AFTER the direct answer sentence
+
+**Example — Before (traditional SEO):**
+> Most businesses struggle with choosing the right platform. In today's crowded market... [200 words later] ...the best option is X because...
+
+**Example — After (AI-optimized):**
+> The best project management tools in 2026 are Asana, Monday, and ClickUp — each optimized for different team sizes and workflows. Here's what separates them. [Then hook, story, depth]
+
+### TL;DR / Key Takeaways Block
+
+Every article should include a TL;DR block near the top (after the introduction, before the first H2 body section). This gets pulled into AI-generated summaries and helps both AI and human readers.
+
+**Format:**
+```markdown
+> **Key Takeaways**
+> - [Core finding or recommendation #1]
+> - [Core finding or recommendation #2]
+> - [Core finding or recommendation #3]
+> - [Core finding or recommendation #4 if needed]
+> - [Core finding or recommendation #5 if needed]
+```
+
+**Rules:**
+- 3-5 bullet points maximum
+- Each bullet is a complete, standalone claim (not a teaser)
+- Use specific numbers, names, or outcomes — not vague summaries
+- This is NOT a table of contents — it's the article's actual conclusions up front
+
+### Authority Signaling for AI
+
+AI models weight authoritativeness signals when choosing which sources to cite. Include these in every article:
+
+- **Author attribution**: Named author, not just "Team" or brand name
+- **Reviewer/editor credit**: "Reviewed by [name], [title]" where possible
+- **Last updated date**: Visible on the page, not just in metadata
+- **Expert verification badge**: Where applicable, note content has been expert-reviewed
+- **Year in titles**: Include current year for time-sensitive topics ("Best X Tools 2026")
+
+These signals should be in the article's frontmatter for the WordPress publisher to render.
+
+### One Idea Per Section
+
+AI models parse content by section. Each H2/H3 section should focus on a single clear idea. This increases the chance that a specific section gets cited as a source in AI answers.
+
+- One concept per heading
+- Use bullet lists and structured formatting within sections
+- Avoid long flowing paragraphs that blend multiple topics
+
+### Embedded Media for Cross-Validation
+
+AI models (especially Perplexity and Gemini) reference YouTube videos alongside articles. Embedding relevant YouTube videos in articles:
+- Provides cross-validation (the article references a video that references the same topic)
+- Increases time on page (Google signal)
+- Adds a content format AI can independently verify
+
+**Rule:** Embed at least one relevant YouTube video per article where it adds context. Prefer your own videos, then authoritative third-party videos.
+
+### FAQ Sections as Prompt Targets
+
+FAQ sections serve double duty: they target Google's People Also Ask AND they match the question-answer format that ChatGPT/Perplexity users type as prompts.
+
+- Write FAQ questions in natural prompt language (how real people ask, not SEO-speak)
+- Answer each question directly in the first sentence, then expand
+- Include 4-6 questions per article
+- Questions should come from actual user research (Reddit, YouTube comments, search suggestions)
+
+### Content Repurposing for AI Citation Surface
+
+AI tools pull from many surfaces beyond your website: Medium, LinkedIn Pulse, Reddit, Quora, YouTube transcripts. One article should be repurposed across multiple platforms to maximize the chance of being cited.
+
+This is handled by the `/repurpose` command, but writers should be aware: the more surfaces your content appears on (with attribution back to your site), the higher the chance AI recommends it.
+
+### AI Citation Audit
+
+For competitive topics, audit which sources AI actually cites. See `context/ai-citation-targets.md` for priority citation surfaces and the `/research-ai-citations` command for prompt-based auditing.
+
 ## Content Refresh Strategy
 
 ### When to Update Content
@@ -470,6 +559,16 @@ Before publishing, verify:
 - [ ] Alt text with keywords
 - [ ] Images optimized for web
 
+### AI Search Optimization
+- [ ] Direct answer in first 1-2 sentences (not buried)
+- [ ] TL;DR / Key Takeaways block after introduction
+- [ ] Meta description directly answers the target query
+- [ ] FAQ questions written in natural prompt language
+- [ ] At least one embedded YouTube video
+- [ ] Author attribution (named, not generic "Team")
+- [ ] Last updated date included
+- [ ] Year included in title for time-sensitive topics
+
 ### Quality
 - [ ] No spelling or grammar errors
 - [ ] Factually accurate
@@ -496,4 +595,4 @@ Before publishing, verify:
 
 ---
 
-**Remember**: SEO serves the user, not the algorithm. Never sacrifice content quality, accuracy, or helpfulness for keyword optimization. The best SEO is great content that genuinely helps podcast creators succeed.
+**Remember**: SEO serves the user, not the algorithm. Never sacrifice content quality, accuracy, or helpfulness for keyword optimization. The best SEO is great content that genuinely helps your audience succeed.

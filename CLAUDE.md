@@ -29,6 +29,8 @@ All commands are defined in `.claude/commands/` and invoked as slash commands:
 - `/cluster [topic]` - Build complete topic cluster strategy with pillar + supporting articles + linking map
 - `/priorities` - Content prioritization matrix
 - `/research-serp`, `/research-gaps`, `/research-trending`, `/research-performance`, `/research-topics` - Specialized research commands
+- `/research-ai-citations [topic]` - AI citation audit: generates prompts, clusters them, audits which sources AI cites
+- `/repurpose [file]` - Adapts article for LinkedIn, Medium, Reddit, Quora distribution
 - `/landing-write`, `/landing-audit`, `/landing-research`, `/landing-publish`, `/landing-competitor` - Landing page commands
 
 ## Architecture
@@ -83,7 +85,7 @@ python3 test_dataforseo.py
 
 `topics/` (ideas) → `research/` (briefs) → `drafts/` (articles) → `review-required/` (pending review) → `published/` (final)
 
-Rewrites go to `rewrites/`. Landing pages go to `landing-pages/`. Audits go to `audits/`.
+Rewrites go to `rewrites/`. Landing pages go to `landing-pages/`. Audits go to `audits/`. Repurposed content goes to `repurposed/`.
 
 ## Context Files
 
@@ -95,6 +97,8 @@ Rewrites go to `rewrites/`. Landing pages go to `landing-pages/`. Audits go to `
 - `features.md` - Product features
 - `competitor-analysis.md` - Competitive intelligence
 - `cro-best-practices.md` - Conversion optimization guidelines
+- `ai-citation-targets.md` - Directories/platforms where your brand should be cited by AI tools
+- `reddit-strategy.md` - Reddit engagement strategy for AI SEO and community visibility
 
 ## WordPress Integration
 
