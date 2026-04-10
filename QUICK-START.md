@@ -106,7 +106,7 @@ You now have:
 
 - Full Documentation: See README.md
 - Real Example: Check `examples/castos/` directory
-- Issues: https://github.com/[your-username]/seomachine/issues
+- Issues: https://github.com/TheCraigHewitt/seomachine/issues
 
 ---
 
