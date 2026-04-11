@@ -59,6 +59,17 @@ claude-code .
 
    **Quick Start**: Check out `examples/castos/` to see a complete real-world example of all context files filled out for a podcast hosting SaaS company.
 
+## Docker Setup
+
+Before running Docker, configure `data_sources/config/.env` with your credentials.
+
+```bash
+docker-compose build
+docker-compose run seomachine bash
+```
+
+Content directories are mounted as volumes, so files in `topics/`, `research/`, `drafts/`, `published/`, `output/`, `rewrites/`, `context/`, and `credentials/` persist on your host.
+
 ## Workflows
 
 ### Creating New Content
