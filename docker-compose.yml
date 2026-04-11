@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  seomachine:
+    build: .
+    volumes:
+      - ./.env:/app/.env:ro
+      - ./credentials:/app/credentials:ro
+      - ./research:/app/research
+      - ./drafts:/app/drafts
+      - ./output:/app/output
+      - ./published:/app/published
+    environment:
+      - PYTHONUNBUFFERED=1
