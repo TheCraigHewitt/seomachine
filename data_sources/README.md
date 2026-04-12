@@ -39,6 +39,16 @@ Data sources provide real-time performance metrics for:
   - Search volume and difficulty
   - Related keywords and questions
 
+### Exa AI Search
+- **Purpose**: AI-powered web search, content discovery, and competitor content analysis
+- **Key Capabilities**:
+  - Semantic search (finds contextually relevant content, not just keyword matches)
+  - Content discovery and idea generation
+  - Competitor content analysis across domains
+  - Similar content finding (find articles similar to a given URL)
+  - Category-filtered search (news, research papers, companies, etc.)
+  - Full content retrieval with highlights, text, or summaries
+
 ## Directory Structure
 
 ```
@@ -52,6 +62,7 @@ data_sources/
 │   ├── google_analytics.py
 │   ├── google_search_console.py
 │   ├── dataforseo.py
+│   ├── exa_search.py
 │   └── data_aggregator.py
 ├── utils/                 # Utility functions
 │   ├── auth.py           # Authentication helpers
@@ -104,6 +115,14 @@ pip install -r data_sources/requirements.txt
    DATAFORSEO_PASSWORD=your_password
    ```
 
+#### Exa AI Search
+1. Sign up at [Exa](https://exa.ai/)
+2. Get your API key from the dashboard
+3. Add to `.env` file:
+   ```
+   EXA_API_KEY=your_api_key
+   ```
+
 ### 3. Configure Data Sources
 
 Copy example config:
@@ -125,6 +144,9 @@ GSC_CREDENTIALS_PATH=data_sources/config/gsc_credentials.json
 DATAFORSEO_LOGIN=your_login
 DATAFORSEO_PASSWORD=your_password
 DATAFORSEO_BASE_URL=https://api.dataforseo.com
+
+# Exa AI Search
+EXA_API_KEY=your_api_key
 
 # Cache settings
 CACHE_ENABLED=true
@@ -191,6 +213,46 @@ competitor_data = dfs.analyze_competitor(
 
 # Get SERP data
 serp = dfs.get_serp_data(keyword="podcast monetization")
+```
+
+#### Fetch Exa AI Search Data
+```python
+from data_sources.modules.exa_search import ExaSearch
+
+exa = ExaSearch()
+
+# AI-powered content search with highlights
+results = exa.search(
+    query="best podcast hosting platforms for beginners",
+    num_results=10,
+    content_mode="highlights",
+)
+
+# Find competitor content on a topic
+competitor_content = exa.find_competitor_content(
+    topic="podcast monetization",
+    competitor_domains=["competitor1.com", "competitor2.com"],
+)
+
+# Discover recent content ideas
+ideas = exa.discover_content_ideas(
+    seed_topic="podcast monetization strategies",
+    num_results=20,
+    days_back=30,
+)
+
+# Find content similar to a specific URL
+similar = exa.find_similar_content(
+    url="https://example.com/blog/podcast-guide",
+    num_results=10,
+)
+
+# Comprehensive topic research (general + news + research papers)
+research = exa.research_topic(
+    topic="podcast advertising trends",
+    include_news=True,
+    include_research=True,
+)
 ```
 
 ### From Claude Code Agent
@@ -297,6 +359,11 @@ The Performance Agent uses this data to:
 - **Budget**: Set monthly limits in config
 - **Tip**: Use caching aggressively to minimize costs
 
+### Exa AI Search
+- **Free Tier**: 1,000 searches/month
+- **Pricing**: Pay-per-request after free tier
+- **Tip**: Use caching and batch research sessions to stay within limits
+
 ## Security
 
 **IMPORTANT**: Never commit credentials to git!
@@ -352,6 +419,7 @@ For issues with:
 - **Google APIs**: [Google Analytics API docs](https://developers.google.com/analytics/devguides/reporting/data/v1)
 - **Search Console API**: [Search Console API docs](https://developers.google.com/webmaster-tools/search-console-api-original)
 - **DataForSEO**: [DataForSEO docs](https://docs.dataforseo.com/)
+- **Exa AI Search**: [Exa docs](https://exa.ai/docs)
 
 ---
 
