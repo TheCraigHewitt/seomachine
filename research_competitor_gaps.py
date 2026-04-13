@@ -37,6 +37,7 @@ def load_competitors():
 
 
 DIRECT_COMPETITORS, CONTENT_COMPETITORS = load_competitors()
+_RELEVANT_TERMS_CACHE = None
 
 
 def main():
@@ -276,6 +277,25 @@ def is_branded_keyword(keyword: str, domain: str) -> bool:
     return False
 
 
+def load_relevant_terms() -> List[str]:
+    """Load and cache relevant keyword terms used by is_relevant_keyword."""
+    global _RELEVANT_TERMS_CACHE
+
+    if _RELEVANT_TERMS_CACHE is not None:
+        return _RELEVANT_TERMS_CACHE
+
+    config_path = os.path.join(os.path.dirname(__file__), 'config', 'competitors.json')
+    if os.path.exists(config_path):
+        with open(config_path) as f:
+            config = json.load(f)
+        terms = config.get('relevant_terms', [])
+        _RELEVANT_TERMS_CACHE = [term.lower() for term in terms]
+        return _RELEVANT_TERMS_CACHE
+
+    _RELEVANT_TERMS_CACHE = []
+    return _RELEVANT_TERMS_CACHE
+
+
 def is_relevant_keyword(keyword: str) -> bool:
     """Filter for relevant industry keywords. Override relevant_terms for your niche."""
     keyword_lower = keyword.lower()
@@ -286,17 +306,9 @@ def is_relevant_keyword(keyword: str) -> bool:
 
     # Industry-relevant terms - customize for your niche
     # Load from config if available, otherwise accept all keywords
-    config_path = os.path.join(os.path.dirname(__file__), 'config', 'competitors.json')
-    if os.path.exists(config_path):
-        with open(config_path) as f:
-            config = json.load(f)
-        relevant_terms = config.get('relevant_terms', [])
-        if not relevant_terms:
-            return True  # No filter configured, accept all
-    else:
+    relevant_terms = load_relevant_terms()
+    if not relevant_terms:
         return True  # No config, accept all
-
-    relevant_terms = [t.lower() for t in relevant_terms]
 
     # Check if keyword contains any relevant terms
     if not any(term in keyword_lower for term in relevant_terms):
