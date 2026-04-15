@@ -92,6 +92,7 @@ class ContentScrubber:
             'unicode_removed': 0,
             'emdashes_replaced': 0,
             'format_control_removed': 0,
+            'ai_phrases_replaced': 0,
         }
 
         # Step 1: Remove specific watermark characters
