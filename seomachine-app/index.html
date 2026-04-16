@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEOMachine — 블로그 글 생성기</title>
+  <meta name="description" content="Unifi.me SEO 최적화 블로그 글 자동 생성 도구" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Marked.js (Markdown renderer) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+  <style>
+    /* Tailwind config override for our design system */
+    [x-cloak] { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     APP ROOT
+═══════════════════════════════════════════════════ -->
+<div x-data="app" x-cloak>
+
+  <!-- ── Header ──────────────────────────────────────── -->
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="./" class="logo">
+        <div class="logo-icon">✦</div>
+        SEOMachine
+      </a>
+      <button class="btn-icon" @click="openApiModal()" title="API 키 설정">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+          <path d="M12 2v2m0 16v2M2 12h2m16 0h2m-3.05-8.95 1.42 1.42M4.63 19.37l1.42-1.42M19.37 19.37l-1.42-1.42M4.63 4.63 6.05 6.05"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── Main ─────────────────────────────────────────── -->
+  <main class="main-content">
+
+    <!-- ══════════════════════════════════════════════════
+         VIEW: FORM
+    ══════════════════════════════════════════════════ -->
+    <div x-show="view === 'form'">
+      <h1 class="page-title">새 블로그 글 작성</h1>
+      <p class="page-subtitle">
+        주제와 키워드를 입력하면 SEO 최적화된 한국어 블로그 글을 생성합니다.
+      </p>
+
+      <!-- Form card -->
+      <div class="card form-card">
+
+        <!-- Error -->
+        <div x-show="formError" class="form-error" x-text="formError"></div>
+
+        <!-- 주제 -->
+        <div class="form-group">
+          <label class="form-label" for="topic">주제 / 타이틀</label>
+          <input
+            id="topic"
+            type="text"
+            class="form-input"
+            x-model="topic"
+            placeholder="예: 스테이블코인으로 월 이자 받는 방법"
+            @keydown.enter="generate()"
+          />
+        </div>
+
+        <!-- 타겟 키워드 -->
+        <div class="form-group">
+          <label class="form-label" for="keywords">
+            타겟 키워드
+            <span class="optional">쉼표로 구분 / 첫 번째가 주 키워드</span>
+          </label>
+          <input
+            id="keywords"
+            type="text"
+            class="form-input"
+            x-model="keywords"
+            placeholder="예: 스테이블코인 이자, USDT 예치, Unifi 스테이블코인"
+          />
+        </div>
+
+        <!-- 톤 -->
+        <div class="form-group">
+          <label class="form-label">톤 & 스타일</label>
+          <div class="tone-options">
+            <template x-for="t in ['친근한', '전문적', '실용적']" :key="t">
+              <label class="tone-option">
+                <input type="radio" :value="t" x-model="tone" />
+                <span class="tone-label" x-text="t"></span>
+              </label>
+            </template>
+          </div>
+        </div>
+
+        <!-- 타겟 독자 (optional) -->
+        <div class="form-group">
+          <label class="form-label" for="audience">
+            타겟 독자
+            <span class="optional">선택</span>
+          </label>
+          <input
+            id="audience"
+            type="text"
+            class="form-input"
+            x-model="audience"
+            placeholder="예: 암호화폐 초보자, LINE 사용자, 재테크에 관심 있는 20-40대"
+          />
+        </div>
+
+        <!-- 추가 지시사항 (optional) -->
+        <div class="form-group">
+          <label class="form-label" for="instructions">
+            추가 지시사항
+            <span class="optional">선택</span>
+          </label>
+          <textarea
+            id="instructions"
+            class="form-textarea"
+            x-model="instructions"
+            placeholder="예: 최근 금리 비교 포함, 특정 경쟁사 언급 피할 것, 초보자도 이해 가능한 수준으로..."
+          ></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button
+          class="btn btn-primary btn-full"
+          style="height: 44px; font-size: 15px; margin-top: 4px;"
+          @click="generate()"
+          :disabled="isGenerating"
+        >
+          <span>✦</span>
+          <span>블로그 글 생성하기</span>
+        </button>
+
+      </div>
+      <!-- /form-card -->
+
+      <!-- History -->
+      <template x-if="history.length > 0">
+        <div class="history-list">
+          <p class="section-title">최근 생성 기록</p>
+          <template x-for="item in history" :key="item.id">
+            <div class="history-item" @click="loadHistory(item)">
+              <span class="history-topic" x-text="item.topic"></span>
+              <span class="history-date" x-text="item.date"></span>
+              <button class="history-delete" @click="deleteHistory(item.id, $event)" title="삭제">×</button>
+            </div>
+          </template>
+        </div>
+      </template>
+
+    </div>
+    <!-- /view: form -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         VIEW: GENERATING
+    ══════════════════════════════════════════════════ -->
+    <div x-show="view === 'generating'">
+      <h1 class="page-title" style="margin-bottom: 6px;">생성 중...</h1>
+      <p class="page-subtitle" x-text="`"${generatedTopic}" 블로그 글을 작성하고 있습니다.`"></p>
+
+      <!-- Progress steps -->
+      <div class="progress-steps" style="margin-bottom: 28px;">
+        <template x-for="(step, i) in generatingSteps" :key="i">
+          <div
+            class="progress-step"
+            :class="{
+              'active': generatingStep === i,
+              'done': generatingStep > i
+            }"
+          >
+            <div class="step-icon">
+              <span x-text="generatingStep > i ? '✓' : step.icon"></span>
+            </div>
+            <span x-text="step.label"></span>
+          </div>
+        </template>
+      </div>
+
+      <!-- Streaming preview -->
+      <template x-if="streamingText">
+        <div>
+          <p class="section-title">실시간 출력</p>
+          <div class="streaming-preview" id="stream-box">
+            <span x-text="streamingText.slice(-1500)"></span><span class="streaming-cursor" x-show="generatingStep === 0"></span>
+          </div>
+        </div>
+      </template>
+
+    </div>
+    <!-- /view: generating -->
+
+
+    <!-- ══════════════════════════════════════════════════
+         VIEW: RESULT
+    ══════════════════════════════════════════════════ -->
+    <div x-show="view === 'result'">
+
+      <!-- Header row -->
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; gap: 16px; flex-wrap: wrap;">
+        <div>
+          <h1 class="page-title" style="font-size: 26px; margin-bottom: 4px;" x-text="generatedTopic"></h1>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="badge" x-text="`${wordCount.toLocaleString()} 자`"></span>
+            <template x-if="metaInfo?.primaryKeyword">
+              <span class="badge" style="background: #f0fdf4; color: #16a34a;" x-text="metaInfo.primaryKeyword"></span>
+            </template>
+          </div>
+        </div>
+        <button class="btn btn-ghost btn-sm" @click="newRequest()">
+          ← 새 글 요청
+        </button>
+      </div>
+
+      <!-- Meta info card -->
+      <template x-if="metaInfo || metaOptions">
+        <div class="meta-card">
+          <p class="section-title" style="margin-bottom: 16px;">SEO 메타 정보</p>
+
+          <!-- Meta title -->
+          <template x-if="displayMetaTitle">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label style="font-size: 11px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; display: block; margin-bottom: 4px;">
+                Meta Title
+                <span style="font-weight: 400; margin-left: 4px;" x-text="`(${displayMetaTitle.length}/60자)`"></span>
+              </label>
+              <p style="font-size: 14px; font-weight: 500;" x-text="displayMetaTitle"></p>
+            </div>
+          </template>
+
+          <!-- Meta description -->
+          <template x-if="displayMetaDesc">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label style="font-size: 11px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; display: block; margin-bottom: 4px;">
+                Meta Description
+                <span style="font-weight: 400; margin-left: 4px;" x-text="`(${displayMetaDesc.length}/160자)`"></span>
+              </label>
+              <p style="font-size: 14px; color: var(--text-secondary);" x-text="displayMetaDesc"></p>
+            </div>
+          </template>
+
+          <!-- URL slug + keywords row -->
+          <div class="meta-row" style="margin-bottom: 0;">
+            <template x-if="metaInfo?.slug">
+              <div class="meta-field">
+                <label>URL Slug</label>
+                <p class="mono" x-text="metaInfo.slug"></p>
+              </div>
+            </template>
+            <template x-if="metaInfo?.secondaryKeywords">
+              <div class="meta-field">
+                <label>Secondary Keywords</label>
+                <p x-text="metaInfo.secondaryKeywords"></p>
+              </div>
+            </template>
+          </div>
+
+        </div>
+      </template>
+
+      <!-- Article content -->
+      <div class="card" style="padding: 32px; margin-bottom: 0;">
+        <article class="article-content" x-html="renderedArticle"></article>
+      </div>
+
+      <!-- Action bar -->
+      <div class="action-bar">
+        <button class="btn btn-primary" @click="copyToClipboard()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          마크다운 복사
+        </button>
+        <button class="btn btn-secondary" @click="downloadMarkdown()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          .md 다운로드
+        </button>
+        <div style="flex: 1;"></div>
+        <button class="btn btn-ghost btn-sm" @click="newRequest()">새 글 요청</button>
+      </div>
+
+    </div>
+    <!-- /view: result -->
+
+  </main>
+
+
+  <!-- ══════════════════════════════════════════════════
+       API KEY MODAL
+  ══════════════════════════════════════════════════ -->
+  <div class="modal-backdrop" x-show="showApiModal" @click.self="closeApiModal()">
+    <div class="modal">
+      <h2 class="modal-title">Anthropic API 키 설정</h2>
+      <p class="modal-subtitle">
+        Claude API를 사용하여 블로그 글을 생성합니다.
+        API 키는 이 브라우저에만 저장되며 외부로 전송되지 않습니다.
+      </p>
+
+      <div class="form-group" style="margin-bottom: 12px;">
+        <label class="form-label" for="api-key-input">Anthropic API Key</label>
+        <input
+          id="api-key-input"
+          type="password"
+          class="form-input"
+          x-model="apiKeyInput"
+          placeholder="sk-ant-api03-..."
+          @keydown.enter="saveApiKey()"
+        />
+        <p
+          x-show="apiKeyError"
+          style="color: #dc2626; font-size: 13px; margin-top: 6px;"
+          x-text="apiKeyError"
+        ></p>
+      </div>
+
+      <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6;">
+        API 키는 <strong>console.anthropic.com</strong>에서 발급받을 수 있습니다.
+        사용량에 따라 비용이 청구됩니다.
+      </p>
+
+      <div style="display: flex; gap: 8px; justify-content: flex-end;">
+        <button
+          class="btn btn-ghost"
+          x-show="apiKey"
+          @click="closeApiModal()"
+        >취소</button>
+        <button class="btn btn-primary" @click="saveApiKey()">저장</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       NOTIFICATION TOAST
+  ══════════════════════════════════════════════════ -->
+  <div
+    class="notification"
+    x-show="notification"
+    x-text="notification"
+    x-transition.duration.200ms
+  ></div>
+
+</div>
+<!-- /app root -->
+
+
+<!-- ── Scripts ─────────────────────────────────────────── -->
+<script src="context.js"></script>
+<script src="prompts.js"></script>
+<script src="app.js"></script>
+
+<!-- Auto-scroll streaming box -->
+<script>
+  const observer = new MutationObserver(() => {
+    const box = document.getElementById('stream-box');
+    if (box) box.scrollTop = box.scrollHeight;
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const box = document.getElementById('stream-box');
+    if (box) observer.observe(box, { childList: true, subtree: true, characterData: true });
+  });
+</script>
+
+</body>
+</html>

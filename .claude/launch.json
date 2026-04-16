@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "seomachine-app",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3456", "--directory", "seomachine-app"],
+      "port": 3456
+    }
+  ]
+}
