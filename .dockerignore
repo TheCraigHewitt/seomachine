@@ -1,0 +1,12 @@
+.git
+.env
+credentials/
+drafts/
+output/
+published/
+research/
+rewrites/
+topics/
+__pycache__
+*.pyc
+.DS_Store
