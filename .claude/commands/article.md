@@ -280,7 +280,7 @@ Save to: `research/article-plan-[topic-slug]-[YYYY-MM-DD].md`
   1. [Option 1]
   2. [Option 2]
   3. [Option 3]
-- **Meta Description**: [150-160 chars]
+- **Meta Description**: [150-160 chars — must directly answer the target query, not just tease]
 - **URL Slug**: /blog/[slug]
 
 ## Section Plan
@@ -369,6 +369,7 @@ Save to: `research/article-plan-[topic-slug]-[YYYY-MM-DD].md`
 
 #### Introduction
 **Requirements:**
+- **Direct answer first** (AI Search Optimization): For any "best/top/how" query, the first 1-2 sentences MUST directly answer the question before the narrative hook. AI scrapers pull from the top of the page.
 - Hook (NOT generic opening - use question/scenario/stat/bold statement)
 - APP Formula: Agree, Promise, Preview
 - Primary keyword in first 100 words
@@ -380,6 +381,14 @@ Save to: `research/article-plan-[topic-slug]-[YYYY-MM-DD].md`
 - "When it comes to..."
 - "If you're looking for..."
 - "In today's world..."
+
+#### Key Takeaways Block (After Introduction, Before First H2)
+**Requirements:**
+- 3-5 bullet points summarizing the article's actual conclusions
+- Each bullet is a standalone claim with specifics (numbers, names, outcomes)
+- NOT a table of contents — these are the conclusions up front
+- Format as blockquote with bold "Key Takeaways" header
+- Written after full article is drafted, then placed here
 
 #### Body: How-To
 **Requirements:**
@@ -402,6 +411,7 @@ Save to: `research/article-plan-[topic-slug]-[YYYY-MM-DD].md`
 - Progressive complexity (simple → advanced)
 - Analogies for complex concepts
 - Examples with specifics
+- Embed at least one relevant YouTube video in a body section where it adds context (prefer your own channel, then authoritative third-party)
 - 250-400 words per section
 
 #### FAQ
@@ -479,6 +489,15 @@ After all sections are written and edited:
    - [ ] Meta title 50-60 chars
    - [ ] Meta description 150-160 chars
    - [ ] 2000+ words
+
+   **AI Search Optimization Checklist:**
+   - [ ] Direct answer in first 1-2 sentences (not buried behind narrative)
+   - [ ] Key Takeaways block with 3-5 specific bullet points after introduction
+   - [ ] Meta description directly answers the target query
+   - [ ] At least one relevant YouTube video embedded
+   - [ ] FAQ questions written in natural prompt language
+   - [ ] One idea per section (each H2/H3 focuses on single concept)
+   - [ ] Author attribution in frontmatter
 
    **Engagement Checklist:**
    - [ ] Hook (not generic opening)

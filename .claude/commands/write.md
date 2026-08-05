@@ -30,11 +30,16 @@ Use this command to create comprehensive, SEO-optimized long-form blog content.
 - Keep under 60 characters for SERP display
 - Promise clear value to reader
 
-#### 2. Introduction (150-200 words)
+#### 2. Introduction (150-250 words)
 
-**CRITICAL: The Hook (First 1-2 Sentences)**
+**CRITICAL: Direct Answer First (AI Search Optimization)**
 
-The opening hook is the most important element. A strong hook can boost reader retention by 30%. NEVER open with a generic definition or statement like "X is..." or "When it comes to..."
+For any "best/top/how" query, the first 1-2 sentences MUST directly answer the question. AI scrapers (ChatGPT, Perplexity, Gemini) pull from the top of the page. Don't bury the answer behind narrative.
+
+**Example — "best project management tools":**
+> The best project management tools in 2026 are Asana, Monday, and ClickUp — each built for different team sizes and workflows. Here's how they compare.
+
+After the direct answer, use a hook to keep human readers engaged.
 
 **Choose ONE hook type for each article:**
 
@@ -54,7 +59,28 @@ The opening hook is the most important element. A strong hook can boost reader r
 - **Keyword**: Include primary keyword in first 100 words
 - **Credibility**: Establish why you/this article is authoritative
 
-#### 3. Main Body (1800-2500+ words)
+#### 3. Key Takeaways Block (After Introduction)
+
+**REQUIRED: TL;DR block immediately after the introduction, before the first H2 body section.**
+
+This gets pulled into AI-generated summaries and helps both AI and human readers quickly assess the article's value.
+
+```markdown
+> **Key Takeaways**
+> - [Core finding or recommendation #1]
+> - [Core finding or recommendation #2]
+> - [Core finding or recommendation #3]
+> - [Core finding or recommendation #4 if needed]
+> - [Core finding or recommendation #5 if needed]
+```
+
+**Rules:**
+- 3-5 bullet points
+- Each bullet is a standalone claim with specifics (numbers, names, outcomes)
+- NOT a table of contents — these are the article's actual conclusions
+- Written after the full article is drafted (so the takeaways are accurate)
+
+#### 4. Main Body (1800-2500+ words)
 - **Logical Flow**: Organize sections in clear, progressive order
 - **H2 Sections**: 4-7 main sections covering comprehensive topic scope
 - **H3 Subsections**: Break complex sections into digestible pieces
@@ -62,6 +88,7 @@ The opening hook is the most important element. A strong hook can boost reader r
 - **Depth**: Provide thorough, actionable information at each point
 - **Data**: Reference statistics and studies to support claims
 - **Visuals**: Note where images, screenshots, or graphics enhance understanding
+- **YouTube Embed**: Include at least one relevant YouTube video (prefer your own channel, then authoritative third-party) — AI models cross-reference video and article content
 - **Lists**: Use bulleted or numbered lists for scannability
 - **Formatting**: Bold key concepts, use short paragraphs (2-4 sentences MAX)
 
@@ -97,7 +124,7 @@ Don't just put one CTA at the end. Embedded CTAs get 121% more conversions than 
 - First CTA should appear within the first 500 words
 - Never use generic "Click here" text
 
-#### 4. Conclusion (150-200 words)
+#### 5. Conclusion (150-200 words)
 - **Recap**: Summarize 3-5 key takeaways
 - **Action**: Provide clear next steps for reader
 - **CTA**: Include relevant call-to-action (free trial, resource download, etc.)
@@ -186,7 +213,16 @@ Word Count: [actual word count]
 - [ ] Proper H2/H3 hierarchy
 - [ ] Readability optimized
 
-### 4. Engagement Checklist
+### 4. AI Search Optimization Checklist
+- [ ] **Direct answer**: First 1-2 sentences directly answer the target query
+- [ ] **Key Takeaways**: TL;DR block with 3-5 specific bullet points after introduction
+- [ ] **Meta description**: Directly answers the query (not just a teaser)
+- [ ] **YouTube embed**: At least one relevant video embedded
+- [ ] **FAQ prompts**: Questions written in natural language people would type into ChatGPT
+- [ ] **One idea per section**: Each H2/H3 focuses on a single clear concept
+- [ ] **Author attribution**: Named author in frontmatter
+
+### 5. Engagement Checklist
 - [ ] **Hook**: Opens with question, scenario, statistic, or bold statement (NOT generic definition)
 - [ ] **APP Formula**: Introduction includes Agree, Promise, Preview elements
 - [ ] **Mini-stories**: 2-3 specific scenarios with names, details, and outcomes
