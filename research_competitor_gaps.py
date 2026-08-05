@@ -276,6 +276,23 @@ def is_branded_keyword(keyword: str, domain: str) -> bool:
     return False
 
 
+_relevant_terms_cache = None
+
+
+def _load_relevant_terms() -> List[str]:
+    """Load relevant_terms from config once and cache for the process lifetime."""
+    global _relevant_terms_cache
+    if _relevant_terms_cache is None:
+        config_path = os.path.join(os.path.dirname(__file__), 'config', 'competitors.json')
+        if os.path.exists(config_path):
+            with open(config_path) as f:
+                config = json.load(f)
+            _relevant_terms_cache = [t.lower() for t in config.get('relevant_terms', [])]
+        else:
+            _relevant_terms_cache = []
+    return _relevant_terms_cache
+
+
 def is_relevant_keyword(keyword: str) -> bool:
     """Filter for relevant industry keywords. Override relevant_terms for your niche."""
     keyword_lower = keyword.lower()
@@ -285,18 +302,9 @@ def is_relevant_keyword(keyword: str) -> bool:
         return False
 
     # Industry-relevant terms - customize for your niche
-    # Load from config if available, otherwise accept all keywords
-    config_path = os.path.join(os.path.dirname(__file__), 'config', 'competitors.json')
-    if os.path.exists(config_path):
-        with open(config_path) as f:
-            config = json.load(f)
-        relevant_terms = config.get('relevant_terms', [])
-        if not relevant_terms:
-            return True  # No filter configured, accept all
-    else:
-        return True  # No config, accept all
-
-    relevant_terms = [t.lower() for t in relevant_terms]
+    relevant_terms = _load_relevant_terms()
+    if not relevant_terms:
+        return True  # No config or no filter configured, accept all
 
     # Check if keyword contains any relevant terms
     if not any(term in keyword_lower for term in relevant_terms):
@@ -455,10 +463,14 @@ def write_markdown_report(gaps: List[Dict[str, Any]], total_found: int):
 
         # Analyze patterns
         total_volume = sum(g.get('search_volume', 0) for g in gaps if g.get('search_volume'))
-        avg_difficulty = sum(g.get('difficulty', 0) for g in gaps if g.get('difficulty')) / len([g for g in gaps if g.get('difficulty')])
+        gaps_with_difficulty = [g for g in gaps if g.get('difficulty')]
 
         f.write(f"- **Total Potential Search Volume:** {total_volume:,}/month\n")
-        f.write(f"- **Average SEO Difficulty:** {avg_difficulty:.1f}/100\n")
+        if gaps_with_difficulty:
+            avg_difficulty = sum(g['difficulty'] for g in gaps_with_difficulty) / len(gaps_with_difficulty)
+            f.write(f"- **Average SEO Difficulty:** {avg_difficulty:.1f}/100\n")
+        else:
+            f.write(f"- **Average SEO Difficulty:** N/A (no difficulty data available)\n")
 
         # Content type breakdown
         content_types = {}
