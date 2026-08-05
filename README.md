@@ -27,6 +27,9 @@ git clone https://github.com/TheCraigHewitt/seomachine.git
 cd seomachine
 ```
 
+> Planning to contribute? Fork this repo first, then clone your fork instead:
+> `git clone https://github.com/<your-username>/seomachine.git`
+
 2. Install Python dependencies for analysis modules:
 ```bash
 pip install -r data_sources/requirements.txt
