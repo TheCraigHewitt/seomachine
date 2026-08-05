@@ -65,6 +65,17 @@ Google Analytics 4 provides traffic data, user behavior metrics, and page perfor
 8. Uncheck "Notify new users by email"
 9. Click **Add**
 
+#### Troubleshooting: "This email address does not belong to a Google account"
+
+Google Analytics sometimes rejects valid service account emails with this error. If you hit it, try the following in order:
+
+1. **Check for stray whitespace.** Copy the email directly from the Cloud Console **Credentials** page and paste it into a plain-text editor first to confirm there are no leading/trailing spaces or invisible characters.
+2. **Use an incognito/private window** signed in to *only* the Google account that administers the GA4 property. Being signed in to multiple Google accounts at once is a common trigger for this error.
+3. **Wait and retry.** Newly created service accounts can take anywhere from a few minutes up to 24 hours to be recognized by the Analytics UI. If you just created the account, come back later and try again.
+4. **Verify the service account exists** under **IAM & Admin > Service Accounts** in the same project where you enabled the Analytics APIs, and that you copied its full email (ending in `.iam.gserviceaccount.com`).
+
+If none of these work, the service account approach is currently the only authentication method SEO Machine supports natively (`google_analytics.py` and `google_search_console.py` load credentials via `service_account.Credentials.from_service_account_file`). OAuth2 user credentials are a known alternative that other users have made work with custom scripts (see issues [#56](https://github.com/TheCraigHewitt/seomachine/issues/56) and [#58](https://github.com/TheCraigHewitt/seomachine/issues/58)), but would require modifying the modules.
+
 ### Step 5: Get Your GA4 Property ID
 
 1. In Google Analytics, click **Admin**
@@ -126,6 +137,19 @@ Google Search Console provides search query data, click-through rates, average p
 6. Enter the service account email (e.g., `seo-machine-ga4@your-project.iam.gserviceaccount.com`)
 7. Select permission level: **Full** (required for API access, but only provides read access)
 8. Click **Add**
+
+#### Troubleshooting: "This email address does not belong to a Google account"
+
+Search Console can reject service account emails with the same error described in the GA4 troubleshooting section above — the whitespace, incognito-window, and propagation-delay fixes apply here too.
+
+Search Console also has a dedicated workaround that GA4 does not: add the service account as a **delegated owner** through the legacy verification console, which accepts service account emails even when the Search Console UI rejects them:
+
+1. Go to [https://www.google.com/webmasters/verification/home](https://www.google.com/webmasters/verification/home)
+2. Click your verified property
+3. Click **Verification details**, then **Add an owner**
+4. Enter the service account email and confirm
+
+Delegated ownership grants the service account API access to the property. Note that this makes the service account a full owner rather than a restricted user, so keep the JSON key file secure.
 
 ### Step 4: Get Your Site URL
 
