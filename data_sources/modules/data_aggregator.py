@@ -13,11 +13,13 @@ try:
     from .google_analytics import GoogleAnalytics
     from .google_search_console import GoogleSearchConsole
     from .dataforseo import DataForSEO
+    from .exa_search import ExaSearch
 except ImportError:
     # Fallback for direct execution
     from google_analytics import GoogleAnalytics
     from google_search_console import GoogleSearchConsole
     from dataforseo import DataForSEO
+    from exa_search import ExaSearch
 
 
 class DataAggregator:
@@ -46,6 +48,12 @@ class DataAggregator:
         except Exception as e:
             print(f"Warning: DataForSEO not configured: {e}")
             self.dfs = None
+
+        try:
+            self.exa = ExaSearch()
+        except Exception as e:
+            print(f"Warning: Exa Search not configured: {e}")
+            self.exa = None
 
     def get_comprehensive_page_performance(
         self,
