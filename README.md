@@ -17,7 +17,13 @@ SEO Machine is built on Claude Code and provides:
 
 ### Prerequisites
 - [Claude Code](https://claude.com/claude-code) installed
-- Anthropic API account
+- One of the following authentication options for Claude Code:
+  - A Claude Pro, Max, Team, or Enterprise subscription
+  - An Anthropic Console account with API billing enabled
+
+> Claude subscriptions and Anthropic Console API billing are separate. Optional
+> integrations such as DataForSEO, Google Analytics, and Google Search Console
+> require their own credentials.
 
 ### Installation
 
@@ -44,7 +50,7 @@ This installs:
 
 3. Open in Claude Code:
 ```bash
-claude-code .
+claude
 ```
 
 4. **Customize Context Files** (Important!):
