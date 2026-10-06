@@ -2,6 +2,8 @@
 
 A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.
 
+Walkthrough: https://www.youtube.com/watch?v=Ncj7fGFbmEs
+
 ## Overview
 
 SEO Machine is built on Claude Code and provides:
