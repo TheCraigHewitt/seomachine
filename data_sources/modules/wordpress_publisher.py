@@ -2,7 +2,7 @@
 WordPress Publisher Module
 
 Publishes draft articles to WordPress as draft posts via the REST API.
-Supports Yoast SEO meta fields (title, description, focus keyphrase).
+Supports Yoast SEO and RankMath meta fields (title, description, focus keyphrase).
 """
 
 import os
@@ -309,7 +309,7 @@ class WordPressPublisher:
         response.raise_for_status()
         return response.json()
 
-    def set_yoast_meta(
+    def set_seo_meta(
         self,
         post_id: int,
         meta_title: str,
@@ -318,10 +318,11 @@ class WordPressPublisher:
         post_type: str = 'posts'
     ) -> Dict:
         """
-        Set Yoast SEO meta fields on a post, page, or custom post type
+        Set Yoast SEO and RankMath meta fields on a post, page, or custom post type
 
-        Requires the SEO Machine Yoast REST plugin to be installed:
+        Requires the SEO Machine Yoast and/or RankMath REST plugin to be installed:
         wp-content/mu-plugins/seo-machine-yoast-rest.php
+        wp-content/mu-plugins/seo-machine-rankmath-rest.php
 
         Args:
             post_id: WordPress post ID
@@ -333,9 +334,14 @@ class WordPressPublisher:
         Returns:
             Updated post response
         """
-        # Use the yoast_seo field provided by our mu-plugin
-        yoast_data = {
+        # Use the yoast_seo and rankmath_seo fields provided by our mu-plugins
+        seo_data = {
             'yoast_seo': {
+                'seo_title': meta_title,
+                'meta_description': meta_description,
+                'focus_keyphrase': focus_keyphrase
+            },
+            'rankmath_seo': {
                 'seo_title': meta_title,
                 'meta_description': meta_description,
                 'focus_keyphrase': focus_keyphrase
@@ -344,7 +350,7 @@ class WordPressPublisher:
 
         response = self.session.post(
             f"{self.api_base}/{post_type}/{post_id}",
-            json=yoast_data
+            json=seo_data
         )
         response.raise_for_status()
         return response.json()
@@ -406,9 +412,9 @@ class WordPressPublisher:
 
         post_id = post['id']
 
-        # Set Yoast meta
+        # Set SEO meta
         if draft['meta_title'] or draft['meta_description'] or draft['target_keyword']:
-            self.set_yoast_meta(
+            self.set_seo_meta(
                 post_id=post_id,
                 meta_title=draft['meta_title'],
                 meta_description=draft['meta_description'],
@@ -465,7 +471,7 @@ def main():
         print(f"\n✓ Parsed draft file")
         print(f"✓ Converted {result['word_count']:,} words to HTML")
         print(f"✓ Created WordPress {type_label} draft (ID: {result['post_id']})")
-        print(f"✓ Set Yoast meta (title, description, focus keyphrase)")
+        print(f"✓ Set SEO meta (title, description, focus keyphrase)")
 
         if result['categories']:
             print(f"✓ Assigned categories: {', '.join(result['categories'])}")

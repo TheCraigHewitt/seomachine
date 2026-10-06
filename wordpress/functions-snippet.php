@@ -9,6 +9,8 @@
  * - focus_keyphrase (Focus Keyphrase)
  * - seo_title (SEO Title)
  * - meta_description (Meta Description)
+ *
+ * Supports both Yoast SEO and RankMath.
  */
 
 add_action('rest_api_init', function() {
@@ -48,6 +50,48 @@ add_action('rest_api_init', function() {
                 'focus_keyphrase' => ['type' => 'string', 'description' => 'Yoast Focus Keyphrase'],
                 'seo_title' => ['type' => 'string', 'description' => 'Yoast SEO Title'],
                 'meta_description' => ['type' => 'string', 'description' => 'Yoast Meta Description'],
+            ],
+        ],
+    ]);
+});
+
+add_action('rest_api_init', function() {
+    // Only proceed if RankMath SEO is active
+    if (!defined('RANK_MATH_VERSION')) {
+        return;
+    }
+
+    register_rest_field('post', 'rankmath_seo', [
+        'get_callback' => function($post) {
+            return [
+                'focus_keyphrase' => get_post_meta($post['id'], 'rank_math_focus_keyword', true),
+                'seo_title' => get_post_meta($post['id'], 'rank_math_title', true),
+                'meta_description' => get_post_meta($post['id'], 'rank_math_description', true),
+            ];
+        },
+        'update_callback' => function($value, $post) {
+            if (!current_user_can('edit_post', $post->ID)) {
+                return new WP_Error('rest_forbidden', 'Permission denied.', ['status' => 403]);
+            }
+
+            if (isset($value['focus_keyphrase'])) {
+                update_post_meta($post->ID, 'rank_math_focus_keyword', sanitize_text_field($value['focus_keyphrase']));
+            }
+            if (isset($value['seo_title'])) {
+                update_post_meta($post->ID, 'rank_math_title', sanitize_text_field($value['seo_title']));
+            }
+            if (isset($value['meta_description'])) {
+                update_post_meta($post->ID, 'rank_math_description', sanitize_text_field($value['meta_description']));
+            }
+
+            return true;
+        },
+        'schema' => [
+            'type' => 'object',
+            'properties' => [
+                'focus_keyphrase' => ['type' => 'string', 'description' => 'RankMath Focus Keyword'],
+                'seo_title' => ['type' => 'string', 'description' => 'RankMath SEO Title'],
+                'meta_description' => ['type' => 'string', 'description' => 'RankMath Meta Description'],
             ],
         ],
     ]);
