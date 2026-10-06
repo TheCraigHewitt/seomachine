@@ -1,0 +1,273 @@
+{
+  "id": "state-v-pruitt",
+  "title": "State of Alabama v. Odell Pruitt",
+  "tier": 1,
+  "category": "wrongful-conviction",
+  "tagline": "A white teenager shot dead in a dry cleaner's. A Black pulpwood hauler with a dozen alibi witnesses. One accomplice witness whose story keeps changing, and a sheriff who wants a conviction.",
+  "jurisdiction": "Alabama (Baldwin County, on change of venue from Harlow County)",
+  "courtName": "Circuit Court of Baldwin County, Alabama",
+  "basedOn": {
+    "name": "State of Alabama v. Walter McMillian",
+    "year": "1988",
+    "summary": "In November 1986 an 18-year-old clerk was shot to death at a dry cleaner's in Monroeville, Alabama. Months later a white man facing his own murder charge told investigators that a Black pulpwood businessman had forced him to drive to the cleaner's and had committed the killing. The defendant had been at a fish fry at his home with dozens of people at the time. He was held on death row before trial, the venue was moved to a nearly all-white county, and a jury convicted him after a trial that lasted a day and a half.",
+    "realOutcome": "Convicted of capital murder in 1988; the jury recommended life, and the judge overrode the recommendation and imposed death. Bryan Stevenson of the Equal Justice Initiative took the case, obtained the accomplice witness's recantation and a recording showing investigators had pressured him, and uncovered other suppressed evidence. The Alabama Court of Criminal Appeals reversed in 1993; the State dropped all charges and he walked out after six years on death row. His case is the subject of the book and film Just Mercy.",
+    "keyLessons": [
+      "An accomplice witness who is himself facing capital charges is the most dangerous witness in criminal law. Get every version of his story on the record and read them side by side.",
+      "Alibi evidence is only as strong as its independence. A dozen family members are worth less to a jury than one stranger with a receipt, so find the stranger.",
+      "Brady v. Maryland is not a formality. Demand the file, the notes, and the recordings, and put the demand on the record.",
+      "Batson v. Kentucky: when the State strikes every Black juror but one, object before the jury is sworn, or the issue is gone.",
+      "The absence of physical evidence is your evidence. No weapon, no prints, no fibers, no witness inside the store: say it in every phase."
+    ],
+    "sources": [
+      "https://eji.org/cases/walter-mcmillian/",
+      "https://en.wikipedia.org/wiki/Walter_McMillian",
+      "https://www.nytimes.com/1993/03/03/us/alabama-releases-man-held-on-death-row-for-six-years.html"
+    ]
+  },
+  "defendant": {
+    "name": "Odell Pruitt",
+    "age": 46,
+    "background": "A self-employed pulpwood hauler from the Black community outside Harlow, Alabama, who built a small trucking business from one truck. Married, four children, church deacon. He had been seen around town with a white woman, which in Harlow was a scandal that made him a name people knew before the killing.",
+    "privateAccount": "He says he has never been inside that dry cleaner's in his life. On the morning of the killing he was at his own house hosting a church fish fry; he was frying fish under the carport from mid-morning until the afternoon, and his sister's husband was working on the truck's transmission in the yard, which is why the truck could not have been anywhere. He does not know the State's witness Dale Purcell except by sight from the county jail. He believes the sheriff went after him because of the affair. He admits the affair, which the State will use to show he 'runs around.'",
+    "priors": "One misdemeanor conviction for possession of a pistol without a permit, twelve years ago.",
+    "testifyRisk": "Moderate. He is plain-spoken and credible on the fish fry. The State will cross him on the affair, on the pistol conviction, and will ask whether every alibi witness is his relative or fellow churchgoer. If he loses his temper about the sheriff, the jury will see the man the State wants them to see."
+  },
+  "judge": {
+    "name": "Hon. Thurman Bell",
+    "temperament": "pro-prosecution",
+    "bio": "A circuit judge for nineteen years who has never had a capital conviction reversed and intends to keep it that way. He moves trials fast, sustains the State on close calls, and dislikes what he calls 'lawyer speeches.' He can be moved by a clean, specific record."
+  },
+  "prosecutor": {
+    "name": "District Attorney Wade Cutler",
+    "style": "Folksy and certain. He calls the victim by her first name in every sentence and refers to the defendant as 'that man.' He will tell the jury that Dale Purcell had no reason to lie, and that a dozen relatives will say anything for family."
+  },
+  "caseSummary": "On the morning of November 1, Tasha Greer, 18, was found shot to death behind the counter of Harlow Cleaners on the town square. She had been shot three times with a .38. The register was open and roughly $40 was missing. No weapon was recovered. No fingerprints, fibers or other physical evidence connected anyone to the scene. No one saw the shooter.\n\nFor seven months the case went nowhere. In June, Dale Purcell, a white man with a long record who was in custody for a separate murder in the next county, told investigators that on the morning of the killing Odell Pruitt had flagged him down, forced him to drive Pruitt's truck to the cleaner's, and gone inside; Purcell said he heard shots and later saw the body. Purcell's account changed in each of his four statements. Two other men later said they had seen Pruitt's truck near the cleaner's that morning.\n\nPruitt was arrested and, before any trial, held on death row at Holman Prison for fifteen months. On the State's motion the trial was moved from Harlow County, which is 40 percent Black, to Baldwin County, which is 13 percent Black. The State charged capital murder (murder during a robbery) and robbery in the first degree.",
+  "prosecutionTheory": "Pruitt needed money, chose a small business on the square, forced a man he knew from the jail to drive him so his truck would not be seen with him at the wheel, went in, robbed the register and shot the clerk when she recognized him. Purcell has no reason to lie, two witnesses saw the truck, and the alibi is family and church friends who would say anything for their deacon.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Capital Murder (Murder During a Robbery)",
+      "statute": "Ala. Code § 13A-5-40(a)(2)",
+      "elements": [
+        "The defendant intentionally caused the death of Tasha Greer.",
+        "The killing was committed during the course of a robbery in the first degree, or an attempt or flight from one.",
+        "The defendant was the person who committed the killing, or was a knowing participant in it."
+      ],
+      "maxSentence": "Death, or life imprisonment without parole.",
+      "lesserIncluded": ["Murder (§ 13A-6-2; 20 years to life)", "Felony murder"]
+    },
+    {
+      "id": "c2",
+      "name": "Robbery in the First Degree",
+      "statute": "Ala. Code § 13A-8-41",
+      "elements": [
+        "In the course of committing a theft, the defendant used or threatened the immediate use of force against Tasha Greer.",
+        "The defendant was armed with a deadly weapon or caused serious physical injury.",
+        "The defendant intended to deprive the owner of the property."
+      ],
+      "maxSentence": "Life, or 10 to 99 years."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Testimony of Dale Purcell (accomplice witness)",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Purcell says Pruitt forced him at gunpoint to drive Pruitt's truck to the cleaner's, went inside, and came out after shots were fired. He says he later saw the body when Pruitt made him go in.",
+      "weakness": "Four statements, four versions: the time of day, whether he went inside, whether he saw a gun, and whether Pruitt had a second man with him all change. He gave the first statement while facing his own capital charge and after investigators told him he would 'go to the chair' otherwise. Under Ala. Code § 12-21-222, a felony conviction cannot rest on the uncorroborated testimony of an accomplice.",
+      "admissibilityIssue": "Accomplice-corroboration rule (§ 12-21-222); Giglio disclosure of every benefit; Brady disclosure of his recorded recantation."
+    },
+    {
+      "id": "e2",
+      "name": "Reggie Mott: the truck sighting",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Mott, a jail trusty, says he drove past the cleaner's that morning and saw Pruitt's distinctive 'low-rider' truck parked outside.",
+      "weakness": "Pruitt's truck was not converted to a low-rider until six months after the killing; the mechanic's invoice proves it. Mott was released from jail and paid reward money after his statement.",
+      "admissibilityIssue": "Giglio: reward money and release from custody must be disclosed."
+    },
+    {
+      "id": "e3",
+      "name": "Lonnie Pratt: the second truck sighting",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Pratt says he saw the truck leave the square 'fast' around mid-morning.",
+      "weakness": "He came forward eight months later, after the reward was publicized. He could not describe the driver. He owed money to the sheriff's brother.",
+      "admissibilityIssue": "Giglio: reward payment."
+    },
+    {
+      "id": "e4",
+      "name": "The church fish fry alibi",
+      "type": "testimonial",
+      "offeredBy": "defense",
+      "description": "Twelve people, including the defendant's wife, his brother-in-law, and Deacon Amos Reed, place the defendant frying fish under his carport from about 9 a.m. into the afternoon, and place the truck in the yard with its transmission out.",
+      "weakness": "Nearly all are family or church members. The State will say a dozen relatives are one witness. The strongest alibi witness is the parts-store clerk who sold the transmission fluid that morning, and she is not family.",
+      "admissibilityIssue": "None. Alibi notice under Rule 16.1 must be served."
+    },
+    {
+      "id": "e5",
+      "name": "The recorded recantation",
+      "type": "statement",
+      "offeredBy": "defense",
+      "description": "A tape, in the sheriff's file, of Purcell telling an investigator that he 'don't know nothing about it' and that he was 'being made to say' Pruitt did it. The tape was not disclosed to the defense.",
+      "weakness": "The State will say Purcell recanted under pressure from other inmates and later reaffirmed his account. But the tape exists, and its suppression is a Brady violation on its face.",
+      "admissibilityIssue": "Brady v. Maryland; prior inconsistent statement for impeachment (Rule 613)."
+    },
+    {
+      "id": "e6",
+      "name": "Absence of physical evidence",
+      "type": "forensic",
+      "offeredBy": "defense",
+      "description": "No weapon recovered. No fingerprints matching the defendant anywhere in the store. No fibers, no blood transfer, no ballistics link to any gun he owned. No eyewitness inside the store.",
+      "weakness": "The State will say robbers wear gloves and the shooter was there for two minutes.",
+      "admissibilityIssue": "None."
+    },
+    {
+      "id": "e7",
+      "name": "Sheriff Dunn's investigation file",
+      "type": "documentary",
+      "offeredBy": "defense",
+      "description": "Notes showing the sheriff focused on the defendant within days of learning of his relationship with a white woman, a memo describing the defendant's pretrial placement on death row as 'to encourage cooperation,' and the reward-payment ledger.",
+      "weakness": "The judge may treat the file as collateral. Get it in through the sheriff on cross.",
+      "admissibilityIssue": "Bias of the investigation is always relevant; Brady for the reward ledger."
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Dale Purcell",
+      "role": "Accomplice witness (facing his own capital charge)",
+      "side": "prosecution",
+      "demeanor": "Shifty but practiced. Sticks to the story on direct; gets angry and expansive when caught in a contradiction. Will blame 'the way they wrote it down.'",
+      "publicTestimony": "Pruitt flagged him down at a gas station, showed him a gun, and made him drive Pruitt's truck to the cleaner's. Pruitt went in. He heard shots. Pruitt came out, made him go inside to see the girl, and said he'd kill him if he talked.",
+      "hiddenFacts": [
+        "His first statement said the killing happened in the afternoon; the coroner puts it before 10:30 a.m.",
+        "In his second statement he said he never went inside the store; in his third he described the body in detail after being shown crime-scene photographs.",
+        "He was told by investigators that if he did not cooperate he would be charged with this killing too and 'go to the chair.'",
+        "He recanted on tape to a state investigator and said he was being made to lie; the tape is in the sheriff's file.",
+        "He was moved off death row and his own capital charge was reduced after he agreed to testify.",
+        "He had never seen the inside of Pruitt's truck and could not describe it."
+      ],
+      "priorStatements": [
+        "Statement 1 (June): the killing happened 'in the afternoon, after lunch.'",
+        "Statement 2 (June): 'I never went in there. I stayed in the truck.'",
+        "Statement 3 (July): describes the body's position, after being shown photographs.",
+        "Recorded recantation (August): 'I don't know nothing about it. They're making me say it.'"
+      ],
+      "credibilityIssues": ["Facing his own capital murder charge.", "Charge reduced and moved off death row after cooperating.", "Four inconsistent statements and a recorded recantation.", "Long record for fraud and theft."]
+    },
+    {
+      "id": "w2",
+      "name": "Sheriff Hollis Dunn",
+      "role": "Sheriff of Harlow County, lead investigator",
+      "side": "prosecution",
+      "demeanor": "Courtly, slow, and immovable. Treats every defense question as an insult to the county. Does not concede unless the paper is in front of him.",
+      "publicTestimony": "The case was solved by patient work: Purcell came forward, the truck sightings corroborated him, and the defendant's alibi was family. Pretrial housing was a Department of Corrections decision.",
+      "hiddenFacts": [
+        "He personally requested the defendant's placement on death row before trial, in a memo that says it was 'to encourage cooperation.'",
+        "He knew the recantation tape existed; it was logged into his file and never disclosed.",
+        "He authorized reward payments to Mott and Pratt from the county fund and signed the ledger.",
+        "His notes from the first week after the arrest refer to the defendant's relationship with a white woman and describe him as 'the type.'",
+        "He never sent the truck for forensic examination and never searched the defendant's home for the weapon."
+      ],
+      "priorStatements": ["Memo to the Department of Corrections requesting death-row housing for a pretrial detainee.", "Reward ledger signed in his hand."],
+      "credibilityIssues": ["Suppressed a recorded recantation.", "Paid the corroborating witnesses.", "Investigation shaped by the defendant's relationship with a white woman."]
+    },
+    {
+      "id": "w3",
+      "name": "Reggie Mott",
+      "role": "Jail trusty who says he saw the truck",
+      "side": "prosecution",
+      "demeanor": "Cocky and vague. Overstates, then retreats.",
+      "publicTestimony": "He was driving past the square that morning and saw Pruitt's low-rider truck outside the cleaner's. Everybody knows that truck.",
+      "hiddenFacts": [
+        "The truck was converted to a low-rider six months after the killing; the mechanic's invoice is dated the following May.",
+        "He was released from jail three days after giving his statement and received $1,500 in reward money.",
+        "He was a trusty who drove the sheriff's vehicles and had daily contact with the sheriff's office.",
+        "He has since told two people he 'didn't see nothing' but 'got paid.'"
+      ],
+      "priorStatements": ["Statement to the sheriff: 'I know that truck. Low to the ground, shiny.'", "To a cellmate, later: 'I didn't see nothing.'"],
+      "credibilityIssues": ["Paid and released after his statement.", "Described a truck modification that did not yet exist."]
+    },
+    {
+      "id": "w4",
+      "name": "Lonnie Pratt",
+      "role": "Second truck witness",
+      "side": "prosecution",
+      "demeanor": "Nervous and eager to please whoever is asking.",
+      "publicTestimony": "He saw a truck leave the square fast around mid-morning and believes it was Pruitt's.",
+      "hiddenFacts": [
+        "He came forward eight months later, after the reward was announced, and received $1,000.",
+        "He could not identify the driver and did not see a license plate.",
+        "He owed money to the sheriff's brother, and the debt was forgiven that fall."
+      ],
+      "priorStatements": ["Reward claim form describing 'a dark truck.'"],
+      "credibilityIssues": ["Reward money.", "Debt to the sheriff's family.", "Came forward months later."]
+    },
+    {
+      "id": "w5",
+      "name": "Marlene Kirby",
+      "role": "Auto-parts store clerk (independent alibi witness)",
+      "side": "defense",
+      "demeanor": "Matter-of-fact. Has no stake and says so.",
+      "publicTestimony": "On the morning of November 1 she sold two quarts of transmission fluid to the defendant's brother-in-law at about 9:40 a.m.; the receipt is time-stamped. He said Odell's truck was 'tore up in the yard' and they were frying fish. She has no connection to the family.",
+      "hiddenFacts": [
+        "Her store is four miles from the defendant's house and eleven miles from the cleaner's.",
+        "She told the sheriff's deputy about the receipt in December; the deputy never followed up and her statement is not in the file."
+      ],
+      "priorStatements": ["Time-stamped receipt.", "Statement to a deputy in December, never recorded in the file."],
+      "credibilityIssues": ["None significant. Her account rests on a receipt, not memory."]
+    },
+    {
+      "id": "w6",
+      "name": "Deacon Amos Reed",
+      "role": "Fish-fry alibi witness (church deacon)",
+      "side": "defense",
+      "demeanor": "Dignified and slow. Will not be hurried and will not be rattled.",
+      "publicTestimony": "He arrived at the defendant's house around 9:30 to help set up, and the defendant was at the fryer under the carport all morning. The truck was on blocks in the yard with the transmission pan off. Some thirty people came through by noon.",
+      "hiddenFacts": [
+        "He has known the defendant for thirty years and baptized two of his children.",
+        "He kept the church's sign-in book for the fish fry, which lists the defendant as host and is dated that morning."
+      ],
+      "priorStatements": ["Church sign-in book."],
+      "credibilityIssues": ["Longtime friend and fellow churchman."]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Compel Brady and Giglio Disclosure (Recantation Tape, Reward Payments, Sheriff's Notes)",
+      "basis": "Brady v. Maryland; Giglio v. United States. The State must disclose Purcell's recorded recantation, every payment to Mott and Pratt, the reduction of Purcell's charge, and the sheriff's investigative notes. Suppression of any of them warrants exclusion of the affected witness or dismissal.",
+      "merit": 65
+    },
+    {
+      "id": "m2",
+      "name": "Batson Challenge to the State's Peremptory Strikes",
+      "basis": "Batson v. Kentucky (1986). The State used its strikes to remove every Black member of the venire but one. The defense demands race-neutral reasons for each strike and asks the court to reseat the jurors or quash the panel.",
+      "merit": 50
+    },
+    {
+      "id": "m3",
+      "name": "Motion to Exclude Purcell's Testimony as Uncorroborated and Coerced",
+      "basis": "Ala. Code § 12-21-222 forbids a felony conviction on uncorroborated accomplice testimony. The only 'corroboration' is two paid truck sightings, one of which describes a modification that did not exist. Purcell's statements were obtained by threats of the death penalty.",
+      "targets": ["e1"],
+      "merit": 25
+    },
+    {
+      "id": "m4",
+      "name": "Motion to Return Venue to Harlow County",
+      "basis": "The State obtained a venue change to a county with a fraction of the Black population, without a showing of prejudice against the State. The change served no purpose but the jury's composition.",
+      "merit": 15
+    }
+  ],
+  "defenseAngles": [
+    "Read Purcell's four statements side by side, in order, and ask him which one the jury should believe.",
+    "The low-rider invoice is dated six months after the killing. Mott described a truck that did not exist yet. Say it once and let it sit.",
+    "The State's whole case is family versus family. Change the frame: Marlene Kirby's time-stamped receipt is a stranger with paper.",
+    "Cross the sheriff with his own memo. 'To encourage cooperation' is the sentence that wins this case.",
+    "Demand the recantation tape on the record before trial. If it appears mid-trial, move for a mistrial or dismissal.",
+    "Make the Batson record before the jury is sworn. It may not win at trial, but it wins on appeal."
+  ],
+  "startingLean": 45
+}

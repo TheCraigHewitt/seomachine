@@ -1,0 +1,362 @@
+{
+  "id": "state-v-brennan",
+  "title": "State of Florida v. Kayla Brennan",
+  "tier": 2,
+  "category": "murder",
+  "tagline": "A toddler missing for 31 days, a mother who lied about everything, and a medical examiner who can't say how the child died.",
+  "jurisdiction": "Florida, Ninth Judicial Circuit (fictional Osprey County)",
+  "courtName": "Circuit Court of the Ninth Judicial Circuit in and for Osprey County, Florida",
+  "basedOn": {
+    "name": "State of Florida v. Casey Marie Anthony",
+    "year": "2011",
+    "summary": "Two-year-old Caylee Anthony was reported missing by her grandmother in July 2008, 31 days after she was last seen. Her mother, Casey Anthony, lied to police about a nanny, a job, and the child's whereabouts. The child's skeletal remains were found in December 2008 near the family home with duct tape near the skull. The medical examiner ruled the death a homicide by undetermined means. The State sought the death penalty and relied on trunk odor, air-sample 'decomposition' chemistry, a chloroform internet search, and the mother's behavior.",
+    "realOutcome": "On July 5, 2011, the jury acquitted Anthony of first-degree murder, aggravated child abuse, and aggravated manslaughter of a child. She was convicted of four misdemeanor counts of providing false information to law enforcement (two were later vacated on appeal). A key forensic claim, 84 searches for 'chloroform', was found after trial to be a software error; there was one search. It was later reported that investigators missed a 'foolproof suffocation' search on the family computer.",
+    "keyLessons": [
+      "Lies and bad behavior are not proof of murder. Without a cause of death the State has to prove how the child died, not merely that the defendant acted guilty.",
+      "Novel forensic methods (air-sample decomposition odor analysis) and cadaver-dog alerts must be challenged under Frye/Daubert and exposed on cross.",
+      "Computer-forensics software can badly misreport data. Demand the raw artifacts and have your own examiner.",
+      "An alternative theory (accidental drowning and a panicked cover-up) must be backed by admissible evidence. Promising the jury something in opening that you can't prove is dangerous.",
+      "Family witnesses may help the defense on cross even when called by the State."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Death_of_Caylee_Anthony"
+    ]
+  },
+  "defendant": {
+    "name": "Kayla Brennan",
+    "age": 22,
+    "background": "A single mother who lived with her parents, Linda and Ray Brennan, and her daughter Sophie in a suburban ranch house. She told her family for two years that she worked as an event planner at a theme park; she hadn't worked there in years. In the 31 days after Sophie was last seen, she stayed with a boyfriend, went to nightclubs, and got a tattoo reading 'Bella Vita' ('beautiful life').",
+    "privateAccount": "She tells you Sophie drowned in the family's above-ground pool on June 16 after climbing the ladder that was left up. Her father found the child and told her she'd go to prison for neglect, and he took the body. She says she doesn't know what he did with it. She says she lies compulsively because she grew up in a house where you pretended everything was fine, and that the partying was how she coped. She says her father abused her as a child, but she has no corroboration and has never told anyone. She did not search for 'chloroform' to hurt Sophie; she says she looked it up after a boyfriend posted about it.",
+    "priors": "Pending (separate) check-fraud charges for using a friend's checks. Not admissible unless she testifies and the door is opened (not a crime of dishonesty conviction yet).",
+    "testifyRisk": "Very high. She lies easily and will be impeached with her false statements to police (the nanny, the job, the fake tour of her former workplace). The drowning and abuse claims would be tested on cross by a prosecutor with 18 months of preparation. Almost certainly advise her not to testify, but then the drowning theory must come in through other witnesses (the grandparents on cross, the pool ladder evidence) or it can't be argued."
+  },
+  "judge": {
+    "name": "Hon. Bernard T. Pruitt",
+    "temperament": "fair",
+    "bio": "A no-nonsense former defense lawyer turned judge who runs long court days. He is fair to both sides but will sanction lawyers who violate discovery rules or promise the jury things they can't deliver. He lets novel science in if it passes Frye and leaves the weight for the jury."
+  },
+  "prosecutor": {
+    "name": "Assistant State Attorney Janine Oakes",
+    "style": "Methodical and passionate. She builds a 'mountain of lies' narrative and closes with a split screen of the mother partying next to the missing-child flyer. She relies on novel forensics and emotion, with the argument that 'she wanted her beautiful life.'"
+  },
+  "caseSummary": "On July 15, Linda Brennan called 911 to report that her granddaughter Sophie, age 2, had been missing for 31 days. Earlier that day she had retrieved Kayla's car from a tow yard and told the dispatcher it 'smelled like there's been a dead body in the damn car.' Kayla told detectives that a nanny named 'Tessa Moreau' had kidnapped Sophie. There was no such nanny at the address she gave. She also claimed she worked at a theme park and led detectives on a walk through the office before admitting she had not worked there in years.\n\nIn December, a county meter reader found a child's skeletal remains in a laundry bag in a wooded lot a quarter-mile from the Brennan home. There was duct tape near the lower part of the skull. The medical examiner ruled the death a homicide by undetermined means because the remains were too decomposed to determine a cause.\n\nKayla Brennan was indicted for first-degree murder. The State did not seek death and is seeking life without parole.",
+  "prosecutionTheory": "Kayla wanted to be free of motherhood. She used chloroform to sedate Sophie, then put duct tape over her mouth and nose, killing her. She kept the body in her car trunk for days, dumped it in the woods, and partied for a month. Her lies show her guilty knowledge, and the smell in the trunk, the hair with a 'death band,' the air-sample chemistry, and the chloroform search prove what happened.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Murder in the First Degree",
+      "statute": "Fla. Stat. § 782.04(1)(a)1.-2. (premeditated, or felony murder during aggravated child abuse)",
+      "elements": [
+        "Sophie Brennan is dead.",
+        "The death was caused by the criminal act of the defendant.",
+        "Either (a) there was a premeditated killing, or (b) the death occurred while the defendant was engaged in the commission of aggravated child abuse."
+      ],
+      "maxSentence": "Life imprisonment without parole (death not sought).",
+      "lesserIncluded": [
+        "Second-degree murder (§ 782.04(2))",
+        "Manslaughter / Aggravated manslaughter of a child"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Aggravated Child Abuse",
+      "statute": "Fla. Stat. § 827.03(1)(a), (2)(a)",
+      "elements": [
+        "The defendant committed aggravated battery on a child, willfully tortured, maliciously punished, or willfully and unlawfully caged a child, or knowingly or willfully abused a child causing great bodily harm, permanent disability or permanent disfigurement.",
+        "Sophie Brennan was under 18."
+      ],
+      "maxSentence": "First-degree felony: up to 30 years."
+    },
+    {
+      "id": "c3",
+      "name": "Aggravated Manslaughter of a Child",
+      "statute": "Fla. Stat. § 782.07(3)",
+      "elements": [
+        "Sophie Brennan is dead.",
+        "The death was caused by the culpable negligence of the defendant (or by an act of aggravated child abuse/neglect).",
+        "Sophie Brennan was under 18."
+      ],
+      "maxSentence": "First-degree felony: up to 30 years."
+    },
+    {
+      "id": "c4",
+      "name": "Providing False Information to a Law Enforcement Officer (4 counts)",
+      "statute": "Fla. Stat. § 837.055",
+      "elements": [
+        "The defendant knowingly and willfully gave false information to a law enforcement officer.",
+        "The officer was conducting a missing-person investigation or a felony criminal investigation.",
+        "The defendant intended to mislead the officer or impede the investigation."
+      ],
+      "maxSentence": "First-degree misdemeanor: up to 1 year in county jail per count."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Air-sample 'decomposition odor' analysis of the car trunk",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "A national-lab researcher analyzed air from the trunk carpet and found chemical compounds he associates with human decomposition, plus 'shockingly high' levels of chloroform. His database of decomposition compounds comes from buried adult bodies at a research facility.",
+      "weakness": "No peer-reviewed method for identifying human decomposition from air samples in a car. The database contains buried adults, not a child in a trunk. Garbage (the trunk held a bag of trash with food wrappers) can produce many of the same compounds. Chloroform is found in household cleaners and chlorinated water. No validation studies, no known error rate, and he holds a patent interest in a 'decomposition detector.'",
+      "admissibilityIssue": "Frye/Daubert (Fla. Stat. § 90.702). Novel scientific method with no general acceptance or error rate.",
+      "suppressible": true
+    },
+    {
+      "id": "e2",
+      "name": "Cadaver-dog alerts on the trunk and backyard",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "Two cadaver dogs alerted on the car trunk and in one corner of the Brennan backyard.",
+      "weakness": "Dog alerts are not scientific. The handlers' notes show one dog alerted, then didn't alert on a re-run. No remains were found in the backyard. Handler cueing is a documented problem, and there is no documentation of blind protocols.",
+      "admissibilityIssue": "Reliability / foundation (§ 90.702); § 90.403. Many courts admit dog alerts only with corroboration.",
+      "suppressible": true
+    },
+    {
+      "id": "e3",
+      "name": "Hair from the trunk with 'post-mortem root banding'",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "An FBI examiner found one hair in the trunk that is microscopically similar to Sophie's (mtDNA consistent with the maternal line). It shows a dark band at the root that she says is 'characteristic' of decomposition.",
+      "weakness": "Mitochondrial DNA is shared with the mother and grandmother, so it doesn't prove the hair is Sophie's. Only one hair out of many had banding. Root banding has not been studied enough to know how often it appears in living people's shed hair. The child had been in the car many times while alive.",
+      "admissibilityIssue": "Frye / § 90.702 challenge to 'death band' testimony.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Family computer search history ('chloroform')",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "A sheriff's office forensic examiner testifies that the family desktop showed searches in March for 'how to make chloroform' and visits to a chloroform website, and that the site was visited 84 times according to the analysis software.",
+      "weakness": "The 84 figure is a software parsing error; the raw history database shows one visit. The software developer discovered the error and told prosecutors during trial. The computer was used by the whole family, and the grandmother claims she did the searches (she was looking up 'chlorophyll'). The searches happened three months before Sophie died.",
+      "admissibilityIssue": "Reliability of forensic software output; Brady/Giglio if the State learns of the error and doesn't correct it.",
+      "suppressible": false
+    },
+    {
+      "id": "e5",
+      "name": "Duct tape recovered with the remains",
+      "type": "physical",
+      "offeredBy": "prosecution",
+      "description": "Three strips of silver duct tape found near the skull, the same brand as a roll found in the Brennan garage. The State's expert superimposed a photo of Sophie's face over the skull and tape to argue it covered her mouth and nose.",
+      "weakness": "No fingerprints or DNA on the tape. The tape had shifted as the remains decomposed, and the meter reader handled the area. The same brand is sold at every hardware store. The photo superimposition is a demonstrative aid, not science. The ME did not open the skull, and the defense pathologist says the scene was disturbed.",
+      "admissibilityIssue": "§ 90.403 and foundation objection to the superimposition video.",
+      "suppressible": true
+    },
+    {
+      "id": "e6",
+      "name": "Photos and videos of the defendant partying; 'Bella Vita' tattoo",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "Nightclub photos from the 31 days, including a 'hot body contest,' and the tattoo she got that month.",
+      "weakness": "Grief and trauma don't look the same in everyone. This is character evidence dressed up as consciousness of guilt. It doesn't show how Sophie died.",
+      "admissibilityIssue": "§§ 90.403, 90.404. The defense can argue the evidence is unfairly prejudicial and irrelevant to cause of death.",
+      "suppressible": true
+    },
+    {
+      "id": "e7",
+      "name": "Defendant's false statements to detectives",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "Recorded interviews in which she describes the fictional nanny, fake coworkers, and a job she didn't have, including a walk-through of her former employer's offices.",
+      "weakness": "These prove she lies (the misdemeanor counts) but not that she killed anyone. A person hiding an accident, or protecting a family member, would also lie.",
+      "admissibilityIssue": "Miranda. The first statements were made at home and were non-custodial. The workplace walk-through happened when she was not free to leave (argument for custody). Low chance of suppression.",
+      "suppressible": true
+    },
+    {
+      "id": "e8",
+      "name": "Pool ladder and gate evidence",
+      "type": "physical",
+      "offeredBy": "defense",
+      "description": "The grandmother told police she found the above-ground pool ladder attached and the side gate open on June 16, the day Sophie was last seen. Sophie knew how to climb the ladder and had done it before.",
+      "weakness": "It's circumstantial and depends on the grandmother's testimony, which has shifted. There's no direct evidence of drowning.",
+      "admissibilityIssue": "None if elicited through the grandmother.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Linda Brennan",
+      "role": "Grandmother, 911 caller",
+      "side": "prosecution",
+      "demeanor": "Fierce, emotional, and protective of both her daughter and her dead granddaughter, and pulled in two directions. She will shade testimony to help Kayla while insisting she wants justice for Sophie.",
+      "publicTestimony": "She hadn't seen Sophie in a month. She found the car at the tow yard, and it smelled bad; she thought it was trash. She describes Sophie as a happy child and Kayla as a loving mother.",
+      "hiddenFacts": [
+        "She says she did the chloroform searches herself because she was worried the dogs were eating bamboo leaves and she was researching chlorophyll. Her work records show she was logged into her employer's computer at that time.",
+        "She found the pool ladder attached and the gate open on June 16. She had always removed the ladder.",
+        "She said on the 911 call that the car 'smelled like there's been a dead body in the damn car,' but now attributes the smell to pizza in the trash.",
+        "She knows her husband was having an affair with a volunteer searcher.",
+        "She believes Kayla lies but that Kayla would never hurt Sophie."
+      ],
+      "priorStatements": [
+        "911 call: 'It smells like there's been a dead body in the damn car.'",
+        "Deposition: she did not recall searching for chloroform.",
+        "Interview with detectives: she found the pool ladder up on June 16 and was 'upset' about it."
+      ],
+      "credibilityIssues": [
+        "Family bias.",
+        "Claims about the searches contradicted by employer computer logs (potential perjury).",
+        "Changed her description of the car smell."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Ray Brennan",
+      "role": "Grandfather, retired sheriff's deputy",
+      "side": "prosecution",
+      "demeanor": "A former cop who is stoic and then brittle. When the defense suggests he had a role in covering up an accident, he becomes angry and then tearful.",
+      "publicTestimony": "He smelled human decomposition in the trunk when he picked up the car; he knows the smell from his time as a deputy. He had nothing to do with Sophie's death.",
+      "hiddenFacts": [
+        "He was having an affair with a woman who volunteered in the search, and he told her Sophie's death was 'an accident that snowballed out of control.' She has given a sworn statement.",
+        "He attempted suicide in January and wrote a note referring to 'my daughter' and wanting to be with Sophie; the note is inconsistent with ignorance.",
+        "Gas cans had been taken from his shed shortly before Sophie disappeared. He had duct tape on the gas cans that looks like the tape found with the remains.",
+        "He didn't call police when he smelled 'decomposition' in the trunk.",
+        "He was the last adult in the house on the morning of June 16, according to Kayla's account."
+      ],
+      "priorStatements": [
+        "Statement to detectives: 'There was no smell like a dead body; it smelled like garbage.' That conflicts with his trial testimony.",
+        "Sworn statement of the affair partner: he said the death was 'an accident that snowballed.'",
+        "Suicide note (partly redacted)."
+      ],
+      "credibilityIssues": [
+        "Potential third-party involvement.",
+        "Contradictory statements about the car smell.",
+        "Affair and hidden statements."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Dr. Arthur Beecham",
+      "role": "State's air-sample chemistry expert",
+      "side": "prosecution",
+      "demeanor": "A proud, pioneering research chemist who is certain of his work and irritated by skeptics. He gets combative when his financial interest is raised.",
+      "publicTestimony": "The trunk air contained a 'signature' of human decomposition and extremely high levels of chloroform. In his professional opinion, a human body decomposed in that trunk.",
+      "hiddenFacts": [
+        "His method has never been peer-reviewed or validated on vehicles.",
+        "He has a patent application on an 'electronic decomposition detector' and would benefit from this method being accepted in court.",
+        "He did not test trash from the trunk as a control.",
+        "His database of 478 compounds came from buried adult bodies; only a handful were found in the trunk, and many of those are found in household products.",
+        "A colleague in his lab reviewed the data and wrote that the findings were 'inconclusive.'"
+      ],
+      "priorStatements": [
+        "Frye hearing testimony: 'This is a new application of the science.'",
+        "Colleague's email: 'the results are not definitive for human decomposition.'"
+      ],
+      "credibilityIssues": [
+        "Financial interest.",
+        "Unvalidated method.",
+        "Contradicted by a colleague."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Dr. Gloria Reyes-Hart",
+      "role": "Chief Medical Examiner",
+      "side": "prosecution",
+      "demeanor": "A seasoned ME who is firm on her conclusions but honest about their limits.",
+      "publicTestimony": "The death was a homicide by undetermined means. Her conclusion rests on 'red flags': the child wasn't reported missing for 31 days, the body was hidden in a bag, and there was duct tape near the mouth. No child should have duct tape on her face.",
+      "hiddenFacts": [
+        "She can't determine cause of death. There is no skull fracture, no evidence of trauma, and nothing in the bones that indicates homicide.",
+        "Her 'homicide' ruling rests on circumstantial factors (the delay, the concealment, the tape), not medical findings.",
+        "She didn't open the skull. The defense pathologist says that was a significant omission.",
+        "She agrees that a drowning would leave no evidence in skeletal remains.",
+        "An accidental death followed by concealment would also produce the 'red flags' she relied on."
+      ],
+      "priorStatements": [
+        "Autopsy report: 'Cause of death: homicide of undetermined means.' The report doesn't specify a mechanism.",
+        "Deposition: 'I can't exclude an accidental drowning based on the remains.'"
+      ],
+      "credibilityIssues": [
+        "Her conclusion is based on non-medical factors."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Dennis Kowal",
+      "role": "Meter reader who found the remains",
+      "side": "prosecution",
+      "demeanor": "Awkward, eager to be believed, and a little too interested in reward money. Gets rattled when asked why he called police three times.",
+      "publicTestimony": "In December, while reading meters, he found the bag in the woods and saw a skull. He called the sheriff.",
+      "hiddenFacts": [
+        "He had called the sheriff's tip line three times in August about a suspicious bag in the same spot. A deputy came, looked briefly, and left.",
+        "He moved the skull with a meter stick before calling police.",
+        "He told his ex-wife he 'would be famous' and was going to find Sophie.",
+        "Tropical storm flooding had covered that area in August, which raises questions about whether the bag was there all along."
+      ],
+      "priorStatements": [
+        "Tip-line records: three calls in August reporting 'something' in the woods.",
+        "Initial statement in December: he 'lifted the bag' with his stick and saw the skull roll out."
+      ],
+      "credibilityIssues": [
+        "Handling of the scene.",
+        "Reward motivation.",
+        "His August calls suggest the investigation missed the remains; the defense can argue the scene was disturbed."
+      ]
+    },
+    {
+      "id": "w6",
+      "name": "Dr. Sidney Walcott",
+      "role": "Defense forensic pathologist",
+      "side": "defense",
+      "demeanor": "An eminent, elderly pathologist who can be condescending but is devastating on the substance.",
+      "publicTestimony": "The cause of death can't be determined. The ME failed to open the skull, which is a basic step. The duct tape could have been placed after decomposition, when the skull detached, and the scene had been disturbed by animals, water and a meter stick.",
+      "hiddenFacts": [
+        "He opened the skull at a second autopsy and found debris that suggested it had been disturbed before being found.",
+        "He concedes that he can't exclude homicide either."
+      ],
+      "priorStatements": [
+        "Second autopsy report."
+      ],
+      "credibilityIssues": [
+        "Paid defense expert.",
+        "Has been accused of arrogance by prior courts."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Frye Motion to Exclude Air-Sample Decomposition Analysis",
+      "basis": "Frye / Fla. Stat. § 90.702. Air-sample analysis for human decomposition is not generally accepted, has no validation studies, and has no known error rate. The expert's financial interest and his colleague's contrary view show the scientific community hasn't accepted it.",
+      "targets": [
+        "e1"
+      ],
+      "merit": 45
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Exclude Cadaver-Dog Evidence",
+      "basis": "§ 90.702 / § 90.403. The handlers kept no records of false alerts or blind trials, and one dog alerted inconsistently. No remains were found in the backyard.",
+      "targets": [
+        "e2"
+      ],
+      "merit": 35
+    },
+    {
+      "id": "m3",
+      "name": "Motion in Limine to Exclude Partying Photos and Tattoo",
+      "basis": "§§ 90.403, 90.404. Evidence of the defendant's lifestyle after the child's disappearance is character evidence that invites the jury to punish her for being a bad mother. It has minimal probative value on how the child died.",
+      "targets": [
+        "e6"
+      ],
+      "merit": 35
+    },
+    {
+      "id": "m4",
+      "name": "Motion to Exclude Photo Superimposition Video of Duct Tape",
+      "basis": "§ 90.403 and lack of foundation. The superimposition of a living child's face on a skull is a demonstrative aid designed to inflame. It assumes the tape's position at death, which no one can establish.",
+      "targets": [
+        "e5"
+      ],
+      "merit": 30
+    }
+  ],
+  "defenseAngles": [
+    "There is no cause of death. The State must prove how Sophie died, and the ME admits she can't.",
+    "Lies are not murder. Concede the false statements (and the misdemeanor counts) to build credibility on the big question.",
+    "Get the raw data behind the '84 chloroform searches.' If the software is wrong, the State's forensic case looks careless.",
+    "Attack every novel forensic claim: air chemistry, dog alerts, death-band hair. None of them are validated, and each was done by someone with a stake in the outcome.",
+    "Build the accidental-drowning theory through the State's witnesses: the pool ladder, the open gate, and the grandfather's 'accident that snowballed' statement. Don't promise in opening what you can't prove.",
+    "The meter reader's August calls and his handling of the skull support contamination and a disturbed scene."
+  ],
+  "startingLean": 40
+}

@@ -1,0 +1,4 @@
+[build]
+  base = "courtroom-sim"
+  command = "npm run build"
+  publish = ".next"

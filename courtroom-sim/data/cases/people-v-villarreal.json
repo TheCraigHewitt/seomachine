@@ -1,0 +1,333 @@
+{
+  "id": "people-v-villarreal",
+  "title": "People v. Adrian Villarreal",
+  "tier": 2,
+  "category": "murder",
+  "tagline": "Two brothers shotgunned their parents in the family den. Your client says it was years of abuse and a night of terror. The State says it was $14 million.",
+  "jurisdiction": "California (Los Angeles County)",
+  "courtName": "Superior Court of California, County of Los Angeles, Van Nuys",
+  "basedOn": {
+    "name": "People v. Lyle and Erik Menendez",
+    "year": "1993–1996",
+    "summary": "In August 1989 two brothers, 21 and 18, shot their parents to death with shotguns in the den of the family's Beverly Hills mansion, then called 911 claiming to have found the bodies. Months later the younger brother confessed to his psychologist, whose tapes reached police through the psychologist's former lover. At trial the brothers testified that their father had sexually abused them for years and that they believed their parents were about to kill them to keep it secret. The State called it a killing for the inheritance.",
+    "realOutcome": "The first trials, before two separate juries in 1993 and 1994, both hung, split largely between murder and manslaughter. At the 1996 retrial the judge excluded much of the abuse evidence and refused an imperfect self-defense instruction; both brothers were convicted of first-degree murder with special circumstances and sentenced to life without parole. In May 2025 a Los Angeles judge resentenced them to 50 years to life, making them eligible for parole under California's youthful-offender law; in August 2025 the parole board denied parole to both.",
+    "keyLessons": [
+      "Imperfect self-defense (an honest but unreasonable belief in imminent danger) reduces murder to voluntary manslaughter in California. Whether the jury hears that instruction can decide the case.",
+      "The psychotherapist-patient privilege has a dangerous-patient exception, but it is narrow. Fight the foundation for it, not just the privilege.",
+      "A confession that never mentions the defense's motive is the prosecutor's best exhibit. Your client's story has to explain why.",
+      "Conduct after the killing (spending, lies to police, staged alibis) is admissible as consciousness of guilt. Front it, explain it, do not let the State reveal it.",
+      "Jailhouse letters asking a witness to shade testimony have sunk stronger defenses than this one. Know every piece of paper your client has written."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lyle_and_Erik_Menendez",
+      "https://www.latimes.com/california/story/2025-05-13/menendez-brothers-resentenced",
+      "https://www.courts.ca.gov/"
+    ]
+  },
+  "defendant": {
+    "name": "Adrian Villarreal",
+    "age": 21,
+    "background": "The younger of two sons of a Cuban-born entertainment executive and a former beauty queen, raised in Beverly Hills with tennis lessons, private tutors and a father who treated losing as a character flaw. He was 18 on the night of the shootings. Nationally ranked junior tennis player. No job, no record, and until his arrest, a Rolex on each wrist.",
+    "privateAccount": "He says his father sexually abused him from age six until weeks before the killings, and that his older brother Marcus was abused as a child too. A week before, Marcus confronted their father and threatened to expose him; their mother told them she and their father would handle it, and in the days after, doors were locked that had never been locked. He and Marcus bought the shotguns in San Diego with a friend's driver's license because they were terrified and, he says, 'we thought it would be us.' On the night, he says they heard the den doors close and believed their parents were coming for them; they ran in shooting. He does not remember reloading. Afterward Marcus told him what to say. He confessed to his therapist, Dr. Marsh, because he could not sleep. He admits the spending and the lies to police, and that the abuse is not on the therapy tapes.",
+    "priors": "None.",
+    "testifyRisk": "High reward, high risk. He is soft-spoken and the jury will feel for him on direct. On cross the State has the shotgun purchase two days before, the movie-ticket alibi, months of lies, the spending, and the fact that his taped confession describes hatred and money but never abuse. If he cannot explain the silence on the tapes, the abuse account sounds invented after the arrest."
+  },
+  "judge": {
+    "name": "Hon. Walter Greaves",
+    "temperament": "pro-prosecution",
+    "bio": "A former deputy district attorney with a reputation for tight control over what the jury hears. He is skeptical of psychological defenses and will demand a foundation for every piece of abuse evidence before it comes in. He follows appellate law carefully and does not like being reversed."
+  },
+  "prosecutor": {
+    "name": "Deputy District Attorney Lorraine Feld",
+    "style": "Calm, well organized, and relentless on timeline. Her theme is 'the abuse excuse': a story assembled after the shotguns were bought. She will read the therapy tapes aloud, put the Rolex receipts on the screen, and ask the jury why a terrified boy reloads."
+  },
+  "caseSummary": "On the night of August 20, a 911 caller, the older Villarreal brother, reported finding his parents shot to death in the den of the family's Beverly Hills home. Ramón Villarreal, 45, had been shot five times, once in the back of the head at close range. Celeste Villarreal, 47, had been shot nine times, including a final contact shot to the face after the shooter reloaded. Fifteen spent shotgun shells were fired; the police recovered none, because they had been picked up.\n\nDetectives at first pursued a theory of an organized-crime hit connected to the father's business. The brothers said they had been at a movie and a food festival. In the six months that followed they spent roughly $700,000 from the estate: watches, cars, a restaurant, a condominium, tennis coaching.\n\nIn March, the psychologist's former lover, Dana Whitlock, told police that Dr. Leland Marsh had recorded therapy sessions in which the younger brother described the killings. Detectives seized the tapes. Both brothers were arrested. The State charged each with two counts of first-degree murder with special circumstances of multiple murder and lying in wait, and conspiracy to commit murder. The brothers are tried together before separate juries; this jury decides Adrian's case only.",
+  "prosecutionTheory": "The brothers hated their father, feared being cut out of a $14 million estate, and planned the killings for days: they bought shotguns with a borrowed ID, waited until the parents were seated in the den, fired fifteen rounds, reloaded to finish their mother, gathered the shells, built an alibi and lied to police for months while spending the money. The abuse story surfaced only after arrest, appears nowhere on the confession tapes, and is a defense manufactured to fit the law of manslaughter.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Murder in the First Degree (Ramón Villarreal)",
+      "statute": "Cal. Penal Code § 187(a), § 189; special circumstances § 190.2(a)(3) (multiple murder) and § 190.2(a)(15) (lying in wait)",
+      "elements": [
+        "The defendant, or one he aided and abetted, committed an act that caused the death of Ramón Villarreal.",
+        "The defendant acted with malice aforethought.",
+        "The killing was willful, deliberate and premeditated, or was committed by means of lying in wait.",
+        "The defendant did not act in the actual belief, reasonable or unreasonable, that he was in imminent danger of death or great bodily injury (if the belief was actual but unreasonable, the crime is voluntary manslaughter)."
+      ],
+      "maxSentence": "Life without the possibility of parole (special circumstances found true).",
+      "lesserIncluded": ["Murder in the Second Degree (§ 189; 15 years to life)", "Voluntary Manslaughter (§ 192(a); 3, 6 or 11 years)"]
+    },
+    {
+      "id": "c2",
+      "name": "Murder in the First Degree (Celeste Villarreal)",
+      "statute": "Cal. Penal Code § 187(a), § 189; special circumstances § 190.2(a)(3) and § 190.2(a)(15)",
+      "elements": [
+        "The defendant, or one he aided and abetted, committed an act that caused the death of Celeste Villarreal.",
+        "The defendant acted with malice aforethought.",
+        "The killing was willful, deliberate and premeditated, or was committed by means of lying in wait.",
+        "The defendant did not actually believe he was in imminent danger of death or great bodily injury from her."
+      ],
+      "maxSentence": "Life without the possibility of parole (special circumstances found true).",
+      "lesserIncluded": ["Murder in the Second Degree", "Voluntary Manslaughter"]
+    },
+    {
+      "id": "c3",
+      "name": "Conspiracy to Commit Murder",
+      "statute": "Cal. Penal Code § 182(a)(1), § 187",
+      "elements": [
+        "The defendant and his brother agreed to kill their parents.",
+        "At the time of the agreement, the defendant intended that one of them would commit the killing.",
+        "One of them committed an overt act in California in furtherance of the agreement (the shotgun purchase, the ammunition purchase, the drive home).",
+        "The agreement was reached with malice and with premeditation and deliberation."
+      ],
+      "maxSentence": "25 years to life."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Shotgun purchase in San Diego with a friend's driver's license",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "Two 12-gauge shotguns bought at a sporting-goods store in San Diego two days before the killings. The buyer used the driver's license of Bryce Hollins, a friend, and the brothers paid cash. Ammunition was bought the next day at a second store.",
+      "weakness": "A purchase two days before is consistent with fear as much as with a plan: people who believe they are about to be killed also buy guns. The borrowed ID shows the brothers were 18 and 21 and could not buy long guns without a waiting period, not that they were hiding a murder plot.",
+      "admissibilityIssue": "Business records; no serious admissibility issue. The fight is over inference."
+    },
+    {
+      "id": "e2",
+      "name": "Dr. Marsh's therapy-session tapes",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "Audio recordings of sessions in which the defendant described the killings, said he and his brother 'had to do it,' spoke of his father's cruelty and his mother's misery, and of the money. Dr. Marsh recorded some sessions without the brothers' knowledge and kept the tapes in a safe-deposit box.",
+      "weakness": "The psychotherapist-patient privilege (Evid. Code § 1014) covers them unless the dangerous-patient exception (§ 1024) applies, which requires that the therapist reasonably believed the patient was dangerous and that disclosure was necessary to prevent the danger. Dr. Marsh kept the tapes for months, used them as leverage, and disclosed them only through a jilted lover. The tapes never mention abuse; the defense says that is because the therapist was steering the sessions toward a narrative he could use.",
+      "admissibilityIssue": "Psychotherapist-patient privilege (Evid. Code §§ 1014, 1024); the appellate courts held some sessions privileged and others within the exception. Foundation for the therapist's 'reasonable belief' of danger.",
+      "suppressible": true
+    },
+    {
+      "id": "e3",
+      "name": "Spending after the killings",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "Receipts and bank records: about $700,000 in six months, including two Rolex watches, a Porsche, a restaurant in New Jersey, a condominium, and private tennis coaching. Also a will search at the family office days after the funeral.",
+      "weakness": "Grief spending by two young men who suddenly controlled an estate is not proof of motive before the fact. Nothing was spent before the killings, and the estate was theirs regardless of how their parents died. Evid. Code § 352: the prejudice is enormous and the probative value is thin.",
+      "admissibilityIssue": "Evid. Code § 352 balancing; consciousness-of-guilt theory requires a link to the killing.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Crime-scene reconstruction: fifteen rounds, a reload, and the missing shells",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "The coroner and criminalist reconstruct fifteen shotgun discharges from two weapons, a contact wound to the father's head, a final shot to the mother's face after a reload from a car outside, and the collection of every spent shell by the shooters before police arrived.",
+      "weakness": "Panic fire from two terrified shooters looks like overkill too; the reconstruction cannot say what the shooters believed. The reload is the State's strongest fact, and the defense must meet it head-on rather than avoid it.",
+      "admissibilityIssue": "Expert foundation under Evid. Code §§ 801, 802 and Sargon."
+    },
+    {
+      "id": "e5",
+      "name": "The 911 call and the movie-ticket alibi",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "The older brother's 911 call ('someone killed my parents') and the brothers' account of a movie and a food festival that night, with ticket stubs. Detectives later found the ticket times did not fit.",
+      "weakness": "The lies were the older brother's plan, made after the shootings; they show fear of the police, not premeditation before the fact. Adrian was 18 and did what his brother told him.",
+      "admissibilityIssue": "Party admissions; the older brother's statements are admissible against Adrian only if in furtherance of a conspiracy or adopted by him."
+    },
+    {
+      "id": "e6",
+      "name": "The screenplay 'Friends'",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "A screenplay the defendant co-wrote with a friend a year before the killings, in which a wealthy young man kills his parents for the inheritance.",
+      "weakness": "A teenager's genre screenplay is not a confession. Evid. Code §§ 352 and 1101(b): its only use is to suggest character and propensity.",
+      "admissibilityIssue": "Evid. Code § 1101(b) (other acts to show plan or intent) versus § 352 prejudice.",
+      "suppressible": true
+    },
+    {
+      "id": "e7",
+      "name": "Abuse evidence: the cousin, the letter, and the family doctor's records",
+      "type": "testimonial",
+      "offeredBy": "defense",
+      "description": "A cousin who saw the father showering with the boys and heard Adrian, at 11, say his father 'touched' him; a letter Adrian wrote to a cousin months before the killings describing fear of his father; and pediatric records of unexplained throat and genital injuries.",
+      "weakness": "The letter's date is disputed and the original is lost. The cousin is family. The records are ambiguous. None of it is on the therapy tapes.",
+      "admissibilityIssue": "Relevant only to the defendant's actual belief in imminent danger (imperfect self-defense) and to explain his state of mind; the judge may limit or exclude it if he finds no substantial evidence of imminent threat on the night itself."
+    },
+    {
+      "id": "e8",
+      "name": "Defense expert on childhood trauma and perceived threat",
+      "type": "testimonial",
+      "offeredBy": "defense",
+      "description": "Dr. Helen Aldridge, a psychologist who has studied abused children who kill their abusers, explains how years of abuse and a recent confrontation can produce an honest belief that death is imminent even where an outsider sees no threat.",
+      "weakness": "She has consulted for the defense in similar cases. On cross she will concede that a genuine fear of imminent death is hard to square with a two-day plan, a borrowed ID and a reload.",
+      "admissibilityIssue": "Expert qualification and relevance to the mental-state elements; the court may exclude it if the imperfect self-defense theory is not supported by evidence of a threat on the night of the killings."
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Dr. Leland Marsh",
+      "role": "The brothers' psychologist (State's key witness)",
+      "side": "prosecution",
+      "demeanor": "Smooth and self-protective. Presents himself as a frightened professional who did the right thing. Bristles when his own conduct is questioned.",
+      "publicTestimony": "Adrian came to him months after the killings, distraught, and confessed that he and his brother had shot their parents. In later sessions the brothers described planning, the purchase of the shotguns, hatred of their father, and concern about the inheritance. He recorded sessions because he feared for his life after the older brother threatened him. Neither brother ever mentioned sexual abuse.",
+      "hiddenFacts": [
+        "He recorded the sessions without telling the brothers and kept the tapes in a safe-deposit box for months, describing them to his lover as 'insurance.'",
+        "He continued treating the brothers, and billing them, for months after the sessions he says made him fear for his life.",
+        "His former lover, Dana Whitlock, was in his office during at least one session, listening through a door, at his invitation.",
+        "The state licensing board was investigating him for sexual misconduct with patients at the time; he later surrendered his license.",
+        "In one unrecorded session, according to his own notes, Adrian said his father 'did things to me'; Dr. Marsh did not follow up and the note was not produced until the defense subpoenaed his files."
+      ],
+      "priorStatements": [
+        "Police interview: 'They never mentioned any abuse. It was about the money and about hatred.'",
+        "Deposition in the licensing matter: 'I kept the tapes because I did not know what these boys would do to me.'"
+      ],
+      "credibilityIssues": [
+        "Recorded patients without consent and used the tapes as leverage.",
+        "Licensing investigation and later loss of license.",
+        "Disclosure came through an ex-lover with her own grievance, not through any report of danger."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Dana Whitlock",
+      "role": "Dr. Marsh's former lover, who reported the tapes",
+      "side": "prosecution",
+      "demeanor": "Emotional and eager to be believed. Wanders into detail about her relationship with the doctor.",
+      "publicTestimony": "She was at Dr. Marsh's office when the brothers came in. She heard the older brother threaten the doctor and heard Adrian sobbing. Months later she went to the police because she believed the doctor was sitting on evidence of a double murder.",
+      "hiddenFacts": [
+        "She was also Dr. Marsh's patient, and their relationship began during treatment.",
+        "She went to the police one week after the doctor ended the relationship and after she had sued him.",
+        "She heard the sessions through a closed door and has given three different versions of what she heard.",
+        "She has said publicly that the doctor told her what the brothers said, which is how she knows most of it."
+      ],
+      "priorStatements": [
+        "First police statement: 'I heard them say they did it.'",
+        "Television interview: 'Most of what I know, Leland told me afterward.'"
+      ],
+      "credibilityIssues": ["Romantic and legal dispute with the doctor.", "Much of her account is secondhand.", "Sought publicity and payment for interviews."]
+    },
+    {
+      "id": "w3",
+      "name": "Detective Ray Cordell",
+      "role": "Lead homicide detective, Beverly Hills Police",
+      "side": "prosecution",
+      "demeanor": "Professional and even. Concedes small points readily to protect big ones.",
+      "publicTestimony": "The scene showed a planned attack: victims seated, fifteen rounds, a reload, no shells recovered, no forced entry. The brothers' alibi did not check out. The estate spending began within weeks. The tapes confirmed the planning.",
+      "hiddenFacts": [
+        "For months the department pursued an organized-crime theory and treated the brothers as grieving sons; no gunshot-residue test was done on either brother the night of the killings.",
+        "The brothers were never asked about their father's conduct toward them; the department did not investigate the family's history at all.",
+        "The reconstruction's claim that the parents were 'ambushed' rests on the seating positions, and the den doors were found closed, consistent with the defendant's account that he heard them shut.",
+        "The ticket-stub inconsistency was not discovered until after the arrests; the alibi had been accepted."
+      ],
+      "priorStatements": ["Initial report: 'Possible organized-crime retaliation connected to the father's business.'"],
+      "credibilityIssues": ["The investigation ignored the family history entirely.", "Key physical tests were never performed."]
+    },
+    {
+      "id": "w4",
+      "name": "Bryce Hollins",
+      "role": "Friend whose driver's license was used to buy the shotguns",
+      "side": "prosecution",
+      "demeanor": "Reluctant. Likes the defendant and resents being here.",
+      "publicTestimony": "He did not buy any shotguns. His license went missing from the brothers' car the week before the killings. He identified his license on the store's form.",
+      "hiddenFacts": [
+        "He was out of state that week and can prove it.",
+        "Adrian told him months before the killings that he was afraid of his father and 'couldn't be alone with him.'",
+        "He saw bruising on Adrian's arms the spring before and was told it was from tennis."
+      ],
+      "priorStatements": ["Police interview: 'Adrian was always scared of his dad. Everybody knew that.'"],
+      "credibilityIssues": ["Friend of the defendant."]
+    },
+    {
+      "id": "w5",
+      "name": "Andrea Villarreal",
+      "role": "Cousin (abuse witness)",
+      "side": "defense",
+      "demeanor": "Steady and sad. Blames herself for not doing more.",
+      "publicTestimony": "As a teenager she stayed with the family for a summer. She saw Ramón take the boys into the shower and heard him tell them it was 'a family thing.' When Adrian was eleven he told her his father touched him. She told Celeste, who told her never to repeat it.",
+      "hiddenFacts": [
+        "She told a school counselor at the time, and the counselor's note exists but was never acted on.",
+        "She and Adrian did not speak for two years before the killings after a family dispute over money.",
+        "She first told this account to the defense investigator, not to police, and only after the arrests."
+      ],
+      "priorStatements": ["Statement to defense investigator, taken after the arrests."],
+      "credibilityIssues": ["Family member.", "First disclosed after the arrests.", "Prior falling-out with the defendant over money."]
+    },
+    {
+      "id": "w6",
+      "name": "Dr. Helen Aldridge",
+      "role": "Defense expert: psychologist, childhood trauma and perceived threat",
+      "side": "defense",
+      "demeanor": "Precise and careful. Will not overstate.",
+      "publicTestimony": "Children abused over years develop hypervigilance and a distorted sense of imminent danger. After a confrontation with the abuser, ordinary events, a locked door, a raised voice, can be experienced as the beginning of an attack. That belief can be honest even where it is unreasonable.",
+      "hiddenFacts": [
+        "She has consulted for the defense in eleven cases and for the prosecution in none.",
+        "She agrees that buying weapons two days earlier and reloading are 'difficult facts' for an imminent-danger theory.",
+        "She did not review the therapy tapes before forming her opinion."
+      ],
+      "priorStatements": ["Her published work on abused children who kill."],
+      "credibilityIssues": ["Defense-side expert.", "Opinion formed without reviewing the confession tapes."]
+    },
+    {
+      "id": "w7",
+      "name": "Marcus Villarreal",
+      "role": "Older brother and co-defendant (tried before a separate jury)",
+      "side": "defense",
+      "demeanor": "Controlled and articulate. Protective of his brother. Cracks when pressed on the letters.",
+      "publicTestimony": "He was abused by their father as a small child and learned in the days before the killings that it had never stopped for Adrian. He confronted their father; their mother said they would 'take care of it.' He bought the shotguns because he believed their parents would kill them. On the night he heard the den doors and thought it had begun. Afterward he told Adrian what to say to the police.",
+      "hiddenFacts": [
+        "From jail he wrote to a former girlfriend asking her to testify that their mother had once tried to poison the family, and he wrote to another friend to 'remember' seeing their father hit Adrian; both letters are in the State's possession.",
+        "He handled the money after the killings and directed the spending.",
+        "He lied to police for seven months, including in two recorded interviews.",
+        "He, not Adrian, went back to the car for more shells and fired the final shot at their mother."
+      ],
+      "priorStatements": [
+        "Recorded police interview: 'We were at the movies. We came home and found them.'",
+        "Jail letter to a former girlfriend asking her to testify to events she did not witness."
+      ],
+      "credibilityIssues": ["Co-defendant with every incentive to shape his account.", "Letters soliciting testimony.", "Months of recorded lies."]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Suppress the Therapy Tapes (Psychotherapist-Patient Privilege)",
+      "basis": "Evid. Code §§ 1014, 1024. The dangerous-patient exception requires that the therapist reasonably believed the patient was dangerous and that disclosure was necessary to prevent the threatened danger. Dr. Marsh kept the tapes for months as 'insurance,' kept treating and billing the brothers, and disclosed them only through a jilted lover. That is not a disclosure to prevent danger.",
+      "targets": ["e2"],
+      "merit": 40
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Admit Abuse Evidence and Instruct on Imperfect Self-Defense",
+      "basis": "People v. Flannel (1979) and In re Christian S. (1994): an honest but unreasonable belief in imminent danger negates malice and reduces murder to voluntary manslaughter. The history of abuse, the confrontation the week before, and the events of the night are substantial evidence of the defendant's actual belief and must go to the jury.",
+      "merit": 55
+    },
+    {
+      "id": "m3",
+      "name": "Motion in Limine to Exclude the Screenplay",
+      "basis": "Evid. Code §§ 352, 1101. A genre screenplay written a year earlier is character evidence dressed as plan. Its probative value on intent is minimal and its prejudicial effect is severe.",
+      "targets": ["e6"],
+      "merit": 50
+    },
+    {
+      "id": "m4",
+      "name": "Motion in Limine to Limit Spending-Spree Evidence",
+      "basis": "Evid. Code § 352. Post-killing spending is not evidence of intent before the killing; the estate passed to the brothers however the parents died. The State's inheritance motive is supported only by the tapes, and the receipts serve to inflame.",
+      "targets": ["e3"],
+      "merit": 30
+    },
+    {
+      "id": "m5",
+      "name": "Motion to Exclude the Older Brother's Statements to Police",
+      "basis": "Evid. Code § 1223 and Bruton/Aranda. The older brother's statements to police after the killings were not in furtherance of any conspiracy and cannot be used against Adrian before this jury unless Marcus testifies and is subject to cross.",
+      "targets": ["e5"],
+      "merit": 45
+    }
+  ],
+  "defenseAngles": [
+    "The whole case turns on the manslaughter instruction. Build a record of the confrontation, the locked doors, and the closing den doors, so the judge cannot refuse imperfect self-defense.",
+    "Attack the tapes at the foundation: a therapist who keeps 'insurance' for months and keeps billing is not disclosing to prevent danger.",
+    "Explain the silence on the tapes before the State exploits it: the doctor's own unrecorded note says 'my father did things to me.'",
+    "Front the worst facts yourself: the shotguns, the reload, the lies, the spending. The jury forgives what you admit and punishes what you hide.",
+    "Keep Marcus's letters away from your client. Adrian did not write them. Separate the brothers in the jury's mind.",
+    "Detective Cordell never asked one question about the family. Make the jury wonder what he would have found."
+  ],
+  "startingLean": 35
+}

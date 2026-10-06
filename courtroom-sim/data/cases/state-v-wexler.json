@@ -1,0 +1,340 @@
+{
+  "id": "state-v-wexler",
+  "title": "State of Wisconsin v. Cody Wexler",
+  "tier": 1,
+  "category": "self-defense",
+  "tagline": "A 17-year-old with a rifle, a burning city, three shootings in under three minutes, and hours of video that each side swears proves its case.",
+  "jurisdiction": "Wisconsin (fictional Lakeshore County)",
+  "courtName": "Circuit Court, Lakeshore County, Wisconsin - Branch 3",
+  "basedOn": {
+    "name": "State of Wisconsin v. Kyle Rittenhouse",
+    "year": "2021",
+    "summary": "During the August 2020 unrest in Kenosha, Wisconsin, 17-year-old Kyle Rittenhouse, armed with an AR-15-style rifle, shot three men, killing two. He was charged with homicide, attempted homicide, reckless endangerment, and possession of a dangerous weapon by a minor. The trial centered on extensive video footage, including an FBI infrared aerial video and an enhanced drone video. There were also disputes over provocation, zoomed-in images, and late disclosure of a higher-quality video file.",
+    "realOutcome": "Acquitted of all counts in November 2021. The judge dismissed the minor-in-possession charge mid-trial under the short-barreled-rifle exception in Wis. Stat. § 948.60(3)(c). The surviving victim admitted on cross that he pointed his pistol at the defendant before he was shot.",
+    "keyLessons": [
+      "Wisconsin places the burden on the State to disprove self-defense beyond a reasonable doubt once it is raised.",
+      "The provocation doctrine (§ 939.48(2)) was the State's best route. It depended on a blurry, zoomed image said to show the defendant pointing his rifle first.",
+      "Late disclosure of a higher-resolution drone video led to a defense motion for mistrial with prejudice. Discovery and Brady compliance matter even in a video-heavy case.",
+      "Close reading of the statutory text defeated the weapons charge.",
+      "The State's own witnesses (a journalist and the surviving victim) supplied the defense's best facts."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kenosha_unrest_shooting",
+      "https://en.wikipedia.org/wiki/Kyle_Rittenhouse"
+    ]
+  },
+  "defendant": {
+    "name": "Cody Wexler",
+    "age": 17,
+    "background": "A lifeguard and former police-cadet program member from a town across the Illinois state line. His older friend bought an AR-15-style rifle for him with Cody's stimulus money and kept it at his stepfather's house in Port Adler. During the second night of unrest after a police shooting, Cody joined armed men who said they were guarding a car dealership. He also carried a medic bag.",
+    "privateAccount": "He says he went to protect property and give first aid. A man he had never met (Martin Keane) had threatened the group earlier, saying 'if I catch any of you alone tonight I'm going to kill you.' When Keane chased him into a parking lot and lunged for his rifle, he fired. He ran toward police to turn himself in and was chased by a crowd shouting 'get him.' He was kicked and struck with a skateboard, and he fired at the man who hit him. He lowered his rifle when a third man put his hands up, then fired when that man lunged at him with a pistol. He admits he told a reporter earlier that night that 'if someone is hurt I'm running into harm's way,' and that he was not legally old enough to buy the gun. He also admits that two weeks earlier, watching a video of men leaving a pharmacy, he said he wished he had his rifle to 'start shooting rounds at them.'",
+    "priors": "None.",
+    "testifyRisk": "High emotional impact either way. He could break down sobbing on the stand, which could humanize him. The State will cross on why he came armed to a city where he didn't live, on his earlier 'shoot rounds at them' remark (if the court's ruling is violated or the door is opened), and on whether he pointed his rifle at anyone before the first shooting. If he testifies he waives his silence, and the prosecutor may improperly comment on his post-arrest silence, which could produce a mistrial motion."
+  },
+  "judge": {
+    "name": "Hon. Walter J. Brenneman",
+    "temperament": "defense-friendly",
+    "bio": "The longest-serving circuit judge in the state. He is folksy and unpredictable, and very protective of a defendant's rights. He will scold a prosecutor for commenting on post-arrest silence or ignoring pretrial rulings. He is skeptical of 'enhanced' digital images and has told lawyers that the burden to prove what an image shows is on the party offering it."
+  },
+  "prosecutor": {
+    "name": "Assistant District Attorney Thomas Harlan",
+    "style": "Aggressive and theatrical. He will point the rifle at the jury to make a point. He argues the defendant was a 'chaos tourist' who provoked the confrontation, and he pushes the bounds of the judge's rulings. He relies heavily on blurry enhanced images to argue provocation."
+  },
+  "caseSummary": "On the second night of rioting after a police shooting in Port Adler, Wisconsin, 17-year-old Cody Wexler was among armed civilians near a used-car lot. Shortly before midnight he was chased across a parking lot by Martin Keane, 36, who threw a plastic bag at him. A third party fired a handgun into the air. Keane lunged toward Wexler's rifle, and Wexler fired four shots in under a second, killing Keane. Wexler called a friend and said 'I just shot somebody,' then ran toward the police line.\n\nA crowd chased him. He tripped and fell. A man jump-kicked him, and he fired twice and missed. Derek Hale, 26, struck him with a skateboard and grabbed the rifle; Wexler fired once and killed Hale. Gavin Ruiz, 26, a volunteer medic carrying a concealed pistol, approached with his hands up. When Ruiz moved toward Wexler with the pistol in his hand, Wexler fired once and wounded Ruiz in the arm. Wexler walked to the police line with his hands up, was waved through, and turned himself in the next morning in his hometown.",
+  "prosecutionTheory": "Wexler was an armed minor who had no business on the streets of Port Adler. He provoked the first confrontation by pointing his rifle at people, which strips him of self-defense under § 939.48(2). Everything that followed came from his own unlawful conduct: the crowd was trying to stop an 'active shooter.' Keane was unarmed, Hale had only a skateboard, and Ruiz was trying to help.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "First-Degree Reckless Homicide, Use of a Dangerous Weapon (Keane)",
+      "statute": "Wis. Stat. §§ 940.02(1), 939.63(1)(b)",
+      "elements": [
+        "The defendant caused the death of Martin Keane.",
+        "The defendant caused the death by criminally reckless conduct (conduct creating an unreasonable and substantial risk of death or great bodily harm, of which the defendant was aware).",
+        "The circumstances showed utter disregard for human life.",
+        "The State must also disprove privilege (self-defense) beyond a reasonable doubt."
+      ],
+      "maxSentence": "Class B felony: up to 60 years, plus up to 5 years for the dangerous weapon enhancer.",
+      "lesserIncluded": [
+        "Second-degree reckless homicide (§ 940.06; Class D, up to 25 years)"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "First-Degree Intentional Homicide, Use of a Dangerous Weapon (Hale)",
+      "statute": "Wis. Stat. §§ 940.01(1)(a), 939.63(1)(b)",
+      "elements": [
+        "The defendant caused the death of Derek Hale.",
+        "The defendant acted with intent to kill.",
+        "The State must disprove self-defense beyond a reasonable doubt. If the defendant actually but unreasonably believed deadly force was necessary, the offense is mitigated to second-degree intentional homicide (§ 940.01(2)(b), imperfect self-defense)."
+      ],
+      "maxSentence": "Class A felony: mandatory life imprisonment.",
+      "lesserIncluded": [
+        "Second-degree intentional homicide (§ 940.05; Class B, up to 60 years)",
+        "First-degree reckless homicide (§ 940.02(1))"
+      ]
+    },
+    {
+      "id": "c3",
+      "name": "Attempted First-Degree Intentional Homicide, Use of a Dangerous Weapon (Ruiz)",
+      "statute": "Wis. Stat. §§ 940.01(1)(a), 939.32, 939.63(1)(b)",
+      "elements": [
+        "The defendant intended to kill Gavin Ruiz.",
+        "The defendant's acts demonstrated unequivocally that he intended to kill and would have killed except for the intervention of another person or some extraneous factor.",
+        "The State must disprove self-defense."
+      ],
+      "maxSentence": "Class B felony: up to 60 years, plus weapon enhancer.",
+      "lesserIncluded": [
+        "Attempted second-degree intentional homicide",
+        "First-degree recklessly endangering safety (§ 941.30(1))"
+      ]
+    },
+    {
+      "id": "c4",
+      "name": "First-Degree Recklessly Endangering Safety (two counts: jump-kick man; journalist behind Keane)",
+      "statute": "Wis. Stat. § 941.30(1)",
+      "elements": [
+        "The defendant endangered the safety of another.",
+        "The defendant did so by criminally reckless conduct.",
+        "The circumstances showed utter disregard for human life."
+      ],
+      "maxSentence": "Class F felony: up to 12 years 6 months per count, plus weapon enhancer."
+    },
+    {
+      "id": "c5",
+      "name": "Possession of a Dangerous Weapon by a Person Under 18",
+      "statute": "Wis. Stat. § 948.60(2)(a)",
+      "elements": [
+        "The defendant possessed a dangerous weapon.",
+        "The defendant was under 18 at the time.",
+        "The exception in § 948.60(3)(c) (applying only to minors possessing short-barreled rifles or shotguns, or those not in compliance with §§ 29.304 and 29.593) does not apply."
+      ],
+      "maxSentence": "Class A misdemeanor: up to 9 months."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "FBI infrared aerial surveillance video",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "Thermal footage from an FBI aircraft circling overhead shows small heat signatures moving through the car lot. The State says it shows Keane chasing Wexler, and later Wexler's movement before the chase.",
+      "weakness": "At this altitude the figures are a few pixels each. Which blob is which is inferred, not observed. It is also consistent with Keane initiating the chase.",
+      "admissibilityIssue": "Authentication requires an FBI witness. The defense should demand chain of custody for the native file.",
+      "suppressible": false
+    },
+    {
+      "id": "e2",
+      "name": "Enhanced drone video and zoomed still ('the provocation image')",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "A hobbyist's drone video, obtained by the State, captured the scene moments before the first shooting. The State enlarged one frame to argue that Wexler raised his rifle toward a nearby man (a provocation that would forfeit self-defense).",
+      "weakness": "Enlargement software adds pixels by interpolation; it doesn't reveal detail that was never captured. The defense got a heavily compressed 3.6 MB copy while the State had an 11 MB version, disclosed only after testimony closed. The image is a handful of pixels, and the State's own analyst can't testify about what the enlargement algorithm does.",
+      "admissibilityIssue": "Authentication and reliability of enhanced images (Wis. Stat. § 909.01; § 907.02 Daubert standard). Discovery violation under § 971.23 and possible Brady issue.",
+      "suppressible": true
+    },
+    {
+      "id": "e3",
+      "name": "Journalist's cellphone video of the first shooting",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "A livestreamer's video, taken just behind Keane, captures the chase, the gunshot from an unknown third person, Keane lunging, and the four shots.",
+      "weakness": "For the State, a weakness in its own exhibit: it shows Keane chasing Wexler and lunging immediately before the shots, and it captures the third party's gunshot, which would make a reasonable person fear being fired upon.",
+      "admissibilityIssue": "None; authenticated by the videographer.",
+      "suppressible": false
+    },
+    {
+      "id": "e4",
+      "name": "Crowd videos of the second and third shootings",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "Several phone videos show the crowd chasing Wexler, people yelling 'get him' and 'beat him up,' a man jump-kicking him, Hale swinging a skateboard at his neck and grabbing the rifle, and Ruiz advancing with a pistol.",
+      "weakness": "These videos are the defense's best evidence. The attackers are on camera using force against a fleeing, fallen person.",
+      "admissibilityIssue": "None.",
+      "suppressible": false
+    },
+    {
+      "id": "e5",
+      "name": "Pharmacy parking-lot video from 15 days earlier",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "A friend's phone video shows Wexler watching men leave a pharmacy and saying he wished he had his rifle so he could 'start shooting rounds at them.'",
+      "weakness": "The circumstances are entirely different, the people are unrelated, and it is classic propensity evidence. It's also unclear whether the men were shoplifting.",
+      "admissibilityIssue": "Wis. Stat. § 904.04(2) (other acts) and § 904.03 (unfair prejudice). The real court excluded it.",
+      "suppressible": true
+    },
+    {
+      "id": "e6",
+      "name": "The rifle and the straw-purchase documents",
+      "type": "physical",
+      "offeredBy": "prosecution",
+      "description": "The AR-15-style rifle bought by an adult friend with Wexler's money. The barrel is 16 inches, the legal minimum length for a rifle, so it is not short-barreled.",
+      "weakness": "The barrel length is the whole defense to count 5. Under § 948.60(3)(c) the minor-possession ban applies to a rifle only if it is short-barreled or if the minor is out of compliance with hunting-age statutes that a 17-year-old satisfies.",
+      "admissibilityIssue": "None for the item itself. The legal issue is statutory interpretation (see m1).",
+      "suppressible": false
+    },
+    {
+      "id": "e7",
+      "name": "Defendant's statements to a reporter earlier that night",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "On-camera interview: 'People are getting injured, and our job is to protect this business. Part of my job is to also help people. If there's somebody hurt, I'm running into harm's way.'",
+      "weakness": "Helps the defense by showing his stated purpose was protective, not violent.",
+      "admissibilityIssue": "Party admission. The State may try to use it to frame him as a self-appointed enforcer.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Gavin Ruiz",
+      "role": "Surviving shooting victim",
+      "side": "prosecution",
+      "demeanor": "Earnest, emotional, and sympathetic, with a visibly damaged arm. He believes he was a medic trying to help. He gets defensive about his gun and gives careful, lawyered answers.",
+      "publicTestimony": "He thought Wexler was an active shooter. He approached with his hands up to de-escalate, and was shot in the arm as he stepped forward.",
+      "hiddenFacts": [
+        "He admits under cross that he advanced on Wexler with his pistol drawn and pointed at him, and that Wexler fired only after that.",
+        "His concealed-carry permit had expired that day, so he was carrying illegally.",
+        "He told a friend in the hospital that his only regret was 'not killing the kid' or 'not emptying the whole mag' (depending on the friend's recollection).",
+        "He has a $10 million civil suit pending against the city and has a financial interest in the outcome.",
+        "He didn't tell police initially that he had his gun in his hand."
+      ],
+      "priorStatements": [
+        "Police interview: he 'dropped' his gun when he was shot, omitting that he was pointing it.",
+        "Statement to a friend, preserved in the friend's social media message: his 'only regret was hesitating' and not killing Wexler.",
+        "Civil complaint: describes himself as 'unarmed' in an early draft."
+      ],
+      "credibilityIssues": [
+        "Omitted drawing and pointing his gun.",
+        "Illegal carry (permit expired).",
+        "Financial bias from the civil suit.",
+        "Hostile post-event statements."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Rory Dunmore",
+      "role": "Journalist and livestream videographer",
+      "side": "prosecution",
+      "demeanor": "A precise, articulate former military officer who's now an online commentator. He is anxious about being seen as partisan and wants to 'just state what I saw.'",
+      "publicTestimony": "He was following Wexler to interview him. Keane was 'chasing' Wexler and lunged 'at the gun,' and Wexler fired.",
+      "hiddenFacts": [
+        "He heard Keane threatening people earlier and yelling profanity.",
+        "Keane was 'lunging for the weapon' with his hands going toward the barrel, according to his first statement.",
+        "He was in the line of fire when the shots were fired (the basis for one reckless-endangerment count), yet he says Wexler's shots were aimed and controlled.",
+        "The State asked him to delete references to Keane 'lunging' in a follow-up statement; he refused.",
+        "He had a strong sense the third-party gunshot made everyone think they were being shot at."
+      ],
+      "priorStatements": [
+        "Police statement that night: Keane 'lunged' at the barrel of the gun.",
+        "Livestream narration within minutes: 'That guy tried to grab his gun.'"
+      ],
+      "credibilityIssues": [
+        "Online commentary gives the State room to call him biased, but that cuts against the State since he's their witness."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Detective Sgt. Lena Morrow",
+      "role": "Lead detective",
+      "side": "prosecution",
+      "demeanor": "Professional and procedural, uncomfortable with the political pressure. Tries to answer narrowly.",
+      "publicTestimony": "Describes the scene, the recovery of shell casings, the videos, and the investigation.",
+      "hiddenFacts": [
+        "Wexler turned himself in at his local police department the next morning without being sought.",
+        "Police waved Wexler through their line as he walked toward them with his hands up.",
+        "The State's copy of the drone video was 11 MB, but the defense received a 3.6 MB version by email; the detective knows the file transfer compressed it.",
+        "Hale had a prior conviction for domestic violence and was out on bond. This isn't admissible unless the defense can show Wexler knew it, but the detective knows.",
+        "The detective's own report says Keane 'initiated contact.'"
+      ],
+      "priorStatements": [
+        "Incident report: 'Keane is observed to chase the defendant and initiate contact.'",
+        "Email to prosecutors discussing the 'phone compression' of the drone video."
+      ],
+      "credibilityIssues": [
+        "Discovery failures in the video transfer."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Nathaniel Cobb",
+      "role": "Defense witness: armed Army veteran at the car lot",
+      "side": "defense",
+      "demeanor": "Blunt, matter-of-fact veteran who was also carrying a rifle that night. He clearly believes Wexler was young and out of his depth.",
+      "publicTestimony": "Earlier that night Keane was agitated and hyperaggressive, and he said 'if I catch any of you alone tonight I'm going to kill you.' Wexler was among the people who heard it.",
+      "hiddenFacts": [
+        "He admits Wexler was 'in over his head' and too young to be there.",
+        "He was carrying a rifle himself, so the State will call him a militia type.",
+        "He thinks Wexler became separated from the group because an adult sent him alone to another lot to put out fires."
+      ],
+      "priorStatements": [
+        "FBI interview weeks later: described Keane's threat as 'if I catch any of you alone, I'm going to kill you.'"
+      ],
+      "credibilityIssues": [
+        "Armed civilian with a pro-defense viewpoint."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Travis Voss",
+      "role": "Friend who bought the rifle (possible defense witness, testifying under his own pending charges)",
+      "side": "defense",
+      "demeanor": "Nervous 19-year-old, guilt-ridden about the straw purchase. He will invoke the Fifth unless immunized.",
+      "publicTestimony": "He bought the gun and kept it at his stepfather's house. That night they went to protect businesses, and Cody said he wanted to help people.",
+      "hiddenFacts": [
+        "Wexler called him right after the first shooting and said 'I just shot somebody.' That is a present sense impression / excited utterance, and it shows immediate candor.",
+        "He had a deal with the State to reduce his felony charges to a civil forfeiture if he testifies. The State can use this against him, but it also shows cooperation.",
+        "He knows who sent Wexler to the other lot alone."
+      ],
+      "priorStatements": [
+        "Police interview: Wexler 'wasn't looking for a fight.'"
+      ],
+      "credibilityIssues": [
+        "Friend of the defendant.",
+        "Pending charges and plea deal."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Dismiss Count 5 (Minor in Possession) - Statutory Exception",
+      "basis": "Wis. Stat. § 948.60(3)(c) makes the minor-in-possession ban apply to a person under 18 with a rifle or shotgun only if it is short-barreled (§ 941.28) or the minor is not in compliance with §§ 29.304 and 29.593. A 17-year-old is outside § 29.304's age limits, and § 29.593 (hunter-education certificate) applies only to obtaining a hunting approval. The rifle's barrel is 16 inches, so the statute doesn't reach this conduct. The rule of lenity resolves any ambiguity for the defendant.",
+      "targets": [],
+      "merit": 70
+    },
+    {
+      "id": "m2",
+      "name": "Motion in Limine to Exclude Pharmacy Video (Other Acts)",
+      "basis": "Wis. Stat. §§ 904.04(2), 904.03. This is propensity evidence of a remark made two weeks earlier in unrelated circumstances. Under the Sullivan three-step analysis it is not offered for a proper purpose, is marginally relevant, and its prejudice substantially outweighs its probative value.",
+      "targets": [
+        "e5"
+      ],
+      "merit": 75
+    },
+    {
+      "id": "m3",
+      "name": "Motion to Exclude Enhanced Drone Still / Motion for Mistrial with Prejudice for Discovery Violation",
+      "basis": "The State can't authenticate that interpolation software faithfully depicts the scene without an expert who can explain the algorithm (§§ 909.01, 907.02). Separately, the State gave the defense a degraded file while it used a higher-resolution version (§ 971.23 discovery; Brady v. Maryland if exculpatory detail is lost). The remedy is exclusion or, in the alternative, a mistrial.",
+      "targets": [
+        "e2"
+      ],
+      "merit": 45
+    },
+    {
+      "id": "m4",
+      "name": "Motion in Limine re: Terminology ('Victims' vs. 'Rioters/Looters')",
+      "basis": "Calling the deceased 'victims' presumes the ultimate issue, which is whether a crime occurred. The defense asks the court to bar the word 'victim,' and to permit 'rioters,' 'looters,' or 'arsonists' in closing if the evidence supports those terms.",
+      "targets": [],
+      "merit": 55
+    }
+  ],
+  "defenseAngles": [
+    "Split the case into three incidents. The State must disprove self-defense for each shooting separately.",
+    "The State's provocation theory depends entirely on a tiny, enlarged, interpolated image. Attack the software, the file size, and the late disclosure.",
+    "Keane's earlier threat, the third party's gunshot, and the lunge for the barrel are all on camera or from neutral witnesses.",
+    "Ruiz's admission that he pointed his pistol first effectively ends count 3. Have him demonstrate his arm position.",
+    "The weapon count fails on the plain text of § 948.60(3)(c). Raise it by motion before trial and again at the close of the State's case.",
+    "Keep the pharmacy video out. If the defendant testifies, be careful not to open the door to it."
+  ],
+  "startingLean": 50
+}

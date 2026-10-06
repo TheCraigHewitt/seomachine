@@ -1,0 +1,325 @@
+{
+  "id": "commonwealth-v-denholm",
+  "title": "Commonwealth v. Claire Denholm",
+  "tier": 2,
+  "category": "murder",
+  "tagline": "A police officer was found dead in the snow outside another cop's house. The Commonwealth says his girlfriend backed her SUV into him. The defense says he never left the party alive.",
+  "jurisdiction": "Massachusetts (Norfolk County; fictional town of Milbrook)",
+  "courtName": "Norfolk Superior Court, Dedham, Massachusetts",
+  "basedOn": {
+    "name": "Commonwealth v. Karen Read",
+    "year": "2024-2025",
+    "summary": "Boston police officer John O'Keefe was found unresponsive in the snow outside the Canton home of a fellow Boston officer in January 2022. His girlfriend, Karen Read, was charged with second-degree murder, alleging she struck him with her SUV while intoxicated and left him to die. The defense argued a police cover-up: that O'Keefe was beaten inside the house, attacked by a dog, and dumped outside, and that the lead state trooper, who had personal ties to the homeowners, planted taillight evidence. The lead investigator's crude texts about Read led to his firing.",
+    "realOutcome": "The first trial (2024) ended in a mistrial with a hung jury. At the 2025 retrial the jury acquitted Read of second-degree murder, manslaughter while OUI, and leaving the scene of a fatal accident. It convicted her only of misdemeanor OUI (operating with a blood alcohol level of .08 or more). She was sentenced to one year of probation.",
+    "keyLessons": [
+      "Investigator bias and misconduct (the trooper's texts, his relationships with witnesses, his handling of evidence) can create reasonable doubt even when there is physical evidence.",
+      "Third-party culpability evidence is admissible in Massachusetts if it has substantial probative value and doesn't confuse the jury (Commonwealth v. Silva-Santiago).",
+      "Independent experts (here, accident reconstructionists hired by federal investigators) whose conclusions contradicted the prosecution's theory were powerful because they weren't defense-retained.",
+      "Contested digital evidence (a timestamp on a Google search, vehicle-data timing) needs forensic experts on both sides.",
+      "Admissions ('I hit him') need context. Were they a question, a panicked fear, or a confession?"
+    ],
+    "sources": [
+      "https://www.npr.org/2025/06/18/nx-s1-5435406/karen-read-acquitted-trial-verdict-not-guilty",
+      "https://www.cbsnews.com/boston/news/karen-read-trial-timeline-john-okeefe/"
+    ]
+  },
+  "defendant": {
+    "name": "Claire Denholm",
+    "age": 43,
+    "background": "A financial analyst and adjunct finance professor. She had dated Officer Sean Callahan for two years and often stayed at his house, where he was raising his orphaned niece and nephew. The relationship was strained: they argued about his drinking, and he was texting another woman.",
+    "privateAccount": "They were drinking at two bars that night. She dropped Sean off at 34 Fairview Road, where the Doherty family was hosting an after-party. He went toward the door, and she waited in the car. When he didn't come back and wouldn't answer calls, she got angry and left. She says she drove home angrily and doesn't remember the drive well. When she woke up at 4:30 a.m. and Sean hadn't come home, she panicked and went searching. When they found him in the snow, she asked, 'Could I have hit him?' She now thinks that was panic. She did clip his car in his driveway at around 5 a.m. while backing out, which she thinks may explain her cracked taillight. She says she never felt or heard an impact at Fairview.",
+    "priors": "None.",
+    "testifyRisk": "High. She gave many media interviews before trial, and some statements ('Could I have hit him?') will be used against her. She is sharp but can be combative and has made some sarcastic remarks. If she doesn't testify, her statements to first responders come in anyway as party admissions."
+  },
+  "judge": {
+    "name": "Hon. Ellen M. Carrigan",
+    "temperament": "strict",
+    "bio": "A former prosecutor with 15 years on the bench. She keeps a tight rein on third-party culpability evidence and on media-driven theatrics. She has limited defense 'cover-up' arguments in past cases to what the evidence supports."
+  },
+  "prosecutor": {
+    "name": "Special Prosecutor Hank O'Rourke",
+    "style": "A seasoned trial lawyer brought in after the first trial collapsed. He is folksy and relentless. He keeps the case simple: she was drunk, she was angry, she backed into him, and she said 'I hit him.' He will try to keep the discredited trooper off the stand."
+  },
+  "caseSummary": "At about 6 a.m. on January 29, during a blizzard, Officer Sean Callahan, 46, was found unresponsive on the front lawn of 34 Fairview Road in Milbrook, the home of fellow officer Sgt. Kevin Doherty. He died of hypothermia and blunt-force head injuries. Claire Denholm had dropped Callahan at the house after midnight. Witnesses inside say he never came in.\n\nWhen she searched for him at dawn with two friends, one of them, Jillian Ahearn, says Denholm repeatedly said 'I hit him.' Paramedics and a fire captain also say they heard her say 'I hit him.' The right rear taillight of her SUV was cracked, and investigators later found pieces of red and clear plastic in the snow near where he lay. Vehicle data showed her SUV reversing at 24 mph at 12:32 a.m. Callahan had cuts on his right arm and a swollen eye.\n\nState Police Trooper Dale Crane led the investigation. His texts about Denholm ('whack job,' and comments about her medical condition) were revealed at the first trial. He was later fired.",
+  "prosecutionTheory": "Denholm was drunk and furious with Callahan. When she dropped him off, she backed up at 24 mph, struck him with her rear bumper, and drove away, leaving him to die in the snow. She knew what she had done: she said 'I hit him' to three people. The taillight fragments and the arm injuries match the SUV.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Murder in the Second Degree",
+      "statute": "M.G.L. c. 265, § 1",
+      "elements": [
+        "The defendant caused the death of Sean Callahan.",
+        "The defendant intended to kill him, intended to cause grievous bodily harm, or intended to do an act which, in the circumstances known to her, a reasonable person would have known created a plain and strong likelihood of death (third-prong malice).",
+        "No mitigating circumstances."
+      ],
+      "maxSentence": "Life imprisonment with parole eligibility after 15 years.",
+      "lesserIncluded": [
+        "Involuntary manslaughter (c. 265, § 13; up to 20 years)",
+        "Motor vehicle homicide (c. 90, § 24G)"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Manslaughter While Operating Under the Influence",
+      "statute": "M.G.L. c. 265, § 13½",
+      "elements": [
+        "The defendant operated a motor vehicle on a public way (or place to which the public has access).",
+        "While under the influence of alcohol or with a BAC of .08 or more.",
+        "She caused the death of another person by wanton or reckless conduct."
+      ],
+      "maxSentence": "5 to 20 years state prison, mandatory minimum 5 years.",
+      "lesserIncluded": [
+        "Motor vehicle homicide while OUI (c. 90, § 24G)",
+        "Operating under the influence (c. 90, § 24(1)(a)(1); up to 2.5 years in the house of correction)"
+      ]
+    },
+    {
+      "id": "c3",
+      "name": "Leaving the Scene of Personal Injury Resulting in Death",
+      "statute": "M.G.L. c. 90, § 24(2)(a½)(2)",
+      "elements": [
+        "The defendant operated a motor vehicle on a public way.",
+        "She knowingly collided with or otherwise caused injury to a person.",
+        "She did not stop and make known her name, residence, and registration.",
+        "The injured person died as a result."
+      ],
+      "maxSentence": "2.5 to 10 years state prison, mandatory minimum 1 year."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Taillight fragments found at the scene",
+      "type": "physical",
+      "offeredBy": "prosecution",
+      "description": "Troopers found 47 pieces of red and clear plastic in the snow near where Callahan lay, recovered over several days. The pieces fit the SUV's broken taillight.",
+      "weakness": "The first search on the morning of January 29 found no pieces, only blood. The SUV was in police custody at the Milbrook Police sallyport when later pieces were found. The sallyport video from that time is missing about 40 minutes and was 'flipped' (mirror-imaged), making it hard to verify. Trooper Crane led the searches and had personal ties to the homeowners. A home security video shows Denholm clipping Callahan's car at 5 a.m., which could explain the taillight damage.",
+      "admissibilityIssue": "Chain of custody; potential evidence tampering; Brady (full sallyport video).",
+      "suppressible": false
+    },
+    {
+      "id": "e2",
+      "name": "Callahan's injuries and autopsy",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "Skull fractures on the back of the head, a swollen right eye, and a series of abrasions and punctures on the right forearm. The medical examiner ruled cause of death as blunt-force injuries and hypothermia, manner undetermined.",
+      "weakness": "No bruises on his legs, hips, or lower body, the parts of the body a reversing SUV would hit first. The ME couldn't determine whether a vehicle was involved. The arm wounds show a pattern of punctures and scratches that a defense expert says fits a dog bite. The homeowners' German shepherd was rehomed soon after.",
+      "admissibilityIssue": "Expert disputes about the arm wounds (Daubert-Lanigan standard).",
+      "suppressible": false
+    },
+    {
+      "id": "e3",
+      "name": "SUV vehicle-data (Techstream) download",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "The Commonwealth's reconstructionist testifies that a 12:32 a.m. event showed the SUV reversing about 62 feet at up to 24 mph with a sharp throttle.",
+      "weakness": "The timestamps in the vehicle data come from an internal clock that isn't synced and has an offset to the phone records. The 'key cycle' being analyzed may not correspond to that location. The State's reconstructionist is not a biomechanics expert and did not do crash testing.",
+      "admissibilityIssue": "Reliability (Commonwealth v. Lanigan / Daubert). Foundation for timestamp mapping.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Houseguest's phone search: 'hos long to die in cold'",
+      "type": "digital",
+      "offeredBy": "defense",
+      "description": "Jillian Ahearn's phone shows a Google search 'hos long to die in cold.' The defense's digital-forensics expert says the timestamp indicates the search was made at 2:27 a.m., hours before the body was 'discovered.' Ahearn says she searched it at 6:23 a.m., at Denholm's request, after they found him.",
+      "weakness": "The Commonwealth's expert says the 2:27 timestamp is when a browser tab was opened, not when the search was typed. The defense must present strong expert testimony. Ahearn also deleted her call log to Doherty's family.",
+      "admissibilityIssue": "Expert disputes over forensic-extraction interpretation.",
+      "suppressible": false
+    },
+    {
+      "id": "e5",
+      "name": "Statements 'I hit him' to paramedics and firefighters",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "A paramedic and a fire captain testify that Denholm said 'I hit him, I hit him' at the scene. Ahearn testifies she heard it too.",
+      "weakness": "None of them wrote it down in their reports that day. Some first responders at the scene didn't hear it. The phrase could be a question ('Did I hit him?') said in panic.",
+      "admissibilityIssue": "Party admission (Mass. G. Evid. § 801(d)(2)(A)). Admissible, but the reliability of recollection is attackable.",
+      "suppressible": false
+    },
+    {
+      "id": "e6",
+      "name": "Trooper Crane's text messages",
+      "type": "digital",
+      "offeredBy": "defense",
+      "description": "Texts sent by the lead investigator to friends and colleagues during the investigation. He called Denholm a 'whack job,' joked about finding nude photos on her phone, and said he hoped she would 'kill herself.'",
+      "weakness": "The Commonwealth will argue the texts show bad judgment, not tampering, and that other troopers found the evidence.",
+      "admissibilityIssue": "Bias impeachment of the lead investigator (Commonwealth v. Bowden allows arguing the inadequacy of the investigation).",
+      "suppressible": false
+    },
+    {
+      "id": "e7",
+      "name": "Independent accident-reconstruction report",
+      "type": "forensic",
+      "offeredBy": "defense",
+      "description": "A biomechanics firm hired by federal investigators (not by the defense) concluded that Callahan's injuries were not consistent with being struck by the SUV, and that the taillight damage was not consistent with hitting a human arm.",
+      "weakness": "The Commonwealth will say the firm did limited testing and wasn't given all the evidence. The defense can't get into why the federal investigation existed.",
+      "admissibilityIssue": "Expert qualifications and methodology (Lanigan). The defense must disclose it in discovery.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Trooper Dale Crane",
+      "role": "Lead state police investigator (now terminated)",
+      "side": "prosecution",
+      "demeanor": "Cocky, defensive, and prone to smirking; a liability for the Commonwealth. He is apologetic about the texts but insists they didn't affect the investigation.",
+      "publicTestimony": "He supervised the scene, the vehicle seizure, and the recovery of the taillight pieces. The evidence led to Denholm.",
+      "hiddenFacts": [
+        "He was friends with the Doherty family, and his sister is close to Jillian Ahearn. He didn't disclose this or recuse himself.",
+        "He didn't search the Doherty house or interview the people inside for several days.",
+        "He accepted a gift from the Doherty family during the investigation.",
+        "He oversaw the SUV in the sallyport during the 40 minutes of missing video.",
+        "Blood from the scene was collected in red plastic party cups and put in a grocery bag.",
+        "He was fired after an internal investigation for misconduct."
+      ],
+      "priorStatements": [
+        "Texts calling Denholm a 'whack job' and wishing she would kill herself.",
+        "Grand jury testimony that the taillight was 'cracked with pieces missing' when the SUV was seized; the tow photos appear to show the taillight mostly intact."
+      ],
+      "credibilityIssues": [
+        "Bias and misconduct.",
+        "Conflicts of interest.",
+        "Evidence-handling irregularities."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Jillian Ahearn",
+      "role": "Houseguest and search companion",
+      "side": "prosecution",
+      "demeanor": "Composed, articulate, and indignant at being accused of a cover-up. Slightly too rehearsed.",
+      "publicTestimony": "Denholm called her panicked at about 5 a.m. They searched for Callahan together and found him in the snow. Denholm repeatedly said 'I hit him' and asked her to Google how long someone could survive in the cold.",
+      "hiddenFacts": [
+        "Her search 'hos long to die in cold' may be timestamped 2:27 a.m.",
+        "She deleted calls and searches from her phone before turning it over.",
+        "She called Doherty's family several times that morning, calls she didn't mention.",
+        "She told a grand jury she didn't see Callahan's body on the lawn when she left the party at 1:40 a.m., but the body was later found near where she parked.",
+        "In her first police statement she didn't mention Denholm saying 'I hit him.'"
+      ],
+      "priorStatements": [
+        "First police statement: no mention of 'I hit him.'",
+        "Grand jury testimony: she heard 'I hit him' three times.",
+        "Grand jury testimony: she made the search at Denholm's request at around 6 a.m."
+      ],
+      "credibilityIssues": [
+        "Possible deletion of evidence.",
+        "Evolving account.",
+        "Family ties to the homeowners."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Captain Ronan Healey",
+      "role": "Fire captain and first responder",
+      "side": "prosecution",
+      "demeanor": "Solid and credible. He tries to be honest about what he remembers.",
+      "publicTestimony": "Denholm was hysterical and said 'I hit him, I hit him' several times.",
+      "hiddenFacts": [
+        "He didn't include the statement in his report and first mentioned it more than a year later.",
+        "Other first responders standing near him didn't hear it.",
+        "He agrees the words could have been 'Did I hit him?'"
+      ],
+      "priorStatements": [
+        "Incident report: no mention of any admission."
+      ],
+      "credibilityIssues": [
+        "Delayed recollection."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Sgt. Kevin Doherty",
+      "role": "Homeowner, Boston police sergeant",
+      "side": "prosecution",
+      "demeanor": "Tight-lipped and slightly contemptuous of the defense. His lawyer is in the courtroom.",
+      "publicTestimony": "Callahan never came into the house. He didn't hear anything outside. Everyone went to bed.",
+      "hiddenFacts": [
+        "He had a swollen hand the next morning.",
+        "His German shepherd had bitten people before. He rehomed the dog months after Callahan's death.",
+        "He sold his house and destroyed his phone ('lost it') before a litigation hold.",
+        "Callahan had texted about a disagreement with a relative of Doherty's weeks earlier."
+      ],
+      "priorStatements": [
+        "Grand jury: he didn't know when Callahan arrived and didn't see him."
+      ],
+      "credibilityIssues": [
+        "Possible third-party culpability.",
+        "Destruction of evidence."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Dr. Adrienne Kolb",
+      "role": "Defense expert: biomechanical engineer (from the independent federal reconstruction)",
+      "side": "defense",
+      "demeanor": "Scientific, calm, and well-credentialed. She emphasizes that she was hired by federal investigators, not the defense.",
+      "publicTestimony": "Callahan's injuries don't fit being struck by the SUV. There would be lower-body injuries, and the taillight couldn't cause the arm wounds.",
+      "hiddenFacts": [
+        "Her testing was on a crash dummy, not in the exact snow conditions.",
+        "She didn't consider the possibility of the SUV clipping him at an angle."
+      ],
+      "priorStatements": [
+        "Firm's report concluding the injuries were 'inconsistent' with vehicle impact."
+      ],
+      "credibilityIssues": [
+        "Limited testing conditions."
+      ]
+    },
+    {
+      "id": "w6",
+      "name": "Dr. Rachel Imbert",
+      "role": "Defense expert: emergency physician (dog bites)",
+      "side": "defense",
+      "demeanor": "Confident and specific.",
+      "publicTestimony": "The punctures and scratches on the right arm are in a pattern consistent with animal bites and claws, not glass or plastic.",
+      "hiddenFacts": [
+        "She is not a forensic pathologist.",
+        "No dog DNA was found on the arm or clothing, but no one tested for it until much later."
+      ],
+      "priorStatements": [
+        "Report comparing the arm wounds to animal-bite photos."
+      ],
+      "credibilityIssues": [
+        "Limited forensic credentials."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Admit Third-Party Culpability Evidence",
+      "basis": "Commonwealth v. Silva-Santiago, 453 Mass. 782 (2009); Commonwealth v. Adjutant. Evidence that Callahan was injured inside the house by someone else (dog-bite wounds, Doherty's swollen hand, the destroyed phone, the rehomed dog, and the 2:27 a.m. search) has substantial probative value and is not too remote. The defense may also argue the investigation was inadequate (Commonwealth v. Bowden).",
+      "targets": [],
+      "merit": 60
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Compel Discovery and for Sanctions (Missing Sallyport Video, Investigator Communications)",
+      "basis": "Mass. R. Crim. P. 14 and Brady. The Commonwealth must produce the complete sallyport video, Crane's communications, and federal investigative materials. Loss of the video warrants a spoliation instruction or exclusion of later-found taillight pieces (Commonwealth v. Kee; Commonwealth v. Olszewski).",
+      "targets": [
+        "e1"
+      ],
+      "merit": 45
+    },
+    {
+      "id": "m3",
+      "name": "Motion to Exclude Vehicle-Data Timing Testimony",
+      "basis": "Commonwealth v. Lanigan / Daubert. The Commonwealth's reconstructionist can't reliably match the vehicle's internal clock to real time or place. Without a reliable match, the 'reverse at 24 mph' testimony is misleading.",
+      "targets": [
+        "e3"
+      ],
+      "merit": 30
+    }
+  ],
+  "defenseAngles": [
+    "Put the investigation on trial (Bowden). The trooper's bias, his relationships with witnesses, and his mishandling of evidence infect everything.",
+    "Missing injuries: a reversing SUV would cause lower-body injuries. Where are they?",
+    "The arm wounds look like dog bites and claws, and the Dohertys rehomed the dog.",
+    "The taillight pieces appeared only after the SUV was in police custody, during a gap in the sallyport video.",
+    "The 'hos long to die in cold' timestamp and the deleted call logs show someone knew before dawn.",
+    "Recontextualize 'I hit him' as a panicked question. None of the first responders wrote it down."
+  ],
+  "startingLean": 42
+}

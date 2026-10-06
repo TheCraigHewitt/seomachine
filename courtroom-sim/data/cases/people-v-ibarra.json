@@ -1,0 +1,295 @@
+{
+  "id": "people-v-ibarra",
+  "title": "People of the State of Illinois v. Tomás Ibarra",
+  "tier": 2,
+  "category": "gang",
+  "tagline": "One 12-year-old eyewitness, one jailhouse informant who wants out, one detective with a track record, and no physical evidence at all.",
+  "jurisdiction": "Illinois (Cook County)",
+  "courtName": "Circuit Court of Cook County, Criminal Division, 26th and California",
+  "basedOn": {
+    "name": "People v. Jacques Rivera (wrongful conviction), with the jailhouse-informant pattern documented by the National Registry of Exonerations",
+    "year": "1989",
+    "summary": "In August 1988, 16-year-old Felix Valentin was shot in a gang-related shooting in Chicago's Humboldt Park area. A 12-year-old boy identified Jacques Rivera, after Detective Reynaldo Guevara showed him a photo and a lineup. There was no physical evidence. Rivera was convicted at a bench trial. The eyewitness later recanted, saying he had told police Rivera wasn't the shooter. Guevara has been linked to dozens of wrongful convictions. This game case adds a jailhouse informant, a feature common to many Cook County exonerations documented by the Registry.",
+    "realOutcome": "Convicted and sentenced to 80 years. After the eyewitness recanted, a judge ordered a new trial in 2011, and prosecutors dismissed all charges. Rivera received a certificate of innocence in 2012. In 2018 a federal jury awarded him $17 million against Guevara and other officers. Guevara invoked the Fifth Amendment hundreds of times in related cases.",
+    "keyLessons": [
+      "A single eyewitness identification, particularly by a child and particularly across racial or ethnic lines, is among the leading causes of wrongful convictions.",
+      "Suggestive procedures (showing a single photo, telling the witness the suspect was caught, lineups where the suspect stands out) contaminate identifications. Challenge them under Manson v. Brathwaite and Illinois's eyewitness identification statute.",
+      "Illinois permits expert testimony on eyewitness memory (People v. Lerma, 2016).",
+      "Illinois requires a pretrial reliability hearing for jailhouse informant testimony in murder cases (725 ILCS 5/115-21).",
+      "A detective's pattern of misconduct in other cases can be admissible to show bias or modus operandi, and is Brady material."
+    ],
+    "sources": [
+      "https://exonerationregistry.org/cases/11015",
+      "https://exonerationregistry.org/jailhouse-informants",
+      "https://abc7chicago.com/reynaldo-guevara-jacques-rivera-verdict-felix-valentin/3676850/"
+    ]
+  },
+  "defendant": {
+    "name": "Tomás Ibarra",
+    "age": 23,
+    "background": "A Puerto Rican father of two who works nights at a meatpacking plant. He was a member of the Kedzie Kings street gang as a teenager and has a 'KK' tattoo on his forearm, but says he stepped away after his daughter was born. He drives a brown Chevy Nova, not the blue car witnesses described.",
+    "privateAccount": "He says he was at his girlfriend's mother's apartment on the night of the shooting, watching a boxing match on TV with her family, until about 11 p.m. He knows the victim's gang (the Spaulding Disciples) were rivals, but he didn't shoot anyone. He thinks Detective Quintero targeted him because he refused to inform on a Kedzie Kings leader. While he was in Cook County Jail awaiting trial, a cellmate kept asking about his case and reading his paperwork.",
+    "priors": "A 1985 conviction for possession of a controlled substance (probation) and a 1986 misdemeanor battery (fistfight). The drug felony is admissible to impeach under People v. Montgomery if he testifies, subject to balancing.",
+    "testifyRisk": "Moderate. His alibi is detailed, and he's calm. But the prosecution will impeach him with his felony conviction and ask about his gang history. He may be tempted to downplay his old gang ties, which the State can easily disprove."
+  },
+  "judge": {
+    "name": "Hon. Martin J. Kowalski",
+    "temperament": "pro-prosecution",
+    "bio": "A former Cook County prosecutor in the Gang Crimes Unit. He is skeptical of eyewitness experts and of allegations of police misconduct, and he trusts veteran detectives. He will follow a clear statute, and the informant-hearing statute is mandatory."
+  },
+  "prosecutor": {
+    "name": "Assistant State's Attorney Brian Mulcahy",
+    "style": "Blunt and efficient. He presents the case as a gang execution witnessed by a brave child. He calls the eyewitness a 'hero' and the defense attacks 'victim-blaming a 12-year-old.'"
+  },
+  "caseSummary": "At about 9:40 p.m. on August 27, Rubén Alcalá, 16, was sitting in a friend's car in an alley near Palmer Square when a man walked up and fired six shots, hitting him in the neck and chest. The shooter ran to a blue car and fled. Alcalá was a member of the Spaulding Disciples. He was paralyzed and died three months later of complications.\n\nKevin Doyle, 12, was riding his bike nearby. He told the first officers the shooter was a 'Puerto Rican guy with a ponytail.' Four days later Detective Raymond Quintero showed Doyle a single photo of Tomás Ibarra, a former Kedzie Kings member, and Doyle said 'that's him.' He later picked Ibarra from a lineup in which Ibarra was the only person with a ponytail.\n\nWhile awaiting trial in Cook County Jail, Ibarra shared a cell for three weeks with Leon Stavros, who later told prosecutors Ibarra had confessed. No gun, fingerprints, or other physical evidence was ever connected to Ibarra.",
+  "prosecutionTheory": "Ibarra, a Kedzie King, shot a rival Spaulding Disciple as gang retaliation. A 12-year-old eyewitness with no reason to lie picked him out twice. Ibarra confessed to a cellmate, describing details only the shooter would know.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "First Degree Murder",
+      "statute": "720 ILCS 5/9-1(a)(1), (a)(2); firearm enhancement 730 ILCS 5/5-8-1(a)(1)(d)(iii)",
+      "elements": [
+        "The defendant performed the acts which caused the death of Rubén Alcalá.",
+        "When he did so, he intended to kill or do great bodily harm, or knew that his acts would cause death, or knew that his acts created a strong probability of death or great bodily harm."
+      ],
+      "maxSentence": "20 to 60 years, plus a mandatory 25-years-to-life enhancement for personally discharging a firearm that proximately caused death. Effective maximum: natural life.",
+      "lesserIncluded": [
+        "Second Degree Murder (720 ILCS 5/9-2; unreasonable belief in justification or sudden and intense passion; 4-20 years)"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Aggravated Discharge of a Firearm",
+      "statute": "720 ILCS 5/24-1.2(a)(2)",
+      "elements": [
+        "The defendant knowingly or intentionally discharged a firearm.",
+        "In the direction of another person or a vehicle he knew or reasonably should have known was occupied."
+      ],
+      "maxSentence": "Class 1 felony: 4 to 15 years."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Single-photo identification and lineup identification by Kevin Doyle",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Four days after the shooting, Detective Quintero showed Doyle one photo of Ibarra, and Doyle said 'that's him.' Two weeks later Doyle picked Ibarra from a five-person lineup.",
+      "weakness": "A single-photo showup is inherently suggestive. In the lineup Ibarra was the only person with a ponytail, the feature Doyle described, and the only person Doyle had seen a photo of. Doyle saw the shooter for a few seconds at night, from about 60 feet, under a single streetlight, while terrified. The identification was cross-ethnic (Doyle is white, Ibarra is Puerto Rican). Doyle's initial description (ponytail, 'about 18,' no tattoos visible) doesn't fully fit Ibarra, who has visible forearm tattoos. The lineup wasn't double-blind: Quintero ran it.",
+      "admissibilityIssue": "Due process suppression under Manson v. Brathwaite, 432 U.S. 98 (1977) and Neil v. Biggers; 725 ILCS 5/107A-2 (lineup procedures). Illinois applies the Biggers factors and permits an independent-source analysis for in-court IDs.",
+      "suppressible": true
+    },
+    {
+      "id": "e2",
+      "name": "Jailhouse informant testimony (Leon Stavros)",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Stavros says Ibarra confessed in their cell, saying he 'lit up' a Spaulding Disciple in an alley 'for what they did to' a Kedzie King.",
+      "weakness": "Every detail Stavros gives is in the police reports and charging documents Ibarra kept in his cell. Stavros has four pending felony cases and has testified as an informant in two prior cases. He received sentence reductions both times. He asked to be moved into Ibarra's cell.",
+      "admissibilityIssue": "725 ILCS 5/115-21 requires disclosure of the informant's history, benefits, and statements, and a pretrial hearing where the State must prove reliability by a preponderance of the evidence. Also Massiah v. United States if he was acting as a State agent when he elicited statements after charges were filed.",
+      "suppressible": true
+    },
+    {
+      "id": "e3",
+      "name": "Gang evidence: tattoo photos and gang-crimes card",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "Photos of Ibarra's 'KK' tattoo and a gang-crimes intelligence card listing him as a Kedzie Kings member, plus testimony from a gang-crimes officer about the rivalry.",
+      "weakness": "The card is from four years ago. Membership doesn't prove he committed this shooting, and there were dozens of Kedzie Kings in the area. The officer's testimony relies on hearsay.",
+      "admissibilityIssue": "Ill. R. Evid. 403 and 404(b). Gang evidence is admissible in Illinois only if relevant to motive and if its probative value is not substantially outweighed by prejudice (People v. Smith, 141 Ill. 2d 40). Hearsay and Crawford issues if the gang officer relays statements of others.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Victim's hospital statement",
+      "type": "statement",
+      "offeredBy": "defense",
+      "description": "While paralyzed in the hospital, Alcalá told his mother and a patrol officer he didn't know who shot him, and that the shooter was 'a Kedzie King with a ponytail named Tito or something, from the other side.' No one followed up on 'Tito.'",
+      "weakness": "Alcalá was on heavy pain medication, and his statement was hearsay. The State will argue he didn't see the shooter's face. Ibarra's nickname is not 'Tito.'",
+      "admissibilityIssue": "Dying declaration (Ill. R. Evid. 804(b)(2)) requires belief in imminent death, which is debatable since he lived three months. Alternatively, statement against penal interest does not apply. Admissible as excited utterance only if near the event. Potentially admissible to impeach the investigation.",
+      "suppressible": false
+    },
+    {
+      "id": "e5",
+      "name": "Defendant's car registration and photos",
+      "type": "documentary",
+      "offeredBy": "defense",
+      "description": "Ibarra's only car was a brown 1979 Chevy Nova, which was in a repair shop with a broken transmission from August 20 to September 3.",
+      "weakness": "The State will say he could have borrowed or stolen a car.",
+      "admissibilityIssue": "Business records of the repair shop (Ill. R. Evid. 803(6)).",
+      "suppressible": false
+    },
+    {
+      "id": "e6",
+      "name": "Detective Quintero's disciplinary and complaint history",
+      "type": "documentary",
+      "offeredBy": "defense",
+      "description": "Records of prior complaints alleging that Quintero coerced witnesses, used single-photo showups, and told witnesses who to pick in at least four other cases, one of which led to a conviction being vacated.",
+      "weakness": "Most complaints were 'not sustained.' The court will limit their use, and the State will call it a smear.",
+      "admissibilityIssue": "Brady and Giglio; Ill. R. Evid. 404(b) for modus operandi or intent (People v. Patterson, 192 Ill. 2d 93 (2000) allows pattern evidence of police misconduct in some circumstances). § 403.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Kevin Doyle",
+      "role": "Eyewitness (age 12 at the time; 13 at trial)",
+      "side": "prosecution",
+      "demeanor": "Shy, eager to please adults, and scared. He looks at the prosecutor after answering. He becomes visibly anxious and quiet when asked about the detective's conversations with him.",
+      "publicTestimony": "He saw a man walk up to the car and shoot, then run to a blue car. He identified the defendant as the shooter in a photo and a lineup, and he is sure.",
+      "hiddenFacts": [
+        "Before showing him the photo, Detective Quintero told him 'we caught the guy who shot Rubén.'",
+        "He saw the shooter for 'a couple of seconds' and mostly saw the gun and the shooter's back as he ran.",
+        "His mother told him the shooter was 'one of those Kedzie Kings,' and the whole neighborhood was talking about Ibarra before the photo.",
+        "At the lineup he said 'I think it's number three,' and the detective said 'good job.' His certainty grew after that.",
+        "He has told a school counselor he isn't sure it was Ibarra and has nightmares about getting it wrong."
+      ],
+      "priorStatements": [
+        "First police report: shooter 'Puerto Rican male, 17-18, ponytail, dark clothing.' No mention of tattoos.",
+        "Lineup report: 'Positive ID of #3.' The detective's handwritten note says 'witness hesitant.'",
+        "Counselor's note: 'Kevin expresses doubt about his identification.'"
+      ],
+      "credibilityIssues": [
+        "Brief observation at night under stress.",
+        "Suggestive identification procedures.",
+        "Cross-ethnic identification.",
+        "Confidence inflation from post-identification feedback."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Detective Raymond Quintero",
+      "role": "Lead Area Five detective",
+      "side": "prosecution",
+      "demeanor": "Smooth, charming, and confident, with deep neighborhood knowledge. He becomes curt and evasive when asked about other cases and may invoke the Fifth if pressed about misconduct.",
+      "publicTestimony": "Street sources told him Ibarra was the shooter. He showed Doyle a photo and then ran a fair lineup. Doyle picked Ibarra without hesitation.",
+      "hiddenFacts": [
+        "His 'street sources' were two members of the Spaulding Disciples who had their own motives.",
+        "He showed Doyle one photo before the lineup, not an array, and he didn't document it.",
+        "He was the only officer at the lineup, and he selected the fillers.",
+        "He had pressured Ibarra to inform on a Kedzie Kings leader weeks before the shooting.",
+        "He didn't follow up on the victim's 'Tito' statement.",
+        "In at least four other cases, witnesses have said he told them who to pick."
+      ],
+      "priorStatements": [
+        "Supplementary report: 'Witness viewed photo array and positively identified the offender.' There is no array in the file.",
+        "Testimony in another case: he never uses single-photo showups."
+      ],
+      "credibilityIssues": [
+        "Pattern of alleged misconduct.",
+        "Undocumented procedures.",
+        "Bias against the defendant."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Leon Stavros",
+      "role": "Jailhouse informant",
+      "side": "prosecution",
+      "demeanor": "Friendly, talkative, and rehearsed. He smiles at the jury. He becomes defensive and argumentative when confronted with his pending cases and his informant history.",
+      "publicTestimony": "Ibarra confessed to him in their cell, describing the alley, the car, and the six shots, and said he did it for the Kedzie Kings.",
+      "hiddenFacts": [
+        "He asked to be moved to Ibarra's cell after seeing Ibarra's case on the news.",
+        "He had access to Ibarra's discovery paperwork, which Ibarra kept in a folder under his bunk.",
+        "He has testified as an informant in two prior murder cases and got sentence reductions both times.",
+        "He has four pending felony cases (burglary and forgery). The State has told his lawyer his 'cooperation will be considered.'",
+        "He wrote a letter to the State's Attorney offering information on 'a Palmer Square murder' before he was moved into Ibarra's cell.",
+        "His account includes a detail (the car was a 'blue Buick') that appears in the police report but is wrong according to later evidence."
+      ],
+      "priorStatements": [
+        "Letter to the State's Attorney offering information before he was moved into Ibarra's cell.",
+        "Testimony in an earlier case: 'I've never received anything for testifying.' That was later contradicted by his sentence reduction."
+      ],
+      "credibilityIssues": [
+        "Professional informant.",
+        "Pending charges and expected benefits.",
+        "Access to discovery documents.",
+        "Prior perjury."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Marisol Vega",
+      "role": "Alibi witness (defendant's girlfriend's mother)",
+      "side": "defense",
+      "demeanor": "Warm, dignified, and nervous about speaking in court. She speaks carefully in accented English and uses an interpreter for some answers.",
+      "publicTestimony": "Tomás was at her apartment the night of the shooting watching a boxing match on TV with the family from about 8 p.m. to 11 p.m.",
+      "hiddenFacts": [
+        "She remembers the date because the fight was a big event and she has the TV listing.",
+        "Her neighbor came over during the fight and can corroborate Tomás was there.",
+        "She didn't go to the police because she was afraid of Detective Quintero, who had harassed her son."
+      ],
+      "priorStatements": [
+        "Statement to the defense investigator weeks after the arrest describing the boxing match."
+      ],
+      "credibilityIssues": [
+        "Family bias.",
+        "Delay in coming forward."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Dr. Hannah Lindqvist",
+      "role": "Defense eyewitness identification expert",
+      "side": "defense",
+      "demeanor": "An academic cognitive psychologist, careful and clear. She explains research without vouching for any witness.",
+      "publicTestimony": "Memory is reconstructive, not a recording. Research shows that stress, weapon focus, short exposure, distance, poor lighting, cross-race effects, and suggestive procedures reduce accuracy. Confidence at trial is not a good predictor of accuracy, especially after confirming feedback.",
+      "hiddenFacts": [
+        "She can't say whether this particular ID is wrong.",
+        "She agrees children can be accurate eyewitnesses in some conditions."
+      ],
+      "priorStatements": [
+        "Her published research on post-identification feedback."
+      ],
+      "credibilityIssues": [
+        "Paid expert who testifies mostly for the defense."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Suppress Out-of-Court and In-Court Identifications",
+      "basis": "Due process (Manson v. Brathwaite; Neil v. Biggers). The single-photo showup and non-blind lineup with a unique ponytail were unnecessarily suggestive, and the identification is unreliable under the Biggers factors (brief view, darkness, distance, stress, inaccurate description, growing certainty). Violations of 725 ILCS 5/107A-2. The in-court ID lacks an independent source.",
+      "targets": [
+        "e1"
+      ],
+      "merit": 45
+    },
+    {
+      "id": "m2",
+      "name": "Motion for Pretrial Informant Reliability Hearing and to Exclude Informant Testimony",
+      "basis": "725 ILCS 5/115-21. In a murder case the State must disclose the informant's criminal history, benefits, and prior testimony, and prove reliability at a pretrial hearing by a preponderance. Access to discovery, informant history, and self-placement in the cell show unreliability. Massiah v. United States if Stavros acted as a State agent after charges were filed.",
+      "targets": [
+        "e2"
+      ],
+      "merit": 55
+    },
+    {
+      "id": "m3",
+      "name": "Motion to Admit Expert Testimony on Eyewitness Identification",
+      "basis": "People v. Lerma, 2016 IL 118496. Expert testimony on eyewitness memory is admissible and often necessary when the case turns on a single identification.",
+      "targets": [],
+      "merit": 75
+    },
+    {
+      "id": "m4",
+      "name": "Motion in Limine to Exclude Gang Evidence",
+      "basis": "Ill. R. Evid. 403 and 404(b). The gang evidence is stale, and it is offered as propensity rather than motive, since nothing ties this shooting to any specific gang conflict involving Ibarra.",
+      "targets": [
+        "e3"
+      ],
+      "merit": 30
+    }
+  ],
+  "defenseAngles": [
+    "Walk through the Biggers factors with Kevin Doyle gently: night, distance, seconds, a gun, a terrified 12-year-old. Don't attack the child; attack the procedure.",
+    "Put Quintero's showup and lineup in the jury's hands: one photo, one ponytail, one detective saying 'good job.'",
+    "Win the informant reliability hearing. If Stavros testifies, show that every 'secret' detail was in the paperwork under Ibarra's bunk.",
+    "Use the repair-shop records: Ibarra's only car was brown and inoperable, not blue.",
+    "Follow the victim's 'Tito' statement. The police never did.",
+    "Put on the alibi witness and her neighbor, and call the eyewitness expert."
+  ],
+  "startingLean": 38
+}

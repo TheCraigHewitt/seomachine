@@ -1,0 +1,320 @@
+{
+  "id": "state-v-whitmore-yge",
+  "title": "State of Georgia v. Jarell Whitmore et al.",
+  "tier": 3,
+  "category": "rico",
+  "tagline": "The State says Yellow Gold Entertainment is a street gang, the rapper who founded it is the boss, and his lyrics are confessions. You have to convince a jury that a song is just a song.",
+  "jurisdiction": "Georgia (Fulton County)",
+  "courtName": "Superior Court of Fulton County, Atlanta Judicial Circuit",
+  "basedOn": {
+    "name": "State of Georgia v. Jeffery Williams (Young Thug) et al. (the YSL RICO case)",
+    "year": "2023-2024",
+    "summary": "Fulton County prosecutors indicted rapper Jeffery Williams (Young Thug) and 27 others under Georgia's RICO and street-gang statutes, alleging his label YSL (Young Slime Life) was a criminal street gang responsible for murders, shootings, and drug dealing. The indictment cited rap lyrics as overt acts, and the court allowed some lyrics into evidence. Co-defendants took pleas (including rapper Sergio Kitchens, known as Gunna, whose Alford plea included a statement that YSL is 'also a gang'). The trial became the longest in Georgia history, marked by an immunized witness jailed for refusing to testify, an ex parte meeting between the judge, prosecutors, and a cooperating witness, and the judge's removal from the case.",
+    "realOutcome": "After the original judge was removed in July 2024 for an ex parte meeting with prosecutors and a witness, Williams entered a non-negotiated guilty and no-contest plea in October 2024. He was sentenced to time served plus 15 years of probation. In December 2024 the last two co-defendants tried to verdict were acquitted of murder, gang, and racketeering charges. One of them was convicted only of possessing a firearm as a convicted felon. No one was convicted of murder at trial.",
+    "keyLessons": [
+      "Rap lyrics as evidence: courts require a specific connection between the lyric and the charged conduct. Without one, lyrics are unfairly prejudicial character evidence (Georgia's § 24-4-403 and 24-4-404(b)).",
+      "RICO conspiracy lets the State bring in a vast amount of other people's crimes. Severance, limiting instructions, and objections to co-conspirator hearsay (§ 24-8-801(d)(2)(E)) are critical.",
+      "Gang experts can become conduits for testimonial hearsay (Crawford).",
+      "Cooperating co-defendants' plea deals, and any undisclosed benefits, are Giglio material.",
+      "Ex parte contacts between the court and the prosecution's witnesses violate due process and can derail a trial."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/YSL_Records_racketeering_trial",
+      "https://www.npr.org/2024/10/31/nx-s1-5174207/young-thug-guilty-plea-ysl-trial",
+      "https://www.fox5atlanta.com/news/ysl-trial-murder-convictions-defendant-plea-deal-young-thug"
+    ]
+  },
+  "defendant": {
+    "name": "Jarell 'Lil Saint' Whitmore",
+    "age": 31,
+    "background": "A Grammy-winning rapper from the Cleveland Avenue neighborhood of southwest Atlanta who founded the record label Yellow Gold Entertainment (YGE). He's known for philanthropy in his old neighborhood and has employed dozens of friends from childhood. His lyrics are violent, and his public persona embraces street imagery.",
+    "privateAccount": "He says YGE is a record label and a family of neighborhood friends. Some friends did crimes, and he's paid lawyers and bail for some of them, but he never ordered anyone to do anything. The car used in the rival's murder was rented in his name, but he rents cars for lots of people in his crew. He says the lyrics are fiction and brand, and that other rappers use the same phrases. The drugs and gun found in his house during the search belonged to other people who lived there or visited, though he admits he knew there were guns in the house and that he smoked weed.",
+    "priors": "A 2014 misdemeanor conviction for making terroristic threats against a mall security guard (pled down). Not a crime of dishonesty; may be admissible as a predicate act in the RICO case.",
+    "testifyRisk": "Extremely high. The State would cross-examine him line by line on his lyrics, social media posts, and associates. His confidence could come across as arrogance. He almost certainly shouldn't testify."
+  },
+  "judge": {
+    "name": "Hon. Darrell K. Moseley",
+    "temperament": "pro-prosecution",
+    "bio": "A former prosecutor who has presided over the case since indictment. He wants to move the long trial forward. He has let some lyrics in but has also warned the State about overreach. He becomes defensive when his impartiality is questioned. Holding lawyers in contempt is not out of the question for him."
+  },
+  "prosecutor": {
+    "name": "Deputy District Attorney Adriana Castellanos",
+    "style": "Intense and detail-driven. She has spent years building the case and knows it better than anyone. She shows lyrics on large screens, plays music videos, and argues the defendant 'told the world who he was.' She calls many witnesses and relies on the RICO conspiracy to bring in every act by every YGE associate."
+  },
+  "caseSummary": "The indictment charges that Yellow Gold Entertainment (YGE) is a criminal street gang and a RICO enterprise founded and led by Jarell Whitmore. It lists 190 overt acts over eight years, including the murder of a rival gang leader, Darnell 'Bleed' Hopkins, shootings, drug sales, and robberies, as well as rap lyrics, social media posts, and music videos.\n\nThe State alleges that Whitmore rented the car later used to kill Hopkins in a drive-by shooting and that he paid for bail and lawyers for members who committed crimes, rewarded violence with money and status, and used his music to boast about the crimes. During a search of his house, police found cocaine, codeine cough syrup, and several guns.\n\nTwo co-defendants have taken plea deals and are expected to testify. The State has given one reluctant witness immunity.",
+  "prosecutionTheory": "YGE is a gang first and a record label second. Whitmore is its leader and the architect of its violence. He rented the car used in the Hopkins murder, paid those who did the gang's work, and put the gang's crimes into his songs. Every overt act, including his lyrics, furthered the enterprise's goals of power and money.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Conspiracy to Violate the RICO Act",
+      "statute": "O.C.G.A. § 16-14-4(c); penalty § 16-14-5",
+      "elements": [
+        "The defendant conspired or endeavored to violate § 16-14-4(a) or (b) (acquire or maintain control of an enterprise, or participate in an enterprise, through a pattern of racketeering activity).",
+        "A pattern of racketeering activity: at least two predicate acts in furtherance of one or more incidents, schemes, or transactions with the same or similar intents, results, accomplices, victims, or methods, and not isolated incidents.",
+        "At least one overt act in furtherance of the conspiracy by any conspirator (Georgia requires an overt act for RICO conspiracy)."
+      ],
+      "maxSentence": "5 to 20 years imprisonment, fine, or both; forfeiture of property.",
+      "lesserIncluded": []
+    },
+    {
+      "id": "c2",
+      "name": "Participation in Criminal Street Gang Activity",
+      "statute": "O.C.G.A. § 16-15-4(a); definitions § 16-15-3",
+      "elements": [
+        "The existence of a criminal street gang (three or more persons associated in fact, formal or informal, that engages in criminal gang activity).",
+        "The defendant was employed by or associated with the gang.",
+        "The defendant participated in criminal gang activity through the commission of an enumerated offense.",
+        "A nexus between the offense and an intent to further the gang's interests."
+      ],
+      "maxSentence": "5 to 15 years imprisonment, consecutive to other sentences if the underlying offense is also charged."
+    },
+    {
+      "id": "c3",
+      "name": "Possession of a Controlled Substance with Intent to Distribute (Cocaine)",
+      "statute": "O.C.G.A. § 16-13-30(b), (d)",
+      "elements": [
+        "The defendant knowingly possessed (actually or constructively) cocaine, a Schedule II controlled substance.",
+        "With intent to distribute."
+      ],
+      "maxSentence": "5 to 30 years for a first offense."
+    },
+    {
+      "id": "c4",
+      "name": "Possession of a Firearm During the Commission of a Felony",
+      "statute": "O.C.G.A. § 16-11-106(b)",
+      "elements": [
+        "The defendant had a firearm on or within arm's reach of his person.",
+        "During the commission of, or attempt to commit, a felony involving a controlled substance or crime against the person."
+      ],
+      "maxSentence": "5 years, mandatory, consecutive."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Rap lyrics and music videos",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "Seventeen excerpts from Whitmore's songs and three music videos, including a verse the State says boasts about Hopkins's murder ('Bleed got drained, I ain't pull it but I paid for the ride') and videos in which YGE members display guns and gang signs.",
+      "weakness": "Rap is an art form built on exaggerated violent personas, and many of the phrases are genre conventions. The Hopkins verse was released after the murder was widely reported in the news. Most excerpts have no link to a specific charged act. No other genre of music is used as evidence this way.",
+      "admissibilityIssue": "O.C.G.A. §§ 24-4-403 and 24-4-404(b); First Amendment concerns. Lyrics are admissible only if the State lays a foundation that ties them to specific charged conduct.",
+      "suppressible": true
+    },
+    {
+      "id": "e2",
+      "name": "Car rental agreement for the vehicle used in the Hopkins murder",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "A rental-car agreement in Whitmore's name for a silver Infiniti used in the drive-by, rented two days before the murder.",
+      "weakness": "Whitmore rented more than 30 cars in the prior year for various people. His credit card was used, but someone else picked up the car. There's no evidence he knew what it would be used for.",
+      "admissibilityIssue": "Business record (§ 24-8-803(6)).",
+      "suppressible": false
+    },
+    {
+      "id": "e3",
+      "name": "Drugs and firearms seized from the defendant's house",
+      "type": "physical",
+      "offeredBy": "prosecution",
+      "description": "Cocaine, codeine cough syrup, and seven guns found in multiple rooms during a search pursuant to a warrant.",
+      "weakness": "Eight people had access to the house, including people who lived there. None of the drugs or guns were in his bedroom. No fingerprints were taken. Constructive possession requires proof of knowledge and control, not mere proximity.",
+      "admissibilityIssue": "Fourth Amendment challenge to the warrant affidavit (Franks v. Delaware) if the affiant misstated facts about informants.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Gang expert testimony (Atlanta Police gang unit)",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "An investigator testifies about YGE's structure, colors, hand signs, slang, and the defendant's role as a leader, based on years of intelligence gathering, social media monitoring, and interviews.",
+      "weakness": "Much of his knowledge comes from statements of people who have never testified. He also interprets lyrics and slang, which is lay interpretation dressed up as expertise. Some of his 'gang signs' are the label's logo.",
+      "admissibilityIssue": "O.C.G.A. § 24-7-702 (Daubert in criminal cases since 2022); Crawford v. Washington and Smith v. Arizona (2024) when an expert relays testimonial hearsay as the basis for opinions.",
+      "suppressible": true
+    },
+    {
+      "id": "e5",
+      "name": "Jail calls and co-conspirator statements",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "Recorded jail calls and texts in which YGE associates discuss 'Saint' paying for lawyers, the 'business,' and 'handling' problems.",
+      "weakness": "The calls don't mention crimes explicitly. The State interprets slang and 'business' as criminal. Paying bail for friends is not a crime.",
+      "admissibilityIssue": "Co-conspirator statements under § 24-8-801(d)(2)(E) require proof by a preponderance that a conspiracy existed, that the declarant and the defendant were members, and that the statement was made during and in furtherance of it.",
+      "suppressible": true
+    },
+    {
+      "id": "e6",
+      "name": "Plea statement of co-defendant Deshawn Carter",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "Carter, a YGE rapper, entered an Alford plea stating that YGE is 'a record label and also a gang,' and that he had seen members commit crimes.",
+      "weakness": "An Alford plea doesn't admit guilt. Carter never said Whitmore directed anything. He's publicly said he took the deal to get home to his family.",
+      "admissibilityIssue": "Hearsay and Confrontation Clause if Carter doesn't testify. Admissible only if he takes the stand.",
+      "suppressible": true
+    },
+    {
+      "id": "e7",
+      "name": "Defendant's social media posts and interviews",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "Instagram posts with captions such as 'YGE forever, we don't lose,' photos with alleged gang members, and interviews in which he said 'I'm YGE to the grave.'",
+      "weakness": "Brand promotion by a label founder.",
+      "admissibilityIssue": "§§ 24-4-403 and 24-4-404(b).",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Deshawn 'Money D' Carter",
+      "role": "Cooperating co-defendant (Alford plea)",
+      "side": "prosecution",
+      "demeanor": "Visibly uncomfortable, avoids looking at the defendant. He gives minimal answers and sometimes contradicts his plea statement. He's clearly conflicted about testifying against a friend.",
+      "publicTestimony": "YGE is a label, and also a gang. He saw members commit crimes. Whitmore is the head of the label.",
+      "hiddenFacts": [
+        "He never saw Whitmore order or pay for any crime.",
+        "He took the plea because he'd been in jail for over a year and was offered release that day.",
+        "His plea deal requires 'truthful cooperation,' and the State decides what's truthful.",
+        "He told his lawyer that 'the State wrote' the gang statement.",
+        "He still receives royalties from the label and has a financial motive to protect Whitmore, but also to comply with the State."
+      ],
+      "priorStatements": [
+        "Plea hearing: 'YGE is a record label and also a gang.'",
+        "Prior public statement: 'I'm not a snitch; I never said nothing about anybody.'",
+        "Proffer session notes: 'Saint never told anyone to do anything violent in front of me.'"
+      ],
+      "credibilityIssues": [
+        "Plea deal and pressure from the State.",
+        "Inconsistent statements."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Curtis 'Buddha' Lyle",
+      "role": "Immunized witness (former YGE associate)",
+      "side": "prosecution",
+      "demeanor": "Hostile, sarcastic, and refuses to answer many questions. He says 'I don't remember' and 'I plead the Fifth,' even though he's been given immunity. He may be held in contempt.",
+      "publicTestimony": "He was with YGE members the day Hopkins was killed and knows who was in the Infiniti. When he answers, he says Whitmore wasn't there.",
+      "hiddenFacts": [
+        "He met with the presiding judge and prosecutors in chambers, without defense counsel, before testifying, and the meeting was not disclosed to the defense. The judge urged him to testify and discussed his immunity and possible jail time.",
+        "He was threatened with jail for contempt unless he testified.",
+        "He told police in his first interview that the shooters 'did it on their own' because of a personal beef with Hopkins, not for the label.",
+        "He was paid by the State's victim-witness program for relocation."
+      ],
+      "priorStatements": [
+        "First police interview: 'That was a personal thing. Saint wasn't in that.'",
+        "Grand jury: named Whitmore as the person who 'put money on' Hopkins, a statement he now says was coerced."
+      ],
+      "credibilityIssues": [
+        "Immunity and threats of contempt.",
+        "Inconsistent statements.",
+        "Ex parte meeting (a due-process issue)."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Investigator Marcus Haley",
+      "role": "Atlanta Police gang unit investigator (State's gang expert)",
+      "side": "prosecution",
+      "demeanor": "Confident and polished, with years of testimony experience. He explains gang culture in a way that sounds authoritative. He becomes combative when the defense asks about his sources.",
+      "publicTestimony": "YGE is a criminal street gang with a hierarchy, signs, colors, and slang. Whitmore is its leader. Lyrics and social media posts are how gang members claim credit for violence.",
+      "hiddenFacts": [
+        "His conclusions rely heavily on interviews with confidential informants who won't testify.",
+        "He has no training in music or linguistics, yet he interprets lyrics.",
+        "He first identified YGE as a gang only after Whitmore became famous.",
+        "The 'gang sign' he identifies is the label's logo, printed on merchandise sold in stores.",
+        "He has testified as a gang expert in more than 100 cases, always for the State."
+      ],
+      "priorStatements": [
+        "Report: 'YGE is a hybrid organization: a legitimate label and a street gang.'",
+        "Earlier testimony in another case, where he described YGE as a label with 'some members' involved in crime."
+      ],
+      "credibilityIssues": [
+        "Reliance on testimonial hearsay (Crawford, Smith v. Arizona).",
+        "Exceeding the scope of expertise (lyric interpretation).",
+        "Bias."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Dr. Keisha Montgomery",
+      "role": "Defense expert: hip-hop scholar and musicologist",
+      "side": "defense",
+      "demeanor": "Warm, engaging professor who teaches with examples. She's persuasive and good at comparing rap to other genres.",
+      "publicTestimony": "Violent imagery and first-person 'crime narratives' are genre conventions in rap, like in country ballads and crime novels. Rappers adopt personas. Lyrics are not reliable evidence of personal conduct.",
+      "hiddenFacts": [
+        "She has consulted for the defense in several lyric cases.",
+        "She agrees a lyric can be evidence when it contains details only the perpetrator would know.",
+        "She couldn't find the 'Bleed got drained' phrasing in any other artist's work."
+      ],
+      "priorStatements": [
+        "Her book on rap lyrics in criminal trials."
+      ],
+      "credibilityIssues": [
+        "Advocacy against the use of lyrics as evidence."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Tanya Rollins",
+      "role": "Car rental branch manager",
+      "side": "prosecution",
+      "demeanor": "Neutral business witness, precise with documents.",
+      "publicTestimony": "The Infiniti was rented under Whitmore's name and credit card.",
+      "hiddenFacts": [
+        "Whitmore wasn't the person who picked up the car. The branch's records show another driver's license was scanned.",
+        "Whitmore's account had over 30 rentals that year, used by various people.",
+        "The rental was booked online, with no evidence Whitmore made the booking himself."
+      ],
+      "priorStatements": [
+        "Records showing the driver's license of another person scanned at pickup."
+      ],
+      "credibilityIssues": [
+        "None; she's neutral, which makes her helpful facts powerful."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion in Limine to Exclude Rap Lyrics and Music Videos",
+      "basis": "O.C.G.A. §§ 24-4-403 and 24-4-404(b); First Amendment. Lyrics are artistic expression. The State hasn't shown that any excerpt refers to specific charged conduct, and the risk of unfair prejudice (jurors judging violent art as character) substantially outweighs any probative value. At minimum, the court should require a line-by-line foundation.",
+      "targets": [
+        "e1"
+      ],
+      "merit": 40
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Limit Gang Expert Testimony (Daubert / Confrontation)",
+      "basis": "O.C.G.A. § 24-7-702; Crawford v. Washington; Smith v. Arizona, 602 U.S. 779 (2024). The expert can't serve as a conduit for testimonial hearsay from informants, and lyric interpretation is outside his expertise.",
+      "targets": [
+        "e4"
+      ],
+      "merit": 45
+    },
+    {
+      "id": "m3",
+      "name": "Motion for Disclosure of Ex Parte Communications, to Recuse the Presiding Judge, and for Mistrial",
+      "basis": "Due process; Georgia Code of Judicial Conduct Rule 2.9 (ex parte communications); Brady/Giglio. The presiding judge and prosecutors met with an immunized State witness without defense counsel and did not disclose it. The defense is entitled to full disclosure and a transcript, and to have the recusal motion decided by a different judge under Uniform Superior Court Rule 25.",
+      "targets": [],
+      "merit": 60
+    },
+    {
+      "id": "m4",
+      "name": "Motion to Require Pretrial Showing for Co-Conspirator Statements (and to Sever)",
+      "basis": "O.C.G.A. § 24-8-801(d)(2)(E); Bourjaily v. United States. The State must show by a preponderance that a conspiracy existed, that Whitmore was a member, and that each statement was made in furtherance. Severance (O.C.G.A. § 17-8-4) is warranted because the spillover prejudice from other defendants' violent acts will overwhelm individual consideration.",
+      "targets": [
+        "e5"
+      ],
+      "merit": 30
+    }
+  ],
+  "defenseAngles": [
+    "Fight the lyrics line by line. Demand a specific connection for each lyric and show the genre conventions through your expert.",
+    "Separate the label from the gang. Show YGE's legitimate business: contracts, royalties, payroll, and philanthropy.",
+    "The rental car shows the defendant's credit card, not his knowledge. Use the scanned license of the person who picked it up.",
+    "Cross the gang expert on his sources. Every opinion built on informants who won't testify is a Crawford problem.",
+    "Expose the ex parte meeting and the immunized witness's shifting statements.",
+    "Use the cooperator's proffer notes: he never saw Whitmore order anything."
+  ],
+  "startingLean": 30
+}

@@ -1,0 +1,288 @@
+{
+  "id": "people-v-kranz",
+  "title": "People v. Walter Kranz",
+  "tier": 1,
+  "category": "self-defense",
+  "tagline": "Four teenagers surrounded a man on a subway car and asked for five dollars. He shot all four. New York asks whether a reasonable person would have.",
+  "jurisdiction": "New York (New York County)",
+  "courtName": "Supreme Court of the State of New York, New York County, Criminal Term",
+  "basedOn": {
+    "name": "People v. Bernhard Goetz",
+    "year": "1987",
+    "summary": "On December 22, 1984, an electrical engineer riding a Manhattan subway was approached by four Black teenagers, one of whom asked him for five dollars. He drew an unlicensed .38 revolver and shot all four, one of them twice, leaving one paralyzed. He fled to New Hampshire, surrendered nine days later, and gave a videotaped statement in which he said he had intended to 'murder them' and 'make them suffer.' The Court of Appeals ruled that New York's justification defense uses an objective standard: whether a reasonable person in the defendant's situation would have believed deadly force was necessary.",
+    "realOutcome": "In June 1987 a Manhattan jury acquitted him of attempted murder, assault and reckless endangerment, and convicted him only of criminal possession of a weapon in the third degree. He served about eight months. In 1996 a Bronx civil jury awarded the paralyzed teenager $43 million.",
+    "keyLessons": [
+      "New York justification (Penal Law § 35.15) has two halves: the defendant must actually believe deadly force is necessary, and a reasonable person in his situation must too. Win both or lose.",
+      "A defendant's own recorded words are the prosecution's case. 'I wanted to make them suffer' has to be explained as shock and self-loathing, or it is intent.",
+      "What the victims intended matters only insofar as the defendant could perceive it. Evidence of their records and screwdrivers comes in narrowly, if at all.",
+      "The 'second shot' is the case within the case: once the threat has ended, continued force is not justified. Fight the ballistics on where and when each round was fired.",
+      "Juries acquit people they identify with. Every fact about the defendant's prior mugging and the city that year is part of the reasonable-person argument."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/1984_New_York_City_Subway_shooting",
+      "https://law.justia.com/cases/new-york/court-of-appeals/1986/68-n-y-2d-96-0.html",
+      "https://www.nytimes.com/1987/06/17/nyregion/goetz-is-cleared-in-subway-attack-jury-convicts-him-on-gun-possession.html"
+    ]
+  },
+  "defendant": {
+    "name": "Walter Kranz",
+    "age": 38,
+    "background": "A self-employed electronics repairman who lives alone in a Manhattan walk-up. Three years earlier he was mugged in a subway station by three men who beat him and injured his knee; one was arrested and released within hours. He applied for a pistol permit and was denied. He bought a .38 out of state and has carried it since. Neighbors describe him as quiet, precise and angry about crime.",
+    "privateAccount": "He says the four surrounded him as soon as he sat down, that one stood over him and said 'give me five dollars' with the others closing in, and that he saw the outline of something in one boy's pocket. He says he was certain he was about to be beaten again and fired as fast as he could. He admits he said, to one who was sitting, 'you seem to be doing all right, here's another,' and fired again; he says he does not know whether he actually fired that shot, and the ballistics are unclear. He admits everything on the New Hampshire tape. He says the words 'murder' and 'suffer' were 'what I felt in that moment, not what I planned.' He admits the gun was unlicensed and that he will lose that count.",
+    "priors": "None. Denied a pistol permit after a prior mugging.",
+    "testifyRisk": "Severe. He is articulate and will explain his fear well, but he is rigid and self-righteous under pressure. The State will play his own tape back to him line by line: 'I wanted to murder them.' If he argues with the tape, the jury will believe the tape."
+  },
+  "judge": {
+    "name": "Hon. Miriam Roth",
+    "temperament": "fair",
+    "bio": "A former appellate lawyer with a precise command of the justification statute. She will give the jury the objective-reasonableness instruction exactly as the Court of Appeals wrote it, and she will keep both sides from turning the trial into a referendum on the city. Patient with counsel who are prepared; short with those who are not."
+  },
+  "prosecutor": {
+    "name": "Assistant District Attorney Nathan Pell",
+    "style": "Precise and unemotional. His theme is that fear is not a license: four teenagers asked a man for money and he shot them, one twice as he sat helpless, then said he wanted them to suffer. He will avoid defending the four and keep the jury on the defendant's own words and the fifth shot."
+  },
+  "caseSummary": "On the afternoon of December 22, Walter Kranz boarded a downtown express train and sat near four teenagers: Terrence Boyd, Marcus Hale, Jamal Rowe and Dwayne Kirkland, aged 18 and 19. According to Kranz and several passengers, Boyd approached and said, 'Give me five dollars.' Kranz stood, drew a .38 revolver and fired five times, hitting all four. Kirkland was struck in the side; the bullet severed his spinal cord and he is paralyzed. Kranz told the conductor the four had tried to rob him, then left the train through the rear car and disappeared.\n\nNine days later he surrendered to police in New Hampshire and gave a two-hour videotaped statement. On it he described the encounter, said he had decided to shoot when he saw Boyd's 'smile,' said 'my intention was to murder them, to hurt them, to make them suffer as much as possible,' and described telling the seated Kirkland, 'You seem to be doing all right, here's another,' before firing again. He said he would have shot more if he had had more bullets.\n\nTwo of the four had screwdrivers in their coats. All four had prior arrests. Kranz was charged with four counts of attempted murder in the second degree, four counts of assault in the first degree, reckless endangerment in the first degree, and criminal possession of a weapon in the third degree. The Court of Appeals has ruled that the justification defense is judged by whether a reasonable person in the defendant's circumstances would have believed deadly force necessary.",
+  "prosecutionTheory": "Four teenagers asked for money. Nobody displayed a weapon, nobody touched him, nobody said they would hurt him. He drew a gun he had no right to carry, shot all four, walked over to one who was sitting and, by his own account, said 'here's another' and shot him again. A reasonable person does not do that; an angry man who has been waiting for this does. His own words on tape are his confession.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Attempted Murder in the Second Degree (Dwayne Kirkland)",
+      "statute": "N.Y. Penal Law §§ 110.00, 125.25(1)",
+      "elements": [
+        "The defendant intended to cause the death of Dwayne Kirkland.",
+        "The defendant engaged in conduct that tended to effect that death.",
+        "The defendant was not justified: he did not reasonably believe Kirkland was using or about to use deadly physical force, or was committing or attempting a robbery (Penal Law § 35.15)."
+      ],
+      "maxSentence": "8⅓ to 25 years.",
+      "lesserIncluded": ["Assault in the Second Degree", "Reckless Endangerment in the First Degree"]
+    },
+    {
+      "id": "c2",
+      "name": "Assault in the First Degree (four counts, consolidated)",
+      "statute": "N.Y. Penal Law § 120.10(1)",
+      "elements": [
+        "With intent to cause serious physical injury, the defendant caused such injury to Boyd, Hale, Rowe and Kirkland.",
+        "By means of a deadly weapon.",
+        "The defendant was not justified under Penal Law § 35.15."
+      ],
+      "maxSentence": "5 to 15 years on each count.",
+      "lesserIncluded": ["Assault in the Second Degree", "Assault in the Third Degree"]
+    },
+    {
+      "id": "c3",
+      "name": "Reckless Endangerment in the First Degree",
+      "statute": "N.Y. Penal Law § 120.25",
+      "elements": [
+        "Under circumstances evincing a depraved indifference to human life, the defendant recklessly engaged in conduct creating a grave risk of death to other passengers.",
+        "Firing five rounds inside a crowded subway car."
+      ],
+      "maxSentence": "2⅓ to 7 years."
+    },
+    {
+      "id": "c4",
+      "name": "Criminal Possession of a Weapon in the Third Degree",
+      "statute": "N.Y. Penal Law § 265.02",
+      "elements": [
+        "The defendant possessed a loaded firearm outside his home or place of business.",
+        "The firearm was unlicensed.",
+        "Justification is not a defense to possession."
+      ],
+      "maxSentence": "Up to 7 years (mandatory minimum of one year)."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "The New Hampshire videotaped statement",
+      "type": "video",
+      "offeredBy": "prosecution",
+      "description": "Two hours of the defendant, nine days after the shooting, describing the encounter, saying his intention was 'to murder them, to hurt them, to make them suffer,' describing the 'here's another' remark to the seated Kirkland, and saying he would have kept shooting.",
+      "weakness": "He surrendered voluntarily and asked to tell his story; the words are self-lacerating hindsight from a man in shock, not a description of what he thought in the two seconds on the train. The tape also contains his account of the four closing in and the 'smile,' which supports his fear. Play all of it, not the State's excerpts (rule of completeness).",
+      "admissibilityIssue": "Miranda and voluntariness: he was warned and waived; a suppression motion is weak. Rule of completeness for the defense's use of the rest.",
+      "suppressible": true
+    },
+    {
+      "id": "e2",
+      "name": "Ballistics and the seated victim",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "Five rounds fired. Kirkland was struck once in the left side while seated, the bullet traveling front to back and downward; the criminalist says the position is consistent with a shooter standing over him. Two other victims were struck from the side or rear as they turned away.",
+      "weakness": "Five shots in about two seconds; the sequence cannot be established from the wounds. The 'fifth shot' the defendant described may never have been fired: only five cartridges were discharged and four victims were hit, and the criminalist cannot say whether the wound to Kirkland came first or last. Victims turning away during rapid fire is normal.",
+      "admissibilityIssue": "Expert foundation for shot sequencing; the criminalist's 'standing over' opinion is inference, not measurement."
+    },
+    {
+      "id": "e3",
+      "name": "Testimony of the four teenagers",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Boyd says he asked for five dollars 'as a joke' and nobody threatened the defendant. The others say they were sitting or standing nearby and did nothing.",
+      "weakness": "Two had sharpened screwdrivers in their coats; all four had prior arrests, and one later told a hospital nurse they had planned to rob him. What the defendant could perceive is the question, but their intent goes to whether his perception was accurate.",
+      "admissibilityIssue": "The victims' prior acts and intent are admissible only insofar as they were known to the defendant or corroborate his account of what happened; the court may limit the records to impeachment."
+    },
+    {
+      "id": "e4",
+      "name": "The prior mugging and the permit denial",
+      "type": "documentary",
+      "offeredBy": "defense",
+      "description": "Police report of the defendant's beating in a subway station three years earlier, his knee injury, and the city's denial of his pistol-permit application.",
+      "weakness": "The State will use it too: it shows a man who had been waiting to use the gun. Frame it as the experience that shaped a reasonable person's perception of four young men closing in.",
+      "admissibilityIssue": "Relevant to the defendant's state of mind and to the 'circumstances' the reasonable person is placed in; the court will give a limiting instruction."
+    },
+    {
+      "id": "e5",
+      "name": "Passenger eyewitness accounts",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Several passengers describe the four moving toward the defendant, one describes Boyd leaning over him, and two say the four were 'loud and rowdy' before he sat down. None saw a weapon. Some describe the defendant firing while the four fled.",
+      "weakness": "The eyewitnesses cut both ways: the four were surrounding him, which is the defense case, and the four were fleeing when he kept firing, which is the State's.",
+      "admissibilityIssue": "None."
+    },
+    {
+      "id": "e6",
+      "name": "Medical evidence: Kirkland's paralysis",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "The surgeon describes the spinal-cord injury and Kirkland's permanent paralysis from the waist down.",
+      "weakness": "Sympathy evidence. Do not fight the injury; keep the surgeon short and move on.",
+      "admissibilityIssue": "Relevant to serious physical injury; cumulative detail may be limited under the court's discretion."
+    },
+    {
+      "id": "e7",
+      "name": "The screwdrivers and the arcade",
+      "type": "physical",
+      "offeredBy": "defense",
+      "description": "Two sharpened screwdrivers recovered from the coats of two of the four, and the admission that they were heading to break into arcade machines.",
+      "weakness": "The defendant did not see the screwdrivers. They matter only to corroborate his account that the four were closing in with a purpose, and to impeach 'as a joke.'",
+      "admissibilityIssue": "Admissible only for corroboration or impeachment, not to show the defendant was justified by facts he did not know."
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Terrence Boyd",
+      "role": "The teenager who asked for five dollars",
+      "side": "prosecution",
+      "demeanor": "Sullen and short. Gets defensive about his record. Denies any intent to rob until confronted with the nurse.",
+      "publicTestimony": "He asked the man for five dollars as a joke. Nobody threatened him. The man stood up and started shooting.",
+      "hiddenFacts": [
+        "He told a hospital nurse the night of the shooting that they 'were going to take him off,' meaning rob him.",
+        "He had a sharpened screwdriver in his coat and has admitted the four were going to break into arcade machines that afternoon.",
+        "He was standing over the defendant, close enough to touch him, with the other three moving up behind him.",
+        "He has three prior arrests for robbery-related offenses, one pending at the time."
+      ],
+      "priorStatements": ["Hospital nurse's note: 'Pt. states they were going to rob the man.'", "Police interview two days later: 'We were just playing with him.'"],
+      "credibilityIssues": ["Prior robbery arrests.", "Statement to the nurse contradicts 'as a joke.'", "Sharpened screwdriver in his coat."]
+    },
+    {
+      "id": "w2",
+      "name": "Detective Frank Cusack",
+      "role": "NYPD detective who took the New Hampshire statement",
+      "side": "prosecution",
+      "demeanor": "Careful and low-key. Lets the tape do the talking.",
+      "publicTestimony": "The defendant surrendered voluntarily, was warned, waived, and spoke for two hours. He was calm and articulate. He said he intended to murder them and make them suffer, and described the 'here's another' remark.",
+      "hiddenFacts": [
+        "The defendant also said, on the tape, that he 'saw the look in his eyes' and 'knew they were going to do it again,' referring to the prior mugging; the State's excerpt omits it.",
+        "The defendant said on tape that he was not sure he fired the 'here's another' shot and that he 'may have just said it.'",
+        "The detective's own report describes the defendant as 'distraught' and 'self-punishing' during the interview, not calm.",
+        "No passenger described the defendant walking over to Kirkland; the account of a separate, deliberate shot comes only from the defendant's own tape."
+      ],
+      "priorStatements": ["Detective's report: 'Subject appeared distraught and repeatedly described himself as a monster.'"],
+      "credibilityIssues": ["The State's excerpts omit the portions of the tape that support fear."]
+    },
+    {
+      "id": "w3",
+      "name": "Carla Ruiz",
+      "role": "Passenger eyewitness",
+      "side": "prosecution",
+      "demeanor": "Honest and a little frightened. Answers what is asked.",
+      "publicTestimony": "The four were loud before the man got on. When he sat, two of them went over to him and one leaned in. She heard 'five dollars.' Then the shots. The boys ran, and he was still shooting.",
+      "hiddenFacts": [
+        "She moved to the far end of the car before the man boarded because the four had been bothering another passenger.",
+        "She told police the four 'surrounded' him and that she thought 'they were going to jump him.'",
+        "She cannot say the man fired after the boys ran; she heard shots and saw running and cannot order them."
+      ],
+      "priorStatements": ["Police statement the same day: 'They surrounded him. I thought they were going to jump him.'"],
+      "credibilityIssues": ["Her sequence of shots and flight is reconstructed, not observed."]
+    },
+    {
+      "id": "w4",
+      "name": "Dr. Priya Nair",
+      "role": "Trauma surgeon who treated Dwayne Kirkland",
+      "side": "prosecution",
+      "demeanor": "Clinical and brief.",
+      "publicTestimony": "The bullet entered Kirkland's left side and severed the spinal cord. He is permanently paralyzed below the waist.",
+      "hiddenFacts": [
+        "The wound track is consistent with a seated victim turning to his right, as well as with a shooter standing over him; she cannot distinguish the two.",
+        "Kirkland told her during treatment that 'we were just going to take his money.'"
+      ],
+      "priorStatements": ["Operative report."],
+      "credibilityIssues": ["None as to the injury; the wound-track inference is shared with the criminalist and is uncertain."]
+    },
+    {
+      "id": "w5",
+      "name": "Ed Sorenson",
+      "role": "Defense witness: friend who saw the defendant after the prior mugging",
+      "side": "defense",
+      "demeanor": "Blunt and loyal. Talks about crime in the city more than the question asks.",
+      "publicTestimony": "He saw Walter the night after the first mugging: face swollen, knee torn, terrified. Walter reported it, the man arrested was out in hours, and Walter was denied a permit. After that Walter never took the subway without checking every car.",
+      "hiddenFacts": [
+        "Walter told him more than once that if it happened again he 'wouldn't let it,' and once showed him the gun.",
+        "He and Walter had discussed how many rounds a .38 holds and whether hollow-points were legal.",
+        "He is the person who told Walter where to buy the gun out of state."
+      ],
+      "priorStatements": ["None."],
+      "credibilityIssues": ["Friend of the defendant.", "Helped him obtain the illegal gun."]
+    },
+    {
+      "id": "w6",
+      "name": "Dr. Alan Whitcomb",
+      "role": "Defense expert: forensic psychologist, perception under threat",
+      "side": "defense",
+      "demeanor": "Academic and even. Concedes limits freely.",
+      "publicTestimony": "Under sudden threat, time compresses; five shots in two seconds is a single decision, not five. A prior violent victimization sharpens threat perception, and a person who has been beaten in the same setting will read encirclement and a demand for money as the start of an attack. Statements made days later about 'wanting to murder' reflect self-judgment, not the state of mind at the time.",
+      "hiddenFacts": [
+        "He agrees that once an attacker is fleeing or seated and no longer a threat, continued fire is not a reflex of fear.",
+        "He did not interview the defendant before writing his report; he relied on the tape.",
+        "He has testified for the defense in nine self-defense cases."
+      ],
+      "priorStatements": ["His report, prepared without an interview."],
+      "credibilityIssues": ["Defense-side expert.", "Did not interview the defendant."]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Suppress the New Hampshire Statement",
+      "basis": "Miranda; voluntariness. The defendant was questioned for two hours after nine days without sleep or counsel, and his waiver was not knowing. In the alternative, exclude the 'murder' and 'suffer' passages under the court's discretion as unfairly prejudicial statements of hindsight.",
+      "targets": ["e1"],
+      "merit": 15
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Admit the Victims' Screwdrivers, Records and Statements of Intent to Rob",
+      "basis": "Although the defendant did not know of the screwdrivers or records, they corroborate his account that the four were closing in with a purpose and impeach the claim that the request was 'a joke.' The nurse's note and the surgeon's account are admissions by the complainants.",
+      "merit": 45
+    },
+    {
+      "id": "m3",
+      "name": "Motion for a Justification Instruction on Robbery (Penal Law § 35.15(2)(b))",
+      "basis": "Deadly force is justified to prevent what the defendant reasonably believes is a robbery in progress, not only to meet deadly force. Encirclement plus a demand for money is evidence of an attempted robbery. The jury must be instructed on both branches of § 35.15.",
+      "merit": 60
+    },
+    {
+      "id": "m4",
+      "name": "Motion for Change of Venue (Pretrial Publicity)",
+      "basis": "The shooting has been front-page news for two years; every potential juror in the county has an opinion. A fair jury cannot be seated in Manhattan.",
+      "merit": 10
+    }
+  ],
+  "defenseAngles": [
+    "The case is Penal Law § 35.15(2)(b): a reasonable belief that a robbery is in progress. Four young men closing in and 'give me five dollars' is a robbery to anyone who has been mugged before. Get that instruction.",
+    "Play the whole tape. The State's excerpt is 'murder them'; the rest is 'I saw the look in his eyes' and 'I may have just said it.'",
+    "The 'fifth shot' exists only on the tape. Five rounds, four victims, two seconds. Make the criminalist admit he cannot order the wounds.",
+    "Boyd told a nurse they were going to rob him. Impeach 'as a joke' with the nurse's note, then sit down.",
+    "Your client's prior beating is the jury's window into his fear. Ed Sorenson is dangerous on cross (the gun, the hollow-points) but the beating itself is your best fact.",
+    "Concede the weapon count in opening. It buys credibility on everything else."
+  ],
+  "startingLean": 50
+}
