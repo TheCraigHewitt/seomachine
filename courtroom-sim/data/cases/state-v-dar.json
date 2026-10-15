@@ -1,0 +1,341 @@
+{
+  "id": "state-v-dar",
+  "title": "State of Maryland v. Rafiq Dar",
+  "tier": 2,
+  "category": "murder",
+  "tagline": "A high-school senior accused of killing his ex-girlfriend. The case rests on cell tower pings and a friend who helped bury her body and whose story keeps changing.",
+  "jurisdiction": "Maryland (Baltimore City)",
+  "courtName": "Circuit Court for Baltimore City, Maryland",
+  "basedOn": {
+    "name": "State of Maryland v. Adnan Syed",
+    "year": "2000",
+    "summary": "In January 1999, 18-year-old Hae Min Lee disappeared after school in Baltimore County; her body was found weeks later in Leakin Park. Her ex-boyfriend Adnan Syed was convicted of first-degree murder based mainly on the testimony of Jay Wilds, who said he helped bury the body, and on cell-tower records the State said corroborated Wilds's account. A potential alibi witness, Asia McClain, who said she saw Syed at the public library during the supposed murder window, was never contacted by his trial lawyer. The case became famous through the podcast Serial.",
+    "realOutcome": "Convicted in 2000 and sentenced to life plus 30 years. The conviction was vacated in 2022 when the State disclosed Brady material about two alternative suspects, but it was reinstated in 2023 and 2024 on appeal because the victim's family had not been given adequate notice of the hearing. In March 2025 a judge reduced his sentence to time served under Maryland's Juvenile Restoration Act. He remains free but the conviction stands.",
+    "keyLessons": [
+      "Cell-site location for incoming calls was unreliable, according to the carrier's own fax cover-sheet disclaimer. The State's expert later said he would have changed his testimony had he seen it.",
+      "An accomplice witness whose story changed many times can be impeached through every prior statement, and through undisclosed benefits such as a free lawyer arranged by the State (Giglio).",
+      "Failure to investigate an alibi witness is a classic ineffective-assistance claim. Use your investigator.",
+      "Brady: notes of a third party threatening the victim must be disclosed.",
+      "The State's timeline (a 2:36 p.m. murder) depended on a call that conflicted with other witnesses' testimony."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Murder_of_Hae_Min_Lee",
+      "https://www.npr.org/2024/08/30/nx-s1-5096124/adnan-syed-maryland-supreme-court-redo-hearing"
+    ]
+  },
+  "defendant": {
+    "name": "Rafiq Dar",
+    "age": 17,
+    "background": "A popular honors student, varsity runner, and volunteer EMT at Westfield High in Baltimore. His parents immigrated from Pakistan and are devout; they didn't know he'd been dating Grace Yoon, a Korean American classmate. Grace broke up with him in December and began dating a coworker.",
+    "privateAccount": "He says he doesn't remember much about January 13 because it was an ordinary school day. He lent his car and his new cell phone to Dante Mercer that morning so Dante could buy a birthday present for his girlfriend. He thinks he was in the public library across from school after last period and then went to track practice. He admits he was sad about the breakup but says they were still friends and he was dating someone new. He doesn't know why Dante would say he did it, but he knows Dante sold weed and was worried about the police. He says his memory of the day is foggy and he can't account for every hour.",
+    "priors": "None.",
+    "testifyRisk": "Moderate. He is likable and articulate, but his vague memory of the day of the murder will sound evasive. The State will cross him on the breakup, on a note Grace wrote him, and on why he asked her for a ride that morning (which he denies). If he doesn't testify, the jury hears no explanation for the 'come get me' call."
+  },
+  "judge": {
+    "name": "Hon. Marguerite L. Haines",
+    "temperament": "fair",
+    "bio": "A former public defender who became a circuit judge, known for careful rulings on scientific evidence. She is strict about Brady and Giglio disclosure and will hold a hearing if a discovery violation is raised."
+  },
+  "prosecutor": {
+    "name": "Assistant State's Attorney Kevin Urquhart",
+    "style": "Polished and well prepared. He presents the case as a jilted boyfriend's obsession and uses a large map with cell-tower overlays to 'prove' the accomplice's story. He minimizes the accomplice's inconsistencies as 'the natural behavior of a scared kid.'"
+  },
+  "caseSummary": "On January 13, Grace Yoon, 18, a senior at Westfield High, didn't pick up her young cousin after school as planned. Four weeks later a man found her body partially buried in Hollins Run Park. She had been strangled.\n\nAn anonymous caller told police to look at her ex-boyfriend, Rafiq Dar. Phone records showed that Dar's cell phone, which he had lent to his friend Dante Mercer, made several calls that afternoon and evening. Mercer, a 19-year-old who worked at a video store and sold marijuana, told police Dar called him around 2:36 p.m. and said 'come get me' from a Best Buy parking lot, where Dar showed him Grace's body in the trunk of her car. Mercer said that evening they buried her in the park, and that the cell records showing calls pinging near the park at 7:09 and 7:16 p.m. confirm it.\n\nDar was arrested and charged with first-degree murder, kidnapping, robbery, and false imprisonment. Mercer pleaded guilty to accessory after the fact and was promised a recommendation of no jail time in exchange for his testimony.",
+  "prosecutionTheory": "Dar was humiliated by the breakup and planned the killing. He got a ride from Grace after school, strangled her in the Best Buy lot, and called Mercer to pick him up. That evening they buried the body in Hollins Run Park. The cell records corroborate every step of Mercer's story, including the burial.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Murder in the First Degree",
+      "statute": "Md. Code, Crim. Law § 2-201(a)(1)",
+      "elements": [
+        "The defendant caused the death of Grace Yoon.",
+        "The killing was willful, deliberate, and premeditated."
+      ],
+      "maxSentence": "Life imprisonment (State did not seek life without parole).",
+      "lesserIncluded": [
+        "Murder in the Second Degree (§ 2-204; up to 40 years)",
+        "Voluntary manslaughter (§ 2-207; up to 10 years)"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Kidnapping",
+      "statute": "Md. Code, Crim. Law § 3-502",
+      "elements": [
+        "The defendant carried or caused Grace Yoon to be carried from one place to another.",
+        "The defendant did so by force or fraud.",
+        "The defendant did so with intent to have her carried or concealed within or outside the state."
+      ],
+      "maxSentence": "Up to 30 years."
+    },
+    {
+      "id": "c3",
+      "name": "Robbery",
+      "statute": "Md. Code, Crim. Law § 3-402",
+      "elements": [
+        "The defendant took the victim's property (her car) from her presence or control.",
+        "By force or threat of force.",
+        "With intent to permanently deprive her of the property."
+      ],
+      "maxSentence": "Up to 15 years."
+    },
+    {
+      "id": "c4",
+      "name": "False Imprisonment",
+      "statute": "Maryland common law",
+      "elements": [
+        "The defendant confined or detained the victim.",
+        "Against her will.",
+        "Without legal justification."
+      ],
+      "maxSentence": "Common-law misdemeanor; sentence at the court's discretion, not to exceed what is reasonable."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Cell phone records and tower locations",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "Call detail records from the defendant's phone for January 13, with cell sites. The State says incoming calls at 7:09 and 7:16 p.m. used an antenna covering Hollins Run Park.",
+      "weakness": "The carrier's fax cover sheet states: 'Outgoing calls only are reliable for location status. Any incoming calls will NOT be considered reliable information for location.' The key park calls were incoming. The cover sheet was in the State's file but wasn't shown to the expert. Cell-site data shows only a general coverage area, often miles wide, not a precise location.",
+      "admissibilityIssue": "Md. Rule 5-702 (Daubert standard since Rochkind v. Stevenson, 2020). Business-records foundation for the carrier data. Brady/discovery obligation regarding the disclaimer.",
+      "suppressible": true
+    },
+    {
+      "id": "e2",
+      "name": "Testimony of Dante Mercer (accomplice)",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "Mercer says Dar called him to pick him up, showed him the body, and later made him help bury her.",
+      "weakness": "He gave at least four versions of events, changing where he saw the body, the time and location of the trunk 'pop,' and the sequence of the evening. He got a plea deal with a no-jail recommendation and a free private lawyer arranged by the prosecutor. He had his own motive to deflect: he sold drugs and had a record.",
+      "admissibilityIssue": "Giglio disclosure of all benefits, including the free lawyer. Jury instruction on accomplice testimony and witnesses with plea agreements.",
+      "suppressible": false
+    },
+    {
+      "id": "e3",
+      "name": "The 2:36 p.m. 'come get me' call (Best Buy)",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "The State says a 2:36 incoming call to the phone was Dar calling from the Best Buy pay phone. That fixes the murder time between 2:15 and 2:36.",
+      "weakness": "The Best Buy pay phone may not have existed. Mercer said the call came at 3:40 in two of his statements. The 2:36 call lasted only a few seconds. The State's own timeline has Dar leaving school at 2:15 and Grace being killed and put in her trunk within 21 minutes.",
+      "admissibilityIssue": "None for the record itself. The theory is attacked on cross.",
+      "suppressible": false
+    },
+    {
+      "id": "e4",
+      "name": "Grace's diary and the breakup note",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "Grace's diary describes the breakup and her new relationship. A note from Grace to Dar says their families' disapproval was too much.",
+      "weakness": "It shows a normal teenage breakup. Dar had a new girlfriend. Nothing in the diary mentions fear of Dar.",
+      "admissibilityIssue": "Hearsay (state-of-mind exception, Md. Rule 5-803(b)(3)); the victim's state of mind is relevant only in limited ways. § 403 balancing.",
+      "suppressible": true
+    },
+    {
+      "id": "e5",
+      "name": "Library alibi letters from Tamsin Blake",
+      "type": "documentary",
+      "offeredBy": "defense",
+      "description": "Two letters sent to Dar in jail by classmate Tamsin Blake, saying she saw and talked to him at the public library from about 2:20 to 2:40 p.m. on January 13.",
+      "weakness": "The letters were written weeks later. The State will say she was a friend trying to help. The library's security video was taped over because no one requested it.",
+      "admissibilityIssue": "The letters are hearsay; Blake must testify. Her letters are prior consistent statements if her testimony is attacked as recent fabrication (Md. Rule 5-802.1(b)).",
+      "suppressible": false
+    },
+    {
+      "id": "e6",
+      "name": "Detective notes on alternative suspects",
+      "type": "documentary",
+      "offeredBy": "defense",
+      "description": "Notes in the State's file recording a tip that another man said he would 'make her disappear' and 'kill her,' and noting that a second suspect had a history of violence against women.",
+      "weakness": "They are raw tips. The State will say they were investigated and ruled out, though there's no record of that.",
+      "admissibilityIssue": "Brady v. Maryland: this is exculpatory material that must be disclosed. Admissibility at trial depends on third-party-culpability standards (the evidence must tend to show the other person's guilt, not just raise suspicion).",
+      "suppressible": false
+    },
+    {
+      "id": "e7",
+      "name": "Soil, fibers, and DNA from the burial site",
+      "type": "forensic",
+      "offeredBy": "defense",
+      "description": "The crime lab found fibers and hairs on the victim's body and clothing and collected a rope and a liquor bottle near the grave. None was tested against Dar or matched him. Later touch-DNA testing of the victim's shoes excluded Dar.",
+      "weakness": "Absence of evidence is only circumstantial.",
+      "admissibilityIssue": "None.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Dante Mercer",
+      "role": "Accomplice witness (accessory after the fact)",
+      "side": "prosecution",
+      "demeanor": "Guarded, street-smart, uncomfortable in a suit. He gives short answers and gets irritated when pinned down on details. He doesn't lie smoothly, but he has told this story many times.",
+      "publicTestimony": "Dar said he was going to kill Grace. Dar called him around 2:36 to come get him at Best Buy, showed him the body in her trunk, and later made him help bury it in the park.",
+      "hiddenFacts": [
+        "He told police in his first statement that he saw the body in front of Grace's grandmother's house, then later said Best Buy, then later said a different street.",
+        "The prosecutor personally referred him to a private lawyer who represented him for free, and that lawyer negotiated his plea.",
+        "He admitted in an interview that he was high on marijuana most of that day.",
+        "His grandmother's house was being searched for drugs at the time, so he had a reason to cooperate with police.",
+        "He first told police he didn't dig the grave, then admitted he did.",
+        "He told a reporter later that he lied about the location of the trunk pop to protect a friend who was growing weed."
+      ],
+      "priorStatements": [
+        "First police statement: trunk pop on Edmondson Avenue around 3:45 p.m.",
+        "Second police statement: trunk pop at Best Buy around 2:36 p.m.",
+        "Plea hearing: 'I was just helping him bury her.'",
+        "Interview with a journalist: he changed details to protect his friends."
+      ],
+      "credibilityIssues": [
+        "Plea deal and free lawyer arranged by the State (Giglio).",
+        "At least four inconsistent statements.",
+        "Drug use on the day in question.",
+        "Motive to deflect blame."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Brooke Holcomb",
+      "role": "Mercer's friend (corroborating witness)",
+      "side": "prosecution",
+      "demeanor": "Nervous, cooperative with police because her lawyer told her to be. Says 'I don't remember' often.",
+      "publicTestimony": "Mercer was at her house on the afternoon of January 13. Dar called and asked for Mercer. Later that night Mercer told her Dar had killed Grace and she helped Mercer throw away shovels.",
+      "hiddenFacts": [
+        "Mercer was at her house at a time when the State's timeline says he was with Dar.",
+        "Her first police interview (with her lawyer) said Mercer told her the killing happened at a different time and place.",
+        "She is testifying without charges in exchange for her cooperation.",
+        "She never saw Dar that day."
+      ],
+      "priorStatements": [
+        "First police interview: Mercer told her the body was 'in the trunk on the street near the grandmother's.'"
+      ],
+      "credibilityIssues": [
+        "Uncharged in exchange for testimony.",
+        "Everything she knows came from Mercer."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Leonard Pryce",
+      "role": "Radio-frequency engineer (State's cell expert)",
+      "side": "prosecution",
+      "demeanor": "Precise, technical, and honest. He answers exactly what's asked. When shown new information, he's willing to reconsider.",
+      "publicTestimony": "He drove test calls in the area and found that certain towers serve Hollins Run Park, consistent with the 7:09 and 7:16 calls.",
+      "hiddenFacts": [
+        "He was never shown the fax cover sheet disclaimer about incoming calls.",
+        "If he'd seen it, he would have wanted to know why before testifying about incoming calls.",
+        "His drive test only proved a tower could serve a spot, not that the phone was there. The same tower serves several neighborhoods, including the area where Mercer's friend lived.",
+        "He wasn't asked to test the 2:36 call's location."
+      ],
+      "priorStatements": [
+        "Later sworn affidavit: 'I would not have affirmed the interpretation of this exhibit without understanding the disclaimer.'"
+      ],
+      "credibilityIssues": [
+        "Testimony was limited by the State's selection of the data he saw."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Detective Glenn Osterhout",
+      "role": "Lead homicide detective",
+      "side": "prosecution",
+      "demeanor": "An experienced homicide detective who is patient and guarded and has a reputation for getting witnesses to 'remember.' He resents questions about his interview methods.",
+      "publicTestimony": "The investigation followed the evidence: the anonymous tip, the phone records, and Mercer's statements, which the cell records corroborated.",
+      "hiddenFacts": [
+        "Mercer's first recorded interview came after a pre-interview of several hours that wasn't recorded.",
+        "Detectives drove Mercer around to show him places to talk about in his statement.",
+        "He received the alternative-suspect tip and didn't follow up in writing.",
+        "He didn't ask for security video from the library or Best Buy."
+      ],
+      "priorStatements": [
+        "Report: 'Pre-interview conducted' before the tape began, with no notes.",
+        "Notes about the anonymous tip, which the defense received only in part."
+      ],
+      "credibilityIssues": [
+        "Unrecorded interviews that shaped Mercer's statements.",
+        "Failure to investigate alternative suspects."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Tamsin Blake",
+      "role": "Alibi witness (library)",
+      "side": "defense",
+      "demeanor": "A cheerful, confident college freshman who is sure of what she saw. She is irritated that no one from the defense contacted her before.",
+      "publicTestimony": "She saw Rafiq at the public library around 2:20 to 2:40 p.m. on January 13. She remembers the day because it was the first snowstorm and school closed early the next day.",
+      "hiddenFacts": [
+        "Her boyfriend was with her at the library and can corroborate, though he is harder to find.",
+        "She wrote the letters because she thought Rafiq was wrongly accused, not because she's in love with him.",
+        "A prosecutor discouraged her from testifying by telling her that everyone knew Rafiq was guilty."
+      ],
+      "priorStatements": [
+        "Two letters to Rafiq in jail, written weeks after the murder, describing the library conversation.",
+        "Later affidavit reaffirming the account."
+      ],
+      "credibilityIssues": [
+        "Delay between the event and her statement.",
+        "Friendship with the defendant."
+      ]
+    },
+    {
+      "id": "w6",
+      "name": "Coach Darnell Freeman",
+      "role": "Track coach",
+      "side": "defense",
+      "demeanor": "A calm, respected teacher. He has no stake in the outcome and speaks plainly.",
+      "publicTestimony": "Rafiq was a dedicated member of the track team and attended practice regularly. Practice started around 3:30 p.m.",
+      "hiddenFacts": [
+        "He doesn't specifically remember whether Rafiq was at practice on January 13, but Rafiq rarely missed and was fasting for Ramadan that week and still ran.",
+        "He noticed nothing unusual about Rafiq in the days after the disappearance."
+      ],
+      "priorStatements": [
+        "Police interview: Rafiq 'was usually at practice.'"
+      ],
+      "credibilityIssues": [
+        "No specific memory of that date."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Exclude Incoming-Call Location Testimony",
+      "basis": "Md. Rule 5-702 (Daubert via Rochkind v. Stevenson, 471 Md. 1 (2020)). The carrier's own disclaimer says incoming-call location data is unreliable. Expert testimony that the phone was at the park based on incoming calls lacks a reliable basis and fit.",
+      "targets": [
+        "e1"
+      ],
+      "merit": 60
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Compel Brady/Giglio Disclosure (Accomplice Benefits and Alternative-Suspect Notes)",
+      "basis": "Brady v. Maryland and Giglio v. United States. The State must disclose all benefits to Mercer (including the free private lawyer the prosecutor arranged) and all notes about third parties who threatened the victim. Non-disclosure would warrant sanctions, including exclusion of Mercer's testimony or dismissal.",
+      "targets": [],
+      "merit": 75
+    },
+    {
+      "id": "m3",
+      "name": "Motion in Limine to Exclude Religious and Cultural 'Motive' Evidence",
+      "basis": "Md. Rules 5-403, 5-404. Evidence about the defendant's religion, his family's culture, and 'honor' is unfairly prejudicial and invites bias. It is not relevant to whether he killed Grace.",
+      "targets": [],
+      "merit": 65
+    },
+    {
+      "id": "m4",
+      "name": "Motion to Exclude Victim's Diary Entries",
+      "basis": "Hearsay (Md. Rule 5-802). The state-of-mind exception (5-803(b)(3)) covers only the victim's own state of mind, not the defendant's conduct. Entries about the breakup don't show fear of the defendant, and admitting them risks unfair prejudice (5-403).",
+      "targets": [
+        "e4"
+      ],
+      "merit": 40
+    }
+  ],
+  "defenseAngles": [
+    "Exclude or cripple the incoming-call evidence with the carrier's own disclaimer. Without it, nothing independently places Dar at the burial.",
+    "Put Mercer's four versions side by side. Ask him which one was the lie.",
+    "Expose the free lawyer and the no-jail recommendation (Giglio). The jury should know what Mercer got.",
+    "Call Tamsin Blake. A neutral witness puts Dar in the library during the State's murder window.",
+    "Attack the 2:36 timeline: 21 minutes to leave school, kill Grace in a public parking lot, and make the call, from a pay phone that may not have existed.",
+    "Use the Brady material on alternative suspects to show the police locked onto Dar early."
+  ],
+  "startingLean": 40
+}

@@ -1,0 +1,348 @@
+{
+  "id": "people-v-whitfield",
+  "title": "People of the State of California v. Dorian Whitfield",
+  "tier": 3,
+  "category": "murder",
+  "tagline": "A beloved football legend, his murdered ex-wife and her friend, and a mountain of blood evidence. Your case lives or dies on how that evidence was collected, handled, and possibly planted.",
+  "jurisdiction": "California (Los Angeles County)",
+  "courtName": "Superior Court of California, County of Los Angeles - Criminal Courts Building, Department 103",
+  "basedOn": {
+    "name": "People v. O.J. Simpson",
+    "year": "1995",
+    "summary": "In June 1994, Nicole Brown Simpson and Ronald Goldman were stabbed to death outside her Brentwood condominium. Her ex-husband, football star O.J. Simpson, was charged with both murders. The prosecution presented extensive DNA evidence (blood drops at the scene, in his Bronco, and at his home, a bloody glove, and socks), along with his history of domestic violence. The defense attacked the Los Angeles Police Department's evidence collection as sloppy and contaminated, suggested that blood evidence had been planted, and exposed Detective Mark Fuhrman's racist statements and perjury.",
+    "realOutcome": "Acquitted of both murders on October 3, 1995, after less than four hours of deliberation following an eight-month trial. In a 1997 civil suit, a jury found him liable for wrongful death and battery and awarded $33.5 million in damages.",
+    "keyLessons": [
+      "Strong DNA evidence can be neutralized by attacking the collection, preservation, and chain of custody: contamination, missing blood, preservatives (EDTA), and late-discovered evidence.",
+      "A key detective's credibility (lies under oath about racial slurs) can taint every piece of evidence he touched.",
+      "Demonstrations can backfire on the side that stages them (the glove that didn't fit).",
+      "Warrantless entry justified by 'exigent circumstances' should be challenged at a suppression hearing.",
+      "Prior domestic-violence evidence is admissible in California on motive and identity (and, since 1996, propensity under Evid. Code § 1109). Prepare the jury for it."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Murder_trial_of_O._J._Simpson",
+      "https://en.wikipedia.org/wiki/DNA_evidence_in_the_O._J._Simpson_murder_case"
+    ]
+  },
+  "defendant": {
+    "name": "Dorian 'Deuce' Whitfield",
+    "age": 47,
+    "background": "A Hall of Fame running back turned sportscaster, rental-car pitchman, and actor, and one of the most beloved athletes of his generation. He was married to Nadia Whitfield for seven years. They divorced two years before the killings, but he remained obsessed with her, and police had come to their house for domestic disturbances several times. He has two young children with Nadia.",
+    "privateAccount": "He says he was home at his Ashford Avenue estate, chipping golf balls in the yard and then getting ready for a red-eye to Chicago. He admits he was hurt that Nadia was dating other men, but says they'd been reconciling. He cut his finger on a glass in his Chicago hotel room after hearing the news. He says the bloody glove the police found isn't his; he had a similar pair but hasn't seen them in months. He admits he took a gun and a passport in his SUV during the slow-speed pursuit because he was suicidal, not fleeing. He doesn't want you to call the domestic-violence history 'nothing.'",
+    "priors": "A 1989 no-contest plea to misdemeanor spousal battery (probation). The 911 call from October 1993 in which Nadia says he's 'going to beat the [expletive] out of me.' Not admissible as priors to impeach unless he testifies, but likely admissible as motive and identity evidence under Evid. Code § 1101(b).",
+    "testifyRisk": "Very high. He is charming, but he'll be cross-examined on the domestic-violence history, the pursuit with the passport and disguise, his cut finger, and his inconsistent explanations to detectives. His statement to detectives on June 13 was recorded and is already a problem."
+  },
+  "judge": {
+    "name": "Hon. Gerald T. Moravec",
+    "temperament": "fair",
+    "bio": "A careful judge with a scholarly approach. He is liberal about letting both sides develop their theories and admits a lot of evidence, leaving weight to the jury. He is conscious of the media and wants to avoid looking biased. He handles Kelly-Frye challenges meticulously."
+  },
+  "prosecutor": {
+    "name": "Deputy District Attorneys Laura Brandon and Malcolm Hale",
+    "style": "Brandon is a meticulous, intense lead prosecutor who calls the DNA evidence a 'mountain.' Hale is a charismatic trial lawyer who handles the domestic-violence narrative and the glove. They sometimes over-try the case, with long, technical science testimony that can lose the jury."
+  },
+  "caseSummary": "Shortly after midnight on June 13, Nadia Whitfield, 35, and her friend Ryan Castellano, 25, a waiter who had come to return her mother's glasses, were found stabbed to death outside her condominium on Corwin Drive in Westgate, Los Angeles. A trail of bloody size-12 shoe prints led away from the bodies, with blood drops to the left of the prints, suggesting the killer was bleeding from the left hand. A left-hand leather glove was found at the scene.\n\nFour detectives went to Dorian Whitfield's Ashford Avenue estate about two miles away at 5 a.m. to notify him. Seeing a speck of blood on his white SUV, Detective Gary Lindell climbed over the wall without a warrant and let the others in. Lindell later found a right-hand glove soaked in blood behind the guest house. Blood drops led up the driveway to the front door. Whitfield had flown to Chicago on a red-eye; he returned with a cut on his left middle finger. Days later, when he was due to surrender, he fled in his SUV with a friend, a gun, $8,000 in cash, his passport, and a fake beard. After a slow-speed chase he was arrested.\n\nDNA testing linked blood at the scene to Whitfield and blood in his SUV and on socks in his bedroom to the victims.",
+  "prosecutionTheory": "Whitfield was a jealous, controlling ex-husband who had beaten Nadia before. When she rejected him for good, he went to her condo and killed her. When Ryan Castellano walked up, he killed him too. He was cut in the struggle, bled at the scene, dropped a glove, drove home in his SUV, and dropped the other glove behind his guest house. The DNA is overwhelming, and his flight shows consciousness of guilt.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Murder in the First Degree (Nadia Whitfield)",
+      "statute": "Cal. Penal Code §§ 187(a), 189",
+      "elements": [
+        "The defendant committed an act that caused the death of Nadia Whitfield.",
+        "The defendant acted with malice aforethought (express or implied).",
+        "For first degree: the killing was willful, deliberate, and premeditated."
+      ],
+      "maxSentence": "Life without the possibility of parole (multiple-murder special circumstance, § 190.2(a)(3); death not sought).",
+      "lesserIncluded": [
+        "Second-degree murder (15 years to life)",
+        "Voluntary manslaughter (§ 192(a); 3, 6, or 11 years)"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Murder in the First Degree (Ryan Castellano)",
+      "statute": "Cal. Penal Code §§ 187(a), 189",
+      "elements": [
+        "The defendant committed an act that caused the death of Ryan Castellano.",
+        "The defendant acted with malice aforethought.",
+        "For first degree: the killing was willful, deliberate, and premeditated."
+      ],
+      "maxSentence": "Life without the possibility of parole (multiple-murder special circumstance).",
+      "lesserIncluded": [
+        "Second-degree murder (15 years to life)"
+      ]
+    },
+    {
+      "id": "c3",
+      "name": "Special Circumstance: Multiple Murder",
+      "statute": "Cal. Penal Code § 190.2(a)(3)",
+      "elements": [
+        "The defendant has been convicted, in this proceeding, of more than one offense of murder in the first or second degree."
+      ],
+      "maxSentence": "Mandatory life without parole (or death, not sought)."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Blood drops at the Corwin Drive scene",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "Five blood drops along the path leading away from the bodies, to the left of the bloody shoe prints. DNA tests (RFLP and PCR) found them consistent with Whitfield's profile, with random-match probabilities as rare as 1 in 170 million.",
+      "weakness": "The swatches were collected by a trainee, stored wet in plastic bags in a hot truck for hours, and allowed to degrade. Degraded samples are more susceptible to contamination from reference blood. The swatches were processed in the same lab area and on the same day as Whitfield's reference blood. The chain-of-custody log shows gaps.",
+      "admissibilityIssue": "Kelly-Frye (People v. Kelly, 17 Cal.3d 24) for PCR methods as then applied, plus the third prong (correct scientific procedures were used in this case). Chain of custody.",
+      "suppressible": false
+    },
+    {
+      "id": "e2",
+      "name": "Rear gate blood stain found weeks later",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "A large blood stain on the back gate at Corwin Drive, consistent with Whitfield, collected three weeks after the murders.",
+      "weakness": "It wasn't collected the morning of the murders; the criminalist says he saw it but didn't collect it. When collected, it had much more DNA than the scene drops, even though it had been exposed to the elements for weeks. It contained EDTA, a preservative used in reference-blood tubes (the FBI disputes the level).",
+      "admissibilityIssue": "Chain of custody and possible planting. Admissible but open to attack.",
+      "suppressible": false
+    },
+    {
+      "id": "e3",
+      "name": "The bloody right-hand glove at the Ashford Avenue estate",
+      "type": "physical",
+      "offeredBy": "prosecution",
+      "description": "An extra-large leather glove found by Detective Lindell behind the guest house. Contains blood of both victims and Whitfield, and hair and fibers consistent with Castellano. Matches the left-hand glove at the scene. Receipts show Nadia bought two pairs of the same style.",
+      "weakness": "Lindell found it alone. It was still moist hours after the murders, although the night was dry. No blood trail led to the glove, and no blood was found near it. At trial, it appeared too small for Whitfield's hands (with latex gloves underneath, and possibly shrunken from blood and testing).",
+      "admissibilityIssue": "Fruit of an unlawful search if the warrantless entry fails; chain of custody; Lindell's credibility.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Socks in the defendant's bedroom",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "A pair of dark socks on the bedroom floor with Nadia's blood on them.",
+      "weakness": "The socks were collected on June 13, but the blood wasn't noticed until August. The blood soaked through both sides of the sock in a way that a defense expert says suggests it was applied while the sock wasn't being worn. EDTA was detected.",
+      "admissibilityIssue": "Chain of custody; possible contamination or planting.",
+      "suppressible": true
+    },
+    {
+      "id": "e5",
+      "name": "Defendant's reference blood vial",
+      "type": "forensic",
+      "offeredBy": "defense",
+      "description": "Whitfield's reference blood was drawn on June 13. About 8 mL was drawn, but lab records account for only 6.5 mL, leaving about 1.5 mL missing. Detective Walt Brandauer carried the vial back to the Ashford Avenue estate instead of booking it into evidence immediately.",
+      "weakness": "The nurse who drew it isn't sure of the exact amount. The prosecution says the missing blood is a record-keeping discrepancy.",
+      "admissibilityIssue": "None; it's evidence that supports contamination or planting theories.",
+      "suppressible": false
+    },
+    {
+      "id": "e6",
+      "name": "Prior domestic-violence evidence",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "The 1989 incident (photos of Nadia's bruised face, the no-contest plea), the 1993 911 call, and Nadia's diary entries and statements to friends describing abuse and stalking.",
+      "weakness": "Prior incidents were years before. The diary entries and friends' statements are hearsay, and some are testimonial.",
+      "admissibilityIssue": "Evid. Code § 1101(b) (motive, intent, identity) and § 352. Nadia's statements are hearsay (state-of-mind exception § 1250 only if her state of mind is at issue). Evid. Code § 1109 (propensity in DV cases) allows DV prior acts, subject to § 352. The 911 call is likely admissible as a spontaneous statement.",
+      "suppressible": true
+    },
+    {
+      "id": "e7",
+      "name": "Lindell tapes and testimony about racial slurs",
+      "type": "digital",
+      "offeredBy": "defense",
+      "description": "Audio recordings of Detective Lindell, made by a screenwriter over several years, in which he uses racial slurs dozens of times and describes planting evidence and beating suspects.",
+      "weakness": "The prosecution will say Lindell was 'performing' a character for a screenplay. The recordings are years old.",
+      "admissibilityIssue": "Impeachment for bias and prior false testimony (Lindell denied under oath using racial slurs in the past 10 years). § 352 limits: the court may allow only a few excerpts.",
+      "suppressible": false
+    },
+    {
+      "id": "e8",
+      "name": "Slow-speed pursuit: passport, disguise, cash, and gun",
+      "type": "physical",
+      "offeredBy": "prosecution",
+      "description": "Items found in the SUV after the pursuit: a passport, a fake goatee and mustache, $8,000 in cash, and a loaded revolver.",
+      "weakness": "Whitfield wrote a suicide-style letter before the pursuit. The pursuit headed toward his home, not the border. The items may have belonged to the friend driving.",
+      "admissibilityIssue": "Consciousness of guilt (CALCRIM No. 372, flight instruction). The defense may argue it was a suicide attempt, not flight.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Detective Gary Lindell",
+      "role": "LAPD detective (found the glove; climbed the wall)",
+      "side": "prosecution",
+      "demeanor": "Clean-cut, polished, and poised on direct. On cross he is quick to anger if his integrity is challenged, but careful. May invoke the Fifth if recalled after the tapes surface.",
+      "publicTestimony": "He saw blood on the SUV and feared someone inside the estate was hurt, so he climbed the wall. He found the glove behind the guest house while searching the property. He didn't plant anything.",
+      "hiddenFacts": [
+        "He used racial slurs repeatedly on tape and bragged about planting evidence and beating suspects.",
+        "He had responded to a domestic-violence call at the Whitfields' house years earlier and had strong feelings about the case.",
+        "He was alone behind the guest house for about 15 minutes before 'finding' the glove.",
+        "He wasn't the lead detective and had no assignment at Ashford Avenue, but he went to the estate anyway.",
+        "Under oath at a pretrial hearing, he denied using racial slurs in the past 10 years."
+      ],
+      "priorStatements": [
+        "Preliminary hearing testimony: he denied having used racial slurs in the past 10 years.",
+        "Tape recordings: dozens of slurs and descriptions of misconduct."
+      ],
+      "credibilityIssues": [
+        "Racial animus.",
+        "Perjury.",
+        "Opportunity to plant evidence.",
+        "Prior contact with the family."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Detective Walt Brandauer",
+      "role": "LAPD lead detective",
+      "side": "prosecution",
+      "demeanor": "An old-school, gruff, and matter-of-fact detective. He is defensive about procedure and dismissive of 'Monday-morning quarterbacking.'",
+      "publicTestimony": "The detectives went to the estate to notify Whitfield and weren't treating him as a suspect. When they saw the blood, they feared for someone's safety and entered. He collected the reference blood and handled the investigation by the book.",
+      "hiddenFacts": [
+        "He carried Whitfield's reference blood vial around for hours and brought it back to the crime scene instead of booking it immediately.",
+        "The detectives had already treated Whitfield as a suspect: four detectives went to notify him, which is unusual.",
+        "He wrote the search-warrant affidavit and described the SUV's blood as 'human blood,' although it hadn't been tested yet.",
+        "He said in a later interview that Whitfield was a suspect from the start."
+      ],
+      "priorStatements": [
+        "Preliminary hearing: 'He wasn't a suspect at the time.'",
+        "Search-warrant affidavit: described the blood as 'human' before testing.",
+        "Later interview statement: 'He was a suspect, like any husband.'"
+      ],
+      "credibilityIssues": [
+        "Contradictions about suspect status (key to the suppression motion).",
+        "Mishandling the reference blood."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Andrew Tsai",
+      "role": "LAPD criminalist",
+      "side": "prosecution",
+      "demeanor": "Earnest, polite, and increasingly flustered as cross-examination goes on. He tries to defend his work but concedes a lot.",
+      "publicTestimony": "He collected the blood evidence at both scenes according to LAPD procedures, and the chain of custody was preserved.",
+      "hiddenFacts": [
+        "His trainee collected most of the samples, not him.",
+        "Samples were stored wet in plastic bags in a hot truck.",
+        "He saw the back-gate stain on June 13 but didn't collect it until July 3.",
+        "He didn't wear gloves consistently, and video shows him touching evidence with bare hands.",
+        "He signed chain-of-custody records for evidence his trainee collected.",
+        "He took the reference blood from Brandauer at Ashford Avenue, not at the lab."
+      ],
+      "priorStatements": [
+        "Preliminary hearing: he collected the scene blood drops himself.",
+        "Video footage from the scene contradicting his glove use."
+      ],
+      "credibilityIssues": [
+        "Sloppy procedures.",
+        "Misstatements about who did what."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Shane Colby",
+      "role": "Houseguest in the defendant's guest house",
+      "side": "prosecution",
+      "demeanor": "An affable, slightly spacey aspiring actor who has become a media curiosity. He tries to help his friend Dorian but is careful about the thumps.",
+      "publicTestimony": "Around 10:40 p.m. he heard three loud thumps on the wall of his room, near where the glove was later found. He didn't see Whitfield between about 9:40 and 10:55 p.m.",
+      "hiddenFacts": [
+        "He didn't go out to check on the thumps for several minutes, and he found nothing.",
+        "He first told police he heard the thumps 'around 10:45 or so,' but has become less sure.",
+        "Whitfield had been in a good mood earlier that evening at a fast-food restaurant.",
+        "He saw Whitfield put a small dark bag near the limo that he didn't let anyone else touch, then later it wasn't there."
+      ],
+      "priorStatements": [
+        "Police statement: thumps 'around 10:45.'",
+        "Grand jury: 'I'm not sure it was the wall. Maybe a picture falling.'"
+      ],
+      "credibilityIssues": [
+        "Friend and dependent of the defendant (lives rent-free).",
+        "Uncertain about times."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Dr. Helen Marsh",
+      "role": "DNA analyst (private lab)",
+      "side": "prosecution",
+      "demeanor": "Precise, knowledgeable, and patient. She presents DNA statistics clearly, but gets slightly defensive about the LAPD's handling of samples before they reached her.",
+      "publicTestimony": "Her lab's tests found the scene blood drops consistent with Whitfield, with rare match probabilities. The blood in the SUV and on the socks and glove is consistent with the victims.",
+      "hiddenFacts": [
+        "Her results are only as good as the samples the LAPD sent her. She has no knowledge of how they were collected.",
+        "Some samples showed signs of degradation, and she can't exclude contamination from the reference blood before the samples reached her lab.",
+        "Her lab failed a proficiency test (mixing up samples) a few years earlier."
+      ],
+      "priorStatements": [
+        "Lab report notes: 'Some samples degraded.'",
+        "Proficiency-test record."
+      ],
+      "credibilityIssues": [
+        "Dependent on the LAPD chain of custody."
+      ]
+    },
+    {
+      "id": "w6",
+      "name": "Dr. Samuel Okafor",
+      "role": "Defense forensic scientist",
+      "side": "defense",
+      "demeanor": "An internationally renowned criminalist, charismatic and folksy, with a gift for simple explanations. The jury likes him.",
+      "publicTestimony": "Something is wrong with the evidence. The blood-drop patterns, the sock staining, the glove's condition, and the EDTA suggest contamination or planting. He saw a second shoe-print pattern at the scene, suggesting a possible second attacker.",
+      "hiddenFacts": [
+        "He admits he can't say the evidence was definitely planted.",
+        "The 'second shoe print' may be a pattern from the concrete or an investigator's shoe.",
+        "He's paid well for his testimony."
+      ],
+      "priorStatements": [
+        "Report: 'Evidence consistent with contamination; cannot exclude planting.'"
+      ],
+      "credibilityIssues": [
+        "Paid defense expert; overstatement risk."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Suppress Evidence from Warrantless Entry",
+      "basis": "Fourth Amendment; Penal Code § 1538.5. The detectives had already focused on Whitfield as a suspect, so their 'exigent circumstances' justification (fearing for someone inside) was a pretext. The affidavit misstated the blood as 'human' (Franks v. Delaware). Suppress the glove and all evidence found during the warrantless entry and under the tainted warrant.",
+      "targets": [
+        "e3",
+        "e4"
+      ],
+      "merit": 30
+    },
+    {
+      "id": "m2",
+      "name": "Kelly-Frye Challenge to DNA Evidence",
+      "basis": "People v. Kelly, 17 Cal.3d 24 (1976). Even if PCR and RFLP are generally accepted, the third prong requires that correct scientific procedures were used in this case. The LAPD's contamination-prone collection and processing failed that standard.",
+      "targets": [
+        "e1"
+      ],
+      "merit": 20
+    },
+    {
+      "id": "m3",
+      "name": "Motion in Limine to Exclude or Limit Domestic-Violence Evidence",
+      "basis": "Evid. Code §§ 352, 1101, 1109; hearsay (§ 1200) and Confrontation Clause for the victim's statements to police (Crawford). Prior incidents years before are too remote and inflammatory. The diary and statements to friends are inadmissible hearsay.",
+      "targets": [
+        "e6"
+      ],
+      "merit": 35
+    },
+    {
+      "id": "m4",
+      "name": "Motion to Admit Detective Lindell's Recorded Statements for Impeachment",
+      "basis": "Evid. Code §§ 780, 785, 1235; Davis v. Alaska (Confrontation Clause right to cross-examine for bias). The tapes show racial animus, willingness to plant evidence, and prior perjury by the detective who found the glove. The defense is entitled to more than a handful of excerpts.",
+      "targets": [],
+      "merit": 65
+    }
+  ],
+  "defenseAngles": [
+    "Garbage in, garbage out: the DNA is only as good as the LAPD's collection and handling. Walk the criminalist through every mistake.",
+    "Follow the missing blood: 1.5 mL of reference blood unaccounted for, a detective carrying the vial around, and EDTA in the back-gate stain and socks.",
+    "Put Detective Lindell's tapes and his perjury in front of the jury. He found the glove alone, and it was still moist.",
+    "Challenge the warrantless entry: four detectives to 'notify' someone? He was a suspect from the start.",
+    "Don't stage demonstrations you haven't tested, but make the prosecution live with any it stages.",
+    "Frame the pursuit as a suicide attempt, not flight, and prepare the jury for the domestic-violence evidence without minimizing it."
+  ],
+  "startingLean": 30
+}

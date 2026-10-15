@@ -1,0 +1,315 @@
+{
+  "id": "people-v-ransome",
+  "title": "People of the State of New York v. Malik Ransome",
+  "tier": 1,
+  "category": "wrongful-conviction",
+  "tagline": "A 15-year-old confessed on videotape after 22 hours in a police station. None of the physical evidence matches him, and the confession doesn't match the crime.",
+  "jurisdiction": "New York County (Manhattan), New York",
+  "courtName": "Supreme Court of the State of New York, New York County - Criminal Term, Part 51",
+  "basedOn": {
+    "name": "People v. McCray, Richardson, Salaam, Santana & Wise (the Central Park Five / Exonerated Five)",
+    "year": "1990",
+    "summary": "In April 1989 a female jogger was raped and nearly beaten to death in Central Park the same night a large group of teenagers was reported harassing people in the park. After long interrogations without counsel, and in some cases without parents present, five Black and Latino teenagers gave videotaped statements that contradicted each other and the physical evidence. No DNA, blood, or fingerprints tied them to the victim. The confessions were the heart of the case.",
+    "realOutcome": "All five were convicted in 1990 and served 6 to 13 years. In 2002 serial rapist Matias Reyes confessed that he committed the attack alone, and DNA confirmed it. The convictions were vacated in December 2002. New York City settled the civil suits for $41 million in 2014.",
+    "keyLessons": [
+      "False confessions are real, and juveniles are especially vulnerable to them. Suppression litigation under Miranda and state voluntariness law (CPL § 60.45) is the first battlefield.",
+      "Compare every detail of the confession to the physical evidence. Mismatches about location, weapon, clothing, and who did what are the most powerful proof that the statement was fed.",
+      "Negative DNA and serology results are affirmative evidence of innocence, not a gap to explain away.",
+      "Microscopic hair comparison ('consistent with') is discredited forensic science and should be challenged.",
+      "The Bruton rule bars the prosecution from using a non-testifying co-defendant's confession against your client."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Central_Park_jogger_case"
+    ]
+  },
+  "defendant": {
+    "name": "Malik Ransome",
+    "age": 15,
+    "background": "A 10th grader from East Harlem with no prior record who plays trumpet in a church band. On the night of the attack he was one of about 30 teenagers who entered the park; some of them harassed cyclists and a homeless man. He was picked up near the park that night with four others and held at the precinct overnight.",
+    "privateAccount": "He admits he went into the park with the group and saw some older kids throwing rocks at a cyclist and hassling a man by the reservoir. He says he never went near the jogging path on the north side, never saw the woman, and left with two friends around 10:15 p.m. At the precinct detectives kept him for hours without food or sleep. His mother had to leave to go to work, and his father told him to 'just tell them what they want' so he could come home. Detectives told him the others had already named him and that witnesses (not his accomplices) would put him there, but if he said he was only a lookout he could go home. He repeated details they suggested, guessed at others, and signed the statement at 3 a.m. He says he doesn't know what happened to the woman.",
+    "priors": "None. One juvenile warning card for turnstile jumping.",
+    "testifyRisk": "Moderate. He is a sympathetic kid, but a skilled prosecutor could make him seem evasive about what he saw the group do that night. He will admit being in the park and seeing others commit crimes, which the jury may hold against him. His testimony about the interrogation is powerful only if the video shows the mismatches and his exhaustion."
+  },
+  "judge": {
+    "name": "Hon. Leonard P. Graziano",
+    "temperament": "pro-prosecution",
+    "bio": "A former Manhattan homicide prosecutor, now a veteran trial judge. He is known for denying suppression motions in high-profile cases and for moving quickly. He respects well-researched law and will grant a motion when the record is overwhelming, but he won't hand the defense anything."
+  },
+  "prosecutor": {
+    "name": "Assistant District Attorney Catherine Mayhew",
+    "style": "Meticulous and confident, the head of the sex-crimes unit. Her case is 'their own words': she will play the videotaped confessions repeatedly and call the inconsistencies 'minimization' by guilty teenagers. She treats the absence of DNA as unimportant."
+  },
+  "caseSummary": "On the night of April 21, a 28-year-old investment banker, Allison Merritt, was found near the North Woods jogging path in Ridgeview Park, gagged and bound with her own shirt, raped, and beaten so badly she lost 75% of her blood. She has no memory of the attack. The same evening, roughly 30 teenagers entered the park from the northeast corner; some of them assaulted and robbed a cyclist and a man near the reservoir.\n\nPolice picked up Malik Ransome and several others near the park at around 10:40 p.m. Over the next 22 hours he was questioned by several detectives. In the early morning, in front of an Assistant District Attorney and a video camera, he said he held the woman's arm while others hit her with a pipe and 'did stuff to her.' His account of the location, the weapon, and the roles of others was different from, and in places contradicted, the statements of the four co-defendants. It also conflicted with the physical evidence at the scene.",
+  "prosecutionTheory": "Ransome was part of a 'wolf pack' that went into the park looking for victims. When they found the jogger, they attacked her together and Ransome held her down. His videotaped confession proves it, and the details only the attackers would know corroborate it. The lack of DNA shows only that not every attacker ejaculated. Hair consistent with the victim was found on his clothing.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Attempted Murder in the Second Degree",
+      "statute": "N.Y. Penal Law §§ 110.00, 125.25(1)",
+      "elements": [
+        "The defendant, alone or acting in concert, intended to cause the death of Allison Merritt.",
+        "The defendant engaged in conduct that tended to effect the commission of that crime (came dangerously near to killing her)."
+      ],
+      "maxSentence": "Class B violent felony. As a juvenile offender (age 15): indeterminate sentence with a maximum of 3 to 10 years and a minimum of one-third of the maximum (Penal Law § 70.05(2)(b), (3)(b)).",
+      "lesserIncluded": [
+        "Assault in the First Degree (Penal Law § 120.10(1))"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Rape in the First Degree (acting in concert)",
+      "statute": "N.Y. Penal Law §§ 130.35(1), 20.00",
+      "elements": [
+        "A person engaged in sexual intercourse with Allison Merritt by forcible compulsion.",
+        "The defendant, acting with the mental culpability required for the crime, solicited, requested, commanded, importuned, or intentionally aided that person (accessorial liability under § 20.00)."
+      ],
+      "maxSentence": "Class B violent felony. As a juvenile offender: indeterminate sentence, maximum up to 10 years (Penal Law § 70.05)."
+    },
+    {
+      "id": "c3",
+      "name": "Robbery in the First Degree",
+      "statute": "N.Y. Penal Law § 160.15(1)",
+      "elements": [
+        "The defendant, alone or acting in concert, forcibly stole property from Allison Merritt (her Walkman).",
+        "In the course of the commission of the crime or immediate flight therefrom, the defendant or another participant caused serious physical injury to a non-participant."
+      ],
+      "maxSentence": "Class B violent felony. As a juvenile offender: indeterminate sentence, maximum up to 10 years (Penal Law § 70.05)."
+    },
+    {
+      "id": "c4",
+      "name": "Riot in the First Degree",
+      "statute": "N.Y. Penal Law § 240.06",
+      "elements": [
+        "The defendant, simultaneously with ten or more other persons, engaged in tumultuous and violent conduct and thereby intentionally or recklessly caused or created a grave risk of causing public alarm.",
+        "In the course of and as a result of such conduct, a person other than one of the participants suffered physical injury or substantial property damage occurred."
+      ],
+      "maxSentence": "Class E felony: up to 4 years for adults. Riot is not a juvenile-offender-eligible charge, so this count is subject to removal to Family Court (CPL § 210.43) or dismissal as to a 15-year-old."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Defendant's videotaped statement to the ADA",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "A 14-minute videotaped statement made at 3:10 a.m., after roughly 22 hours in custody. Ransome says he held the jogger's arm while others hit her with a pipe and 'got on her.' He says the attack happened near the reservoir, that her clothes were blue, and that the others had a knife.",
+      "weakness": "The attack happened near the North Woods, not the reservoir, and she was wearing a white shirt. No pipe or knife was ever found, and her wounds fit a rock. He never says he penetrated her or saw anyone else do so. He guesses at details, looks at detectives off-camera, and uses police jargon ('perpetrator,' 'the female'). The video begins after hours of unrecorded questioning.",
+      "admissibilityIssue": "Voluntariness under CPL § 60.45 and due process; Miranda waiver validity for a 15-year-old; the parental notification and juvenile-room requirements of CPL § 140.20(6); a Huntley hearing.",
+      "suppressible": true
+    },
+    {
+      "id": "e2",
+      "name": "Defendant's written statement signed at the precinct",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "A written statement in a detective's handwriting, signed by Ransome at 1:40 a.m., before the video. It says he was a lookout and names four others.",
+      "weakness": "Written by a detective, not the defendant. It contains facts the defendant later contradicts on video, and it was taken outside the presence of any parent.",
+      "admissibilityIssue": "Same suppression issues as e1; fruit of an unlawful interrogation.",
+      "suppressible": true
+    },
+    {
+      "id": "e3",
+      "name": "DNA and serology results",
+      "type": "forensic",
+      "offeredBy": "defense",
+      "description": "FBI DNA testing of the cervical swab and the victim's sock produced a single male profile. It excludes Ransome and all four co-defendants.",
+      "weakness": "The prosecution says there may have been an attacker who wasn't caught, or that not all participants left DNA.",
+      "admissibilityIssue": "None. It is admissible and powerful for the defense.",
+      "suppressible": false
+    },
+    {
+      "id": "e4",
+      "name": "Microscopic hair comparison",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "A police lab analyst testifies that a hair found on Ransome's T-shirt was 'consistent with' the victim's hair under a microscope.",
+      "weakness": "Microscopic hair comparison has no statistical basis and a documented high error rate (the FBI's 2015 review found flawed testimony in more than 90% of reviewed cases). Many people's hair is 'consistent.' The shirt was bagged with other clothing, raising cross-contamination questions. Later mitochondrial DNA testing of such hairs has often excluded suspects.",
+      "admissibilityIssue": "Frye (general acceptance) challenge to 'consistent with' testimony and to any statistical implication; chain of custody.",
+      "suppressible": true
+    },
+    {
+      "id": "e5",
+      "name": "Victim's medical records and crime-scene photos",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "Photos of the scene near the North Woods and records of the victim's skull fractures, loss of blood, and hypothermia. A bloodied rock was found near the scene.",
+      "weakness": "They establish the crime but not who did it. The rock contradicts the 'pipe' in the confession. The location contradicts the 'reservoir.' No blood, mud, or leaves were found on Ransome's clothing, even though the attack happened in a muddy ravine.",
+      "admissibilityIssue": "§ 403-type balancing (People v. Pobliner) for gruesome photos; the court will admit some.",
+      "suppressible": false
+    },
+    {
+      "id": "e6",
+      "name": "Co-defendants' videotaped statements",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "Statements by the other four teenagers, each naming the others and minimizing his own role. Two name Ransome as a participant.",
+      "weakness": "Each statement contradicts the others on who did what, where, and with what weapon. They are only admissible against the person who made them.",
+      "admissibilityIssue": "Bruton v. United States and Crawford v. Washington. A non-testifying co-defendant's confession naming Ransome is inadmissible against him at a joint trial. The remedy is severance or redaction (Gray v. Maryland).",
+      "suppressible": true
+    },
+    {
+      "id": "e7",
+      "name": "Park timeline (police radio logs and other victims' reports)",
+      "type": "documentary",
+      "offeredBy": "defense",
+      "description": "Radio runs and complaint reports placing the group at the reservoir and the 102nd Street transverse between about 9:05 and 10:15 p.m. The jogger's attack occurred near the North Woods, a significant walk away, sometime around 9:00 to 9:30 p.m.",
+      "weakness": "Exact times are approximate, and the State will argue the group could have split up.",
+      "admissibilityIssue": "Business records (CPLR 4518 / CPL § 60.10). Authentication is needed through a police records custodian.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Detective Frank Tolliver",
+      "role": "Lead interrogating detective",
+      "side": "prosecution",
+      "demeanor": "Seasoned and calm. He answers in police jargon and insists everything was done 'by the book.' He bristles at suggestions of coercion.",
+      "publicTestimony": "Ransome was advised of his rights in the presence of his mother and waived them. He was given food and drink and was not threatened. He volunteered details of the attack.",
+      "hiddenFacts": [
+        "Ransome was questioned for more than an hour before his mother arrived, and the Miranda form time was filled in after the fact.",
+        "His mother left at about 11 p.m. to go to her night shift; after that, questioning continued with no adult present.",
+        "Detectives told Ransome his fingerprints would be found on the victim's clothing. That was false; no prints were ever recovered.",
+        "Detectives told him that if he said he was a lookout he would 'go home tonight.'",
+        "Detectives showed him crime-scene photos before the video statement, which is how he learned about the victim's injuries.",
+        "The questioning happened in a detective squad room, not a designated juvenile room, as required by CPL § 140.20(6) and the NYPD Patrol Guide."
+      ],
+      "priorStatements": [
+        "DD-5 (detective report) records his first contact with Ransome at 8:30 p.m. and his mother's arrival at 9:45 p.m.",
+        "Grand jury testimony: 'He wasn't questioned about the jogger before his mother arrived.' This conflicts with DD-5 entries of an 'initial interview' at 8:30.",
+        "Huntley hearing testimony that he 'didn't recall' whether he mentioned fingerprints."
+      ],
+      "credibilityIssues": [
+        "Time discrepancies in his own paperwork.",
+        "Undisclosed interrogation tactics.",
+        "Institutional pressure to solve a case that was drawing citywide attention."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "ADA Robert Halvorsen",
+      "role": "Assistant District Attorney who took the videotaped statement",
+      "side": "prosecution",
+      "demeanor": "Earnest, lawyerly, and convinced he did his job properly. He becomes stiff and careful when the videotape's start time is questioned.",
+      "publicTestimony": "He read Ransome his rights on camera, and Ransome confirmed he understood and wanted to talk. Ransome was calm, fed, and gave his account without prompting.",
+      "hiddenFacts": [
+        "He had been briefed by detectives beforehand on what Ransome had 'already said,' and he asked questions to get those points on tape.",
+        "He noticed Ransome said 'reservoir' and 'pipe,' which didn't match the scene, but he didn't correct the record or follow up.",
+        "He knew by the time of trial that the DNA excluded all five defendants.",
+        "He did not ask whether Ransome had been promised anything."
+      ],
+      "priorStatements": [
+        "Memo to his bureau chief: 'Statements contain some inconsistencies re: location and weapon. Recommend emphasize corroborating details.'"
+      ],
+      "credibilityIssues": [
+        "Was a participant in the process under attack.",
+        "Knew about the inconsistencies."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Diane Kowalczyk",
+      "role": "Police lab criminalist (hair and serology)",
+      "side": "prosecution",
+      "demeanor": "Confident but out of her depth on statistics. She becomes defensive when asked about error rates.",
+      "publicTestimony": "A hair on the defendant's T-shirt is microscopically consistent with the victim's hair. The semen sample on the sock excluded all five defendants.",
+      "hiddenFacts": [
+        "Microscopic hair comparison can't identify an individual. She can't give any probability of a random match.",
+        "She examined the hair after the shirt had been stored in a bag with other clothing that had contact with the scene.",
+        "Her lab had no written protocol for hair comparison at the time.",
+        "She recommended additional DNA testing on the hair, which was never done."
+      ],
+      "priorStatements": [
+        "Lab bench notes: 'hair - similar class characteristics - inconclusive for individualization.'",
+        "Pretrial report language: 'could have originated from the victim,' which is weaker than her trial language of 'consistent with.'"
+      ],
+      "credibilityIssues": [
+        "Discredited forensic method.",
+        "Chain-of-custody problems with the clothing bag."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Lavinia Ransome",
+      "role": "Defendant's mother",
+      "side": "defense",
+      "demeanor": "A home health aide. She is tired and emotional but determined, and she speaks carefully. She feels guilty for leaving her son at the precinct.",
+      "publicTestimony": "She arrived at the precinct later than detectives say. Her son was crying and exhausted. The detectives told her he was a witness and asked her to encourage him to cooperate. She had to go to work and left him alone.",
+      "hiddenFacts": [
+        "Detectives told her he was 'just a witness' and would be home soon. She would have gotten a lawyer if she had known he was a suspect.",
+        "She heard a detective raise his voice and slap the table while she was in the room.",
+        "She was never asked to sign anything about his rights; she saw a form only later."
+      ],
+      "priorStatements": [
+        "Statement to a community newspaper: 'They told me he wasn't in trouble.'"
+      ],
+      "credibilityIssues": [
+        "Mother of the defendant; obvious bias."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Dr. Evelyn Sato",
+      "role": "Defense expert on false confessions and interrogation",
+      "side": "defense",
+      "demeanor": "A research psychologist who is careful and academic. She won't say whether this confession is false; she only explains risk factors.",
+      "publicTestimony": "Juveniles are especially susceptible to police interrogation. Risk factors for false confessions include long interrogations, sleep deprivation, false evidence ploys, and promises of leniency. Confessions containing mistakes about facts the police didn't know are a hallmark of contaminated statements.",
+      "hiddenFacts": [
+        "She will concede that most confessions are true and that she can't tell a true confession from a false one on the basis of risk factors alone.",
+        "She is paid for her time and has testified mostly for the defense."
+      ],
+      "priorStatements": [
+        "Her published research documents juvenile false-confession rates in DNA exoneration cases."
+      ],
+      "credibilityIssues": [
+        "Admissibility in New York depends on the case (People v. Bedessie, 2012). The court can limit her to general risk factors."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion to Suppress Written and Videotaped Statements (Huntley Hearing)",
+      "basis": "Statements were involuntary under CPL § 60.45 and the Due Process Clause. The Miranda waiver of an exhausted 15-year-old was not knowing, intelligent, and voluntary (Fare v. Michael C.; J.D.B. v. North Carolina). He was questioned before his parent arrived and after she left, in violation of CPL § 140.20(6)'s notification and juvenile-room requirements. False evidence ploys and a promise that he could go home (People v. Thomas, 22 N.Y.3d 629 (2014)) drove the statements. The 22-hour custody, sleep deprivation, and detectives' conflicting timestamps support suppression.",
+      "targets": [
+        "e1",
+        "e2"
+      ],
+      "merit": 70
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Sever / Exclude Co-Defendants' Statements (Bruton)",
+      "basis": "Bruton v. United States and Crawford v. Washington. The co-defendants' statements accuse Ransome, and redaction can't cure the problem (Gray v. Maryland). He is entitled to a separate trial or to exclusion of those statements.",
+      "targets": [
+        "e6"
+      ],
+      "merit": 85
+    },
+    {
+      "id": "m3",
+      "name": "Frye Motion to Limit Microscopic Hair Comparison Testimony",
+      "basis": "Frye v. United States / People v. Wesley. Microscopic hair comparison is not generally accepted as a method for individualization. At minimum, the analyst must be barred from saying the hair 'matches' or implying any probability. The chain of custody is also compromised.",
+      "targets": [
+        "e4"
+      ],
+      "merit": 50
+    },
+    {
+      "id": "m4",
+      "name": "Motion to Admit Expert Testimony on False Confessions",
+      "basis": "People v. Bedessie, 19 N.Y.3d 147 (2012). Expert testimony on interrogation risk factors is admissible when relevant to the defendant and interrogation. Here: a juvenile, a long interrogation, sleep deprivation, false evidence claims, and a promise of release.",
+      "targets": [],
+      "merit": 55
+    }
+  ],
+  "defenseAngles": [
+    "Win the Huntley hearing. Line up the detectives' timestamps, the mother's departure, the missing juvenile room, and the 'you can go home' promise.",
+    "If the confession comes in, try the confession against the crime scene: wrong location, wrong weapon, wrong clothing color, no mud or blood on the defendant.",
+    "DNA excludes everyone who was charged. Argue that a single unidentified man did this, and that the State stopped looking once it had its 'wolf pack.'",
+    "Get severance under Bruton. The co-defendants' finger-pointing statements can't come in against Ransome.",
+    "Undercut the hair evidence. Microscopic 'consistent with' is not identification, and the shirt was packaged with scene-contaminated items.",
+    "Use the park timeline. The group was at the reservoir while the attack was happening elsewhere."
+  ],
+  "startingLean": 47
+}

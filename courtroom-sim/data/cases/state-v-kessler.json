@@ -1,0 +1,307 @@
+{
+  "id": "state-v-kessler",
+  "title": "State of Florida v. Grant Kessler",
+  "tier": 1,
+  "category": "self-defense",
+  "tagline": "A neighborhood-watch volunteer followed a teenager through a gated community on a rainy night. Two minutes later the teen was dead and nobody else saw how it started.",
+  "jurisdiction": "Florida, Eighteenth Judicial Circuit (fictional Palmetto County)",
+  "courtName": "Circuit Court of the Eighteenth Judicial Circuit in and for Palmetto County, Florida - Criminal Division",
+  "basedOn": {
+    "name": "State of Florida v. George Zimmerman",
+    "year": "2013",
+    "summary": "In February 2012 George Zimmerman, a neighborhood-watch volunteer in Sanford, Florida, shot and killed 17-year-old Trayvon Martin after following him through a gated community and reporting him to police. No one saw the start of the confrontation. Zimmerman claimed Martin attacked him and was slamming his head into the sidewalk; a special prosecutor charged second-degree murder after national protests.",
+    "realOutcome": "A six-person jury acquitted Zimmerman of second-degree murder and the lesser-included offense of manslaughter on July 13, 2013. The defense did not seek a pretrial Stand Your Ground immunity hearing and tried the case as traditional self-defense.",
+    "keyLessons": [
+      "When no witness saw the start of a fight, the state must disprove self-defense beyond a reasonable doubt, and gaps in the evidence help the defense.",
+      "The judge excluded the state's scream voice-identification experts as unreliable. Attacking junk science before trial can take a key prosecution theme off the table.",
+      "A prosecution witness (the neighbor who described the teen on top) helped the defense more than any defense witness did.",
+      "Forensic pathology on gunshot distance and the defendant's head injuries backed up the defendant's account.",
+      "Following someone is legal. The case turned on who used unlawful force first, not on whether the defendant used poor judgment."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Trial_of_George_Zimmerman",
+      "https://en.wikipedia.org/wiki/Killing_of_Trayvon_Martin"
+    ]
+  },
+  "defendant": {
+    "name": "Grant Kessler",
+    "age": 29,
+    "background": "An insurance-fraud investigator who takes night classes in criminal justice and is the self-appointed watch captain at The Groves at Heron Lake, a gated townhouse community hit by a string of burglaries. He has a concealed-weapons license and carries a 9mm pistol in a waistband holster.",
+    "privateAccount": "He says he called the non-emergency line because the kid was walking slowly in the rain and looking at houses. When the kid ran, he got out of his truck to see which way he went and to find a street sign for the dispatcher, because he honestly didn't know the name of the cut-through. He admits the dispatcher said 'we don't need you to do that' and says he answered 'okay' and started walking back to his truck. The teen came up from the dark side of the walkway and asked 'you got a problem?' When he reached for his phone, the teen punched him in the nose, knocked him down, got on top and slammed his head against the concrete. He yelled for help over and over. He says the teen saw the gun and said 'you're gonna die tonight,' and he fired once. Privately he admits he was 'fed up' with burglars getting away and that he muttered something angry on the call. He also admits he learned about Florida's self-defense law in a class.",
+    "priors": "No convictions. A 2005 arrest for resisting an officer without violence (a bar scuffle with an undercover agent) was resolved through pretrial diversion. A former fiancee sought a civil injunction for domestic violence in 2005, and he got a cross-injunction. No criminal charge was filed.",
+    "testifyRisk": "Moderate to high. He comes across as sincere, but he is wordy and gives more detail each time he tells the story. The prosecutor will cross him on the 'these punks always get away' remark, his criminal-justice coursework on Stand Your Ground, and small differences among his five recorded statements, such as where the teen came from and exactly what he said. If he stays silent, the jury still hears his account through his recorded police statements and the walk-through video."
+  },
+  "judge": {
+    "name": "Hon. Deborah L. Nance",
+    "temperament": "strict",
+    "bio": "A former prosecutor who has been a circuit judge for eleven years. She is impatient with lawyer theatrics and very protective of the trial calendar. She is careful on evidence law: she will keep out junk science from either side and won't let either lawyer argue race without an evidentiary basis."
+  },
+  "prosecutor": {
+    "name": "Assistant State Attorney Raymond Colfax",
+    "style": "Loud and moral. His opening is built on the defendant's own words ('these punks always get away'). He stresses that the defendant was a grown man with a gun, the victim was an unarmed teenager carrying candy and a soda, and the defendant chose to follow him. He may overcharge and then lean on the lesser included manslaughter."
+  },
+  "caseSummary": "At 7:09 p.m. on a rainy February night, Grant Kessler called the Palmetto County Sheriff's non-emergency line to report a 'real suspicious guy' walking through The Groves at Heron Lake. The person was 17-year-old Darius Holloway, who was staying with his father's fiancee in the complex and walking back from a convenience store. During the four-minute call Kessler said 'these punks, they always get away.' He told the dispatcher the teen was running and got out of his truck. The dispatcher asked 'Are you following him?' and then said 'Okay, we don't need you to do that.' Kessler answered 'Okay.'\n\nAbout two minutes after the call ended, neighbors heard shouting and repeated screams for help, followed by one gunshot. A neighbor's 911 call recorded the screams and the shot. Deputies found Holloway face down in the grass behind the townhouses with a single gunshot wound to the chest. Kessler had a bleeding broken nose, two lacerations on the back of his scalp, and wet grass on the back of his jacket. He told deputies he had yelled for help and nobody came. The sheriff's office released Kessler that night, citing self-defense. After public protest, a special prosecutor charged him with second-degree murder six weeks later.",
+  "prosecutionTheory": "Kessler profiled Darius Holloway as a criminal, followed him against the dispatcher's advice, and confronted him. When Holloway defended himself, Kessler shot him out of ill will and a depraved indifference to human life. The screams on the 911 recording were Darius's, begging for his life. Kessler's story changed over time, and he knew exactly what to say because he had studied Florida's self-defense law.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Murder in the Second Degree (Depraved Mind) with a Firearm",
+      "statute": "Fla. Stat. § 782.04(2); § 775.087 (10-20-Life)",
+      "elements": [
+        "Darius Holloway is dead.",
+        "The death was caused by the criminal act of the defendant.",
+        "The unlawful killing was by an act imminently dangerous to another and demonstrating a depraved mind without regard for human life (an act a reasonable person would know is reasonably certain to kill or do serious bodily injury, done from ill will, hatred, spite or an evil intent).",
+        "The killing was not justifiable (the State must disprove self-defense beyond a reasonable doubt once it is raised)."
+      ],
+      "maxSentence": "Life in prison. Mandatory minimum of 25 years under 10-20-Life because a firearm was discharged and caused death.",
+      "lesserIncluded": [
+        "Manslaughter with a firearm (Fla. Stat. § 782.07, reclassified to a first-degree felony under § 775.087; up to 30 years, 25-year minimum mandatory if discharge causing death is found)"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Non-emergency call recording (defendant to dispatch)",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "A 4-minute recording of Kessler reporting the teen. It includes 'these punks, they always get away,' sounds of wind and a car door, the dispatcher asking 'are you following him?', 'we don't need you to do that,' and Kessler answering 'okay.' Kessler asks that officers call him when they arrive rather than meet him at the mailboxes.",
+      "weakness": "A dispatcher's suggestion is not a lawful order, and following someone is not a crime. Kessler says 'okay' and the sound of wind stops, which suggests he stopped running. His request for a callback shows he didn't know where he would be, which fits someone looking for a street address rather than a confrontation. There is no racial slur on the tape; a muffled word the media reported turned out to be 'punks.'",
+      "admissibilityIssue": "Party-opponent admission (§ 90.803(18)). The defense may argue that isolated profanity is unfairly prejudicial under § 90.403, but the court will probably admit the full call under the rule of completeness.",
+      "suppressible": false
+    },
+    {
+      "id": "e2",
+      "name": "Neighbor's 911 call with screams and gunshot",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "A 45-second 911 call from neighbor Lorraine Sutter. Someone screams 'help' at least 14 times, then one gunshot is heard and the screaming stops immediately.",
+      "weakness": "Nobody can reliably say whose voice it is. The screams stop at the shot, which fits the shooter being the one screaming because the danger had ended. Both families' members disagree about the voice, and each family says it is their relative.",
+      "admissibilityIssue": "Excited utterance / present sense impression; authentication (§ 90.901). The contested issue is expert voice identification (see motion m2).",
+      "suppressible": false
+    },
+    {
+      "id": "e3",
+      "name": "State's forensic voice-identification analysis",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "Two privately retained audio analysts conclude the screams are 'not consistent with' Kessler's voice. One relies on speaker-recognition software. The other relies on listening to the recording and 'signal enhancement.'",
+      "weakness": "There are only a few seconds of usable screaming, recorded at a distance over a phone line and compared with Kessler's calm speaking voice. The software vendor's own guidance requires at least 16 seconds of clean speech. Neither method has a known error rate for screams under extreme stress. The FBI's audio lab declined to give an opinion.",
+      "admissibilityIssue": "Florida Daubert standard (Fla. Stat. § 90.702, as amended; In re Amendments to Fla. Evidence Code, 2019). The methodology has not been tested, has no known error rate, and is not generally accepted for screams.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Defendant's injuries: EMT and family-doctor records, scene photographs",
+      "type": "forensic",
+      "offeredBy": "defense",
+      "description": "Photos taken minutes after the shooting show blood from Kessler's nose and two lacerations on the back of his head. His family doctor diagnosed a probable nasal fracture the next day. The back of his jacket was wet and grassy.",
+      "weakness": "The prosecution will call the injuries minor: no stitches, no loss of consciousness, and Kessler refused transport. The state's medical examiner calls them 'insignificant' and 'not life-threatening.'",
+      "admissibilityIssue": "None. Photos are authenticated by the deputy who took them.",
+      "suppressible": false
+    },
+    {
+      "id": "e5",
+      "name": "Autopsy and gunshot distance findings",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "One 9mm wound to the center of the chest. The ME found stippling that indicates intermediate range. The victim's knuckles had a small abrasion. The state's toxicology found THC in the victim's blood and urine at low levels.",
+      "weakness": "Gunpowder patterns on the two sweatshirt layers show the muzzle was touching the outer hoodie but was 2 to 4 inches from the skin. That means the fabric was hanging away from the body, which fits the victim leaning over the shooter. The knuckle abrasion fits a punch. The ME changed his opinion on several points between his deposition and trial.",
+      "admissibilityIssue": "The THC evidence is contested under § 90.403. The court will probably exclude it unless the defense ties it to behavior through an expert.",
+      "suppressible": false
+    },
+    {
+      "id": "e6",
+      "name": "Defendant's recorded police statements and walk-through video",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "Five recorded accounts: the on-scene statement, a written statement that night, two interviews with investigators, and a videotaped walk-through at the scene the next morning. His core account is the same in all five: he was attacked on the way back to his truck, knocked down, had his head beaten against the concrete, and fired when the teen reached for the gun.",
+      "weakness": "For the prosecution, the minor discrepancies are useful: where the teen 'came from,' whether he was looking for an address, and whether the teen was 'circling' the truck. For the defense, these statements put the self-defense account in front of the jury without the defendant testifying. They are also detailed and were given voluntarily, without a lawyer.",
+      "admissibilityIssue": "The statements were voluntary and Miranda was waived. They are admissible when offered by the state. The defense can't offer them itself (self-serving hearsay), but if the state plays some, the rest can come in under the rule of completeness (§ 90.108).",
+      "suppressible": false
+    },
+    {
+      "id": "e7",
+      "name": "Defendant's criminal-justice course records",
+      "type": "documentary",
+      "offeredBy": "prosecution",
+      "description": "A community-college transcript and testimony from a professor who taught a course covering Florida's Stand Your Ground law. Kessler got an A.",
+      "weakness": "Knowing the law doesn't make someone a liar. The professor liked Kessler and will say he was a model student. In a televised cable-news interview after his release, Kessler said he 'had never heard' of Stand Your Ground, which is the real impeachment. The coursework itself only helps the state if paired with that denial.",
+      "admissibilityIssue": "Relevance and § 90.403. It is admissible to rebut the claim that his statements were spontaneous and to impeach his public denial.",
+      "suppressible": false
+    },
+    {
+      "id": "e8",
+      "name": "Victim's cell phone text messages about fighting",
+      "type": "digital",
+      "offeredBy": "defense",
+      "description": "Texts from the victim's phone in the weeks before the shooting in which he discusses street fights and says he wants a rematch with someone who 'snitched.'",
+      "weakness": "Character evidence of the victim is limited. A victim's specific acts are admissible only if the defendant knew about them, which he did not. Reputation for violence is admissible only in the proper form (§ 90.404(1)(b)), which opens the door to the defendant's own character. Authorship of the texts is disputed.",
+      "admissibilityIssue": "§ 90.404(1)(b), § 90.405, authentication (§ 90.901). The real court excluded these texts.",
+      "suppressible": true
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Nia Trotter",
+      "role": "Victim's friend on the phone (earwitness)",
+      "side": "prosecution",
+      "demeanor": "A 19-year-old who is reluctant, defensive and resentful of being on the stand. She speaks softly and answers in short phrases. She gets openly irritated by repeated questions and may snap back. She is sincere about her grief. Play her as truthful about what she heard, but angry and not polished.",
+      "publicTestimony": "She was on the phone with Darius for most of the walk. He told her a 'creepy' man was watching him from a truck, and she told him to run. He said he'd lost the man, and then the man was back. She heard Darius say 'Why are you following me for?' and a man answer 'What are you doing around here?' Then she heard a bump, wet grass sounds, and Darius saying 'Get off! Get off!' before the call dropped.",
+      "hiddenFacts": [
+        "Darius told her he was right by his father's fiancee's townhouse. He had enough time to go inside before the confrontation, which suggests he doubled back.",
+        "Darius described the man with a crude racial term ('creepy-ass cracker'), which undercuts the state's theme that only the defendant had racial animus.",
+        "She did not tell the victim's family or police about the call until the family's lawyer contacted her weeks later.",
+        "She first gave her account in an interview with the family's attorney, with the victim's mother sitting beside her.",
+        "She says she can't be sure who said 'get off' because the phone was muffled.",
+        "She told the family's attorney she 'thought' she heard Darius say 'get off.' Her first written letter to the family did not mention 'get off' at all."
+      ],
+      "priorStatements": [
+        "A handwritten letter to the victim's mother, weeks after the shooting, that did not mention 'get off' and that she later admitted someone else helped her write because she can't read cursive.",
+        "Recorded phone interview with the family's lawyer: 'I heard a little bit of Darius, and then the phone just hung up.'",
+        "Sworn interview with the prosecutor: 'He said get off, get off.'",
+        "Deposition: she admitted she lied about being in the hospital to avoid attending the victim's wake."
+      ],
+      "credibilityIssues": [
+        "Delayed report, first given in the presence of the victim's family.",
+        "Prior false statement about her age and about being hospitalized.",
+        "Her account grew over time.",
+        "Hostility toward the defense can make her hard to control, but jurors may sympathize with her."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Owen Delacroix",
+      "role": "Neighbor eyewitness",
+      "side": "prosecution",
+      "demeanor": "A calm, precise 30-something IT manager who clearly wishes he weren't involved. He answers only what is asked and is visibly uncomfortable when the prosecutor pushes him to back off his earlier account.",
+      "publicTestimony": "He opened his back sliding door when he heard shouting. He saw two people on the ground in the dark, one on top of the other, and couldn't make out faces. He yelled that he was calling 911 and went inside. Moments later he heard a shot.",
+      "hiddenFacts": [
+        "The person on top was wearing dark clothing. Kessler wore a red jacket; the victim wore a dark hoodie.",
+        "He saw the person on top making downward arm motions he described as 'MMA-style ground and pound.'",
+        "He heard the person on the bottom yelling for help, and he believes the screams came from the man on the bottom.",
+        "The person on the bottom had lighter skin or clothing, from what he could see.",
+        "He says the prosecutor's office met him twice before trial and suggested he 'wasn't sure' about the punching motions."
+      ],
+      "priorStatements": [
+        "To deputies that night: the man in the red jacket was on the bottom yelling help, and the guy on top in the black hoodie was beating him 'MMA style.'",
+        "Recorded interview two weeks later: 'The guy on the bottom, who I believe had a red sweater on, was yelling to me, help, help.'",
+        "Deposition: he conceded he did not actually see fists hit a face, only arm motions going down."
+      ],
+      "credibilityIssues": [
+        "Poor lighting, rain, and seconds of observation.",
+        "He backed off the word 'punching' under pressure from the state, which a good cross can show as pressure rather than a change in memory."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Investigator Carl Brandt",
+      "role": "Lead Sheriff's investigator",
+      "side": "prosecution",
+      "demeanor": "A 20-year veteran who is fair-minded and plainspoken. He tries to be accurate even when it hurts the state. He shows discomfort when the prosecutor tries to walk back his opinions.",
+      "publicTestimony": "He describes the scene, the recovery of the gun, the defendant's injuries, and the interviews. He used challenge tactics in the interviews, such as falsely telling Kessler the whole event might be on video, and he found places where Kessler's account could be questioned.",
+      "hiddenFacts": [
+        "When he told Kessler there might be a video, Kessler said 'Thank God. I was hoping somebody would record it.'",
+        "He recommended a manslaughter charge, not murder, but also wrote that the sheriff's office couldn't disprove self-defense.",
+        "His honest assessment at the time was that Kessler 'was telling the truth' or at least believed his own account. The state will object to this opinion testimony, but the defense can get the video comment in as a statement of Kessler's reaction.",
+        "He found no evidence that Kessler had called police about Black residents or visitors in a racially targeted way. Kessler's prior calls to the non-emergency line described people of several races.",
+        "Kessler never asked for a lawyer and waived Miranda repeatedly."
+      ],
+      "priorStatements": [
+        "Capias request: 'The encounter could have been avoided if Kessler had remained in his vehicle,' but 'the investigation has not revealed evidence to contradict Kessler's version.'",
+        "Recorded conversation with Kessler: 'If he's telling the truth, it's consistent.'",
+        "FBI civil-rights interview notes: he saw no evidence of racial animus."
+      ],
+      "credibilityIssues": [
+        "His opinion on the defendant's truthfulness is inadmissible if elicited directly and may be stricken. The defense must bring out the facts, not the opinion.",
+        "The state will paint him as an investigator who went easy on the defendant."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Dr. Hsiao-Wen Lin",
+      "role": "Associate Medical Examiner",
+      "side": "prosecution",
+      "demeanor": "A precise forensic pathologist who is defensive when questioned about changes in her opinions. She reads from notes she compiled after her deposition and gets flustered when asked where they came from.",
+      "publicTestimony": "Cause of death was a single gunshot wound to the chest, through the right ventricle of the heart. Intermediate-range fire. The victim could have lived and moved for 1 to 3 minutes. The small knuckle injury was the only injury on the victim other than the gunshot.",
+      "hiddenFacts": [
+        "In her deposition she said she did not know how long the victim remained conscious. At trial she says 1 to 3 minutes, based on new review.",
+        "She changed her opinion about THC and time of death after meeting with prosecutors.",
+        "She conceded that the knuckle abrasion is consistent with a punch landed within minutes of death.",
+        "She did not examine the clothing herself. The muzzle-to-clothing distance came from a separate firearms analyst."
+      ],
+      "priorStatements": [
+        "Deposition: 'I don't know' how long the decedent was conscious.",
+        "Autopsy report: 'small abrasion, left fourth finger' without a comment on its mechanism.",
+        "Deposition: she could not exclude that the THC level was pharmacologically active."
+      ],
+      "credibilityIssues": [
+        "Opinions changed after the deposition.",
+        "Relies on notes made after meeting prosecutors."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Dr. Martin Esquivel",
+      "role": "Defense forensic pathologist",
+      "side": "defense",
+      "demeanor": "A courtly, 70-year-old former chief medical examiner who has testified hundreds of times. He is patient, uses simple analogies, and keeps his composure under attack. His weakness is that he is paid and testifies mostly for the defense.",
+      "publicTestimony": "The powder tattooing on the victim's skin and the contact marks on the hoodie show that the muzzle was pressed against the fabric but 2 to 4 inches from the skin. That separation fits the victim leaning over the shooter with clothing hanging down, and it does not fit the shooter standing over the victim. The scalp lacerations fit impact against a hard surface like concrete. The broken nose fits a punch.",
+      "hiddenFacts": [
+        "He concedes the injuries alone could come from a scuffle rather than a sustained beating.",
+        "He was paid his standard fee of $400 per hour and has testified for the defense in the majority of his recent cases.",
+        "He did not personally examine the defendant."
+      ],
+      "priorStatements": [
+        "His textbook describes the same 'fabric hanging away' phenomenon in an unrelated case, which bolsters his consistency.",
+        "In a prior case he conceded that intermediate-range estimates carry a margin of error of a few inches."
+      ],
+      "credibilityIssues": [
+        "Paid expert who mostly testifies for the defense.",
+        "No personal examination of the defendant."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion for Immunity from Prosecution (Stand Your Ground Hearing)",
+      "basis": "Fla. Stat. § 776.032. Once the defense makes a prima facie claim of self-defense, the State must overcome the immunity claim by clear and convincing evidence at a pretrial evidentiary hearing (§ 776.032(4), as amended 2017). With no eyewitness to the start of the fight, the neighbor's account, and the defendant's injuries, the defense has a real but uphill claim, because judges rarely dismiss a homicide pretrial when the facts are disputed.",
+      "targets": [],
+      "merit": 25
+    },
+    {
+      "id": "m2",
+      "name": "Daubert Motion to Exclude Voice-Identification Experts",
+      "basis": "Fla. Stat. § 90.702 (Daubert). Speaker-recognition methods have not been validated for screams under extreme stress, the sample is only a few seconds long, the error rate is unknown, and the FBI declined to give an opinion. The state's own software requires much longer, cleaner samples.",
+      "targets": [
+        "e3"
+      ],
+      "merit": 85
+    },
+    {
+      "id": "m3",
+      "name": "Motion in Limine to Bar the Terms 'Profiled' and 'Racially Profiled'",
+      "basis": "§ 90.403. There is no evidence of racial motivation (the FBI and the lead investigator found none). Arguing 'racial profiling' invites a verdict on emotion. The court may bar 'racial profiling' while allowing the state to argue that the defendant 'profiled' the victim as a criminal.",
+      "targets": [],
+      "merit": 45
+    },
+    {
+      "id": "m4",
+      "name": "Motion to Admit Victim's Text Messages and Photos About Fighting",
+      "basis": "Relevant to who was the initial aggressor under § 90.404(1)(b). The defense argues the texts show the victim's familiarity with fighting. Obstacles: the defendant didn't know about them, specific-act evidence is barred, and authentication is weak.",
+      "targets": [],
+      "merit": 15
+    }
+  ],
+  "defenseAngles": [
+    "The state must disprove self-defense beyond a reasonable doubt. Stress that no one saw how the fight started and that 'we don't know' is an acquittal.",
+    "Following is lawful and the dispatcher's advice isn't an order. The question is who used force first, and Kessler said 'okay' and the wind noise stopped.",
+    "Make the state's eyewitness your best witness: dark clothing on top, 'ground and pound,' the man on the bottom yelling for help.",
+    "Gun-to-skin distance (fabric hanging away) plus the concrete lacerations support the victim being on top.",
+    "Cross Nia Trotter gently on her delayed, family-assisted account. Don't attack her grief, which the jury will sympathize with.",
+    "Exclude the voice-ID experts before trial. If the screams are unattributed, the state loses its most emotional piece of evidence."
+  ],
+  "startingLean": 52
+}

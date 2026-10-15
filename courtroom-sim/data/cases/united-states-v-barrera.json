@@ -1,0 +1,353 @@
+{
+  "id": "united-states-v-barrera",
+  "title": "United States v. Nelson Barrera",
+  "tier": 3,
+  "category": "gang",
+  "tagline": "A federal murder-in-aid-of-racketeering trial. Two cooperators say your client pulled the trigger to earn his rank in MS-13, and a veteran gang detective is ready to tell the jury everything the gang has ever done.",
+  "jurisdiction": "Federal: Eastern District of New York",
+  "courtName": "United States District Court for the Eastern District of New York (Central Islip)",
+  "basedOn": {
+    "name": "United States v. Mejia (Castro and Vasquez), 545 F.3d 179 (2d Cir. 2008)",
+    "year": "2008",
+    "summary": "MS-13 members Ledwin Castro and David Vasquez were tried in the Eastern District of New York on racketeering-related violent-crime charges arising from two June 2003 drive-by shootings on Long Island. The government's gang expert, a New York State Police investigator on the FBI's Long Island Gang Task Force, testified about MS-13's history, structure, and violence, including that the gang had committed at least 18 murders in the area and that the FBI had seized 15 to 25 of its guns. He built his testimony partly on custodial interrogations of MS-13 members.",
+    "realOutcome": "The jury convicted both defendants on all counts in 2005. In 2008 the Second Circuit vacated the convictions and ordered a new trial. It held that the expert went beyond interpreting gang structure and simply relayed facts that the government could have proved with ordinary witnesses. It also held that repeating testimonial statements from custodial interrogations violated Rule 703 and the Confrontation Clause (Crawford), and that the error was not harmless.",
+    "keyLessons": [
+      "A gang expert may explain gang structure, jargon, and methods, but may not act as a 'case agent' summarizing facts or as a conduit for testimonial hearsay (Mejia; later Smith v. Arizona, 2024).",
+      "Murder in aid of racketeering (18 U.S.C. § 1959) requires proof that the defendant's general purpose was to gain entry to or maintain or increase position in the enterprise. That element is often weak and is worth contesting.",
+      "Cooperators testifying for 5K1.1 letters are the core of most federal gang cases. Their benefits, prior lies, and proffer-session statements are Giglio material.",
+      "After United States v. Davis (2019) and United States v. Taylor (2022), RICO conspiracy and attempted Hobbs Act robbery can't serve as 'crime of violence' predicates for § 924(c)/(j).",
+      "Toolmark (ballistics) identification testimony has been limited by many federal courts after the 2016 PCAST report. Examiners may be barred from claiming 100% certainty."
+    ],
+    "sources": [
+      "https://blog.federaldefendersny.org/expert-tease/",
+      "https://www.justice.gov/usao-edny/pr/ms-13-gang-leader-convicted-racketeering-charges-including-murder-16-year-victim-alley"
+    ]
+  },
+  "defendant": {
+    "name": "Nelson Barrera",
+    "age": 20,
+    "background": "Born in San Miguel, El Salvador, he came to Long Island at 15 as an unaccompanied minor to join his mother, a housekeeper. He dropped out of high school and works in landscaping. The government says he joined the Sailors Locos Salvatrucha clique of MS-13 at 17 and was a 'chequeo' (probationary member) seeking promotion to 'homeboy' (full member).",
+    "privateAccount": "He admits he hung out with MS-13 guys from the neighborhood because they were Salvadoran and he needed protection at school from other gangs. He was jumped in at 17 and later tried to distance himself. On the night of the shooting he was at a clique meeting in a park, where the clique leader 'Demonio' said the 18th Street 'chavalas' (rivals) had to be dealt with. He says he left the meeting early with his girlfriend. He denies being in the car or shooting anyone. He believes 'Flaco' (the driver) is protecting his cousin, who he thinks was the real shooter. After arrest he talked to an HSI agent in English without an interpreter and 'said yes to things' he didn't understand.",
+    "priors": "No adult convictions. A juvenile adjudication for a school fight. Immigration removal proceedings are pending.",
+    "testifyRisk": "Very high. His English is limited and he'll testify through an interpreter. The government will cross him on the post-arrest statement, his tattoos, and the clique meeting he admits attending. Admitting membership is dangerous in a § 1959 case, and denying it would be contradicted by photos. He probably shouldn't testify."
+  },
+  "judge": {
+    "name": "Hon. Catherine Adeyemi-Ross",
+    "temperament": "fair",
+    "bio": "A former federal defender and later an Assistant U.S. Attorney. She knows gang prosecutions from both sides. She is rigorous on Rule 702 and the Confrontation Clause and has read the Second Circuit's 2008 gang-expert decision closely. She won't let a gang expert become a summary witness, but she allows standard gang expert testimony on structure and slang."
+  },
+  "prosecutor": {
+    "name": "Assistant U.S. Attorneys Daniel Kessler-Wu and Marisa Oyelaran",
+    "style": "A polished two-person team from the Long Island Criminal Section. They build the case in layers: first the enterprise (expert and videos), then the rivalry, then the cooperators, then corroboration (ballistics, phone records). They stress MS-13's brutality to make the enterprise feel real and frightening."
+  },
+  "caseSummary": "At 11:20 p.m. on September 14, a gray Honda Accord pulled up beside a group of teenagers outside a deli in Roosevelt Park, Long Island. A man in the back seat fired six shots from a .380 pistol, killing 17-year-old Josué Menjívar and wounding his friend Rafael Ochoa, 16. The government says Menjívar was a suspected associate of the rival 18th Street gang; his family says he wasn't in any gang.\n\nEight months later, the driver, Oscar 'Flaco' Pineda, was arrested on federal drug charges and began cooperating. He named Nelson Barrera as the shooter and said Barrera did it to 'earn his letters' and become a full MS-13 member. The clique leader, Edwin 'Demonio' Portillo, arrested in a separate sweep, also cooperated and said he gave the 'green light' and promoted Barrera afterward. A .380 pistol recovered from another clique member's apartment eight months later was linked by a firearms examiner to the shell casings at the scene. After his arrest Barrera made statements to a Homeland Security Investigations agent.",
+  "prosecutionTheory": "MS-13 is a racketeering enterprise that uses violence against rivals to maintain its territory and reputation. Barrera, a chequeo, killed Josué Menjívar on the clique leader's orders to earn promotion to full member. This is murder in aid of racketeering. The cooperators, the ballistics, and his own statements prove it.",
+  "charges": [
+    {
+      "id": "c1",
+      "name": "Racketeering Conspiracy",
+      "statute": "18 U.S.C. § 1962(d)",
+      "elements": [
+        "An enterprise existed (MS-13, an association in fact).",
+        "The enterprise was engaged in, or its activities affected, interstate or foreign commerce.",
+        "The defendant was associated with or employed by the enterprise.",
+        "The defendant knowingly agreed that a member of the conspiracy would commit at least two acts of racketeering activity (a pattern) in the conduct of the enterprise's affairs. No overt act is required (Salinas v. United States)."
+      ],
+      "maxSentence": "Life imprisonment (because the racketeering activity includes murder, which carries a maximum of life; 18 U.S.C. § 1963(a))."
+    },
+    {
+      "id": "c2",
+      "name": "Murder in Aid of Racketeering (VICAR)",
+      "statute": "18 U.S.C. § 1959(a)(1)",
+      "elements": [
+        "An enterprise existed that was engaged in racketeering activity.",
+        "The enterprise's activities affected interstate or foreign commerce.",
+        "The defendant committed murder (here under New York Penal Law § 125.25, murder in the second degree).",
+        "The defendant's general purpose in committing the murder was to gain entrance to, or to maintain or increase his position in, the enterprise (or it was committed for anything of pecuniary value from the enterprise)."
+      ],
+      "maxSentence": "Mandatory life imprisonment (death not sought).",
+      "lesserIncluded": []
+    },
+    {
+      "id": "c3",
+      "name": "Attempted Murder in Aid of Racketeering (Ochoa)",
+      "statute": "18 U.S.C. § 1959(a)(5)",
+      "elements": [
+        "Enterprise and racketeering activity, as above.",
+        "The defendant attempted to commit murder of Rafael Ochoa (under New York law).",
+        "The purpose element, as above."
+      ],
+      "maxSentence": "Up to 10 years."
+    },
+    {
+      "id": "c4",
+      "name": "Causing Death Through Use of a Firearm",
+      "statute": "18 U.S.C. § 924(j)(1) (and § 924(c)(1)(A)(iii))",
+      "elements": [
+        "The defendant committed a crime of violence prosecutable in federal court (the government must identify a qualifying predicate; after United States v. Davis, RICO conspiracy doesn't qualify).",
+        "The defendant knowingly used, carried, or discharged a firearm during and in relation to that crime.",
+        "In the course of that violation, the defendant caused the death of a person through the use of the firearm, and the killing was murder (18 U.S.C. § 1111)."
+      ],
+      "maxSentence": "Death or imprisonment for any term of years or life (death not sought). If convicted only under § 924(c)(1)(A)(iii): mandatory minimum 10 years consecutive."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e1",
+      "name": "Gang expert testimony (Detective Luis Arroyo)",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "A Suffolk County police detective assigned to an FBI task force testifies about MS-13's origins, structure (cliques, 'chequeos,' 'homeboys'), rules (killing rivals to earn promotion), the rivalry with 18th Street, tattoos and hand signs, and says the clique committed several local murders and drug sales.",
+      "weakness": "Much of his knowledge comes from custodial interrogations of MS-13 members, which is testimonial hearsay. He can't separate which parts of his opinion come from which source. He has no academic training, and his 'every chequeo must kill to be promoted' claim is contradicted by cooperators who were promoted without killing anyone.",
+      "admissibilityIssue": "FRE 702 and 703; Confrontation Clause (Crawford v. Washington; Smith v. Arizona, 602 U.S. 779 (2024)); the Second Circuit's MS-13 gang-expert decision, 545 F.3d 179 (2d Cir. 2008). The expert can't testify to facts of specific crimes the government could prove through fact witnesses, and can't relay testimonial statements.",
+      "suppressible": true
+    },
+    {
+      "id": "e2",
+      "name": "Cooperating witness testimony (Pineda and Portillo)",
+      "type": "testimonial",
+      "offeredBy": "prosecution",
+      "description": "The driver says Barrera fired from the back seat. The clique leader says he gave the green light and promoted Barrera to 'homeboy' days later.",
+      "weakness": "Both face mandatory life and are testifying for 5K1.1 letters. Pineda named a different shooter in his first proffer. Portillo wasn't at the scene. His knowledge of the shooting comes from what others told him. Both have lied to the government before.",
+      "admissibilityIssue": "Giglio (all proffer statements, agreements, benefits, immigration relief). Portillo's recounting of what others told him is hearsay unless it qualifies under FRE 801(d)(2)(E) (co-conspirator statements, in furtherance of the conspiracy).",
+      "suppressible": false
+    },
+    {
+      "id": "e3",
+      "name": "Firearms/toolmark identification: .380 pistol",
+      "type": "forensic",
+      "offeredBy": "prosecution",
+      "description": "A police lab examiner says casings from the scene were fired from a .380 pistol recovered eight months later from the apartment of another clique member (not Barrera).",
+      "weakness": "The gun was never found with Barrera and has no prints or DNA linked to him. Toolmark identification is subjective, and the 2016 PCAST report found insufficient validation of its foundational reliability. The examiner's lab isn't accredited for .380 comparisons. The gun was shared among clique members ('the neighborhood gun').",
+      "admissibilityIssue": "FRE 702 (as amended 2023). Many courts limit examiners to saying casings are 'consistent with' being fired from the gun, and bar claims of certainty.",
+      "suppressible": true
+    },
+    {
+      "id": "e4",
+      "name": "Defendant's post-arrest statement to HSI agent",
+      "type": "statement",
+      "offeredBy": "prosecution",
+      "description": "After arrest at 6 a.m., in an HSI office, the agent read Miranda warnings in English. Barrera signed an English form. In a 3-hour unrecorded interview he allegedly said he was in MS-13, that he 'was there' the night of the shooting, and that 'Demonio gave me the green light.'",
+      "weakness": "Barrera's English is limited. No interpreter was used, and no Spanish-language warnings were given. The interview wasn't recorded, despite DOJ's 2014 policy presuming recording of custodial interviews. The agent's notes are brief and were typed up weeks later. 'I was there' could refer to the clique meeting in the park.",
+      "admissibilityIssue": "Miranda waiver validity (knowing and intelligent, given the language barrier; see United States v. Garibay); voluntariness (18 U.S.C. § 3501). The DOJ recording policy isn't enforceable law but is powerful on cross.",
+      "suppressible": true
+    },
+    {
+      "id": "e5",
+      "name": "Photos, tattoos, and social media",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "Photos of Barrera throwing MS-13 hand signs, a 'MS' tattoo on his chest, and Facebook posts using clique slang.",
+      "weakness": "They show association, not participation in a murder. Many were taken when he was 16 or 17.",
+      "admissibilityIssue": "FRE 403. Evidence of membership is generally admissible to prove the enterprise and association elements, but duplicative or inflammatory items can be limited.",
+      "suppressible": false
+    },
+    {
+      "id": "e6",
+      "name": "Phone records and cell-site data",
+      "type": "digital",
+      "offeredBy": "prosecution",
+      "description": "Barrera's phone connected to a tower that serves the area of the deli between 11:05 and 11:30 p.m.",
+      "weakness": "The same tower serves the park where the clique meeting took place and where Barrera says he was. It also serves his girlfriend's home. Cell-site data can't distinguish between locations a mile apart.",
+      "admissibilityIssue": "Carpenter v. United States (2018) requires a warrant for historical cell-site data. Check whether a warrant or only a § 2703(d) order was obtained.",
+      "suppressible": true
+    },
+    {
+      "id": "e7",
+      "name": "Surviving victim's description of the shooter",
+      "type": "testimonial",
+      "offeredBy": "defense",
+      "description": "Rafael Ochoa told police that night that the shooter was 'a tall skinny guy with a shaved head' in the front passenger seat.",
+      "weakness": "He was being shot at and saw the car for seconds. The government will say he was mistaken about the seat.",
+      "admissibilityIssue": "His statement to police can be used to impeach if he testifies differently, or may qualify as an excited utterance.",
+      "suppressible": false
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "w1",
+      "name": "Oscar 'Flaco' Pineda",
+      "role": "Cooperating witness: driver",
+      "side": "prosecution",
+      "demeanor": "Soft-spoken and eager to please the prosecutors. He testifies through an interpreter and often looks to the government's table. He gets defensive when his first proffer comes up and says he was 'scared' then.",
+      "publicTestimony": "He drove the Honda. Barrera was in the back seat with the .380 and fired at the group outside the deli. Barrera did it to get his letters.",
+      "hiddenFacts": [
+        "In his first proffer session he named his cousin, Kevin 'Sombra' Pineda, as the shooter. He changed his story in the second session after being told he wasn't being truthful.",
+        "His cousin Sombra is tall, skinny, and has a shaved head, matching the surviving victim's description.",
+        "His cousin hasn't been charged.",
+        "He is facing a 10-year mandatory minimum on the drug charges and life for his role in the murder. The government has promised a 5K1.1 letter and help with an S-visa application for his family.",
+        "He's been disciplined in jail for passing notes to other MS-13 members about 'what to say.'"
+      ],
+      "priorStatements": [
+        "First proffer (302 report): 'Sombra was in the back seat. Sombra fired the shots.'",
+        "Second proffer: 'Nelson was in the back seat. I lied before to protect my cousin.'",
+        "Plea allocution: 'I drove the car and another member fired shots.' He didn't name anyone."
+      ],
+      "credibilityIssues": [
+        "Cooperation agreement and 5K1.1 letter.",
+        "Changed identification of the shooter.",
+        "Motive to protect his cousin.",
+        "Jail notes about coordinating stories."
+      ]
+    },
+    {
+      "id": "w2",
+      "name": "Edwin 'Demonio' Portillo",
+      "role": "Cooperating witness: clique leader ('primera palabra')",
+      "side": "prosecution",
+      "demeanor": "Calm, cold, and practiced. He has testified in two prior federal trials. He speaks confidently about MS-13 rules and seems almost proud.",
+      "publicTestimony": "As clique leader, he gave the 'green light' on 18th Street members. After the shooting, members told him Barrera did it, and he promoted Barrera to 'homeboy.'",
+      "hiddenFacts": [
+        "He wasn't at the scene. Everything he knows about who fired came from others, including Pineda.",
+        "He has admitted to participating in four murders and has been promised a 5K1.1 letter that could get him out of prison in 15 years.",
+        "In a prior trial he testified that chequeos were sometimes promoted for selling drugs or paying dues, not killing.",
+        "Barrera's promotion to 'homeboy' was recorded in clique notes seized by police, dated three weeks before the shooting.",
+        "He lied to the FBI about his role in a different murder during his first two proffer sessions."
+      ],
+      "priorStatements": [
+        "Prior trial testimony: 'Not everyone has to kill to get promoted. Some pay their way.'",
+        "Proffer notes: 'I heard Sombra did the deli thing.'",
+        "Clique notebook listing Barrera as a 'homeboy' on a date before the shooting."
+      ],
+      "credibilityIssues": [
+        "Cooperation agreement.",
+        "No personal knowledge (hearsay).",
+        "Prior lies to law enforcement.",
+        "Contradicted by documentary evidence (notebook)."
+      ]
+    },
+    {
+      "id": "w3",
+      "name": "Detective Luis Arroyo",
+      "role": "Government gang expert",
+      "side": "prosecution",
+      "demeanor": "Confident and experienced. He speaks authoritatively about MS-13 and slips facts about specific crimes and defendants into 'background' answers. He becomes evasive when asked where specific information came from.",
+      "publicTestimony": "MS-13 is a violent transnational gang. Chequeos must commit violence to be promoted. Rivals like 18th Street are killed on sight. The clique has committed murders and drug sales in the area.",
+      "hiddenFacts": [
+        "His knowledge comes largely from interviewing arrested MS-13 members, including in this case.",
+        "He interviewed Pineda and Portillo during this investigation, so he is a case agent, not an independent expert.",
+        "He can't say which of his opinions come from which interviews.",
+        "He's never written or published anything about MS-13 and has no formal training beyond task-force seminars.",
+        "He knows promotion without killing is common."
+      ],
+      "priorStatements": [
+        "Testimony in a prior case: 'Promotions depend on the clique; some are for money.'",
+        "Task-force notes from interviews with this case's cooperators."
+      ],
+      "credibilityIssues": [
+        "Case-agent bias.",
+        "Conduit for testimonial hearsay (545 F.3d 179).",
+        "Inconsistent prior testimony."
+      ]
+    },
+    {
+      "id": "w4",
+      "name": "Special Agent Jennifer Kowalski",
+      "role": "Homeland Security Investigations agent (took post-arrest statement)",
+      "side": "prosecution",
+      "demeanor": "Professional and firm. She insists the defendant understood English 'just fine.'",
+      "publicTestimony": "She read the Miranda warnings. Barrera agreed to talk and said he was in MS-13, he 'was there,' and 'Demonio gave me the green light.'",
+      "hiddenFacts": [
+        "She doesn't speak Spanish, and there was no interpreter.",
+        "Barrera asked 'Can you say again?' several times during the warnings.",
+        "The interview was not recorded even though recording equipment was available.",
+        "She typed her report 19 days after the interview.",
+        "Her notes don't contain the phrase 'I was there.' It first appears in the typed report."
+      ],
+      "priorStatements": [
+        "Handwritten notes: 'MS - yes. Demonio - leader. Park meeting.'",
+        "Typed report: 'BARRERA stated he was there and that Demonio gave him the green light.'"
+      ],
+      "credibilityIssues": [
+        "Unrecorded interview.",
+        "Language barrier.",
+        "Delay in writing the report, and discrepancies between notes and report."
+      ]
+    },
+    {
+      "id": "w5",
+      "name": "Rafael Ochoa",
+      "role": "Surviving victim",
+      "side": "prosecution",
+      "demeanor": "A traumatized, quiet 17-year-old who wants justice for his friend and doesn't want to be there. He may bristle if the defense suggests he or Josué were in a gang.",
+      "publicTestimony": "He describes the shooting, the car, his wounds, and Josué's death.",
+      "hiddenFacts": [
+        "He told police that night the shooter was 'tall, skinny, shaved head,' in the front passenger seat. Barrera is short and had long hair then.",
+        "Josué wasn't in 18th Street. He'd refused to join any gang, but some 18th Street kids hung around the deli.",
+        "Detectives showed him a photo array including Barrera; he didn't identify anyone."
+      ],
+      "priorStatements": [
+        "Police report: 'The shooter was a tall skinny male with a shaved head, in the front passenger seat.'",
+        "Photo array report: 'No identification.'"
+      ],
+      "credibilityIssues": [
+        "Stress and short observation (but his description is exculpatory, and he has no motive to lie for Barrera)."
+      ]
+    },
+    {
+      "id": "w6",
+      "name": "Yesenia Flores",
+      "role": "Defendant's girlfriend (alibi witness)",
+      "side": "defense",
+      "demeanor": "Nervous and protective of Nelson. She has a child with him. She's clearly scared of MS-13.",
+      "publicTestimony": "Nelson left the park meeting with her around 10:45 p.m. and they went to her mother's apartment. He was there until the morning.",
+      "hiddenFacts": [
+        "Her mother saw Nelson arrive and can corroborate.",
+        "She got a text from Nelson's phone at 11:15 p.m. while he was sitting next to her; she has a screenshot.",
+        "She was threatened by clique members after Nelson's arrest and told not to testify."
+      ],
+      "priorStatements": [
+        "Statement to the defense investigator."
+      ],
+      "credibilityIssues": [
+        "Girlfriend and mother of his child.",
+        "Knew about his gang membership."
+      ]
+    }
+  ],
+  "pretrialMotions": [
+    {
+      "id": "m1",
+      "name": "Motion in Limine to Limit Gang Expert Testimony (Second Circuit Gang-Expert Rule / Crawford)",
+      "basis": "FRE 702 and 703; Confrontation Clause; the Second Circuit's MS-13 gang-expert decision, 545 F.3d 179 (2d Cir. 2008); Smith v. Arizona (2024). The expert can't relay testimonial statements from custodial interrogations, testify to facts of specific crimes, or serve as a summary witness. As a case agent who interviewed the cooperators, he presents a danger of blending expert and fact testimony. Request a Daubert hearing and a limiting instruction.",
+      "targets": [
+        "e1"
+      ],
+      "merit": 60
+    },
+    {
+      "id": "m2",
+      "name": "Motion to Suppress Post-Arrest Statement",
+      "basis": "Miranda v. Arizona. A waiver must be knowing and intelligent, and Barrera's limited English, the lack of an interpreter or Spanish-language warnings, and his repeated requests for clarification show he didn't understand his rights. Voluntariness under 18 U.S.C. § 3501 (early morning arrest, 3-hour unrecorded interview).",
+      "targets": [
+        "e4"
+      ],
+      "merit": 50
+    },
+    {
+      "id": "m3",
+      "name": "Motion to Dismiss § 924(j) Count to the Extent Predicated on RICO Conspiracy",
+      "basis": "United States v. Davis, 588 U.S. 445 (2019) (residual clause void for vagueness). RICO conspiracy isn't a categorical crime of violence. If the indictment and jury instructions allow conviction based on the conspiracy predicate, the count must be dismissed or the jury instructed that only the VICAR murder predicate qualifies, with a special verdict.",
+      "targets": [],
+      "merit": 70
+    },
+    {
+      "id": "m4",
+      "name": "Daubert Motion to Limit Firearms Toolmark Testimony",
+      "basis": "FRE 702 (2023 amendment emphasizing the court's gatekeeping); PCAST 2016 report. The examiner can't testify to 'identification' with certainty or to the exclusion of all other firearms. At most, 'consistent with.'",
+      "targets": [
+        "e3"
+      ],
+      "merit": 45
+    }
+  ],
+  "defenseAngles": [
+    "Pineda's first proffer named his cousin, who matches the survivor's description. Force him to explain which version is true.",
+    "The clique notebook shows Barrera was promoted before the shooting, which destroys the government's motive for the VICAR purpose element.",
+    "Portillo wasn't there. Everything he says about the shooter is hearsay, and his prior testimony says chequeos can be promoted without killing.",
+    "Keep the gang expert inside the Second Circuit's lines (545 F.3d 179). Every time he says 'based on my interviews,' object under Crawford.",
+    "The HSI statement: no interpreter, no recording, and 'I was there' appears only in a report typed 19 days later.",
+    "The gun was never Barrera's, and the survivor described someone else in a different seat."
+  ],
+  "startingLean": 28
+}
