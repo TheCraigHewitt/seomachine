@@ -20,6 +20,7 @@ SEO Machine is built on Claude Code and provides:
 ### Prerequisites
 - [Claude Code](https://claude.com/claude-code) installed
 - Anthropic API account
+- [DataForSEO account](https://dataforseo.com)
 
 ### Installation
 
