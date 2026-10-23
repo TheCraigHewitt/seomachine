@@ -1,5 +1,7 @@
 # SEO Machine
 
+[![Featured in Awesome Open-Source SEO](https://img.shields.io/badge/Featured_in-Awesome_Open--Source_SEO-7c3aed?style=for-the-badge)](https://github.com/ZensInk/awesome-open-source-seo)
+
 A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.
 
 Walkthrough: https://www.youtube.com/watch?v=Ncj7fGFbmEs

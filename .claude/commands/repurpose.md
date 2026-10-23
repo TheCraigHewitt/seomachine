@@ -154,6 +154,10 @@ repurposed/
 └── project-management-guide-repurposed-2026-04-10.md
 ```
 
+## Automatic Content Scrubbing
+
+Immediately after saving, run `/scrub [file-path]` on the repurposed file to remove invisible Unicode watermarks and em-dash overuse. This matters most for the Reddit and Quora versions, which need to read as written by a person.
+
 ## Quality Standards
 
 - Each platform version must be genuinely adapted, not copy-pasted
