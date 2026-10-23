@@ -49,11 +49,13 @@ class DataAggregator:
             print(f"Warning: DataForSEO not configured: {e}")
             self.dfs = None
 
-        try:
-            self.exa = ExaSearch()
-        except Exception as e:
-            print(f"Warning: Exa Search not configured: {e}")
-            self.exa = None
+        # Exa is optional: only enabled when EXA_API_KEY is set and exa-py is installed
+        self.exa = None
+        if os.getenv("EXA_API_KEY"):
+            try:
+                self.exa = ExaSearch()
+            except Exception as e:
+                print(f"Warning: Exa Search not configured: {e}")
 
     def get_comprehensive_page_performance(
         self,

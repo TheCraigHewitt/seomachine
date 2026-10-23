@@ -39,7 +39,7 @@ Data sources provide real-time performance metrics for:
   - Search volume and difficulty
   - Related keywords and questions
 
-### Exa AI Search
+### Exa AI Search (optional)
 - **Purpose**: AI-powered web search, content discovery, and competitor content analysis
 - **Key Capabilities**:
   - Semantic search (finds contextually relevant content, not just keyword matches)
@@ -115,10 +115,11 @@ pip install -r data_sources/requirements.txt
    DATAFORSEO_PASSWORD=your_password
    ```
 
-#### Exa AI Search
+#### Exa AI Search (optional)
 1. Sign up at [Exa](https://exa.ai/)
 2. Get your API key from the dashboard
-3. Add to `.env` file:
+3. Install the client: `pip install exa-py`
+4. Add to `.env` file:
    ```
    EXA_API_KEY=your_api_key
    ```

@@ -42,5 +42,5 @@ lxml>=4.9.0
 # Markdown processing (for WordPress publisher)
 markdown>=3.5.0
 
-# Exa AI-powered search
-exa-py>=2.0.0
+# Optional: Exa AI-powered search (only needed if EXA_API_KEY is set)
+# pip install exa-py>=2.0.0
