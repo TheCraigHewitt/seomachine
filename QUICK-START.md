@@ -45,7 +45,7 @@ Fill out these **3 essential files** with your company info:
 
 ```bash
 # Open in Claude Code
-claude-code .
+claude
 
 # Research a topic
 /research [your topic]
