@@ -9,7 +9,7 @@ Walkthrough: https://www.youtube.com/watch?v=Ncj7fGFbmEs
 SEO Machine is built on Claude Code and provides:
 - **Custom Commands**: `/research`, `/write`, `/rewrite`, `/analyze-existing`, `/optimize`, `/performance-review`, `/publish-draft`, `/article`, `/priorities`, plus specialized research and landing page commands
 - **Specialized Agents**: Content analyzer, SEO optimization, meta element creation, internal linking, keyword mapping, editor, performance analysis, headline generator, CRO analyst, landing page optimizer
-- **Marketing Skills**: 25 marketing skills for copywriting, CRO, A/B testing, email sequences, pricing strategy, and more
+- **Marketing Skills**: 26 marketing skills for copywriting, CRO, A/B testing, email sequences, pricing strategy, and more
 - **Advanced SEO Analysis**: Search intent detection, keyword density & clustering, content length comparison, readability scoring, SEO quality rating (0-100)
 - **Data Integrations**: Google Analytics 4, Google Search Console, DataForSEO for real-time performance insights
 - **Context-Driven**: Brand voice, style guide, SEO guidelines, and examples guide all content
@@ -470,13 +470,13 @@ Specialized agents that automatically analyze content and provide expert recomme
 
 ## Marketing Skills
 
-SEO Machine includes 25 marketing skills accessible as slash commands:
+SEO Machine includes 26 marketing skills accessible as slash commands:
 
 | Category | Skills |
 |----------|--------|
 | **Copywriting** | `/copywriting`, `/copy-editing` |
 | **CRO** | `/page-cro`, `/form-cro`, `/signup-flow-cro`, `/onboarding-cro`, `/popup-cro`, `/paywall-upgrade-cro` |
-| **Strategy** | `/content-strategy`, `/product-marketing-context`, `/pricing-strategy`, `/launch-strategy`, `/marketing-ideas` |
+| **Strategy** | `/content-strategy`, `/product-marketing-context`, `/pricing-strategy`, `/launch-strategy`, `/marketing-ideas`, `/growth-lead` |
 | **Channels** | `/email-sequence`, `/social-content`, `/paid-ads` |
 | **SEO** | `/seo-audit`, `/schema-markup`, `/programmatic-seo`, `/competitor-alternatives` |
 | **Analytics** | `/analytics-tracking`, `/ab-test-setup` |
@@ -645,7 +645,7 @@ seomachine/
 │   │   ├── headline-generator.md
 │   │   ├── cro-analyst.md
 │   │   └── landing-page-optimizer.md
-│   └── skills/            # 25 marketing skills
+│   └── skills/            # 26 marketing skills
 ├── data_sources/          # Analytics integrations
 │   ├── modules/          # Python analysis modules
 │   │   ├── google_analytics.py
