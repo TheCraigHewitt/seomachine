@@ -94,7 +94,7 @@ Try a simple workflow to ensure everything works:
 
 ```bash
 # 1. Open the project in Claude Code
-claude-code .
+claude
 
 # 2. Try researching a topic
 /research a topic relevant to your business
