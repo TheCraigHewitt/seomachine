@@ -355,6 +355,9 @@ class WordPressPublisher:
         response.raise_for_status()
         return response.json()
 
+    # Backwards-compatible alias for scripts written against the Yoast-only API
+    set_yoast_meta = set_seo_meta
+
     def publish_draft(self, file_path: str, post_type: str = 'post') -> Dict:
         """
         Publish a draft file to WordPress as a post, page, or custom post type
