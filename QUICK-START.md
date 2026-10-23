@@ -4,6 +4,11 @@ Get SEO Machine running in **10 minutes** ⚡
 
 ## Step 1: Install Dependencies (2 min)
 
+Before starting, install [Claude Code](https://claude.com/claude-code) and
+authenticate with either a Claude Pro, Max, Team, or Enterprise subscription,
+or an Anthropic Console account with API billing enabled. Optional data-source
+integrations require their own credentials.
+
 ```bash
 # Install Python dependencies for analysis modules
 pip install -r data_sources/requirements.txt
