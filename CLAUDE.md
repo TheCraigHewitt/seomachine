@@ -12,7 +12,7 @@ SEO Machine is an open-source Claude Code workspace for creating SEO-optimized b
 pip install -r data_sources/requirements.txt
 ```
 
-API credentials are configured in `data_sources/config/.env` (GA4, GSC, DataForSEO, WordPress). GA4 service account credentials go in `credentials/ga4-credentials.json`.
+API credentials are configured in `data_sources/config/.env` (GA4, GSC, DataForSEO, WordPress, and optionally Exa). GA4 service account credentials go in `credentials/ga4-credentials.json`.
 
 ## Commands
 
@@ -31,6 +31,7 @@ All commands are defined in `.claude/commands/` and invoked as slash commands:
 - `/research-serp`, `/research-gaps`, `/research-trending`, `/research-performance`, `/research-topics` - Specialized research commands
 - `/research-ai-citations [topic]` - AI citation audit: generates prompts, clusters them, audits which sources AI cites
 - `/repurpose [file]` - Adapts article for LinkedIn, Medium, Reddit, Quora distribution
+- `/scrub [file]` - Removes invisible Unicode watermarks and AI telltale patterns; auto-run by `/write`, `/rewrite`, `/article`, `/repurpose`
 - `/landing-write`, `/landing-audit`, `/landing-research`, `/landing-publish`, `/landing-competitor` - Landing page commands
 
 ## Architecture
@@ -40,6 +41,10 @@ All commands are defined in `.claude/commands/` and invoked as slash commands:
 **Commands** (`.claude/commands/`) orchestrate workflows. **Agents** (`.claude/agents/`) are specialized roles invoked by commands. After `/write`, these agents auto-run: SEO Optimizer, Meta Creator, Internal Linker, Keyword Mapper.
 
 Key agents: `content-analyzer.md`, `seo-optimizer.md`, `meta-creator.md`, `internal-linker.md`, `keyword-mapper.md`, `editor.md`, `headline-generator.md`, `cro-analyst.md`, `performance.md`, `cluster-strategist.md`.
+
+### Marketing Skills
+
+26 marketing skills live in `.claude/skills/`. Each must be a folder containing `SKILL.md` (`.claude/skills/<name>/SKILL.md`); loose `.md` files there are not loaded.
 
 ### Python Analysis Pipeline
 
@@ -55,8 +60,9 @@ Located in `data_sources/modules/`. The Content Analyzer chains:
 - `google_analytics.py` - GA4 traffic/engagement data
 - `google_search_console.py` - Rankings and impressions
 - `dataforseo.py` - SERP positions, keyword metrics
+- `exa_search.py` - Optional semantic search and content discovery; only enabled when `EXA_API_KEY` is set (`exa-py` is not in requirements.txt)
 - `data_aggregator.py` - Combines all sources into unified analytics
-- `wordpress_publisher.py` - Publishes to WordPress with Yoast SEO metadata
+- `wordpress_publisher.py` - Publishes to WordPress with Yoast SEO and/or RankMath metadata
 
 ### Opportunity Scoring
 
@@ -102,4 +108,4 @@ Rewrites go to `rewrites/`. Landing pages go to `landing-pages/`. Audits go to `
 
 ## WordPress Integration
 
-Publishing uses the WordPress REST API with a custom MU-plugin (`wordpress/seo-machine-yoast-rest.php`) that exposes Yoast SEO fields. Articles are published in WordPress block format (HTML comments in Markdown files).
+Publishing uses the WordPress REST API with custom MU-plugins (`wordpress/seo-machine-yoast-rest.php`, `wordpress/seo-machine-rankmath-rest.php`) that expose Yoast or RankMath SEO fields. `set_seo_meta()` writes both field sets; WordPress ignores whichever plugin isn't installed. Articles are published in WordPress block format (HTML comments in Markdown files).
