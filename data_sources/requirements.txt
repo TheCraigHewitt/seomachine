@@ -44,3 +44,6 @@ markdown>=3.5.0
 
 # Optional: Exa AI-powered search (only needed if EXA_API_KEY is set)
 # pip install exa-py>=2.0.0
+
+# Optional: Firecrawl web search (only needed if FIRECRAWL_API_KEY is set)
+# pip install firecrawl-py>=4.54.0

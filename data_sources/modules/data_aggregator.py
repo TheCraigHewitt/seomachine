@@ -14,12 +14,14 @@ try:
     from .google_search_console import GoogleSearchConsole
     from .dataforseo import DataForSEO
     from .exa_search import ExaSearch
+    from .firecrawl_search import FirecrawlSearch
 except ImportError:
     # Fallback for direct execution
     from google_analytics import GoogleAnalytics
     from google_search_console import GoogleSearchConsole
     from dataforseo import DataForSEO
     from exa_search import ExaSearch
+    from firecrawl_search import FirecrawlSearch
 
 
 class DataAggregator:
@@ -56,6 +58,14 @@ class DataAggregator:
                 self.exa = ExaSearch()
             except Exception as e:
                 print(f"Warning: Exa Search not configured: {e}")
+
+        # Firecrawl is optional: only enabled when FIRECRAWL_API_KEY is set and firecrawl-py is installed
+        self.firecrawl = None
+        if os.getenv("FIRECRAWL_API_KEY"):
+            try:
+                self.firecrawl = FirecrawlSearch()
+            except Exception as e:
+                print(f"Warning: Firecrawl Search not configured: {e}")
 
     def get_comprehensive_page_performance(
         self,

@@ -49,6 +49,14 @@ Data sources provide real-time performance metrics for:
   - Category-filtered search (news, research papers, companies, etc.)
   - Full content retrieval with highlights, text, or summaries
 
+### Firecrawl Search (optional)
+- **Purpose**: Web search with full page content, for content discovery and competitor content analysis
+- **Key Capabilities**:
+  - Web and news search with domain include/exclude filters
+  - Full page content of each result as clean markdown (no separate scraping step)
+  - Competitor content analysis across domains
+  - Time-filtered search for recent content ideas
+
 ## Directory Structure
 
 ```
@@ -63,6 +71,7 @@ data_sources/
 │   ├── google_search_console.py
 │   ├── dataforseo.py
 │   ├── exa_search.py
+│   ├── firecrawl_search.py
 │   └── data_aggregator.py
 ├── utils/                 # Utility functions
 │   ├── auth.py           # Authentication helpers
@@ -124,6 +133,15 @@ pip install -r data_sources/requirements.txt
    EXA_API_KEY=your_api_key
    ```
 
+#### Firecrawl Search (optional)
+1. Sign up at [Firecrawl](https://firecrawl.dev/)
+2. Get your API key from the dashboard
+3. Install the client: `pip install firecrawl-py`
+4. Add to `.env` file:
+   ```
+   FIRECRAWL_API_KEY=your_api_key
+   ```
+
 ### 3. Configure Data Sources
 
 Copy example config:
@@ -148,6 +166,9 @@ DATAFORSEO_BASE_URL=https://api.dataforseo.com
 
 # Exa AI Search
 EXA_API_KEY=your_api_key
+
+# Firecrawl Search
+FIRECRAWL_API_KEY=your_api_key
 
 # Cache settings
 CACHE_ENABLED=true
@@ -255,6 +276,42 @@ research = exa.research_topic(
     include_research=True,
 )
 ```
+
+#### Fetch Firecrawl Search Data
+```python
+from data_sources.modules.firecrawl_search import FirecrawlSearch
+
+firecrawl = FirecrawlSearch()
+
+# Web search with result snippets
+results = firecrawl.search(
+    query="best podcast hosting platforms for beginners",
+    num_results=10,
+)
+
+# Web + news search with the full markdown content of each result
+results = firecrawl.search(
+    query="podcast advertising trends",
+    num_results=5,
+    content_mode="markdown",
+    include_news=True,
+)
+
+# Find competitor content on a topic
+competitor_content = firecrawl.find_competitor_content(
+    topic="podcast monetization",
+    competitor_domains=["competitor1.com", "competitor2.com"],
+)
+
+# Discover recent content ideas
+ideas = firecrawl.discover_content_ideas(
+    seed_topic="podcast monetization strategies",
+    num_results=20,
+    days_back=30,
+)
+```
+
+Run the built-in example: `python data_sources/modules/firecrawl_search.py`
 
 ### From Claude Code Agent
 
@@ -365,6 +422,10 @@ The Performance Agent uses this data to:
 - **Pricing**: Pay-per-request after free tier
 - **Tip**: Use caching and batch research sessions to stay within limits
 
+### Firecrawl Search
+- **Pricing**: See [Firecrawl pricing](https://firecrawl.dev/pricing)
+- **Tip**: `content_mode="markdown"` also fetches each result page, so it costs more than the default `description` mode; use it only when you need full page content
+
 ## Security
 
 **IMPORTANT**: Never commit credentials to git!
@@ -421,6 +482,7 @@ For issues with:
 - **Search Console API**: [Search Console API docs](https://developers.google.com/webmaster-tools/search-console-api-original)
 - **DataForSEO**: [DataForSEO docs](https://docs.dataforseo.com/)
 - **Exa AI Search**: [Exa docs](https://exa.ai/docs)
+- **Firecrawl Search**: [Firecrawl docs](https://docs.firecrawl.dev)
 
 ---
 
