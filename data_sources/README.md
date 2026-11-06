@@ -49,6 +49,12 @@ Data sources provide real-time performance metrics for:
   - Category-filtered search (news, research papers, companies, etc.)
   - Full content retrieval with highlights, text, or summaries
 
+### Parallel Search (optional)
+- **Purpose**: Find sources and relevant passages for research briefs without an Exa key or SDK
+- **Client**: `data_sources.modules.parallel_search.ParallelSearch`
+- **Transport**: [Parallel Unified MCP](https://docs.parallel.ai/integrations/mcp/quickstart) at `https://mcp.parallel.ai/mcp`
+- **Selection**: Explicit opt-in by importing the client or running the module below; existing providers are unchanged
+
 ## Directory Structure
 
 ```
@@ -62,6 +68,7 @@ data_sources/
 │   ├── google_analytics.py
 │   ├── google_search_console.py
 │   ├── dataforseo.py
+│   ├── parallel_search.py
 │   ├── exa_search.py
 │   └── data_aggregator.py
 ├── utils/                 # Utility functions
@@ -255,6 +262,49 @@ research = exa.research_topic(
     include_research=True,
 )
 ```
+
+#### Fetch Parallel Search Data (opt-in)
+
+From the repository root, after installing the existing requirements:
+
+```bash
+python -m data_sources.modules.parallel_search "best podcast hosting platforms for beginners" --num-results 3
+```
+
+Or import the native client when collecting supporting sources for `/research`:
+
+```python
+from data_sources.modules.parallel_search import ParallelSearch
+
+search = ParallelSearch()
+results = search.search("best podcast hosting platforms for beginners", num_results=3)
+for source in results["results"]:
+    print(source["title"], source["url"], source["content"])
+```
+
+The result shape matches Exa's basic search output: `results` contains `title`,
+`url`, `content` (joined excerpt passages), and `published_date` when available;
+`total_results` counts the returned entries. This is source discovery, not SERP
+rankings, keyword volume, or a replacement for Exa's advanced filters and helpers.
+`num_results` must be between 1 and 10 and caps results locally; fewer may be found.
+
+No key is required. Anonymous requests are free at lower rate limits and use the
+server's default Fast search mode. Optionally pass `ParallelSearch(api_key=...)`
+or set `PARALLEL_API_KEY`. The CLI loads `data_sources/config/.env`; imported
+clients read the process environment (load your `.env` yourself if needed).
+An explicit key takes precedence over the environment. Empty keys are rejected,
+and authentication failures never retry anonymously. HTTP, rate-limit, timeout,
+protocol, and tool errors propagate so research can report missing evidence.
+
+The client only contacts the network in `search()`. Use `enabled=False`,
+`offline=True`, CLI `--offline`, or `PARALLEL_SEARCH_ENABLED=false` to block
+requests. Selecting Parallel does not change any saved provider choice or enable
+other data sources. It does not automatically replace Exa when Exa fails.
+No fetch tool or background GET stream is exposed; search excerpts are returned
+directly. Redirects are refused. All MCP requests, including session teardown,
+identify this integration with `User-Agent: seomachine/parallel-search`.
+This client does not use the analytics cache; retain results in the research brief
+and avoid repeating anonymous searches unnecessarily.
 
 ### From Claude Code Agent
 
