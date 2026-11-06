@@ -103,8 +103,11 @@ class ParallelSearch:
             try:
                 if "text/event-stream" in response.headers.get("Content-Type", ""):
                     messages = []
-                    for event in response.content.decode("utf-8").replace("\r\n", "\n").split("\n\n"):
-                        data = "\n".join(line[5:].lstrip(" ") for line in event.splitlines()
+                    # SSE lines end only at CRLF, CR, or LF. Unicode separators
+                    # inside JSON strings are payload, not protocol boundaries.
+                    stream = response.content.decode("utf-8").replace("\r\n", "\n").replace("\r", "\n")
+                    for event in stream.split("\n\n"):
+                        data = "\n".join(line[5:].lstrip(" ") for line in event.split("\n")
                                          if line.startswith("data:"))
                         if data:
                             messages.append(json.loads(data))
