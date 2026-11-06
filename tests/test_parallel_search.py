@@ -65,6 +65,7 @@ class ParallelSearchTests(unittest.TestCase):
         else:
             response.headers["Content-Type"] = "application/json"
             response._content = json.dumps(message).encode()
+        response._content_consumed = True
         return response
 
     def test_search_shape_limit_utf8_and_all_prepared_headers(self):

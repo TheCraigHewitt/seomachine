@@ -33,6 +33,7 @@ def response_for(message, newline="\n", multiline=False, sse=True):
     else:
         response._content = serialized.encode("utf-8")
         response.headers["Content-Type"] = "application/json; charset=utf-8"
+    response._content_consumed = True
     return response
 
 

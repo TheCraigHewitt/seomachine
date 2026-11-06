@@ -91,7 +91,7 @@ class ParallelSearch:
         if params is not None:
             payload["params"] = params
         with session.post(self.ENDPOINT, json=payload, timeout=self.timeout,
-                          allow_redirects=False) as response:
+                          allow_redirects=False, stream=True) as response:
             # Do not follow redirects or forward credentials to another origin.
             if 300 <= response.status_code < 400:
                 raise ParallelSearchError("Parallel MCP redirect refused")
@@ -101,16 +101,9 @@ class ParallelSearch:
             if request_id is None:
                 return None
             try:
-                if "text/event-stream" in response.headers.get("Content-Type", ""):
-                    messages = []
-                    # SSE lines end only at CRLF, CR, or LF. Unicode separators
-                    # inside JSON strings are payload, not protocol boundaries.
-                    stream = response.content.decode("utf-8").replace("\r\n", "\n").replace("\r", "\n")
-                    for event in stream.split("\n\n"):
-                        data = "\n".join(line[5:].lstrip(" ") for line in event.split("\n")
-                                         if line.startswith("data:"))
-                        if data:
-                            messages.append(json.loads(data))
+                media_type = response.headers.get("Content-Type", "").split(";", 1)[0].strip().lower()
+                if media_type == "text/event-stream":
+                    messages = self._sse_messages(response)
                 else:
                     messages = [response.json()]
                 for message in messages:
@@ -122,6 +115,34 @@ class ParallelSearch:
             except (ValueError, AttributeError) as exc:
                 raise ParallelSearchError("Malformed Parallel MCP response") from exc
             raise ParallelSearchError("Missing Parallel MCP response")
+
+    @staticmethod
+    def _sse_messages(response):
+        """Read complete events without waiting for EOF or a larger read buffer."""
+        line = bytearray()
+        data = []
+        skip_lf = False
+        # Small, unclosed responses must not wait for requests' default chunk size.
+        # Split bytes only at CR/LF, preserving UTF-8 and Unicode separators.
+        for chunk in response.iter_content(chunk_size=1):
+            for char in chunk:
+                if skip_lf:
+                    skip_lf = False
+                    if char == 10:
+                        continue
+                if char not in (10, 13):
+                    line.append(char)
+                    continue
+                skip_lf = char == 13
+                if not line:
+                    if data:
+                        event = b"\n".join(data)
+                        data = []
+                        yield json.loads(event.decode("utf-8"))
+                elif line.startswith(b"data:"):
+                    field = bytes(line[5:])
+                    data.append(field[1:] if field.startswith(b" ") else field)
+                line.clear()
 
     @staticmethod
     def _process_results(result, limit):
