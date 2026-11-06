@@ -13,7 +13,7 @@ SEO Machine is built on Claude Code and provides:
 - **Specialized Agents**: Content analyzer, SEO optimization, meta element creation, internal linking, keyword mapping, editor, performance analysis, headline generator, CRO analyst, landing page optimizer
 - **Marketing Skills**: 26 marketing skills for copywriting, CRO, A/B testing, email sequences, pricing strategy, and more
 - **Advanced SEO Analysis**: Search intent detection, keyword density & clustering, content length comparison, readability scoring, SEO quality rating (0-100)
-- **Data Integrations**: Google Analytics 4, Google Search Console, DataForSEO for real-time performance insights
+- **Data Integrations**: Google Analytics 4, Google Search Console, DataForSEO for real-time performance insights; [optional Parallel search](data_sources/README.md#fetch-parallel-search-data-opt-in) for source URLs and passages without an API key
 - **Context-Driven**: Brand voice, style guide, SEO guidelines, and examples guide all content
 - **Workflow Organization**: Structured directories for topics, research, drafts, and published content
 

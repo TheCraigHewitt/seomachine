@@ -60,6 +60,7 @@ Located in `data_sources/modules/`. The Content Analyzer chains:
 - `google_analytics.py` - GA4 traffic/engagement data
 - `google_search_console.py` - Rankings and impressions
 - `dataforseo.py` - SERP positions, keyword metrics
+- `parallel_search.py` - Opt-in source discovery through Parallel Unified MCP, anonymous or with `PARALLEL_API_KEY`; see `data_sources/README.md` for usage and offline settings
 - `exa_search.py` - Optional semantic search and content discovery; only enabled when `EXA_API_KEY` is set (`exa-py` is not in requirements.txt)
 - `data_aggregator.py` - Combines all sources into unified analytics
 - `wordpress_publisher.py` - Publishes to WordPress with Yoast SEO and/or RankMath metadata

@@ -31,6 +31,12 @@ Use this command to conduct comprehensive SEO keyword research and competitive a
 - **Featured Snippets**: Identify if there's a featured snippet opportunity
 - **Domain Authority**: Note which competitors rank (indie blogs vs. major publications)
 
+### Optional Supporting Source Search
+- If the user explicitly selects Parallel for web research, use `ParallelSearch` from `data_sources.modules.parallel_search` to collect URLs and excerpt passages for the brief. See @data_sources/README.md for the import and settings.
+- Example from the repository root: `python -m data_sources.modules.parallel_search "best podcast hosting platforms for beginners" --num-results 3`.
+- Cite returned URLs and use passages to identify common themes and supporting evidence. These results do not establish SERP positions, search volume, or keyword difficulty.
+- Keep existing provider choices. Do not switch from Exa or another provider on an error without the user's selection. Respect disabled/offline research, including `PARALLEL_SEARCH_ENABLED=false`, and report authentication or rate-limit failures rather than inventing sources.
+
 ### Context Integration
 - **your company Advantage**: How can your company product features naturally enhance this content?
 - **Brand Alignment**: Check @context/brand-voice.md for messaging fit
